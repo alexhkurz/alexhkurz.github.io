@@ -1,14 +1,14 @@
 window.addEventListener('load', newQuote, true);
 
 var quotes = [
-  "Is there a difference between harmony and agreement? asked the Marquis. Yen Tzu replied, There is. Harmony is like making broth. (Tso-chuan)"
+"Is there a difference between harmony and agreement? asked the Marquis. Yen Tzu replied, There is. Harmony is like making broth. (Tso-chuan)"
+,  "Amoebae dubia actually has 200 times more DNA than do humans. (Nick Lane)",
+,  "Knowledge of philosophy can be the essential element, because a person with a philosophical education has in their toolbox a plethora of ideas and methods coming from the whole history of human beings attempting to think about the fundamentals of our description of the world. (Lee Smolin)",
+,  "When what had been done in the heart of darkness was repeated in the heart of Europe, no one wished to recognize what everyone knew. (Raoul Peck)",
+,  "We are what we repeatedly do. Excellence, then, is not an act, but a habit. (Aristotle-Durant)",
+, "It is far better to accept doctrines with reason and wisdom than with mere faith. (Origen of Alexandria)"
 ]
 
-//  "Amoebae dubia actually has 200 times more DNA than do humans. (Nick Lane)",
-//  "Knowledge of philosophy can be the essential element, because a person with a philosophical education has in their toolbox a plethora of ideas and methods coming from the whole history of human beings attempting to think about the fundamentals of our description of the world. (Lee Smolin)",
-//  "When what had been done in the heart of darkness was repeated in the heart of Europe, no one wished to recognize what everyone knew. (Raoul Peck)",
-//  "We are what we repeatedly do. Excellence, then, is not an act, but a habit. (Aristotle-Durant)",
-// "It is far better to accept doctrines with reason and wisdom than with mere faith. (Origen of Alexandria)"
 
 /*
 "Therefore geometry is founded in mechanical practice, and is nothing but that part of universal mechanics which accurately proposes and demonstrates the art of measuring. (Isaac Newton)",
