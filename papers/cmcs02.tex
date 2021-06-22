@@ -1,0 +1,1667 @@
+\documentclass{entcs}
+%
+\usepackage[PostScript=dvips]{diagrams}
+\usepackage{entcsmacro}
+\usepackage{hyperref}
+%
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+%\usepackage[english]{babel}
+%
+%\usepackage{a4wide}
+\usepackage{latexsym}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{stmaryrd}
+%\usepackage{amsthm}
+\usepackage{amsmath}
+%\usepackage{multicol}
+%\usepackage{mathrsfs}
+%\usepackage{graphics}
+\usepackage[matrix,arrow,curve]{xy}
+\usepackage{url} 
+\newcommand{\hypergetpageref}{0}
+%
+\input{include/meineamstheorems.tex}
+\input{include/meinemakros.tex}
+\input{include/makros-alex.tex}
+%
+%\setlength{\parindent}{0pt}
+%\setlength{\parskip}{0pt}
+\bibliographystyle{plain}
+
+\def\lastname{Kurz and Pattinson}
+\begin{document}
+\begin{frontmatter}
+  \title{Definability, Canonical Models, Compactness for
+    Finitary Coalgebraic Modal Logic}%
+  \author{Alexander Kurz\thanksref{myemail}}%
+  \address{CWI\\ P.O.  Box 94079, 1090 GB Amsterdam\\ The Netherlands}%
+  \author{Dirk Pattinson\thanksref{coemail}}%
+  \address{Ludwig-Maximilians-Universit{\"a}t M{\"u}nchen\\
+    Oettingenstr.~67, 80538 M{\"u}nchen\\ Germany}%
+  \thanks[myemail]{Email: \href{mailto:kurz@cwi.nl}
+    {\texttt{\normalshape kurz@cwi.nl}}}%
+  \thanks[coemail]{Email:
+    \href{mailto:pattinso@informatik.uni-muenchen.de}
+    {\texttt{\normalshape pattinso@informatik.uni-muenchen.de}}}%
+  \begin{abstract}
+    This paper studies coalgebras %for a $\set$-endofunctor $T$ 
+    from the perspective of the \emph{finitary} observations that can
+    be made of their behaviours.
+    %the behaviours of $T$-coalgebras.
+    Based on the %finitary part of the 
+    terminal sequence, notions of
+    finitary behaviours and finitary predicates are introduced. A
+    category $\Log(T)$ of coalgebras with morphisms preserving
+    finitary behaviours is defined.
+    
+    We then investigate definability and compactness for finitary
+    coalgebraic modal logic, show that the final object in $\Log(T)$
+    generalises the notion of a canonical model in modal logic, and
+    study the topology induced on a coalgebra by the finitary part of
+    the terminal sequence.
+  \end{abstract}
+\end{frontmatter}
+
+
+%DAS LETZTE THEOREM NICHT NUR FUER CANTORSPACE?????
+
+%\setcounter{section}{-1}
+\section*{Introduction}
+
+Coalgebras for an endofunctor $\FT$ on $\Set$ encompass many types of
+state base systems, including Kripke models and frames, labelled
+transition systems, Moore- and Mealy automata and deterministic
+systems, see eg.\ Rutten~\cite{rutten:uc-j}. The research on modal
+logics as specification languages for coalgebras began with
+Moss~\cite{moss:cl} and was then taken up in eg.\ 
+\cite{kurz:cmcs98-j,roessiger:cmcs98-j,roessiger:cmcs00,jacobs:tl,jacobs:many-sorted}.
+
+The relationship between modal logic and coalgebras
+% %, ie.\ how
+% %coalgebras give semantics to modal formulas, 
+has been explained in \cite{kurz:aiml98} as follows. Denoting by $Z$
+the carrier of the final coalgebra, we can consider as the semantics
+of a modal formula $\phi$ the subset $\sem{\phi}\subseteq Z$
+%of the carrier $Z$ of the final coalgebra 
+satisfying $\phi$.
+% %
+% The relationship between modal logic and coalgebras
+% %, ie.\ how coalgebras give semantics to modal formulas, has been explained in
+% % %\cite{kurz:aiml98} as follows. 
+% can be explained in different ways. First, following
+% \cite{kurz:aiml98}, Denoting by $Z$ the carrier of the final
+% coalgebra, we can consider as the semantics of a modal formula $\phi$
+% the subset $\sem{\phi}\subseteq Z$
+% %of the carrier $Z$ of the final coalgebra 
+% satisfying $\phi$.
+%
+The intuition here is: The elements of $Z$ are the
+%(complete infinite) 
+behaviours %of the systems under consideration 
+and the meaning of a modal formula $\phi$ is the property (ie.\ set)
+of behaviours defined by $\phi$.
+%
+In case that the logics we are interested in are expressive in the
+sense that they allow to define \emph{all} subsets of $Z$, we can
+identify modal formulas and subsets of $Z$, resulting in a new way to
+algebraically investigate modal logics,
+see~\cite{kurz:aiml98,kurz:cmcs01}.
+
+Unfortunately, modal logics given by a finitary syntax are in general
+not expressive. 
+% This is a consequence of the fact 
+The reason for this is simply that not all properties of behaviours
+can be described in a finite language. One of the main topics of this
+paper is the quest for a semantics of modal logic that suits
+\emph{finitary} modal logic as perfectly as the semantics sketched
+above does for expressive modal logics.
+
+% A second approach to a coalgebraic semantics of modal logics, due to
+% \cite{pattinson:sem-mod,pattinson:cml-report}, relies on the so called
+% \emph{terminal sequence} $(\FT^n 1)$ of the endofunctor $\FT$. The
+% terminal sequence $(\FT^n 1)$ can be understood as approximating the
+% final coalgebra. Intuively, the elements of the $n$-th approximant
+% represent the behaviours that can be observed of a system in $n$
+% steps. Accordingly, the semantics of a modal formula $\phi$ of depth
+% $n$ is given by a subset $\sem{\phi}\subseteq\FT^n 1$.
+
+
+The key concept used to account for finitariness is the so called
+\emph{terminal sequence} $(\FT^n 1)$ of the endofunctor $\FT$. The
+terminal sequence $(\FT^n 1)$ can be understood as approximating the
+final coalgebra. Intuively, the elements of the $n$-th approximant
+represent the behaviours that can be observed of a system in $n$
+steps. Following \cite{pattinson:sem-mod,pattinson:cml-report}, the
+semantics of a finitary modal formula $\phi$ of depth $n$ will be a
+subset $\sem{\phi}\subseteq\FT^n 1$.
+
+In case that the functor $\FT$ maps finite sets to finite sets, the
+approach above results in a perfect match between finitary modal
+logics and their semantics: For all finite ordinals $n$ and all subset
+of $\FT^n 1$ there will be a formula defining this subset. In case
+that $\FT$ maps finite sets to infinite sets, which is for example the
+case for logics having infinitely many atomic propositions, there will
+be subsets of $\FT^n 1$ which are not defined by a single finitary
+formula.  This is the reason to introduce topologies $\tau_n$ on the
+approximants $\FT^n 1$ in Section~\ref{section:topo-logical}, the idea
+being that finitary formulas correspond to clopen subsets.
+% Furthermore, in
+% Section~\ref{section:compactness} we use topological compacteness to
+% investigate compactness of modal logics for coalgebras.cdcd
+
+
+The main novelty of the paper is probably the introduction, in
+Section~\ref{section:finitary-predicates}, of the category $\Log(T)$
+that has coalgebras as objects and functions that preserve
+\emph{finitary} behaviours as morphisms. One of the claims of this
+paper is that $\Log(T)$ plays a role for finitary modal logics as
+$\Coalg{T}$ does for expressive modal logics. In
+Section~\ref{section:canonical}, we show that $\Log(T)$ always has a
+final object. Moreover, the final object in $\Log(T)$ is compared to
+the canonical model as known from modal logic.  Assuming that $T$ maps
+finite sets to finites sets and based on
+Sections~\ref{section:canonical} and \ref{section:topo-logical},
+Section~\ref{section:compactness} characterises those functors
+$T$ for which finitary modal logics for $T$-coalgebras are compact.
+
+
+
+
+
+
+\section{Preliminaries and Notation}\label{section:preliminaries}
+
+
+We consider coalgebras for a $\Set$-endofunctor $\FT$. The category of
+$\FT$-coalgebras and coalgebra morphisms is denoted by $\CoAlg(\FT)$.
+%
+The \emph{final $\Sigfun$-coalgebra}, denoted by $\Zsf=(Z,\zeta)$, is
+-- if it exists -- defined up to isomorphism by the property that for
+all $\Asf\in\CoalgFun$ there is a unique morphism
+$\ineins_\Asf:\Asf\maps\Zsf$.  Given an element $a$ in $\Asf$, we call
+$(\Asf,a)$ a \emph{process} and $\ineins_\Asf(a)$ its
+\emph{behaviour}. Two processes $(\Asf,a)$ and $(\Bsf,b)$ are
+\emph{behaviourally equivalent} (written $(\Asf,a)\sim(\Bsf,b)$), if
+they can be identified by a morphism of coalgebras, ie.\ if there
+exists $(\Csf, c) \in \CoalgFun$ and $f: \Asf \to \Csf$, $g:\Bsf \to
+\Csf \in \CoalgFun$ such that $f(a) = g(b)$.
+
+If the final coalgebra exists, this is clearly equivalent to 
+$\ineins_\Asf(a)=\ineins_\Bsf(b)$.
+
+\begin{example}[Streams]
+  For a set $\Elem$ consider $\Sigfun X=\Elem\times X$. Given a coalgebra
+  $\alpha=\langle\head,\tail\rangle: A\maps\Elem\times A$ the (complete)
+  behaviour of an element $a\in A$ is the infinite list
+  $(\head(a),\head(\tail(a)),\head(\tail(\tail(a))),\ldots)$. Accordingly, the
+  final coalgebra $\Zsf=(\Elem^\nat,\langle\head,\tail\rangle)$ is given by the
+  infinite lists over $\Elem$.
+\end{example}
+
+\begin{example}[Kripke models]
+  Let $\Prop$ be a countably infinite set. Coalgebras for the functor
+  $\Sigfun(X)=\Pow X\times \Pow\Prop$ are Kripke models. The coalgebraic
+  notion of behavioural equivalence coincides with the standard notion of
+  bisimulation in modal logic.
+\end{example}
+
+% \noindent
+% Sometimes it is easy to give an explicit description of the final coalgebra:
+
+We have seen how the final coalgebra (if it exists) provides a notion
+of behaviour. In general, however, the behaviour of a process
+represents an infinite amount of information.  This paper investigates
+properties of processes, which can be specified by a finite amount of
+information. Hence the final coalgebra (containing the infinite
+behaviours of all processes) has to be replaced by finitary
+approximations. These approximations are provided by the (finitary
+part) of the so-called terminal sequence of the underlying endofunctor
+$\FT$.
+
+\subsection{The Terminal Sequence}
+
+Terminal sequences can be thought of as approximating the final
+coalgebra.  The following definition has been taken from
+\cite{worrell:cmcs99}.
+
+The \emph{terminal sequence} of $\FT$ is an ordinal indexed sequence of sets
+$(Z_{\alpha})$ together with a family $(p^{\alpha}_{\beta})_{\beta \leq
+\alpha}$ of functions $p^{\alpha}_{\beta}: Z_{\alpha} \to Z_{\beta}$ for all
+ordinals $\beta \leq \alpha$ such that
+\begin{itemize}
+\item $Z_{\alpha+1} = \FT Z_{\alpha}$ and $p^{\alpha+1}_{\beta+1} = \FT
+p^{\alpha}_{\beta}$ for all $\beta \leq \alpha$
+\item
+  $p^{\alpha}_{\alpha} = \id_{Z_{\alpha}}$ and $p^{\alpha}_{\gamma} =
+        p^{\beta}_{\gamma} \circ p^{\alpha}_{\beta}$ for $\gamma \leq \beta \leq
+        \alpha$
+\item
+  The cone $(Z_{\alpha}, (p^{\alpha}_{\beta}))_{\beta < \alpha}$ is limiting
+        whenever $\alpha$ is a limit ordinal.
+\end{itemize}
+
+Thinking of $Z_{\alpha}$ as the $\alpha$-fold application of $\FT$ to
+the limit $1$ of the empty diagram, we write $Z_{\alpha} =
+\FT^{\alpha} 1$ in the sequel.  Intuitively, $\FT^n 1$ represents
+behaviours which can be exhibited in $n$ steps.  For example, if $\FT X
+= D \times X$, then $\FT^n 1 \cong D^n$ contains all lists of length
+$n$.
+
+Note that every coalgebra $(C, \gamma)$ gives rist to a cone $(C,
+(\gamma_{\alpha}: C \to \FT^{\alpha} 1))$ over the terminal
+sequence:
+
+%$
+\begin{defn}\label{def:n-step-beh}
+  Given $(C, \gamma) \in \CoalgFun$, let $\gamma_0 = \ineins_C: C \to 1$
+  denote the unique mapping. For successor ordinals $\alpha = \beta +
+  1$ let $\gamma_{\alpha}: C \to \FT^{\alpha}1 = \FT\gamma_{\beta}
+  \circ \gamma$.  If $\alpha$ is a limit ordinal, let
+  $\gamma_{\alpha}$ be the unique map for which $\gamma_{\beta} =
+  p^{\alpha}_{\beta} \circ \gamma_{\alpha}$ for all $\beta < \alpha$.
+\end{defn}
+We will often use without further mentioning the following easy
+\begin{prop}\label{prop:easy} Let $n$ be an ordinal.
+\begin{enumerate}
+\item Let $f:(A,\alpha)\to(B,\beta)$ be a coalgebra morphism. Then
+  $\beta_n\circ f=\alpha_n$.
+\item Let $(A,\alpha)\in\CoalgFun$. Then
+  $p^{n+1}_n\circ\FT(\alpha_n)\circ\alpha=\alpha_n$.
+\end{enumerate}
+\end{prop}
+
+
+\subsection{Coalgebraic Modal Logic}
+
+Following \cite{pattinson:sem-mod,pattinson:cml-report},
+we consider modal logics for coalgebras as given by predicate liftings.
+
+\begin{defn}
+A \emph{predicate lifting} for $\FT$ is a natural transformation $\lambda: 2 \to
+2 \circ \FT$, where $2$ denotes the contravariant powerset functor.
+\end{defn}
+
+\begin{example} \label{example:kripke-liftings}
+Consider $\FT X = \Pow(X) \times \Pow(A)$, where $A$ is a set of atomic
+propositions. Then $\FT$-coalgebras are in 1-1 correspondence with Kripke models
+over the set $A$ of atoms. We demonstrate how to capture the interpretation of
+atoms and modalities using predicate liftings. Let $a \in A$ and consider the
+liftings $\lambda$ and $\lambda_a$ given by
+\begin{align*}
+\lambda(X)(\ssx) & = \lbrace (\ssx', \ssa) \in \Pow(X) \times \Pow(A)
+  \sbars \ssx' \subseteq \ssx \rbrace \\
+\lambda_a(X)(\ssx) & = \lbrace (\ssx', \ssa) \in \Pow(X) \times \Pow(A)
+  \sbars a \in \ssa \rbrace.
+\end{align*}
+%
+Given $(C, \gamma) \in \CoAlg(\FT)$, we write $c \to c'$ if $c, c' \in C$ and
+$c' \in \pi_1 \circ \gamma(c)$. Also, if $c \in C$ and $a \in A$, we write
+$c \models a$ iff $a \in \pi_2 \circ \gamma(c)$. 
+
+\sskip For the case of modalities, consider a subset $\ssc \subseteq C$, which
+we think of as the interpretation $\ssc = \lsem \phi \rsem$ of a modal formula
+$\phi$.  Then
+\[
+  \gamma\inv \circ \lambda(C)(\ssc)  = 
+        \lbrace c \in C \sbars \forall c' \in C. c \to c' \implies c' \in \ssc \rbrace
+\]
+corresponding to the interpretation of $\Box \phi$. The same formula with
+$\lambda$ replaced by $\lambda_a$ yields
+\[
+  \gamma\inv \circ \lambda_a(C)(\ssc) = 
+        \lbrace c \in C \sbars c \models a \rbrace.
+\]
+Hence, given any $\ssc \subseteq C$, we can capture the set of worlds which
+satisfy $a$ using the lifting $\lambda_a$.\qed
+\end{example}
+
+\begin{defn}[Syntax and semantics of $\Lang(\FT,\PredLift)$]
+  Given a set $\PredLift$ of predicate liftings for $\FT$, we consider the
+  language $\Lang(\FT,\PredLift)$, often abbreviated to $\Lang(\PredLift)$,
+  which is given by the grammar
+\[
+  \phi ::= \false \sbars \phi \to \psi \sbars \um{\lambda} \phi 
+        \qquad (\lambda \in \PredLift)
+\]
+For a structure $(C, \gamma) \in \CoAlg(\FT)$, the semantics $\lsem \phi
+\rsem_{\gamma} \subseteq C$ is given by
+\[
+\lsem \false \rsem_{\gamma} = \emptyset %
+\qquad \lsem \phi \to \psi \rsem_{\gamma} = (C \setminus \lsem \phi \rsem_{\gamma}) \cup \lsem \psi \rsem_{\gamma}%
+\qquad \lsem \um{\lambda} \phi\rsem_{\gamma} = \gamma\inv \circ
+\lambda(C)(\lsem \phi \rsem_{\gamma})
+\]
+\end{defn}
+
+\begin{notn}[The modal logic $\ml$]
+  In case of $\FT=\Pow\times\Pow\Prop$, $\Prop$ countably infinite, we denote
+  $\Lang(\FT,\PredLift)$ with $\PredLift$ as in the example above by $\ml$.
+  $\ml$ is the standard modal logic for Kripke models.
+\end{notn}
+
+% Given the two basic predicates $\true = \lbrace 0 \rbrace$ and
+% $\false = \emptyset$ on $1 = \lbrace 0 \rbrace$, we use predicate liftings
+% (and boolean operations) to obtain predicates on the sets $\FT^n 1$ for any $n
+% \in \Nat$. 
+% This provides the handle to study the Cantor
+% space topology from a logical viewpoint.
+
+In the remainder of this section we show that each formula $\phi \in
+\Lang(\PredLift)$ gives rise to a predicate $t \subseteq \FT^n 1$ for
+some $n \in \Nat$. Given any structure $(C, \gamma) \in \CoAlg(\FT)$,
+we show that $\lsem \phi \rsem_\gamma = \gamma_n\inv(t)$, where
+$\gamma_n$ is defined as in Definition~\ref{def:n-step-beh}.
+
+\begin{defn}[Formulas of depth $n$]\label{def:depth}
+Let $L_0$ denote the set of formulas of propositional logic, that is, $L_0$ is
+given by the grammar 
+\[
+  L_0 \ni \phi, \psi  ::= \false \sbars \phi \to \psi
+\]
+The mapping $d_0: L_0 \to \Pow(1)$ is given by $d_0(\phi) = 1$ iff $\phi$ is a
+tautology, and $d_0(\phi) = \emptyset$, otherwise.
+%
+For $n \geq 0$ the set $L_{n+1}$ is given by the grammar
+\[
+  L_{n+1} \ni \phi, \psi ::= \false \sbars \phi \to \psi \sbars \um{\lambda} \rho
+        \qquad (\lambda \in \PredLift, \rho \in L_n)
+\]
+The mapping $d_{n+1}: L_{n+1} \to \Pow(\FT^{n+1} 1)$ is given inductively by
+\[
+  \false \mapsto \emptyset \qquad
+        \phi \to \psi \mapsto (\FT^n 1 \setminus d_{n+1}(\phi)) \cup d_{n+1} (\psi)
+        \qquad
+        \um{\lambda} \rho \mapsto \lambda(\FT^n 1)(d_n(\rho))
+\]
+We call formulas in $L_n$ \emph{formulas of depth $n$}. For $\phi\in L_n$, we
+also write $\sem{\phi}_n$ or simply $\sem{\phi}$ instead of $d_n(\phi)$.
+\end{defn}
+
+\begin{example}\label{exle:depth-ml}
+  In case of $\ml$, an equivalent definition of the depth of a formula
+  is the following: $\depth(\false)=0$,
+  $\depth(\phi\imp\psi)=\max\{\depth(\phi),depth(\psi)\}$,
+  $\depth(p)=1$ for $p\in\Prop$, $\depth(\Box\phi)=\depth(\phi)+1$.
+  This is a slight variation of the standard definition in modal logic
+  (where $\depth(p)=0$) but can be used to the same effect.
+\end{example}
+
+Intuitively, a formula $\phi \in L_n$ describes behaviour which take $n$
+transition steps into account. When thinking of the sets $\FT^n 1$ as
+representing the behaviour which can be exhibited in $n$ transition steps, the
+value $d_n(\phi)$ is a model-independent interpretation of $\phi$. We note that
+every formula is eventually contained in one of the $L_n$'s:
+
+\begin{propn} \label{propn:all-of-L}
+$\Lang(\PredLift) = \bigcup_{n \in \Nat} L_n$.
+\end{propn}
+% \begin{proof}
+% One shows $L_n \subseteq \Lang(\PredLift)$ by induction on $n$. The inclusion
+% $\Lang(\PredLift) \subseteq \bigcup_{n \in \Nat} L_n$ is established using
+% structural induction.
+% \end{proof}
+
+The following proposition supports the intuition that $d_n(\phi)$ is a
+semantical model-independent representation of the $\phi$, for $\phi \in L_n$.
+% It also establishes the link between coalgebraic modal logic and the Cantor
+% space topology on coalgebras.
+
+\begin{propn} \label{propn:semantics}
+Suppose $(C, \gamma) \in \CoAlg(\FT)$. Then
+\[
+\lsem \phi \rsem_\gamma = \gamma_n\inv \circ d_n (\phi)
+\]
+for all $n \in \Nat$ and all $\phi \in L_n$.
+\end{propn}
+\begin{proof}
+By induction on $n$ using the naturality of predicate liftings.
+\end{proof}
+
+% To be able to express topological properties logically, we have to see to the
+% fact that each $d_n$ is a surjection, that is,
+In order to obtain definability results, we have to assume that the logic
+under consideration is reasonably expressive. We deal with two notions of
+expressiveness: logics, which allow the denotation of every $t \subseteq \FT^n
+1$ by a formula, and those which allow to carve out every predicate $t
+\subseteq \FT^n 1$ by a \emph{set} of formulas. The formal definition is as
+follows:
+
+\begin{defn}[formula-(set-)expressive] \label{defn:expressive}
+The language $\Lang(\FT,\PredLift)$ is called
+\begin{itemize}
+\item \emph{formula-expressive}, if every $d_n$ is a surjection
+\item \emph{formula-set-expressive}, if every $D_n$ is a surjection
+\end{itemize}
+where  $d_n$ is as in Definition~\ref{def:depth} and $D_n$ is defined by
+\[
+  D_n:\Pow L_n\to \Pow\FT^n 1, \quad\Phi\mapsto
+  \bigcap\{d_n(\phi):\phi\in\Phi\}.
+\]
+\end{defn}
+%
+For $\Lang(\FT,\PredLift)$ to be expressive, we have to put a completeness
+condition on the set of of predicate liftings.
+
+\begin{defn}[Separation]
+\begin{enumerate}
+\item
+  Suppose $C$ is a set and $\mathcal C \subseteq \Pow(C)$ is a system of
+  subsets of $C$. We call $\mathcal C$ \emph{separating}, if the map
+  $s: C \to \Pow(\mathcal C)$, $s(c) = \lbrace \ssc \in \mathcal C \sbars
+  c \in \ssc \rbrace$ is monic.
+\item
+  A set $\PredLift$ of predicate liftings for $C$ is called \emph{separating},
+  if $\lbrace \lambda(C)(\ssc) \sbars \lambda \in \PredLift,
+  \ssc \subseteq C \rbrace$ is a separating set of subsets of $\FT C$, for all
+  sets $C$.
+\end{enumerate}
+\end{defn}
+
+The idea of separation is that the individual points of $C$ can be
+distinguished by the predicates $P \in \mathcal C$. Passing to predicate
+liftings, we can distinguish individual successors $x \in \FT X$ by means of
+predicate liftings, assuming that all points of $X$ can be distinguished.
+
+The separation property is present in many examples, notably also in Example~\ref{example:kripke-liftings}.
+
+\begin{example}
+Let $\FT X = \Pow(X) \times \Pow(A)$ for some set $A$ of atomic propositions.
+Consider $\PredLift = \lbrace \lambda  \rbrace \cup \lbrace \lambda_a \sbars a
+\in A \rbrace$ as defined in Example~\ref{example:kripke-liftings}. Then
+$\PredLift$ is separating.
+\end{example}
+
+Assuming that $\FT$ maps finite sets to finite sets, which corresponds
+to the fact of having only finitely many propositional variables in
+the case of Kripke models, one easily establishes
+
+\begin{propn} \label{propn:surjection}
+  Suppose $\FT$ maps finite sets to finite sets and $\PredLift$ is separating.
+        Then $\Lang(\FT,\PredLift)$ is formula-expressive.
+\end{propn}
+% \begin{proof}
+% Easy induction.
+% \end{proof}
+
+\noindent
+Given a structure $(C, \gamma) \in \CoAlg(\FT)$, the above proposition
+says that every predicate $\ssc \subseteq C$ on $C$, which arises as
+$\gamma_n\inv(t)$ for some $t \subseteq \FT^n 1$ can actually be
+denoted by a formula.
+
+In the case of Kripke models with a countably infinite set of propositional
+variables we have
+
+\begin{propn} \label{propn:surjection-weak}
+  Let $\FT=\Pow\times\Pow\Prop$, $\Prop$ countably infinite, and
+  $\Lang(\FT,\PredLift)=\ml$. 
+  Then $\Lang(\FT,\PredLift)$ is formula-set-expressive.
+\end{propn}
+\noindent
+Given a structure $(C, \gamma) \in \CoAlg(\Pow\times\Pow\Prop)$, the above
+proposition says that every predicate $\ssc \subseteq C$ on $C$, which arises
+as $\gamma_n\inv(t)$ for some $t \subseteq \FT^n 1$ can be denoted by
+a set of formulas.
+
+
+
+
+
+
+
+
+\section{Finitary Predicates and the Category $\Log(\FT)$}
+\label{section:finitary-predicates}
+
+Behavioural predicates, ie.\ predicates on coalgebras which are
+invariant under observational equivalence, can be considered as
+subsets of the carrier of the final coalgebra. Here, we are interested
+in finitary behavioural predicates and we propose to consider them as
+subsets of the $\FT^n 1$, $n<\omega$, given by the terminal sequence.
+
+
+First, recalling Definition~\ref{def:n-step-beh}, we define a notion
+of $n$-step behavioural equivalence and of predicates of depth $n$.
+
+\begin{defn}[$n$-Behavioural equivalence]
+  Let $n$ be an ordinal. For two coalgebras $\Asf=(A,\alpha)$,
+  $\Bsf=(B,\beta)$ define $(\Asf,a)\sim_n (\Bsf,b)$ iff
+  $\alpha_n(a)=\beta_n(a)$. Similarly, $\Asf\sim_n\Bsf$ iff
+  $\alpha_n(A)=\beta_n(B)$ and $\Asf\sim_{<\omega} \Bsf$ iff
+  $\alpha_n(A)=\beta_n(B)$ for all $n<\omega$.
+\end{defn}
+
+Under the assumoption that the final coalgebra exists, we consider two
+points $x$ and $y$ as behaviourally equivalent, if they are identified
+by the unique morphism into the final coalgebra.  As shown in
+\cite{adamek-koubek:gfp}, this is equivalent to $\alpha_n(x) =
+\alpha_n(y)$ for all ordinals $n$. The notion of finitary behavioural
+predicates, which we are about to introduce, restricts the validity of
+the above equation to \emph{finite} ordinals.
+
+
+\begin{remark}
+  While $(\Asf,a)\sim_\omega(\Bsf,b) \ssi \fa n<\omega \tp
+  (\Asf,a)\sim_n(\Bsf,b) $, we only have $\Asf\sim_\omega\Bsf \oif \fa
+  n < \omega \tp \Asf\sim_n \Bsf$. For an example refuting the converse, let
+  $\FT X=\{a,b\}\times X$, $\Asf$ the final coalgebra with carrier
+  $\{a,b\}^\omega$ and $\Bsf$ the subcoalgebra with carrier $\{s\cdot
+  a^\omega:s\in\{a,b\}^*\}$. 
+% Then $\fa n<\omega \tp \Asf\sim_\omega\Bsf$ but
+%   not $\Asf\sim_\omega\Bsf$.
+\end{remark}
+
+\begin{example}
+  For $\FT X = \Pow X\times\Pow\Prop$, $n$-behavioural equivalence is
+  (a slight variation of) the bounded bisimulation of modal logic as
+  studied in \cite{gerbrandy:diss}.
+\end{example}
+
+\begin{defn}[Behavioural predicates of depth $n$]\label{def:predicates-depth-n}
+  A set $S\subseteq \Sigfun^n 1$ is called a behavioural predicate of
+  depth $n$. A process $(A,\alpha,a)$ satisfies $S$, written
+  $(A,\alpha,a)\models S$ and often abbreviated as $a\models S$, iff
+  $\alpha_n(a)\in S$.
+\end{defn}
+
+\noindent 
+We also use standard notation such as $(A,\alpha)\models S\ssi \fa a\in A\tp
+a\models S$ and $\sem{S}_{(A,\alpha)}=\{a\in A:a\models S\} $ and
+$\Mod(S)=\{\Asf\in\CoalgFun:\Asf\models S\}$.
+
+\begin{example}
+  Let $\phi\in\Lang(\FT,\PredLift)$ be a formula of depth $n$. Then
+  the semantics of $\phi$ is determined by the predicate
+  $\sem{\phi}\subseteq\FT^n 1$ (cf.\ Definition~\ref{def:depth}).  If
+  $\FT$ maps finite sets to finite sets and $\PredLift$ is separating,
+  every predicate $S\subseteq\FT^n 1$ is denoted by a formula (cf.\ 
+  Proposition~\ref{propn:surjection}). In case of $\ml$ every
+  predicate is denoted by a set of formulas (cf.\ 
+  Proposition~\ref{propn:surjection-weak}).
+\end{example}
+
+\begin{remark}
+  In \cite{kurz:aiml98,kurz:diss} it was proposed to investigate modal
+  logics by considering subsets of the final coalgebra as the
+  semantics of modal formulas. From this perspective, the approach
+  presented here is a special case. Let $(Z,\zeta)$ be the final
+  coalgebra. Then every $S\subseteq\FT^n 1$ is logically equivalent to
+  $\zeta_n\inv(S)\subseteq Z$. Indeed, $(\Asf,a)\models S \ssi
+  \alpha_n(a)\in S \ssi \zeta_n(\ineins_\Asf(a))\in S \ssi
+  \ineins_\Asf(a)\in\zeta_n\inv(S)$ which was the definition of
+  satisfaction for modal formulas as subsets of the final coalgebra.
+  This will be used in the next section.
+\end{remark}
+
+Predicates of depth $n$ and $n$-behavioural equivalence are related by the
+following propositions. 
+
+% \begin{prop}
+%   $(\Asf,a)\sim_n(\Bsf,b)\Ssi (\fa S\subseteq\FT^n 1\tp (\Asf,a)\models S \ssi
+%   (\Bsf,b)\models S)$.
+% \end{prop}
+
+\begin{prop}
+  Suppose $\Lang(\FT,\PredLift)$ is formula-expressive.
+  Then, for all $\Asf$ and
+  $a$ in $\Asf$, there exists $\phi_{(\Asf,a)}\in\Lang(\FT,\PredLift)$
+  such that $(\Asf,a)\sim_n(\Bsf,b)\ssi (\Bsf,b)\models\phi_{(\Asf,a)}$.
+\end{prop}
+
+The following is a result well-known in modal logic (cf.\ 
+\cite{gerbrandy:diss}, Proposition~2.8). 
+
+\begin{prop}\label{prop:bounden-beh-equ-ml}
+  Suppose $\Lang(\FT,\PredLift)$ is formula-set-expressive and
+  consider $\Asf$, $\Bsf \in \CoalgFun$ and elements $a$ in $\Asf$,
+  $b$ in $\Bsf$. Then $$(\Asf,a)\sim_n(\Bsf,b) \Ssi (a\models\phi\ssi
+  b\models\phi \text{ for all $\phi\in \Lang(\FT,\PredLift)$ of depth
+    $n$}).$$
+\end{prop}
+
+\mmskip $\CoalgFun$ can be considered as the category which has as
+morphisms $f:(A,\alpha)\to (B,\beta)$ precisely those functions
+$f:A\to B$ satisfying 
+%
+$$\ineins_{(B,\beta)}\circ f = \ineins_{(A,\alpha)}$$
+%
+where $\ineins$ denotes the morphisms into the final coalgebra.
+Equivalently, a function $f:A\to B$ is a morphism $f:(A,\alpha)\to
+(B,\beta)$ iff
+%
+$$\fa S\subseteq Z\tp f(a)\models S \ssi a\models S$$
+%
+where $Z$ is the carrier of the final coalgebra.
+%where $(Z,\zeta)$ is the final coalgebra. 
+% Equivalently, a function
+% $f:A\to B$ is a morphism $f:(A,\alpha)\to (B,\beta)$ iff
+% $$\ineins_{(B,\beta)}\circ f = \ineins_{(A,\alpha).}$$
+% % \begin{diagram}%[small]
+% % A && \rTo{f} && B\\
+% % % & \rdTo{\ineins_{(A,\alpha)}} && \ldTo{\ineins{(B,\beta)}}&\\
+% % % &&Z&&
+% % \end{diagram}
+% %
+We now define the category $\Log(\FT)$ of coalgebras that has the
+analogous properties for finitary behaviours and predicates.
+% $S\subseteq\FT^n1$, $n<\omega$.
+
+\begin{defn}[$\Log(\FT)$]\label{def:log}
+  The category $\Log(\FT)$ has $\FT$-coalgebras as objects. Morphisms
+  $f:(A,\alpha)\to (B,\beta)$ are those functions $f:A\to B$ such that,
+  for all $n<\omega$,
+%
+$\beta_n\circ f = \alpha_n$.
+%
+\end{defn}
+
+\begin{remark} 
+  For $f:A\to B$ each of the following is equivalent to $f$ being a
+  morphism $f:(A,\alpha)\to (B,\beta)$ in $\Log(\FT)$
+\begin{gather*}
+  \beta_\omega\circ f = \alpha_\omega\medskip\\
+  \fa n<\omega\tp \fa S\subseteq \FT^n1\tp\fa a\in A \tp f(a)\models S
+  \ssi a\models S
+\end{gather*}
+\end{remark}
+
+\begin{remark}
+  Some remarks relating the categories $\Log(\FT)$ and $\CoalgFun$ are
+  in order. Clearly, every morphism of coalgebras $f: (A, \alpha) \to
+  (B, \beta) \in \CoAlg(\FT)$ is also a morphism $f \in \Log(\FT)$. We
+  hence obtain a functorial inclusion $\CoAlg(\FT) \to \Log(\FT)$. Now
+  suppose $(A, \alpha)$ and $(B, \beta)$ are $\FT$-coalgebras and $(a,
+  b) \in A \times B$. 
+% If we take $a$ and $b$ to be observationally
+%   equivalent iff they can be identified by a morphism of coalgebras
+%   (ie. there exist morphisms $f, g \in \CoAlg(\FT)$ with the same
+%   codomain such that $f(a) = g(b)$), then $(a, b)$ observationally
+  Clearly, $a, b$ behaviourally equivalent implies $a \sim_{<\omega}
+  b$. The converse holds if one assumes $\FT$ to be
+  $\omega$-accessible:  Under this assumption, $\FT$ adimits a final
+  coalgebra, which is a subset of $\FT^{\omega} 1$ (see
+  \cite{worrell:cmcs99} for details). Hence, if $\FT$ is
+  $\omega$-accessible then $\Log(\FT)=\Coalg{T}$.
+\end{remark}
+
+One of the claims of this paper is that studying finitary modal logics
+for coalgebras, it may be a profitable approach to transfer techniques
+and ideas known from $\CoalgFun$ to $\Log(\FT)$. For example, in
+Section~\ref{section:canonical} we will show that $\Log(\FT)$
+always has a final object.
+
+
+
+
+\section{Definability Results}\label{section:definability}
+
+For the purpose of definability, we assume the existence of a final coalgebra
+$\Zsf = (Z, \zeta)$.
+We
+first note the following easy proposition relating predicates
+over $\FT^n1$ to predicates over $Z$.
+
+\begin{prop}\label{prop:fin}\label{prop:app}\label{prop:finapp}
+\begin{enumerate}
+\item  For any $S\subseteq \Sigfun^n 1$ it holds $\Asf\models S$
+  iff $\Asf\models\zeta_n\inv(S)$.
+\item  For any $S\subseteq Z$ it holds $\Asf\models S$ only if
+  $\Asf\models\zeta_n(S)$.
+\item  $\fa S\subseteq Z \tp S \subseteq \zeta_n\inv(\zeta_n(S))$ and
+  $\fa S\subseteq\FT^n 1\tp\zeta_n(\zeta_n\inv(S))=S$.
+\end{enumerate}
+\end{prop}
+
+We are now able to prove
+
+\begin{thm}
+  A class $\bcal\subseteq\CoalgFun$ is definable by a subset
+  $S\subseteq\Sigfun^n 1$ iff $\bcal$ is closed under images, coproducts,
+  domains of morphisms, and $\sim_n$.
+\end{thm}
+
+\begin{proof}
+  `only if': Closure under images, coproducts, domains of morphisms is
+  standard (and easy to check) and closure under $\sim_n$ is immediate
+  from
+  the definitions.\\ %
+  For `if' let $\Ssf=(S,\sigma)$ be the coalgebra given by the union of the
+  images of all $\ineins_\Bsf:\Bsf\maps\Zsf$, $\Bsf\in\bcal$.  We show that
+  $\bcal=\Mod(\zeta_n(S))$.  For $\Bsf\in\bcal$ we have, by definition of
+  $S$, $\Bsf\models S$, hence
+  $\Bsf\models \zeta_n(S)$ by Proposition~\ref{prop:app}.2.
+  %
+  To show $\bcal\supset\Mod(\zeta_n(S))$, define $\Ssfbar=(\Sbar,\sigmabar)$
+  as the largest subcoalgebra of $\zeta_n\inv(\zeta_n(S))$. It follows from
+  Proposition~\ref{prop:finapp}.3 that $\zeta_n(S)=\zeta_n(\Sbar)$,
+  hence  $\Ssf\sim_n\Ssfbar$.
+  %
+  Since $\bcal$ is closed under images and coproducts, $\bcal$ is also closed
+  under unions, hence $\Ssf\in\bcal$.  Since $\bcal$ is closed under $\sim_n$,
+  $\Ssfbar\in\bcal$. Now assume $\Asf\models \zeta_n(S)$. By
+  Proposition~\ref{prop:fin}.1, $\ineins_\Asf$ factors through
+  $\zeta_n\inv(\zeta(S))$ and hence through $\Ssfbar$, ie.\ there is a morphism
+  $\Asf\maps\Ssfbar$.  Since $\bcal$ is closed under domains of morphisms,
+  $\Asf\in\bcal$.
+\end{proof}
+
+The following corollary is an immediate consequence.
+
+\begin{cor}
+\begin{enumerate}
+\item  Suppose $\Lang(\FT,\PredLift)$ is formula-expressive. Then
+  a class
+  $\bcal\subseteq\CoalgFun$ is definable by a formula of depth $n$ iff
+  $\bcal$ is closed under images, coproducts, domains of morphisms,
+  and $\sim_n$.
+\item If $\Lang(\FT,\PredLift)$ is formula-set-expressive, then
+  a class $\bcal \subseteq \CoalgFun$ is definable by a set
+  of formulas of depth $n$ iff $\bcal$ is closed under images,
+  coproducts, domains of morphisms, and $\sim_n$.
+\end{enumerate}
+\end{cor}
+
+\noindent
+A similar proof gives an expressiveness result for sets of finitary formulas.
+
+
+\begin{thm}
+  A class $\bcal$ of coalgebras is definable by a set $\scal$ with
+  $S\in\scal\oif \ex n\, (S\subseteq \Sigfun^n 1 \y n<\omega)\}$ iff $\bcal$ is
+  closed under images, coproducts, domains of morphisms, and $\sim_{<\omega}$.
+\end{thm}
+
+\begin{cor}
+  If $\Lang(\FT,\PredLift)$ is formula-set-expressive, then a class
+  $\bcal\subseteq\CoalgFun$ is definable by a set of formulas iff
+  $\bcal$ is closed under images, coproducts, domains of morphisms,
+  and $\sim_{<\omega}$.
+\end{cor}
+
+For sufficient conditions ensuring formula-expressiveness and formula-set expressiveness, see Propositions \ref{propn:surjection} and \ref{propn:surjection-weak}.
+
+
+
+
+
+\section{A Canonical Model Construction for Coalgebras} \label{section:canonical}
+
+Reasoning about behaviours, the final coalgebra plays a central role
+because, given the unique coalgebra morphism
+$\ineins_\Asf:\Asf\maps\Zsf$ from a coalgebra $\Asf$ into the final
+coalgebra $\Zsf$, for every element $a$ of $\Asf$, we can consider
+$\ineins_\Asf(a)$ as the behaviour of $a$. Similarly, coalgebras final
+in $\Log(\FT)$ (cf.\ Definition~\ref{def:log}) consist of the finite
+behaviours. We first show that final coalgebras exist in $\Log(\FT)$
+and then show how they generalise the canonical model construction
+known from modal logic.
+
+
+\subsection{Coalgebras Final in $\Log(\FT)$}
+
+A coalgebra final in $\Log(\FT)$ should ``realise'' precisely all
+$n$-behaviours, $n<\omega$. Accordingly, the carrier of a final
+object in $\Log(\FT)$ will be a subset of $\FT^\omega 1$.
+
+Recall that, given any structure $(C, \gamma)$, we write
+$\gamma_{\omega}$ for the unique mediating map $\gamma_{\omega}: C \to
+\FT^{\omega} 1$. That is, all $\omega$-behaviours appear as some
+$\gamma_{\omega}(c)$ in $\FT^{\omega} 1$.
+%
+On the other hand, not every point $t \in \FT^{\omega} 1$ can be
+presented as $t = \gamma_{\omega}(c)$ by some structure $(C, \gamma)$
+and some $c \in C$.  Consider for example the finite powerset functor
+$\FT = \Powfin$.  Worrell~\cite{worrell:cmcs99} shows, that for the
+final $\FT$-coalgebra $(Z, \zeta)$ the morphism $\zeta_{\omega}: Z \to
+\FT^{\omega} 1$ is not surjective.
+
+\pskip Hence we construct the carrier of the coalgebra final in
+$\Log(\FT)$ as consisting of all $t \in \FT^{\omega} 1$, which can be
+``realised'' by some structure, ie.\ for which there are $(C, \gamma)
+\in \CoAlg(\FT)$ and $c \in C$ such that $\gamma_{\omega}(c) = t$. It
+then remains to find an appropriate coalgebra structure on the
+carrier. 
+
+% The present section makes this idea formal in that it shows, that the above
+% construction yields a final object in $\Log(\FT)$. 
+\mmskip Throughout, we fix the set $K$ of ``realisable'' elements $t
+\in \FT^{\omega} 1$, which is given by
+%
+\[
+  K = \lbrace t \in \FT^{\omega} 1 \sbars \exists (C, \gamma) \in \CoAlg(\FT)\tp \ex c
+        \in C\tp \gamma_{\omega}(c) = t \rbrace.
+\]
+%
+For each $k \in K$, we can now choose $(C^k, \gamma^k) \in \CoAlg(\FT)$ and $c^k
+\in C^k$ such that $\gamma_{\omega}^k(c_k) = k$. Note that $K$ is a set, which
+enables us to consider
+\[
+  (C,\gamma) = \coprod_{k \in K} (C^k, \gamma^k)
+\]
+where the coproduct is taken in $\CoAlg(\FT)$.
+% (for the cocompleteness of $\CoAlg(\FT)$ see [Rutten]).
+%
+Denoting the coproduct injections by $\inj_k: C_k \to C$ (which, by
+the construction of coproducts in $\CoAlg(\FT)$ are also coproduct
+injections in the category of sets), we are ready to note:
+
+\begin{lemma}
+$\gamma_{\omega} \circ \inj_k(c) = \gamma^k_{\omega} (c)$ for all $k \in K$ and
+$c \in C_k$.
+\end{lemma}
+%
+\begin{proof}
+  Since $\gamma^k_{\omega}$ is the unique mediating map into the limiting cone
+  with vertex $\FT^{\omega} 1$, it suffices to prove that $\gamma_n \circ
+  \inj_k (c) = \gamma_n^k(c)$ for all $n \in \Nat$. For $n = 0$, this is
+  obvious. For the induction step we calculate 
+%
+$\gamma_{n+1} \circ \inj_k (c)%
+  = %\text{(def.\ of $\gamma_{n+1}$)} 
+    \FT \gamma_n \circ \gamma \circ \inj_k(c)%
+  = %\text{(coproduct)}
+    \FT \gamma_n \circ \FT \inj_k \circ \gamma^k(c) %
+  = %\text{(ind.hyp.)} 
+    \FT \gamma_n^k \circ \gamma^k(c) %
+  = \gamma_{n+1}^k $
+% \begin{align*}
+%   \gamma_{n+1} \circ \inj_k (c)
+%         & = \FT \gamma_n \circ \gamma \circ \inj_k(c) 
+%         && \mbox{(By the construction of coproducts in $\CoAlg(\FT)$)} \\
+%         & = \FT \gamma_n \circ \FT \inj_k \circ \gamma^k(c) \\
+%         & = \FT \gamma_n^k \circ \gamma^k(c) \\
+%         & = \gamma_{n+1}^k
+% \end{align*}
+establishing the claim.
+\end{proof}
+
+We obtain the following immediate corollary:
+
+\begin{cor}
+For all $k \in K$ there exists $c \in C$ with $\gamma_{\omega}(c) = k$.
+\end{cor}
+
+\noindent
+In other words, $\gamma_{\omega}$ factors through $K$ as $\gamma_{\omega} = m
+\circ e$, $m$ injective, $e$ surjective. Now consider the diagram
+%
+\[\xymatrix{
+  \FT \FT^{\omega} 1 & \FT K \ar[l]_{\FT m} &
+  \FT C \ar[l]_{\FT e} \\
+  \FT^{\omega} 1 & K \ar[l]^m \ar@{-->}[u]^{\kappa} \ar@/_/[r]_{o} & C
+  \ar[l]_e \ar[u]_{\gamma} }\] 
+%
+where $o$ is any one-sided inverse of $e$, ie.\
+$e \circ o = \id_K$, the existence of which is guaranteed by $e$ being a
+surjection.  We let 
+%
+$$\kappa = \FT e \circ \gamma \circ o.$$
+%
+Note that $\kappa: K \to \FT K$ makes $K$ into a $\FT$-coalgebra.  Denoting
+the limit projections by $p^{\omega}_n: \FT^{\omega} 1 \to \FT^n 1$, we obtain
+
+\begin{lemma} \label{lemma:kappa-n}
+  For all $n \in \Nat$, $\kappa_n = p^{\omega}_n \circ m$, hence
+  $m=\kappa_\omega$.
+\end{lemma}
+%
+\begin{proof}
+We proceed by induction on $n$, where the case $n = 0$ is evident. We calculate
+  $\kappa_{n+1}%
+        = \FT \kappa_n \circ \kappa %
+        = \FT(p^{\omega}_n \circ m) \circ \FT e \circ \gamma \circ o %
+        = \FT p^{\omega}_n \circ \FT (m \circ e) \circ \gamma \circ o %
+        = \FT p^{\omega}_n \circ \FT \gamma_{\omega} \circ \gamma \circ o %
+        = \FT \gamma_n \circ \gamma \circ o %
+        = \gamma_{n+1} \circ o %
+        = p^{\omega}_{n+1} \circ \gamma_{\omega} \circ o %
+        = p^{\omega}_{n+1} \circ m \circ e \circ o %
+        = p^{\omega}_{n+1} \circ m$
+% \begin{align*}
+%   \kappa_{n+1}
+%         & = \FT \kappa_n \circ \kappa \\
+%         & = \FT(p^{\omega}_n \circ m) \circ \FT e \circ \gamma \circ o \\
+%         & = \FT p^{\omega}_n \circ \FT (m \circ e) \circ \gamma \circ o \\
+%         & = \FT p^{\omega}_n \circ \FT \gamma_{\omega} \circ \gamma \circ o \\
+%         & = \FT \gamma_n \circ \gamma \circ o \\
+%         & = \gamma_{n+1} \circ o \\
+%         & = p^{\omega}_{n+1} \circ \gamma_{\omega} \circ o \\
+%         & = p^{\omega}_{n+1} \circ m \circ e \circ o \\
+%         & = p^{\omega}_{n+1} \circ m
+% \end{align*}
+for the induction step, as desired.
+\end{proof}
+
+The proof of the main theorem of this section is now straightforward.
+
+\begin{thm} \label{thm:log-final}
+$\Log(\FT)$ has a final object.
+\end{thm}
+%
+\begin{proof}
+  We show that $(K, \kappa)$, as constructed above, is final in
+  $\Log(\FT)$. Take any object $(D, \delta) \in \Log(\FT)$.
+% We first construct a morphism $h: (D,
+% \delta) \to (K, \kappa) \in \Log(\FT)$ and then show its uniqueness.
+%
+Consider the mapping $\delta_{\omega}: D \to \FT^{\omega} 1$, which is the
+unique mediating map between the cones $(D, (\delta_n)_{n \in \Nat})$ and
+$(\FT^{\omega} 1, (p^{\omega}_n)_{n \in \Nat})$. By construction,
+$\delta_{\omega}$ factors as $\delta_{\omega} = m\circ h$ where $m: K \to
+\FT^{\omega} 1$ is as above. By Lemma~\ref{lemma:kappa-n}
+$$\delta_{\omega} = \kappa_\omega\circ h,$$
+which implies that $h$ is
+a $\Log(\FT)$-morphism.
+% where $m: K \to
+% \FT^{\omega} 1$ is as above. We claim that $h: (D, \delta) \to (K, \kappa)$ is a
+% morphism of $\Log(\FT)$, which is the case iff $\delta_n = \kappa_n \circ h$ for
+% all $n \in \Nat$. Using standard properties of the limit projections and Lemma
+% \ref{lemma:kappa-n}, we
+% calculate
+% \begin{align*}
+%   \kappa_n \circ h
+%         & = p^{\omega}_n \circ m \circ f \\
+%         & = f^{\omega}_n \circ \delta_{\omega} \\
+%         & = \delta_n
+% \end{align*}
+% establishing $h: (D, \delta) \to (K, \kappa) \in \Log(\FT)$.
+$h$ is unique since $\kappa_\omega$ is injective.
+% For uniqueness, suppose $h_1, h_2: (D, \delta) \to (K, \kappa) \in \Log(\FT)$.
+% Again invoking Lemma \ref{lemma:kappa-n}, we obtain for both $h \in \lbrace h_1,
+% h_2 \rbrace$
+% \begin{align*}
+%   f^{\omega}_n \circ m \circ h_i 
+%         & = \kappa_n \circ h_i \\
+%         & = \delta_n
+% \end{align*}
+% for all $n \in \Nat$. Hence both $m \circ h_1$ and $m \circ h_2$ are morphisms
+% between the cones $(D, (\delta_n)_{n \in \Nat})$ and $(FT^{\omega} 1,
+% (f^{\omega}_n)_{n \in \Nat})$. Since the latter cone is limiting, we obtain $m
+% \circ h_1 = m \circ h_2$. By $m$ being an injection, we finally establish $h_1 =
+% h_2$.
+%%
+\end{proof}
+
+\begin{remark}\label{rem:p-surjective}
+  Note that a coalgebra final in $\Log(\FT)$ is not determined uniquely up
+  to \emph{coalgebra}-isomorphisms. In case that
+  $p^{\omega+1}_\omega:\FT\FT^\omega 1\to \FT^\omega 1$ is
+  surjective\footnote{Which is the case for all examples in this paper with
+    the exception of $\Sigfun=\Powfin$. A sufficient condition for
+    $p^{\omega+1}_\omega$ to be surjective is that $\FT$ weakly preserves
+  limits of $\omega\op$-chains.}, %
+the coalgebras final in $\Log(\FT)$ have a simple description, since then
+$m:K\maps \FT^\omega 1$ as above is iso.
+%  and $\kappa$ as a one-sided inverse
+% $p^{\omega+1}\circ\kappa=\id$. 
+Indeed, if $p^{\omega+1}_\omega$ is surjective then a coalgebra is final in
+$\Log(\FT)$ iff it is isomorphic in $\CoalgFun$ to a coalgebra
+$\FT^\omega 1\stackrel{\kappa}{\mapss}{\FT\FT^\omega 1}$ with
+$p^{\omega+1}_\omega\circ\kappa=\id$.
+\end{remark}
+
+
+
+
+
+\subsection{The Canonical Model}
+
+Let $\mlfun$ be the functor $\Pow\times\Pow\Prop$, $\Prop$ a countably infinite
+set.
+
+\pskip The \emphdef{canonical model} (see for example
+\cite{brv,goldblatt:ltc})
+for the modal logic $\ml$ is the
+$\mlfun$-coalgebra $(L,\langle \lambda_R,\lambda_V\rangle)$
+%
+{\renewcommand{\arraystretch}{1.2}
+\begin{center}
+\begin{tabular}{lll}
+$L$ & & $\{\Phi\subseteq\ml: \Phi \text{ is maximally consistent}\}$\\
+$\lambda_R:L\to\Pow L$ & &
+$\Phi\mapsto\{\Psi:\psi\in\Psi\oif\Diamond\psi\in\Phi\}$\\
+$\lambda_V:L\maps\Pow\Prop$ && $\Phi\mapsto\Phi\cap\Prop$
+\end{tabular}
+\end{center}
+}
+%
+\noindent
+The canonical model is final in the category $\Log_\ml$ that has
+$M$-coalgebras as objects and morphisms $f:(A,\alpha)\to(B,\beta)$ are
+functions $f:A\to B$ such that for all $a\in A$, $a$ and $f(a)$ have the same
+modal theory.% (we write $\Th(a)=\Th(f(a))$).
+
+
+From a coalgebraic viewpoint, finitary formulas correspond to subsets
+of $\FT^{n} 1$. Taking inverse images along the limit projections,
+each set of finitary formulas can be understood as a subset of
+$\FT^{\omega} 1$, and maximally consistent subsets $\Phi \subseteq
+\Lang$ correspond to minimal (ie.\  singleton) subsets $\lbrace t
+\rbrace \subseteq \FT^{\omega} 1$ of $\FT^{\omega} 1$. We make this
+precise by showing that the categories $\Log(M)$ and $\Log_\ml$ are
+actually identical.
+
+\begin{prop} $\Log(M) = \Log_\ml$. \end{prop}
+
+\begin{proof}
+  We have to show that for any coalgebras $(A,\alpha)$, $(B,\beta)$ and any
+  function $f:A\to B$, 
+%
+$$\beta_\omega\circ f(a)=\alpha_\omega(a) \ssi
+  \Th(a)=\Th(f(a)),$$
+%
+  which is equivalent to $[\fa n<\omega\tp \beta_n\circ
+  f(a)=\alpha_n(a)] \ssi [\fa n<\omega\tp \fa\phi\in\ml\tp
+  \depth(\phi)=n\oif (a\models\phi\ssi f(a)\models\phi)]$ which in turn
+  is a consequence of Proposition~\ref{prop:bounden-beh-equ-ml}.
+\end{proof}
+
+Since in the case of $\mlfun$, the projection
+$p^{\omega+1}_\omega:\mlfun\mlfun^\omega 1\to \mlfun^\omega 1$ is
+surjective, we know by Remark~\ref{rem:p-surjective} that all coalgebras
+$(K,\langle\kappa_R,\kappa_V\rangle)$ final in $\Log(\mlfun)$ are
+given---up to coalgebra isomorphisms---by $K=\mlfun^\omega 1$ and a
+one-sided inverse of $p^{\omega+1}_\omega$. Since we have just shown
+that the canonical model is final in $\Log(M)$, it is indeed one of
+the $(K,\kappa)$ constructed in the previous subsection.
+
+
+% We will now precisely relate the construction of final objects in
+% $\Log(\mlfun)$ of the previous subsection to the definition of the canonical
+% model above.  Since in the case of $\mlfun$, the projection
+% $p^{\omega+1}_\omega:\mlfun\mlfun^\omega 1\to \mlfun^\omega 1$ is surjective,
+% we know by Remark~\ref{} that all coalgebras
+% $(K,\langle\kappa_R,\kappa_V\rangle)$ final in $\Log(\mlfun)$ are given---up
+% to coalgebra isomorphisms---by $K=\mlfun^\omega 1$ and a one-sided inverse of
+% $p^{\omega+1}_\omega$. This determines $\kappa_V$. 
+% DAS SCHAFFE ICH NICHT BIS MORGE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{The Topology of Finite Observations}\label{section:topo-logical}
+
+We study the topology on a coalgebra induced by the terminal sequence and
+relate logical and topological properties.
+
+%%$
+%To start with, consider a sequence of sets $(X_n)_{n<\omega}$ with
+%projections $p^{n+1}_n:X_{n+1}\to X_n$ and a cone
+%$(A,(\alpha_n))_{n<\omega}$ over that sequence. In case that each
+%$X_n$ is equipped with a topology $\tau_n$ such that the projections
+%are continuous, there is an \emph{induced topology $\tau_A$ on $A$}
+%given by the basis
+%%
+%$$\{\alpha_n\inv(o_n) : n<\omega, o_n\in\tau_n\}.$$
+%%
+%$\tau_A$ is the smallest topology on $A$ such that the $\alpha_n$ are
+%continuous. $((A,\tau_A),(\alpha_n)_{n<\omega})$ is a cone over
+%$(X_n,\tau_n)_{n<\omega}$ in the category $\Top$ of topological
+%spaces. In case that $(A,(\alpha_n)_{n<\omega})$ is a limit of
+%$(X_n)_{n<\omega}$ in $\set$, $((A,\tau_A),(\alpha_n)_{n<\omega})$ is
+%a limit of $(X_n,\tau_n)_{n<\omega}$ in $\Top$.%\footnote{More
+%%  generally, the forgetful functor $U:\Top\to\set$ lifts limits
+%%  uniquely, that is, for any diagra $D:I\maps\Top$ there is a unique
+%%  limiting cone over the limit of $UD$.}
+%
+%
+%
+%We apply this to the situation where the sequence under consideration
+%is the finitary part of the terminal sequence $(\FT ^n 1)_{n<\omega}$.
+%Recall that any coalgebra $(A,\alpha)$ gives rise to a cone
+%$(A,(\alpha_n)_{n<\omega})$ over the terminal sequence.
+%
+%\begin{defn}
+%  Suppose we are given topologies $\tau_n$ on $\FT ^n 1$ and
+%  $(A,\alpha)\in\CoalgFun$. Then $\tau_A$ is the topology on $A$
+%  induced by the cone $(A,(\alpha_n)_{n<\omega})$. In case the
+%  $\tau_n$ are discrete\footnote{A topology is \emph{discrete} iff it
+%    contains all subsets.}, we call $\tau_A$ the Cantor space topology.
+%\end{defn}
+% Since for any
+% coalgebra $(A,\alpha)$, we have a cone $(A,(\alpha_n)_{n<\omega})$, the
+% terminal sequence induces a topology $\tau_A$ on $A$. 
+% % We call $\tau_A$ the
+% % \textbf{induced topology}.
+\begin{defn}
+  Suppose $\tau_n$ is a topology on $\FT^n 1$ for all finite ordinals.
+  If $(A, \alpha) \in \CoalgFun$, then the topology \emph{induced by
+    $(\tau_n)_{n \in \omega}$} is the topology generated by the base
+\[
+  \lbrace \alpha_n\inv(o) \sbars n \in \omega, o \in \tau_n \rbrace
+\]
+of open sets. If all $\tau_n$ are discrete, we call $\tau_A$ the
+Cantor space topology.
+\end{defn}
+
+Clearly, $\tau_A$ makes all projections $\alpha_n$ continuous.
+Viewing the Cantor set as the final coalgebra for $\FT X = 2 \times X$, the
+topology induced by the discrete $\tau_n = \Pow(\FT^n 1)$, one recovers the
+cantor discontinuum.
+%
+\begin{example} \label{example:mittel-drittel}
+  Suppose $\FT X = 2 \times X$, where $2 = \lbrace 0, 1 \rbrace$.
+  Consider the (final) $\FT$-coalgebra $(A, \alpha)$ with $A =
+  2^{\Nat} = \lbrace f : \Nat \to 2 \rbrace$
+  and $\alpha(f) = (f(0), \lambda n\tp f(n+1))$. Then $(A, \tau_A)$ is
+  homeomorphic to the Cantor discontinuum $C$ (also known as
+  middle-third set, see eg.\ \cite{kelley:gt}) via the mapping
+  $2^{\Nat} \to C$, $f \mapsto \sum_{i = 0}^{\infty}
+  \frac{2}{3^{i+1}} \cdot f(i)$.
+%\[\begin{array}{rccc}
+%  h: & 2^{\Nat} & \to & C \\
+%           & f & \mapsto & \sum_{i = 0}^{\infty} \frac{2}{3^{i+1}}
+%\end{array}\]
+\end{example}
+
+
+\begin{remark} \label{remark:metric-space}
+\begin{enumerate}
+\item Suppose $f: (A, \alpha) \to (B, \beta)$ is a homomorphism of coalgebras.
+  Then $f$ is continuous wrt.\ the topologies on $A$ and $B$. Thus the passage
+  from a coalgebra $(A, \alpha)$ to the topological space $(A, \tau_A)$
+  induces a functor $\CoAlg(\FT) \to \Top$.
+\item %Suppose the $\tau_n$ are discrete\footnote{A topology is discrete iff it
+%    contains all subsets.}. 
+  Let $(A, \alpha) \in \CoAlg(\FT)$ and let, for $a_0,a_1\in A$,
+  $d(a_0, a_1) = \inf \lbrace 2^{-n} : \forall k < n \tp \alpha_k(a_0)
+  = \alpha_k(a_1) \rbrace$. Then $d$ is an ultrametric on $A$ and the
+  Cantor space topology
+  %topology induced by $\tau_n = \Pow(\FT^n 1)$ discrete
+  coincides with the topology induced by $d$, as studied in
+  \cite{barr:tc,worrell:diss}.
+\end{enumerate}
+\end{remark}
+
+
+%\noindent
+The topologies $\tau_n$ on $\FT^n 1$ of interest to us are those given
+by a basis of `finitely observable properties'
+%
+$$\bcal_n=\{\sem{\phi}_n: \phi\in\Lang, \phi\text{ a formula of depth
+  $n$}\},$$
+%
+for some logic $\Lang$. To make precise the assumptions on $\Lang$
+that are needed in the following we make the
+%
+\begin{conv}\label{convention}
+  Given a functor $\FT$, a logic $\Lang$ consists of sets of formulas
+  $\Lang_n, n<\omega,$ equipped with functions
+  $\sem{\cdot}_n:\Lang_n\to\Pow(\FT^n 1)$ which assign to each formula
+  of depth $n$ a predicate of depth $n$. The semantics of $\Lang$ is
+  determined by the terminal sequence as in
+  Definition~\ref{def:predicates-depth-n}. Moreover, we assume that
+  each $\Lang_n$ is closed under boolean operators which are
+  interpreted in the usual way on $\Pow(\FT^n 1)$.
+\end{conv}
+
+
+Since we require $\Lang$ to have boolean operators, $\bcal_n$ is
+indeed closed under intersections and hence a basis.\footnote{A
+  \emph{basis} is closed under finite intersections. A set is
+  \emph{open} iff it is the union of sets in the basis, \emph{closed}
+  iff it is the complement of an open set, and \emph{clopen} iff it is
+  open and clopen.} Moreover, since $\sem{\phi}_n=\FT^n
+1\setminus\sem{\neg\phi}_n$, every set in $\bcal_n$ is clopen.
+
+\pskip That is, in our setting, the relationship between logic and
+topology is given by the correspondence between formulas of depth $n$
+and clopens of $\FT^n 1$. For most of the following results, relating
+logical and topological properties, we therefore impose the following
+%
+\begin{condition}\label{cond1}
+  Given a logic $\Lang$ as described by Convention~\ref{convention},
+  the topologies $\tau_n$ on $\FT ^n 1$ given by the basis
+  $\{\sem{\phi}_n: \phi\in\Lang_n\}$ make the projections continuous.
+\end{condition}
+%
+\noindent
+The condition ensures that $(\FT^n 1,\tau_n)_{n<\omega}$ is a sequence
+of topological spaces, each space having a basis of clopens, and
+clopens determining precisely the subsets definable by single
+formulas. In most examples, the following stronger condition also
+holds.
+%
+\begin{condition}\label{cond2}
+  In addition to Condition~\ref{cond1} require that the topologies $\tau_n$
+  are compact\footnote{A set is \emph{compact} iff any open cover has a finite
+    subcover.  This is sometimes called quasi-compact.}.
+\end{condition}
+%
+\begin{example}\label{exle:conditions}
+\begin{enumerate}
+\item In case that $\Lang$ is $\Lang(\FT,\PredLift)$ with $\FT$
+  mapping finite sets to finite sets and a separating set of predicate
+  liftings $\PredLift$, Condition~\ref{cond2} is satisfied.
+\item In case that $\Lang$ is $\ml$, Condition~\ref{cond2} is satisfied. We
+  skip the proof and only mention that compactness of the $\tau_n$ can be
+  deduced from the compactness of $\ml$, similarly to the argument of `only
+  if' in the proof of Proposition~\ref{prop:log-top-cmp}.
+%\item In case that $\FT X=A\times X$, $\Lang(\FT,\PredLift)$ satisfies
+%  Condition~\ref{cond1} for the predicate liftings ... .  But no logic can
+%  satisfy Condition~\ref{cond2} IST DIESE BEHAUPTUNG ZU STARK ODER DOCH WAHR?
+\end{enumerate}
+\end{example}
+
+
+\noindent
+We give some topological characterisations of logical properties.
+
+\begin{prop}\label{prop:definable=closed}
+  Let $(A,\alpha)\in\CoalgFun$ and $\Lang$ a logic. Under
+  Condition~\ref{cond1}, a subset of $A$ is definable by a set of formulas iff
+  it is closed wrt.\ $\tau_A$.
+\end{prop}
+
+\begin{proof}
+  It is straightforward to check that $S\subseteq A$ is closed iff there are
+  basic opens $O_i\subseteq\FT^{n_i}1$, $i\in I$, such that $S=
+  \bigcap\{\alpha_i\inv(\FT^{n_i}1\setminus O_i):i\in I\}$. The proposition
+  now follows from Condition~\ref{cond1}.
+% %Long Proof:
+%   Assume that, given $S\subseteq A$, there is $\Phi$ such that $S=\{a\in A:
+%   \fa \phi\in\Phi\tp a\models_\alpha\phi\}$. By Condition~\ref{cond1} there is
+%   a family of closed sets $C_\phi\subseteq\FT^{n_\phi} 1$, $\phi\in\Phi$, such
+%   that $S=\bigcap\{\alpha_i\inv(C_\phi):\phi\in\Phi\}$. Hence $S$ is closed.
+% %  
+%   For the converse assume that $S$ is closed. Hence $A\setminus
+%   S=\bigcup\{\alpha_i\inv(O_i):i\in I\}$ for some family of basic opens
+%   $O_i\subseteq\FT^{n_i}1$, that is, $S=
+%   \bigcap\{\alpha_i\inv(\FT^{n_i}1\setminus O_i):i\in I\}$. By
+%   Condition~\ref{cond1}, $\FT^{n_i}1\setminus O_i$ is the semantics of a
+%   formula in $\Lang$, hence $S$ is definable by some $\Phi\subseteq\Lang$.
+\end{proof}
+
+\begin{prop}\label{prop:definable=clopen}
+  Suppose $(A, \alpha) \in \CoAlg(\FT)$ and $(A, \tau_A)$ compact and $\Lang$
+  a logic. Under Condition~\ref{cond1}, a subset $S \subseteq A$ is definable
+  by a single formula in $\Lang$ iff $S$ is clopen.
+\end{prop}
+
+\begin{proof}
+  Assuming that the topologies $\tau_n$ have a clopen basis, we claim that a
+  subset $S\subseteq A$ is clopen iff $S=\alpha_n\inv(O)$ for some $n\in\Nat$
+  and some clopen $O\subseteq\FT^n 1$. The proposition then follows from
+  Condition~\ref{cond1}.
+  
+  It follows from the $\alpha_n$ being continuous that all subsets of the form
+  $\alpha_n\inv(O)$ are clopen if $O$ clopen. Now suppose $S\subseteq A$ is
+  clopen. Then $S=\bigcup\{\alpha_{n_i}\inv(O_i):i\in I\}$ and $A\setminus
+  S=\bigcup\{\alpha_{n_j}\inv(P_j):j\in J\}$ for basic clopens
+  $O_i\subseteq\FT^{n_i} 1$, $P_j\subseteq\FT^{n_j} 1$. Since $A$ is compact,
+  the (disjoint) union $\bigcup\{\alpha_{n_i}\inv(O_i):i\in I\} \cup
+  \bigcup\{\alpha_{n_j}\inv(P_j):j\in J\}$ has a finite subcover,
+%
+  yielding a finite set $I'\subseteq I$ of indices such that $S
+  =\bigcup\{\alpha_{n_i}\inv(O_i):i\in I'\} $. Let $m = \max \lbrace n_i:i\in
+  I'\rbrace$ and consider the projections $p^m_{n_i}:\FT^m 1\to\FT^{n_i}1$.
+  Defining $O=\bigcup\{(p^m_{n_i})\inv(O_{i}): i\in I'\}$ establishes the
+  claim.
+\end{proof}
+
+
+Compactness is a property which is unfortunately not present in all models.
+% We give two examples of non compact structures. The first one demonstrates
+% that arbitrary coalgebras need not be compact, although $\FT X$ is finite for
+% every finite $X$ DIE REFERENZ AUF FINITE PASST JETZT NICHT MEHR. The second
+% example shows that the finiteness assumption on $\FT$ cannot be dropped.
+
+
+
+\begin{example}\label{exle:non-cmp:streams}
+  Let $\FT X = D \times X$ and consider the final coalgebra $(Z,
+  \zeta)$ given by $Z=D^\omega$.
+%   where $Z$ is the set of functions $f: \Nat \to D$ and $\zeta(f) = (f(0),
+%   \lambda n. f(n+1))$. 
+\begin{enumerate}
+\item $(Z, \zeta)$ is compact in the Cantor space
+  topology iff $D$ is finite.
+% the set $O_n = \lbrace f \in Z \sbars f(0) =
+% n \rbrace$ is open for each $n \in \Nat$ and clearly $Z = \bigcup_{n \in \Nat}
+% O_n$. It is easy to see that the cover $(O_n)_{n \in \Nat}$ does not admit a
+% finite subcover.
+\item Suppose $D=\{a,b\}$. Then examples of non-compact coalgebras are given by
+  the carriers $Z\setminus\{b^\omega\}$ and $\{s\cdot a^\omega:
+s\in\{a,b\}^*\}$ (and inheriting the structure from $\zeta$).
+\end{enumerate}
+\end{example}
+
+\begin{example}
+  Let $\FT X = \{a,b\} \times X + 1$ and consider the final coalgebra $(Z,
+  \zeta)$ with $Z=\{a,b\}^*\cup\{a,b\}^\omega$. Then $(Z, \zeta)$ is not
+  compact in the Cantor space topology: consider eg.\  the open cover given by
+  $\{\{w\}: w\in\{a,b\}^*\}\cup\{\{a,b\}^\omega\}$.
+\end{example}
+
+\begin{example}\label{exle:non-cmp:finite-powerset}
+Let $\FT=\Powfin$. Then the final coalgebra is not compact.
+\end{example}
+
+
+%\section{Topological and Logical Compactness} \label{section:topo-logical}
+
+
+For the main result of this section, call a $\FT$-coalgebra
+$(A,\alpha)$ \emphdef{logically compact}, if every set, which is
+finitely satisfiable in $(A,\alpha)$ (that is, for every finite subset
+$\Phi' \subseteq \Phi$ there exists $a \in A$ such that $a \models
+\Phi'$) is satisfiable in $(A,\alpha)$ (ie.\ there exists $a \in A$
+such that $a \models \Phi$). We are now ready to prove
+
+\begin{prop} \label{prop:log-top-cmp}
+Let $(A,\alpha)\in\CoalgFun$ and $\Lang$ a logic. Under
+  Condition~\ref{cond1}, 
+  $(A,\alpha)$ is logically compact iff 
+  $(A,\alpha)$ is compact.
+\end{prop}
+\begin{proof}
+  We use that $A$ is compact iff every system $\mathcal S \subseteq \Pow(A)$
+  of closed subsets, which has the finite intersection
+  property\footnote{$\mathcal S$ has the \emph{finite intersection property}
+    iff $\bigcap\mathcal S'$ is non-empty for all finite $\mathcal
+    S'\subseteq\mathcal S$.}, %
+  has non-empty intersection.  
+  
+\sskip
+  Assume that $(A,\alpha)$ is logically compact and that $\mathcal S
+  \subseteq \Pow(A)$ is a system of closed sets having the finite
+  intersection property. Every set $S \in \mathcal S$ is definable by
+  some $\Phi_S \subseteq \Lang$ by
+  Proposition~\ref{prop:definable=closed}. It follows from $\mathcal
+  S$ having the finite intersection property that $\bigcup \lbrace
+  \Phi_S \sbars S \in \mathcal S \rbrace$ is finitely satisfiable,
+  thus satisfiable by logical compactness. That is, there exists $a
+  \in A$ such that $a \models \bigcup \lbrace \Phi_S \sbars S \in
+  \mathcal S \rbrace$ which implies $a \in \bigcap \mathcal S$ by
+  construction.
+  
+  \sskip Now assume $(A,\alpha)$ is topologically compact and consider a set
+  $\Phi \subseteq \Lang$ which is finitely satisfiable.  Since $\lsem \phi
+  \rsem \subseteq A$ is closed by Proposition~\ref{prop:definable=closed}, the
+  set $\lbrace \lsem \phi \rsem : \phi \in \Phi \rbrace$ is a
+  system of closed sets having the finite intersection property. By
+  compactness of $(A,\alpha)$, there exits $a \in \bigcap \lbrace \lsem \phi
+  \rsem \sbars \phi \in \Phi \rbrace$, which is equivalent to $a\models \Phi$.
+\end{proof}
+
+\begin{example}\label{exle:log-top-cmp}
+  We can now easily verify Examples~\ref{exle:non-cmp:streams}.2 and
+  \ref{exle:non-cmp:finite-powerset}. For instance, in case of
+  $\FT=\Powfin$, it is an easy exercise to write down formulas
+  $\phi_n$ which force any point satisfying $\phi_n$ to have at least
+  $n$ successors.  The set $\Phi = \lbrace \phi_n \sbars n \in \Nat
+  \rbrace$ is then finitely satisfiable, but not satisfiable by a
+  $\Powfin$-coalgebra.
+\end{example}
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{Compactness for Coalgebraic Modal Logic}\label{section:compactness}
+
+In (standard) modal logic, compactness is not an issue, since it is inherited
+from the corresponding result in first order logic via van Benthem's standard
+translation \cite{benthem:mlcl,brv}.  Generalising to coalgebraic modal logic,
+the standard translation is no longer available. We therefore have to resort
+to different means in order to establish a compactness theorem. 
+% What is
+% interesting is that logical compactness
+Moreover, compactness fails in the general case, for example in case of
+image-finite Kripke models (ie $\FT=\Powfin$, cf.\ 
+Examples~\ref{exle:non-cmp:finite-powerset} and \ref{exle:log-top-cmp}).
+% Consider eg.\ the finite
+% powerset functor $\FT = \Powfin$ and the modal logic $\ml$. 
+% %  the predicate lifting $\lambda(X)(\ssx) =
+% % \lbrace t \in \Powfin(X) \sbars t \subseteq x \rbrace$, which interprets the
+% % $\Box$-modality of modal logic (cf. Example \ref{example:kripke-liftings}).
+% % Putting $\PredLift = \lbrace \lambda \rbrace$, 
+% It is an easy exercise to write down formulas $\phi_n$ which force any point
+% satisfying $\phi_n$ to have at least $n$ successors.  The set $\Phi = \lbrace
+% \phi_n \sbars n \in \Nat \rbrace$ is then finitely satisfiable, but not
+% satisfiable by a $\Powfin$-coalgebra.
+
+Hence we are drawn to investigate sufficient and necessary conditions for the
+compactness theorem to hold. Building upon the work of Sections
+\ref{section:topo-logical} and \ref{section:canonical}, we obtain that
+validity of the compactness theorem is equivalent to the existence of a
+\emph{compact} canonical model. We then characterise those endofunctors $\FT$
+for which $\Log(\FT)$ has a final object compact in the Cantor space topology
+as those endofunctors which weakly preserve the limit of the chain $(\FT^n
+1)_{n \in \Nat}$.
+
+% For the remainder of this exposition, we make the same assumptions as in
+% Section \ref{section:topo-logical}. That is, we consider a set-endofunctor
+% $\FT$, together with a set $\PredLift$ of predicate liftings assuming that
+% \begin{enumerate}
+% \item $\FT$ maps finite sets to finite sets
+% \item $\PredLift$ is separating.
+% \end{enumerate}
+
+We say that a set $\Phi \subseteq \Lang(\PredLift)$ is \emph{satisfiable}, if
+there exists a $\FT$-coalgebra $(A,\alpha)$ and $c \in C$ such that $c
+\models_{\gamma} \phi$ for all $\phi \in \Phi$. We call $\Phi$ \emph{finitely
+satisfiable}, if every finite subset of $\Phi$ is satisfiable. Using this
+terminology, we are in the position to present the first version of the
+compactness theorem:
+
+\begin{thm}
+  Under Condition~\ref{cond1}, a logic $\Lang$ for $\FT$-coalgebras is compact
+  iff $\Log(\FT)$ has a compact final object.
+\end{thm}
+%
+\begin{proof}
+  `only if': By Theorem~\ref{thm:log-final} there exists a final object $(K,
+  \kappa) \in \Log(\FT)$. We show that $(K, \kappa)$ is logically compact,
+  from which the result then follows by
+  Proposition~\ref{prop:log-top-cmp}.  So suppose $\Phi \subseteq \Lang$
+  is finitely satisfiable in $(K, \kappa)$. By compactness $\Phi$ is
+  satisfiable. Thus there is $(C, \gamma)$ and $c \in C$ such that $c
+  \models_{\gamma} \Phi$. Since $(K, \kappa)$ is final in $\Log(\FT)$, there
+  is a mapping $u: (C, \gamma) \to (K, \kappa) \in \Log(\FT)$. By definition
+  of morphisms in $\Log(\FT)$, we obtain $u(c) \models_{\kappa} \Phi$. Hence
+  $\Phi$ is finitely satisfiable in $(K, \kappa)$.
+  
+  `if': Let $(K, \kappa)$ be compact and final in $\Log(\FT)$ and suppose
+  $\Phi \subseteq \Lang$ is finitely satisfiable. Then -- by finality and by
+  definition of morphisms in $\Log(\FT)$ -- $\Phi$ is finitely satisfiable in
+  $(K, \kappa)$, hence satisfiable in $(K, \kappa)$ by compactness and
+  Proposition~\ref{prop:log-top-cmp}.
+  %Thus $\Phi$ is satisfiable.
+\end{proof}
+
+We now proceed to characterise those endofunctors $\FT$ for which
+$\Log(\FT)$ has a compact final object. It turns out that $\Log(\FT)$
+has a weakly final object iff $\FT$ weakly preserves the limit of its
+final sequence up to $\omega$. More precisely, consider the limiting
+cone $\FT^{\omega} 1$ of the sequence
+%
+\[\xymatrix{
+  1 & \FT 1 \ar[l]_{p^1_0} & \FT^2 1 \ar[l]_{p^2_1} & \FT^3 1 \ar[l]_{p^3_2} &
+  \dots & \FT^\omega 1 }
+\] 
+%
+with associated projections $p^\omega_n: \FT^{\omega} 1 \to \FT^n 1$, we say that $\FT$
+\emph{weakly preserves} the limit of the sequence $(\FT^n 1)_{n \in \Nat}$, if
+the cone $(\FT \FT^{\omega} 1, (\FT p^\omega_n)_{n \in \Nat})$ is weakly limiting.
+
+% We pause to state
+% \begin{lemma}
+% Suppose $f: (C, \gamma) \to (D, \delta)$ is a morphism in $\Log(\FT)$. Then $f$
+% is continuous wrt. the cantor space topology.
+% \end{lemma}
+% \begin{proof}
+% Follows immediately from the definitions.
+% \end{proof}
+% The preceding lemma tells us in particular, that compactness in the cantor space
+% topology is stable under isomorphism in $\Log(\FT)$. 
+
+%The proof of the promised characterisation theorem is split in several steps.
+We begin by noting that every element of an `approximant' $\FT^n 1$ can be
+realised by a coalgebra.
+
+\begin{prop} \label{lemma:gamma-n-n}
+  Let $m$ be any mapping $1 \to \FT 1$ and $(C^n, \gamma^n) = (\FT^n 1, \FT^n
+  m)$. Then $\gamma_n^n = \id_{C^n}$.
+\end{prop}
+
+\noindent
+We now show that the carrier of a compact final object in $\Log(\FT)$ is
+isomorphic to $\FT^{\omega} 1$. %= \Lim_{n \in \omega} \FT^n 1. 
+This is the crucial step in our proof.
+
+\begin{lemma}
+  Suppose $(K, \kappa)$ is compact and final in $\Log(\FT)$ and $u: K
+  \to \FT^{\omega} 1$ is the unique mediating morphism between the
+  cones $(K, (\kappa_n)_{n \in \Nat})$ and $(\FT^{\omega} 1,
+  (p^\omega_n)_{n \in \Nat})$. Then $u$ is iso.
+\end{lemma}
+\begin{proof}
+  It follows from the construction in Section~\ref{section:canonical}
+  that $u$ is mono. To see that $u$ is epi, it suffices to show that
+  for all $t \in \FT^{\omega} 1$ there exists $k \in K$ such that
+  $p^\omega_n (t) = \kappa_n(k)$.  Fix some $t \in \FT^{\omega} 1$ and
+  let $u^n: (C^n, \gamma^n) \to (K, \kappa)$ denote the unique
+  morphism into the final object (with $(C^n, \gamma^n)$ as in
+  Proposition~\ref{lemma:gamma-n-n}).
+  
+  \sskip Define a sequence $(k_n)_{n \in \Nat}$ by $k_n = u^n \circ
+  p^\omega_n (t)$.  It follows that $\kappa_n(k_n) = p^\omega_n(t)$
+  for all $n \in \Nat$. Note that $(K, \kappa)$ is actually a metric
+  space (cf.\ Remark~\ref{remark:metric-space}), and that $(k_n)_{n \in
+    \Nat}$ is a Cauchy-sequence. Since compact metric spaces are
+  complete, it follows
+%by compactness of $K$ 
+that $k=\lim k_n$ exists in $K$. Observing $\kappa_n(k)= \kappa_n\circ u^n
+\circ p^\omega_n (t)= p^\omega_n (t)$ finishes the proof.
+% %
+%DAS GEHT NUR FUER METRISCHE RAEUME, ALSO NUR FUER TAU\_N DISKRET??
+% the Bolzano-Weierstrass theorem provides us with a converging subsequence
+% $k_{n_i} \to k$ as $i \to \infty$ for some $k \in K$. We claim that $p^\omega_n(t) =
+% \kappa_n(k)$ for all $n \in \Nat$. Fix some $N \in \Nat$. By $k_{n_i} \to k$,
+% there exists $j \in \Nat$ such that $\kappa_N(k_{n_i} = \kappa_N(k)$ for all
+% $i \geq j$. Denoting the morphisms of the terminal sequence by $f^n_m: \FT^n 1
+% \to \FT^m 1$, we obtain for sufficiently large $i$:
+% \begin{align*}
+%   \kappa_N(k)
+%         & = \kappa_N(k_{n_i}) \\
+%         & = f^{n_i}_N \circ \kappa_{n_i}(k_{n_i}) \\
+%         & = {n_i}_N \circ p_{n_i} (t) \\
+%         & = p^\omega_n(t)
+% \end{align*}
+% as required.
+\end{proof}
+
+Observing that $\FT$ weakly preserves the limit of $(\FT^n 1)_{n \in
+  \Nat}$ iff $p^{\omega+1}_{\omega}$ has a one-sided inverse $i$,
+$p^{\omega+1}_{\omega}\circ i = \id_{\FT^\omega 1}$, we are now able
+to prove the following two propositions. 
+
+\begin{prop}
+  Suppose that $\Log(\FT)$ has a final model that is compact wrt.\ the
+  Cantor space topology. Then $\FT$ weakly preserves the limit of
+  $(\FT^n 1)_{n \in \Nat}$.
+\end{prop}
+
+\begin{proof}
+  Let $(K,\kappa)$ be final and compact in $\Log(\FT)$ and $u: K \to
+  \FT^{\omega} 1$ be the unique mediating morphism between the cones
+  $(K, (\kappa_n)_{n \in \Nat})$ and $(\FT^{\omega} 1, (p^\omega_n)_{n
+    \in \Nat})$. Due to the lemma above, we can define $i=\FT
+  u\circ\kappa\circ u\inv$. It remains to check that indeed
+  $p^{\omega+1}_{\omega}\circ i = p^{\omega+1}_{\omega}\circ \FT
+  u\circ\kappa\circ u\inv = u\circ u\inv = \id_{\FT^\omega 1}$.
+\end{proof}
+
+\begin{prop}
+  Suppose the topologies $\tau_n$ on $\FT^n 1$, $n<\omega$, are
+  compact Hausdorff. Then $\FT$ weakly preserves the limit of $(\FT^n
+  1)_{n \in \Nat}$ only if the final model of $\Log(\FT)$ is compact
+  in the induced topology.
+\end{prop}
+
+\begin{proof}
+Let $p^{\omega+1}_{\omega}\circ i = \id_{\FT^\omega 1}$.
+% ... implies that 
+% $p^{\omega+1}_{\omega}$ is surjective. 
+It was shown in Remark~\ref{rem:p-surjective} that $(\FT^\omega 1,i)$
+is final in $\Log(\FT)$. It is compact since $\FT^\omega 1$ is the
+limit of compact Hausdorff spaces and the induced topology on a limit
+of compact Hausdorff spaces is compact Hausdorff (see
+\cite{engelking:gt}~3.2.13).
+\end{proof}
+
+We can summarise:
+
+\begin{thm}
+  Let $\FT$ map finite sets to finite sets. Then $\Log(\FT)$ has a
+  final object that is compact in the Cantor space topology iff $\FT$
+  weakly preserves the limit of $(\FT^n 1)_{n \in \Nat}$.
+\end{thm}
+
+%\begin{proof}
+%Observe that $\FT$ weakly preserves the limit of $(\FT^n 1)_{n \in \Nat}$ iff
+%$p^{\omega+1}_{\omega}$ has a one-sided inverse $i$,
+%$p^{\omega+1}_{\omega}\circ i = \id_{\FT^\omega 1}$.
+
+%\sskip `if': Let $p^{\omega+1}_{\omega}\circ i = \id_{\FT^\omega 1}$.
+%% ... implies that 
+%% $p^{\omega+1}_{\omega}$ is surjective. 
+%It was shown in Remark~\ref{rem:p-surjective} that $(\FT^\omega 1,i)$
+%is final in $\Log(\FT)$. It is compact since $\FT^\omega 1$ is the
+%limit of compact Hausdorff spaces (see \cite{engelking:gt}~3.2.13).
+
+%\sskip `only if': Let $(K,\kappa)$ be final and compact in $\Log(\FT)$
+%and $u: K \to \FT^{\omega} 1$ be the unique mediating morphism between
+%the cones $(K, (\kappa_n)_{n \in \Nat})$ and $(\FT^{\omega} 1,
+%(p^\omega_n)_{n \in \Nat})$. Due to the lemma above, we can define $i=\FT
+%u\circ\kappa\circ u\inv$. It remains to check that indeed
+%$p^{\omega+1}_{\omega}\circ i = p^{\omega+1}_{\omega}\circ \FT
+%u\circ\kappa\circ u\inv = u\circ u\inv = \id_{\FT^\omega 1}$.
+%%the second
+%%equation being due to Proposition~\ref{prop:easy}
+%\end{proof}
+
+%\begin{cor}
+%  WELCHE LOGIKEN KOMAPKT SIND.   (keinen Bock mehr)
+%\end{cor}
+
+\section{Conclusions and Related Work}
+
+We have studied definability and compactness for finitary coalgebraic modal 
+logic. The main instrument through which finitary logics have been studied 
+is the terminal sequence and -- based on the terminal sequence -- the
+shift from the category $\CoAlg(\FT)$ to the category $\Log(\FT)$.
+
+
+
+
+\bibliography{include/coalg}
+
+
+\end{document}
