@@ -13,7 +13,6 @@ I left in 2018, not least because I couldn't trust a management who seemed to co
 - [Foundations of Computer Science are not redundant](https://www.ipetitions.com/petition/foco-is-not-redundant)
 - [Letter to the University by Former Faculty](https://emwww.github.io/home/slides/Supporting_FoCo.pdf)
 - [Letter from the London Mathematical Society](https://www.lms.ac.uk/news-entry/09022021-1444/mathematics-university-leicester)
-- 
 - [Boycott and Greylisting of Leicester](https://www.ucu.org.uk/article/11533/Global-boycott-of-University-of-Leicester-begins-today)
 - [Pure Maths External Examiner resignation](https://web.uculeicester.org.uk/pure-maths-external-examiner-resignation/)
 
