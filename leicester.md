@@ -7,13 +7,13 @@ This appears to continue efforts by the  University of Leicester leadership team
 
 In 2016, they tried for the first time to transform mathematics from a successful research department with world  class academics to service teaching. They also closed physics at the time, which they were able to hide somewhat behind keeping astronomy. 
 
-I left in 2018, not least because I couldn't trust a management who seemed to consider their staff and faculty mainly as cost factors. I should add here that Computer Science has been a profitable department for a long time. Indeed, the University never said that the redundancies are due to economic constaints. Rather they look like an attack on specific areas of research that are deemed unfashionable in the eyes of current management.
+I left in 2018, not least because I couldn't trust a management who seemed to consider their staff and faculty mainly as cost factors. I should add here that Computer Science has been a profitable department for a long time. Indeed, the University never said that the redundancies were due to economic constraints. Rather they look like an attack on specific areas of research that are deemed unfashionable in the eyes of  management, which from my own experience was not only unqualified to judge the academic achievements but also refused to consult external expertise. [Prof Burrell’s correspondence with the VC](https://uculeicester.org.uk/ulsb16/prof-burrells-correspondence-with-the-vc/) shows that not only maths and computer science, but also other areas of science were treated with an embarrasing mix of arrogance and incompetence.
 
 - [Mathematics is not redundant](https://www.ipetitions.com/petition/mathematics-is-not-redundant)
 - [Foundations of Computer Science are not redundant](https://www.ipetitions.com/petition/foco-is-not-redundant)
 - [Letter to the University by Former Faculty](https://emwww.github.io/home/slides/Supporting_FoCo.pdf)
 - [Letter from the London Mathematical Society](https://www.lms.ac.uk/news-entry/09022021-1444/mathematics-university-leicester)
-- [Prof Burrell’s correspondence with the VC](https://uculeicester.org.uk/ulsb16/prof-burrells-correspondence-with-the-vc/)
+- 
 - [Boycott and Greylisting of Leicester](https://www.ucu.org.uk/article/11533/Global-boycott-of-University-of-Leicester-begins-today)
 - [Pure Maths External Examiner resignation](https://web.uculeicester.org.uk/pure-maths-external-examiner-resignation/)
 
