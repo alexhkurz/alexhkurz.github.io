@@ -18,7 +18,8 @@ Formerly University of Leicester, CWI Amsterdam, Masaryk University Brno, LMU Mu
 --- 
 
 
-Random Quote: <div id="quoteDisplay">
+Random Quote: 
+<div id="quoteDisplay">
   <!-- Quotes will display here -->
 </div>
 <script src="quote-generator.js"></script>
