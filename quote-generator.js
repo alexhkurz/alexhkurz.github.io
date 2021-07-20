@@ -25,6 +25,8 @@ var quotes = [
 ,   "Science had its origin, if not in opposition to Aristotle, at least in opposition to Aristotelianism. (Marjorie Grene)"
 , "I tend to agree with Roger Bacon that the study of Aristotle increases ignorance. (George Simpson)"
 , "The void between bacterial and eukaryotic cells is greater than any other in biology. (Nick Lane)"
+, "Somewhere between ridiculous pedantry and erroneous formulation there presumably exists a reasonably precise way of specifying a problem in English. (Tony Dodd)"
+, "As Aristotle seemed immune to scriptural authority, the theologians were forced to use the language and weapons of reason. How the Greek philosopher would have smiled to see so many world shaking faiths pay hommage to his thought. (Will Durant)"
 ]
 
 
