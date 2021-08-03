@@ -34,7 +34,7 @@ Both natural and programming languages are recursive. In German also words are r
 
 ---
 
-If we want to survive on this planet, we need to respect [planetary boundaries](https://en.wikipedia.org/wiki/Planetary_boundaries) and transition to a sustainable economy. To achieve this, we need to get away from the idea that a good economy is a growing economy. Growth is not sustainable in the long run. Even a modest growth of 2% per year equals growth of 724% over 100 years and of 1,995,657% over 500 years. Much more on this is in Dasgupta's Review on [The Economics of Biodiversity](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/957291/Dasgupta_Review_-_Full_Report.pdf).
+If we want to survive on this planet, we need to respect [planetary boundaries](https://en.wikipedia.org/wiki/Planetary_boundaries) and transition to a sustainable economy. To achieve this, we need to get away from the idea that a good economy is a growing economy. Growth is not sustainable in the long run. An average growth of [2% per year](https://ourworldindata.org/grapher/average-gdp-growth-rate-1960-2011-versus-gdp-per-capita-in-1960) equals growth of 724% over 100 years and of 1,995,657% over 500 years. Much more on this is in Dasgupta's Review on [The Economics of Biodiversity](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/957291/Dasgupta_Review_-_Full_Report.pdf) and in the IPBES Global Assessment Report on [Biodiversity and Ecosystem Services](https://ipbes.net/global-assessment).
 
 ---
 
@@ -54,7 +54,7 @@ If we want to survive on this planet, we need to respect [planetary boundaries](
 
 (teaching)
 
-[Programming Languages](https://github.com/alexhkurz/programming-languages) (Fall 2021)  
+[Programming Languages](https://github.com/alexhkurz/programming-languages-2021) (Fall 2021)  
 [Compiler Construction](https://github.com/alexhkurz/compiler-construction-2021) (Spring 2021)  
 [A short course on automata and Haskell](https://hackmd.io/@alexhkurz/HylLKujCP)  
 [A short course on monads in mathematics and Haskell](https://hackmd.io/@alexhkurz/H1OxumxRP) (ongoing, under construction)  
