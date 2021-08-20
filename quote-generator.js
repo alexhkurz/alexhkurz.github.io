@@ -27,6 +27,8 @@ var quotes = [
 , "The void between bacterial and eukaryotic cells is greater than any other in biology. (Nick Lane)"
 , "Somewhere between ridiculous pedantry and erroneous formulation there presumably exists a reasonably precise way of specifying a problem in English. (Tony Dodd)"
 , "As Aristotle seemed immune to scriptural authority, the theologians were forced to use the language and weapons of reason. How the Greek philosopher would have smiled to see so many world shaking faiths pay hommage to his thought. (Will Durant)"
+, "I hope we shall take warning from the example and crush in it’s birth the aristocracy of our monied corporations which dare already to challenge our government to a trial of strength, and to bid defiance to the laws of their country. (Thomas Jefferson)"
+, "Carter had solar collectors on the White House roof and Reagan took them off. ( A Fierce Green Fire)"
 ]
 
 
