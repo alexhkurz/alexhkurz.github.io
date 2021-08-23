@@ -27,7 +27,7 @@ var quotes = [
 , "I hope we shall take warning from the example and crush in it’s birth the aristocracy of our monied corporations which dare already to challenge our government to a trial of strength, and to bid defiance to the laws of their country. (Thomas Jefferson)"
 , "Carter had solar collectors on the White House roof and Reagan took them off. ( A Fierce Green Fire)"
 , "Anything we can actually do, we can afford. (John Maynard Keynes)"
-, "When i was a young man I lost many cases that i should have won, but when i grew older I won many that i should have lost, so on the average justice was done. (Anonymous Lawyer)"
+, "When i was a young man I lost many cases that I should have won, but when I grew older I won many that I should have lost, so on the average justice was done. (Anonymous Lawyer)"
 ]
 
 
