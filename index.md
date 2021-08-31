@@ -26,7 +26,7 @@ Random Quote:
 
 ---
 
-In early 2021, the **University of Leicester** threatened with redundancy some of the best mathematicians and computer scientists I know, former colleagues of mine. By the end of the academic year, if I counted correctly, 14 academics in mathematics and computer science either left their job "voluntarily" or were made redundant ... [more](leicester.md).
+In early 2021, the **University of Leicester** threatened with redundancy some of the best mathematicians and computer scientists I know, former colleagues of mine. By the end of the academic year, if I counted correctly, 16 academics in mathematics and computer science either left their job "voluntarily" or were made redundant ... [more](leicester.md).
 
 ---
 
