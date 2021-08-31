@@ -74,6 +74,7 @@ Orange County on Fire:
 - [How to build an Air Filter for $30](https://www.latimes.com/environment/story/2020-09-17/best-air-filters-sold-out-how-to-make-diy-purifier): We got box fans for $20 from Home Depot and MERV 13 filters are available there and cheaper elsewhere.
 -->
 
+<--
 Governor Newsome finally finds clear words (Sep 11). Since then we are having wildfires for the third time this season in Orange County. [Pictures](https://www.latimes.com/california/story/2020-12-03/photos-intense-brush-fire-in-orange-county-prompts-evacuations).
 
 Otherwise, climate change is not really a topic in these elections. Why? There are many reasons: that [Merchants of Doubts](https://www.youtube.com/watch?v=j8ii9zGFDtc) are undermining the trust in science, that [Our democracy no longer represents the people](https://www.youtube.com/watch?v=PJy8vTu66tE), that the [fossil fuel industry](https://www.google.com/search?biw=1344&bih=660&sxsrf=ALeKk03JjdlENc4XmtLr2MczPAdwVnhCIA%3A1599930745983&ei=eQFdX_3GO8vK-gS1v524CQ&q=site%3Adesmogblog.com%3A+mapping+the+power+of+the+%22fossil+fuel%22+industry&oq=site%3Adesmogblog.com%3A+mapping+the+power+of+the+%22fossil+fuel%22+industry&gs_lcp=CgZwc3ktYWIQA1AAWABg5T9oAHAAeACAAUyIAZYBkgEBMpgBAKoBB2d3cy13aXrAAQE&sclient=psy-ab&ved=0ahUKEwi9552-juTrAhVLpZ4KHbVfB5c4FBDh1QMIDQ&uact=5) dominates politics, that the mainstream media are [biased towards climate change deniers](https://www.google.com/search?biw=1326&bih=916&sxsrf=ALeKk014Kg6rxa9TFTSTewTP110ooTEikQ%3A1599935895689&ei=lxVdX8jPKeit0PEPxMuauAE&q=site%3Adesmogblog.com%3A+%22mainstream%22+media+deny+climate+change&oq=site%3Adesmogblog.com%3A+%22mainstream%22+media+deny+climate+change&gs_lcp=CgZwc3ktYWIQA1AAWABgqTBoAHAAeACAAU-IAZkBkgEBMpgBAKoBB2d3cy13aXrAAQE&sclient=psy-ab&ved=0ahUKEwiI9-bVoeTrAhXoFjQIHcSlBhcQ4dUDCAw&uact=5), the [rise of corporate power](https://www.globalpolicy.org/component/content/article/221/47211.html). 
@@ -83,8 +84,9 @@ But, in fact, [keeping the fossil fuels in the ground](https://www.mcc-berlin.ne
 Anyway, thanks to Governor Newsome for his tweet:
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Record breaking temperatures. Record droughts.<br><br>We’re in a CLIMATE CRISIS.<br><br>And what we&#39;re experiencing in California is coming to every community -- all across the United States of America -- unless we get our act together on climate change. <a href="https://t.co/BulCzB7tKs">pic.twitter.com/BulCzB7tKs</a></p>&mdash; Gavin Newsom (@GavinNewsom) <a href="https://twitter.com/GavinNewsom/status/1304540902904348674?ref_src=twsrc%5Etfw">September 11, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
-
- ---
+-->
+ 
+---
  
 The [carbon clock](https://www.mcc-berlin.net/en/research/co2-budget.html) below shows how much time we have left if we want to limit CO2 in the atmosphere to a value compatible with 1.5, respecticely 2.0, degree Celsius warming compared to pre-industrial levels.
 
@@ -100,18 +102,13 @@ See [climate change with your own eyes](notes/glaciers.html). The longer we wait
 
 ---
 
-(blogs)
+(miscellanea)
 
-[Home-Education](home-education.md)  
-[Coronavirus Blog](notes/covid-19.html)   
+<!-- [Home-Education](home-education.md) -->
+<!-- [Coronavirus Blog](notes/covid-19.html) -->
 [Predatory Publishers](notes/WASET.html)  
-
----
-
-(various) 
-
 [How to](how-to-make-a-webpage.html) make the simplest possible webpage   
-[Podcasts](notes/podcasts.md)   
+<!--[Podcasts](notes/podcasts.md) -->
 
 ---
 
