@@ -80,11 +80,6 @@ Otherwise, climate change is not really a topic in these elections. Why? There a
 
 But, in fact, [keeping the fossil fuels in the ground](https://www.mcc-berlin.net/en/news/information/information-detail/article/why-there-is-no-energy-transition-in-many-countries.html) is not enough, what we really should debate is how to achieve a sustainable economy. There are many [new ideas](notes/sustainable-economy.html) ... but I don't hear people talking about it.
 
-Anyway, thanks to Governor Newsome for his tweet:
-
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Record breaking temperatures. Record droughts.<br><br>We’re in a CLIMATE CRISIS.<br><br>And what we&#39;re experiencing in California is coming to every community -- all across the United States of America -- unless we get our act together on climate change. <a href="https://t.co/BulCzB7tKs">pic.twitter.com/BulCzB7tKs</a></p>&mdash; Gavin Newsom (@GavinNewsom) <a href="https://twitter.com/GavinNewsom/status/1304540902904348674?ref_src=twsrc%5Etfw">September 11, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
--->
- 
 ---
  
 The [carbon clock](https://www.mcc-berlin.net/en/research/co2-budget.html) below shows how much time we have left if we want to limit CO2 in the atmosphere to a value compatible with 1.5, respecticely 2.0, degree Celsius warming compared to pre-industrial levels.

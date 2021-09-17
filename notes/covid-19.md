@@ -61,11 +61,13 @@ I stopped doing my own graphs long ago, there are so many good sources now. Exam
 
 **From the News:**
 
+- David Fuller: [On Vaccine Safety, Ivermectin and the Dark Horse Podcast: An Investigation](https://medium.com/rebel-wisdom/on-vaccine-safety-ivermectin-and-the-dark-horse-podcast-an-investigation-f32491d4c970) (Aug 12)
+
 - ZOE COVID Study: [Hopes that wave of infections had peaked fade](https://covid.joinzoe.com/post/hopes-that-wave-of-infections-had-peaked-fade) (Jul 23) 
 
 - Deutsche Welle: [Cuba's COVID vaccine rivals BioNTech-Pfizer, Moderna](https://www.dw.com/en/cubas-covid-vaccine-rivals-biontech-pfizer-moderna/a-58052365) (June 27)
 
-- Matt Taibi: [Why Has "Ivermectin" Become a Dirty Word?](https://taibbi.substack.com/p/why-has-ivermectin-become-a-dirty-7bd?token=eyJ1c2VyX2lkIjoxMTUzNzA3LCJwb3N0X2lkIjozNzc0NjMxMiwiXyI6Ilp5dUIwIiwiaWF0IjoxNjI0MDUwNDcxLCJleHAiOjE2MjQwNTQwNzEsImlzcyI6InB1Yi0xMDQyIiwic3ViIjoicG9zdC1yZWFjdGlvbiJ9._kO3aNYEqyNjEto_JQac_8TL0Z3jvK-U9Rz6pdfUGww) (June 18) 
+- Matt Taibbi: [Why Has "Ivermectin" Become a Dirty Word?](https://taibbi.substack.com/p/why-has-ivermectin-become-a-dirty-7bd) (June 18) 
 
 - [A mix-and-match approach to COVID-19 vaccines](https://theconversation.com/a-mix-and-match-approach-to-covid-19-vaccines-could-provide-logistical-and-immunological-benefits-161974) (June 17)
 

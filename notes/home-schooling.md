@@ -131,6 +131,8 @@ I keep here some favourites as well as a pretty random selection of what come al
 
 #### For boys and girls who like building stuff with tools
 
+Physics Girl https://www.youtube.com/watch?v=Ek1buV2HA68
+
 Recommended by our youngest one:
 
 Colin Furze: [Electric Drift Trike](https://www.youtube.com/watch?v=otlR05QZRrU), ...  
