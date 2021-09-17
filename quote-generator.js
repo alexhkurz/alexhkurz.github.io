@@ -26,6 +26,7 @@ var quotes = [
 , "When I was a young man I lost many cases that I should have won, but when I grew older I won many that I should have lost, so on the average justice was done. (Anonymous Lawyer)"
 , "And when you do live at the center of a private world, reverse-engineered from your own search history, you begin to notice patterns that others can’t. (Edward Snowden)"
 , "Most often, choice is utterly and stubbornly opposed to reason. (Dostoyevsky)"
+, "The dual of conservative is liberal, while strong liberals can be defined from conservatives [...] Stability of strong liberals under pseudopullback implies each strong liberal is a coinverter of some 2-cell. (Carboni etal)"
 ]
 
 
