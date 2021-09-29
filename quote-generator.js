@@ -28,6 +28,7 @@ var quotes = [
 , "Most often, choice is utterly and stubbornly opposed to reason. (Dostoyevsky)"
 , "The dual of conservative is liberal, while strong liberals can be defined from conservatives [...] Stability of strong liberals under pseudopullback implies each strong liberal is a coinverter of some 2-cell. (Carboni etal)"
 , "The bankruptcy of the liberal class is important, for it effectively turns liberal democratic values into the empty platitudes those who embrace autocracy condemn and despise. (Chris Hedges)"
+, "If only it were all so simple! If only there were evil people somewhere insidiously committing evil deeds, and it were necessary only to separate them from the rest of us and destroy them. But the line dividing good and evil cuts through the heart of every human being. And who is willing to destroy a piece of his own heart? (Solzhenitsyn)"
 ]
 
 
