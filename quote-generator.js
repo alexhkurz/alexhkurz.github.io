@@ -27,6 +27,7 @@ var quotes = [
 , "And when you do live at the center of a private world, reverse-engineered from your own search history, you begin to notice patterns that others can’t. (Edward Snowden)"
 , "Most often, choice is utterly and stubbornly opposed to reason. (Dostoyevsky)"
 , "The dual of conservative is liberal, while strong liberals can be defined from conservatives [...] Stability of strong liberals under pseudopullback implies each strong liberal is a coinverter of some 2-cell. (Carboni etal)"
+, "The bankruptcy of the liberal class is important, for it effectively turns liberal democratic values into the empty platitudes those who embrace autocracy condemn and despise. (Chris Hedges)"
 ]
 
 
