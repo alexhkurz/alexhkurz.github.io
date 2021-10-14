@@ -30,6 +30,7 @@ var quotes = [
 , "The bankruptcy of the liberal class is important, for it effectively turns liberal democratic values into the empty platitudes those who embrace autocracy condemn and despise. (Chris Hedges)"
 , "And who is willing to destroy a piece of his own heart? (Solzhenitsyn)"
 , "I am more of the technology world's old country doctor ... I don't know the actual edge things ... I don't know how to program in Haskell. (Douglas Rushkoff)"
+, "The very same things you could do to prepare for the event, are the things you would do to prevent the event. (Douglas Rushkoff)"
 ]
 
 
