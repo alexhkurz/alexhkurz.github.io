@@ -31,6 +31,7 @@ var quotes = [
 , "And who is willing to destroy a piece of his own heart? (Solzhenitsyn)"
 , "I am more of the technology world's old country doctor ... I don't know the actual edge things ... I don't know how to program in Haskell. (Douglas Rushkoff)"
 , "The very same things you could do to prepare for the event, are the things you would do to prevent the event. (Douglas Rushkoff)"
+, "There is nothing special human about grammar, it is really the stuff which goes in the world in some sort of process logic. (Bob Coecke)"
 ]
 
 
