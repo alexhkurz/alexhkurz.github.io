@@ -100,7 +100,8 @@ See [climate change with your own eyes](notes/glaciers.html). The longer we wait
 
 <!-- [Home-Education](home-education.md) -->
 <!-- [Coronavirus Blog](notes/covid-19.html) -->
-[Climate and Environment News](https://hackmd.io/@alexhkurz/By5ehZRgt)  
+[Climate and Environment News](https://hackmd.io/@alexhkurz/By5ehZRgt)   
+[Language of the 21st Century](https://hackmd.io/@alexhkurz/Sya0jrLMY)  
 [Predatory Publishers](notes/WASET.html)  
 [How to](how-to-make-a-webpage.html) make the simplest possible webpage   
 <!--[Podcasts](notes/podcasts.md) -->
