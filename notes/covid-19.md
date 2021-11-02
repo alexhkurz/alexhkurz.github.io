@@ -61,6 +61,8 @@ I stopped doing my own graphs long ago, there are so many good sources now. Exam
 
 **From the News:**
 
+- Leonhardt: [Britain offers a warning of what happens when a country ignores Covid](https://www.nytimes.com/2021/11/02/briefing/britain-covid-cases-restrictions.html), Nov 2.
+
 - David Fuller: [On Vaccine Safety, Ivermectin and the Dark Horse Podcast: An Investigation](https://medium.com/rebel-wisdom/on-vaccine-safety-ivermectin-and-the-dark-horse-podcast-an-investigation-f32491d4c970) (Aug 12)
 
 - ZOE COVID Study: [Hopes that wave of infections had peaked fade](https://covid.joinzoe.com/post/hopes-that-wave-of-infections-had-peaked-fade) (Jul 23) 
