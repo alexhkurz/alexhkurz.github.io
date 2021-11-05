@@ -33,7 +33,7 @@ Both natural and programming languages are recursive. In German also words are r
 
 ---
 
-If we want to survive on this planet, we need to respect [planetary boundaries](https://en.wikipedia.org/wiki/Planetary_boundaries) and transition to a sustainable economy. To achieve this, we need to get away from the idea that a good economy is a growing economy. Growth is not sustainable because sustained growth is exponential growth. For example, an average growth of [2% per year](https://ourworldindata.org/grapher/average-gdp-growth-rate-1960-2011-versus-gdp-per-capita-in-1960) equals growth of 724% over 100 years and of 1,995,657% over 500 years. While the [Limits to Growth](https://en.wikipedia.org/wiki/The_Limits_to_Growth) have been recognised for a long time, recent accounts are Dasgupta's Review on [The Economics of Biodiversity](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/957291/Dasgupta_Review_-_Full_Report.pdf) and in the IPBES Global Assessment Report on [Biodiversity and Ecosystem Services](https://ipbes.net/global-assessment).
+If we want to survive on this planet, we need to respect [planetary boundaries](https://en.wikipedia.org/wiki/Planetary_boundaries) and transition to a sustainable economy. To achieve this, we need to get away from the idea that a good economy is a growing economy. Growth is not sustainable because sustained growth is exponential growth. For example, an average growth of [2% per year](https://ourworldindata.org/grapher/average-gdp-growth-rate-1960-2011-versus-gdp-per-capita-in-1960) equals growth of 724% over 100 years and of 1,995,657% over 500 years. While the [Limits to Growth](https://en.wikipedia.org/wiki/The_Limits_to_Growth) have been recognised for a long time, recent accounts are Dasgupta's Review on [The Economics of Biodiversity](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/957291/Dasgupta_Review_-_Full_Report.pdf) and the IPBES Global Assessment Report on [Biodiversity and Ecosystem Services](https://ipbes.net/global-assessment).
 
 ---
 
@@ -55,16 +55,15 @@ If we want to survive on this planet, we need to respect [planetary boundaries](
 
 [Programming Languages](https://github.com/alexhkurz/programming-languages-2021) (Fall 2021)  
 [Compiler Construction](https://github.com/alexhkurz/compiler-construction-2021) (Spring 2021)  
-[A short course on automata and Haskell](https://hackmd.io/@alexhkurz/HylLKujCP)  
-[A short course on monads in mathematics and Haskell](https://hackmd.io/@alexhkurz/H1OxumxRP) (ongoing, under construction)  
+Short Courses: [Automata and Haskell](https://hackmd.io/@alexhkurz/HylLKujCP) and [Monads in mathematics and Haskell](https://hackmd.io/@alexhkurz/H1OxumxRP) 
 [Student Projects](student-projects.html)  
-[Postgraduate teaching](teaching-phd-courses.md)
+[Postgraduate teaching](teaching-phd-courses.md)  
 
 ---
-
+<!-- 
 [Chapman and Friends Online Chess Tournaments](chess.md)
 
----
+--->
 
 <!--
 Orange County on Fire:
