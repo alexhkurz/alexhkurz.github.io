@@ -29,12 +29,12 @@ var quotes = [
 , "Deep learning is not computationally expensive by accident, but by design. (Thompson etal)"
 , "Acting alone, seeing ourselves as consumers, fixating on mind-numbing trivia, even as systemic environmental collapse looms: these are forms of obedience. (George Monbiot)"
 , "I am more of the technology world's old country doctor ... I don't know the actual edge things ... I don't know how to program in Haskell. (Douglas Rushkoff)"
+, "The very same things you could do to prepare for the event, are the things you would do to prevent the event. (Douglas Rushkoff)"
 , "There is nothing special human about grammar, it is really the stuff which goes on in the world in some sort of process logic. (Bob Coecke)"
 ]
 
 
 /*
-, "The very same things you could do to prepare for the event, are the things you would do to prevent the event. (Douglas Rushkoff)"
 , "Despite their wide empirical use the mathematical success of deep learning remains a mystery. (Soltanolkotabi etal)"
 , "The dual of conservative is liberal, while strong liberals can be defined from conservatives [...] Stability of strong liberals under pseudopullback implies each strong liberal is a coinverter of some 2-cell. (Carboni etal)"
 ,   "In eating, it is best not to fill up; In thinking, it is best not to overdo. (Neiye)"
