@@ -28,7 +28,7 @@ var quotes = [
 , "And who is willing to destroy a piece of his own heart? (Solzhenitsyn)"
 , "Deep learning is not computationally expensive by accident, but by design. (Thompson etal)"
 , "Acting alone, seeing ourselves as consumers, fixating on mind-numbing trivia, even as systemic environmental collapse looms: these are forms of obedience. (George Monbiot)"
-, "We would rather face civilisational death than the social embarrassment caused by raising awkward subjects, and the political trouble involved in resisting powerful forces. (George Monbiot)"
+, "We would rather face civilisational death than the social embarrassment caused by raising awkward subjects. (George Monbiot)"
 , "The obedience reflex is our greatest flaw, the kink in the human brain that threatens our lives. (George Monbiot)"
 , "Capitalism, which sounds so reasonable when explained by a mainstream economist, is in ecological terms nothing but a pyramid scheme. (George Monbiot)"
 , "I am more of the technology world's old country doctor ... I don't know the actual edge things ... I don't know how to program in Haskell. (Douglas Rushkoff)"
@@ -38,6 +38,7 @@ var quotes = [
   
 
 /*
+, "We would rather face civilisational death than the social embarrassment caused by raising awkward subjects, and the political trouble involved in resisting powerful forces. (George Monbiot)"
 , "Despite their wide empirical use the mathematical success of deep learning remains a mystery. (Soltanolkotabi etal)"
 , "The dual of conservative is liberal, while strong liberals can be defined from conservatives [...] Stability of strong liberals under pseudopullback implies each strong liberal is a coinverter of some 2-cell. (Carboni etal)"
 ,   "In eating, it is best not to fill up; In thinking, it is best not to overdo. (Neiye)"
