@@ -32,7 +32,7 @@ var quotes = [
 , "The very same things you could do to prepare for the event, are the things you would do to prevent the event. (Douglas Rushkoff)"
 , "There is nothing special human about grammar, it is really the stuff which goes on in the world in some sort of process logic. (Bob Coecke)"
 ]
-
+  
 
 /*
 , "Despite their wide empirical use the mathematical success of deep learning remains a mystery. (Soltanolkotabi etal)"
