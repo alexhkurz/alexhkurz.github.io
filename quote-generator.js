@@ -35,10 +35,20 @@ var quotes = [
 , "The very same things you could do to prepare for the event, are the things you would do to prevent the event. (Douglas Rushkoff)"
 , "There is nothing special human about grammar, it is really the stuff which goes on in the world in some sort of process logic. (Bob Coecke)"
 , "There is one and only one social responsibility of business — to use its resources and engage in activities designed to increase its profits so long as it stays within the rules of the game. (Milton Friedman)"
+, "Surveillance capitalism originates in the discovery that companies can stake a claim to people’s lives as free raw material for the extraction of behavioral data, which they then declare their private property. (Zuboff)"
+, "We thought that we search Google, but now we understand that Google searches us. (Zuboff)"
+, "Privacy policies are actually surveillance policies. (Zuboff)"
+, "The most treacherous hallucination of them all: the belief that privacy is private. (Zuboff)"
+, "Privacy is a collective good that is logically and morally inseparable from the values of human autonomy and self-determination upon which privacy depends and without which a democratic society is unimaginable. (Zuboff)"
+, "Matter, therefore, and spirit, are at bottom equally unknown, and we cannot determine what qualities inhere in the one or in the other. (Hume)"
+, "This is the 21st century. It’s not OK for politicians not to understand the internet anymore. (Aaron Swartz)"
+, "No, you can’t force other people to change. You can, however, change just about everything else. And usually, that’s enough. (Aaron Swartz)"
+, "What is the most important thing you could be working on in the world right now? ... And if you're not working on that, why aren't you? (Aaron Swartz)"
 ]
   
 
 /*
+, "Think deeply about things. Don’t just go along because that’s the way things are or that’s what your friends say. Consider the effects, consider the alternatives, but most importantly, just think. (Aaron Swartz)" 
 , "We would rather face civilisational death than the social embarrassment caused by raising awkward subjects, and the political trouble involved in resisting powerful forces. (George Monbiot)"
 , "Despite their wide empirical use the mathematical success of deep learning remains a mystery. (Soltanolkotabi etal)"
 , "The dual of conservative is liberal, while strong liberals can be defined from conservatives [...] Stability of strong liberals under pseudopullback implies each strong liberal is a coinverter of some 2-cell. (Carboni etal)"
