@@ -8,7 +8,6 @@ var quotes = [
 , "Poverty is a lack of cash. (Rutger Bregman)"
 , "Theories are not refuted; they are embarrassed. (Amos Tversky)"
 , "Our government must avoid the impulse to live only for today, plundering, for our own ease and convenience, the precious resources of tomorrow. (Dwight D. Eisenhower)"
-, "Americans make up about 4.4 percent of the global population but own 42 percent of the world’s guns. (NYT)"
 , "The mind seeks coherent stories. What determines our confidence is not whether they are true. (Daniel Kahnemann)"
 , "The diagrams and the whole business that I got the Nobel Prize for came from that piddling around with the wobbling plate. (Richard Feynman)"
 , "We have to recognize that there are no really trustworthy standards of rigor in a mathematics that has embraced the theory of infinite sets. (E. T. Jaynes)"
@@ -48,6 +47,7 @@ var quotes = [
   
 
 /*
+, "Americans make up about 4.4 percent of the global population but own 42 percent of the world’s guns. (NYT)"
 , "Think deeply about things. Don’t just go along because that’s the way things are or that’s what your friends say. Consider the effects, consider the alternatives, but most importantly, just think. (Aaron Swartz)" 
 , "We would rather face civilisational death than the social embarrassment caused by raising awkward subjects, and the political trouble involved in resisting powerful forces. (George Monbiot)"
 , "Despite their wide empirical use the mathematical success of deep learning remains a mystery. (Soltanolkotabi etal)"
