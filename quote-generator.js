@@ -24,7 +24,7 @@ var quotes = [
 , "Most often, choice is utterly and stubbornly opposed to reason. (Dostoyevsky)"
 , "Stability of strong liberals under pseudopullback implies each strong liberal is a coinverter of some 2-cell. (Carboni etal)"
 , "The bankruptcy of the liberal class is important, for it effectively turns liberal democratic values into the empty platitudes those who embrace autocracy condemn and despise. (Chris Hedges)"
-, "And who is willing to destroy a piece of his own heart? (Solzhenitsyn)"
+, "But the line dividing good and evil cuts through the heart of every human being. And who is willing to destroy a piece of his own heart? (Solzhenitsyn)"
 , "Deep learning is not computationally expensive by accident, but by design. (Thompson etal)"
 , "Acting alone, seeing ourselves as consumers, fixating on mind-numbing trivia, even as systemic environmental collapse looms: these are forms of obedience. (George Monbiot)"
 , "We would rather face civilisational death than the social embarrassment caused by raising awkward subjects. (George Monbiot)"
@@ -43,10 +43,13 @@ var quotes = [
 , "This is the 21st century. It’s not OK for politicians not to understand the internet anymore. (Aaron Swartz)"
 , "No, you can’t force other people to change. You can, however, change just about everything else. And usually, that’s enough. (Aaron Swartz)"
 , "What is the most important thing you could be working on in the world right now? ... And if you're not working on that, why aren't you? (Aaron Swartz)"
+, "In 2016, the Google-incubated augmented reality game, Pokémon Go, tested economies of action on the streets. Game players did not know that they were pawns in the real game of behavior modification for profit, as the rewards and punishments of hunting imaginary creatures were used to herd people to the McDonald’s, Starbucks and local pizza joints that were paying the company for “footfall,” in exactly the same way that online advertisers pay for “click through” to their websites. (Zuboff)"
 ]
   
 
 /*
+, "As soon as the land of any country has all become private property, the landlords, like all other men, love to reap where they never sowed, and demand a rent even for its natural produce. (Adam Smith)"
+, "The barbarous gold barons - they did not find the gold, they did not mine the gold, they did not mill the gold, but by some weird alchemy all the gold belonged to them. (Bill Haywood)"
 , "Americans make up about 4.4 percent of the global population but own 42 percent of the world’s guns. (NYT)"
 , "Think deeply about things. Don’t just go along because that’s the way things are or that’s what your friends say. Consider the effects, consider the alternatives, but most importantly, just think. (Aaron Swartz)" 
 , "We would rather face civilisational death than the social embarrassment caused by raising awkward subjects, and the political trouble involved in resisting powerful forces. (George Monbiot)"
