@@ -44,10 +44,15 @@ var quotes = [
 , "No, you can’t force other people to change. You can, however, change just about everything else. And usually, that’s enough. (Aaron Swartz)"
 , "What is the most important thing you could be working on in the world right now? ... And if you're not working on that, why aren't you? (Aaron Swartz)"
 , "In 2016, the Google-incubated augmented reality game, Pokémon Go, tested economies of action on the streets. Game players did not know that they were pawns in the real game of behavior modification for profit, as the rewards and punishments of hunting imaginary creatures were used to herd people to the McDonald’s, Starbucks and local pizza joints that were paying the company for “footfall,” in exactly the same way that online advertisers pay for “click through” to their websites. (Zuboff)"
+, "Let us not become the evil that we deplore. (Barbara Lee)"
+, "Fixing things is innately human: we make things and they break and we fix them. We are constantly at war with entropy, pushing back the forces of chaos a little bit at a time. (Kyle Wiens)"
+, "The arithmetical world is there for me only when and for so long as I occupy the arithmetical standpoint. (Husserl)"
+, "In mathematics we find ourselves at that meeting point of constraint and freedom that is the very essence of human nature. — Hermann Weyl"
 ]
   
 
 /*
+, "Mathematics is not the rigid and rigidity-producing schema that the layman thinks it is; rather, in it we find ourselves at that meeting point of constraint and freedom that is the very essence of human nature. — Hermann Weyl"
 , "As soon as the land of any country has all become private property, the landlords, like all other men, love to reap where they never sowed, and demand a rent even for its natural produce. (Adam Smith)"
 , "The barbarous gold barons - they did not find the gold, they did not mine the gold, they did not mill the gold, but by some weird alchemy all the gold belonged to them. (Bill Haywood)"
 , "Americans make up about 4.4 percent of the global population but own 42 percent of the world’s guns. (NYT)"

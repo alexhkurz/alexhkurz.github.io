@@ -4,7 +4,7 @@ Update, Jan 24, 2021: WASET removed some of the links in the article below. I le
 
 ---
 
-Ever heard of WASET? Or predatory publishing? I didn't ... until yesterday.
+Ever heard of WASET? Or predatory publishing? I didn't ... until yesterday, Dec 16, 2019.
 
 Yesterday I learned of the  [14. International Conference on Topology, Algebra, and Categories in Logic](https://waset.org/topology-algebra-and-categories-in-logic-conference-in-january-2020-in-rome).
 
