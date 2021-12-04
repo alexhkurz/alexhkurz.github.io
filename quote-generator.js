@@ -22,6 +22,8 @@ var quotes = [
 , "When I was a young man I lost many cases that I should have won, but when I grew older I won many that I should have lost, so on the average justice was done. (Anonymous Lawyer)"
 , "And when you do live at the center of a private world, reverse-engineered from your own search history, you begin to notice patterns that others can’t. (Edward Snowden)"
 , "Most often, choice is utterly and stubbornly opposed to reason. (Dostoyevsky)"
+, "But I repeat for the hundredth time, there is one case, one only, when man may consciously, purposely, desire what is injurious to himself, what is stupid, very stupid--simply in order to have the right to desire for himself even what is very stupid and not to be bound by an obligation to desire only what is sensible. (Dostoyevsky)"
+, "Of course, this very stupid thing, this caprice of ours, may be in reality, gentlemen, more advantageous for us than anything else on earth, especially in certain cases. And in particular it may be more advantageous than any advantage even when it does us obvious harm, and contradicts the soundest conclusions of our reason concerning our advantage--for in any circumstances it preserves for us what is most precious and most important--that is, our personality, our individuality. (Dostoyevsky)"
 , "Stability of strong liberals under pseudopullback implies each strong liberal is a coinverter of some 2-cell. (Carboni etal)"
 , "The bankruptcy of the liberal class is important, for it effectively turns liberal democratic values into the empty platitudes those who embrace autocracy condemn and despise. (Chris Hedges)"
 , "But the line dividing good and evil cuts through the heart of every human being. And who is willing to destroy a piece of his own heart? (Solzhenitsyn)"
@@ -48,6 +50,7 @@ var quotes = [
 , "Fixing things is innately human: we make things and they break and we fix them. We are constantly at war with entropy, pushing back the forces of chaos a little bit at a time. (Kyle Wiens)"
 , "The arithmetical world is there for me only when and for so long as I occupy the arithmetical standpoint. (Husserl)"
 , "In mathematics we find ourselves at that meeting point of constraint and freedom that is the very essence of human nature. — Hermann Weyl"
+, "Paradoxically, then, it appears that the more precision philosophers attain in their concepts the more difficult it becomes to be precise about the differences in the positions. (Candice Shelby)"
 ]
   
 
