@@ -1,8 +1,9 @@
 # Causality - literature review (under construction)
 
-Various links I have been coming across:
+Various links I have been coming across recently:
 
 - [From Verification to Causality-Based Explications](https://drops.dagstuhl.de/opus/volltexte/2021/14070/pdf/LIPIcs-ICALP-2021-1.pdf). A survey about applications of causality to the verification of software systems.
+- ...
 
 # From Feb 2020
 
