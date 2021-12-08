@@ -53,7 +53,7 @@ var quotes = [
 , "In mathematics we find ourselves at that meeting point of constraint and freedom that is the very essence of human nature. — Hermann Weyl"
 , "Paradoxically, then, it appears that the more precision philosophers attain in their concepts the more difficult it becomes to be precise about the differences in the positions. (Candice Shelby)"
 , "Well, God has arrived. I met him on the 5.15 train. (Keynes)"
-, "The fundamental economic problem is not scarcity but mismanagement. (Keynes ?)"
+, "The fundamental economic problem is not scarcity but mismanagement. (attributed to Keynes)"
 , "We lose a battle whenever we accept some false opinion and we need much more skill afterwards to regain our former position than we do to make good progress when we already have principles which are well founded. (Descartes)"
 ]
   
