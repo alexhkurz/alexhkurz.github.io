@@ -13,9 +13,9 @@ Alexander Kurz
 Home-educating parent, Professor of Computer Science at Chapman University    
 Formerly University of Leicester, CWI Amsterdam, Masaryk University Brno, LMU Munich   
 [Google Scholar](https://scholar.google.com/citations?user=hnsJeJMAAAAJ&hl=en), [dblp](https://dblp.uni-trier.de/pers/hd/k/Kurz_0001:Alexander), [Airquality Orange CA](https://air.plumelabs.com/air-quality-in-orange-aw-331970?utm_source=accuweather&utm_medium=current_aq_widget&utm_campaign=now_page#ae16)
+[Mathematical Genealogy](mathematical-genealogy.png) thanks to the [Mathematics Genealogy Project](https://www.genealogy.math.ndsu.nodak.edu/index.php) and the <a href="https://www.davidalber.net/geneagrapher/">Geneagrapher</a> by <a href="https://www.davidalber.net/">David Alber</a>. 
 
 --- 
-
 
 Random Quote: 
 <div id="quoteDisplay">

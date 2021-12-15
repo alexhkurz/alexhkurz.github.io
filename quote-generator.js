@@ -55,6 +55,7 @@ var quotes = [
 , "Well, God has arrived. I met him on the 5.15 train. (Keynes)"
 , "The fundamental economic problem is not scarcity but mismanagement. (attributed to Keynes)"
 , "We lose a battle whenever we accept some false opinion and we need much more skill afterwards to regain our former position than we do to make good progress when we already have principles which are well founded. (Descartes)"
+, "The multiplicity of laws often provides excuses for vices. (Descartes)"
 ]
   
 
