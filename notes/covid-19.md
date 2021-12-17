@@ -61,6 +61,14 @@ I stopped doing my own graphs long ago, there are so many good sources now. Exam
 
 **From the News:**
 
+- Scientific American: [The Risk of Vaccinated COVID Transmission Is Not Low](https://www.scientificamerican.com/article/the-risk-of-vaccinated-covid-transmission-is-not-low/?utm_source=newsletter&utm_medium=email&utm_campaign=week-in-science&utm_content=link&utm_term=2021-12-17_featured-this-week&spMailingID=71010471&spUserID=NTQxNTA1OTMwODgzS0&spJobID=2228049341&spReportId=MjIyODA0OTM0MQS2), Dec 2021.
+
+- Matt Yglesias: [Omicron - What we know and what we can do about it](https://www.slowboring.com/p/omicron-update), Dec 16.
+
+- Zeynep Tufekci: [Omicron Scenarios Open Thread](https://www.theinsight.org/p/omicron-scenarios-open-thread-1112), Dec 12.
+
+-  Dylan H. Morris: [Novelty Means Severity: The Key To the Pandemic](https://www.theinsight.org/p/novelty-means-severity-the-key-to), May 18. "What if ME/CFS is a rare but dangerous consequence of first seeing in your 30s a virus most people first saw in childhood?" "These are not new, grand insights. But they are easy to forget. And when we forget them, we make mistakes in combating the virus—lethal ones." "
+
 - Leonhardt: [Britain offers a warning of what happens when a country ignores Covid](https://www.nytimes.com/2021/11/02/briefing/britain-covid-cases-restrictions.html), Nov 2.
 
 - David Fuller: [On Vaccine Safety, Ivermectin and the Dark Horse Podcast: An Investigation](https://medium.com/rebel-wisdom/on-vaccine-safety-ivermectin-and-the-dark-horse-podcast-an-investigation-f32491d4c970) (Aug 12)
