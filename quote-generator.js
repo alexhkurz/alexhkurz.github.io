@@ -58,6 +58,7 @@ var quotes = [
 , "The fundamental economic problem is not scarcity but mismanagement. (attributed to Keynes)"
 , "We lose a battle whenever we accept some false opinion and we need much more skill afterwards to regain our former position than we do to make good progress when we already have principles which are well founded. (Descartes)"
 , "The multiplicity of laws often provides excuses for vices. (Descartes)"
+, "You live and must die, and you must do your work. (Fredrick Douglass)"
 ]
   
 

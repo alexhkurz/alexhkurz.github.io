@@ -65,7 +65,7 @@ I stopped doing my own graphs long ago, there are so many good sources now. Exam
 
 - Matt Yglesias: [Omicron - What we know and what we can do about it](https://www.slowboring.com/p/omicron-update), Dec 16.
 
-- Zeynep Tufekci: [Omicron Scenarios Open Thread](https://www.theinsight.org/p/omicron-scenarios-open-thread-1112), Dec 12.
+- Zeynep Tufekci: [Omicron Scenarios Open Threads](https://substack.com/profile/299814-zeynep).
 
 -  Dylan H. Morris: [Novelty Means Severity: The Key To the Pandemic](https://www.theinsight.org/p/novelty-means-severity-the-key-to), May 18. "What if ME/CFS is a rare but dangerous consequence of first seeing in your 30s a virus most people first saw in childhood?" "These are not new, grand insights. But they are easy to forget. And when we forget them, we make mistakes in combating the virus—lethal ones." "
 
