@@ -59,6 +59,9 @@ var quotes = [
 , "We lose a battle whenever we accept some false opinion and we need much more skill afterwards to regain our former position than we do to make good progress when we already have principles which are well founded. (Descartes)"
 , "The multiplicity of laws often provides excuses for vices. (Descartes)"
 , "You live and must die, and you must do your work. (Fredrick Douglass)"
+, "You have no right to enjoy a child’s share in the labor of your fathers, unless your children are to be blest by your labors. (Fredrick Douglass)"
+, "Men seldom eulogize the wisdom and virtues of their fathers, but to excuse some folly or wickedness of their own.(Fredrick Douglass)"
+, "We do not know them, we do not wish to know them, it is not our business to know them, it is our businuess not to know them! (Edsger Dijkstra)"
 ]
   
 
