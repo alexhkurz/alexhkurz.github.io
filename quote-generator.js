@@ -62,6 +62,9 @@ var quotes = [
 , "You have no right to enjoy a child’s share in the labor of your fathers, unless your children are to be blest by your labors. (Fredrick Douglass)"
 , "Men seldom eulogize the wisdom and virtues of their fathers, but to excuse some folly or wickedness of their own.(Fredrick Douglass)"
 , "We do not know them, we do not wish to know them, it is not our business to know them, it is our businuess not to know them! (Edsger Dijkstra)"
+, "The art of programming is the art of organizing complexity. (Edsger Dijkstra)"
+, "As long as we regard computers primarily as tools, we might grossly underestimate their significance. Their influence as tools might turn out to be but a ripple on the surface of our culture.  (Edsger Dijkstra)"
+, "This is the privilege of champions: even when you’re not at your best, oppositions still have to pretend you are. (Jonathan Liew)"
 ]
   
 
