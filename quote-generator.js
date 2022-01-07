@@ -65,6 +65,7 @@ var quotes = [
 , "The art of programming is the art of organizing complexity. (Edsger Dijkstra)"
 , "As long as we regard computers primarily as tools, we might grossly underestimate their significance. Their influence as tools might turn out to be but a ripple on the surface of our culture.  (Edsger Dijkstra)"
 , "This is the privilege of champions: even when you’re not at your best, oppositions still have to pretend you are. (Jonathan Liew)"
+, "I find that the most objectionable feature of the conservative attitude is its propensity to reject well-substantiated new knowledge because it dislikes some of the consequences which seem to follow from it. (Hayek)"
 ]
   
 
