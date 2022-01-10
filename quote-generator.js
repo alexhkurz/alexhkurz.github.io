@@ -76,6 +76,11 @@ var quotes = [
 , "Nature’s worth to society – the true value of the various goods and services it provides – is not reflected in market prices because much of it is open to all at no monetary charge. (Partha Dasgupta)"
 , "Moreover, aspects of Nature are mobile; some are invisible, such as in the soils; and many are silent. These features mean that the effects of many of our actions on ourselves and others – including our descendants – are hard to trace and go unaccounted for, giving rise to widespread ‘externalities’ and making it hard for markets to function well. (Partha Dasgupta)"
 , "Our economies are embedded within Nature, not external to it. (Partha Dasgupta)"
+, "None of the macroeconomic forecasts of the future have ever built a model of the human economy as embedded in nature. (Partha Dasgupta)"
+, "Many of the most prominent economists today have a math background, and most have no knowledge of ecology. (Partha Dasgupta)"
+, "Mathematical models of ecosystems bear a strong resemblance to models of economic systems, so it should be relatively easy for economics courses to include natural capital. (Partha Dasgupta)"
+, "Estimates show that between 1992 and 2014, produced capital per person doubled, and human capital per person increased by about 13% globally; but the stock of natural capital per person declined by nearly 40%. (Partha Dasgupta)"
+, "Is anybody paying rent for the use of the oceans? (Partha Dasgupta)"
 ]
   
 
