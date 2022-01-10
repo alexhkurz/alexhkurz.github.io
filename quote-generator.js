@@ -17,7 +17,6 @@ var quotes = [
 , "Somewhere between ridiculous pedantry and erroneous formulation there presumably exists a reasonably precise way of specifying a problem in English. (Tony Dodd)"
 , "As Aristotle seemed immune to scriptural authority, the theologians were forced to use the language and weapons of reason. How the Greek philosopher would have smiled to see so many world shaking faiths pay hommage to his thought. (Will Durant)"
 , "I hope we shall take warning from the example and crush in it’s birth the aristocracy of our monied corporations which dare already to challenge our government to a trial of strength, and to bid defiance to the laws of their country. (Thomas Jefferson)"
-, "Carter had solar collectors on the White House roof and Reagan took them off. (A Fierce Green Fire)"
 , "Anything we can actually do, we can afford. (John Maynard Keynes)"
 , "When I was a young man I lost many cases that I should have won, but when I grew older I won many that I should have lost, so on the average justice was done. (Anonymous Lawyer)"
 , "And when you do live at the center of a private world, reverse-engineered from your own search history, you begin to notice patterns that others can’t. (Edward Snowden)"
@@ -60,7 +59,6 @@ var quotes = [
 , "You live and must die, and you must do your work. (Fredrick Douglass)"
 , "You have no right to enjoy a child’s share in the labor of your fathers, unless your children are to be blest by your labors. (Fredrick Douglass)"
 , "Men seldom eulogize the wisdom and virtues of their fathers, but to excuse some folly or wickedness of their own.(Fredrick Douglass)"
-, "We do not know them, we do not wish to know them, it is not our business to know them, it is our businuess not to know them! (Edsger Dijkstra)"
 , "The art of programming is the art of organizing complexity. (Edsger Dijkstra)"
 , "As long as we regard computers primarily as tools, we might grossly underestimate their significance. Their influence as tools might turn out to be but a ripple on the surface of our culture.  (Edsger Dijkstra)"
 , "This is the privilege of champions: even when you’re not at your best, oppositions still have to pretend you are. (Jonathan Liew)"
@@ -74,7 +72,7 @@ var quotes = [
 , "Estimates of our total impact on Nature suggest that we would require 1.6 Earths to maintain the world’s current living standards. (Partha Dasgupta)"
 , "Biodiversity is declining faster than at any time in human history. Current extinction rates, for example, are around 100 to 1,000 times higher than the baseline rate, and they are increasing. (Partha Dasgupta)"
 , "Nature’s worth to society – the true value of the various goods and services it provides – is not reflected in market prices because much of it is open to all at no monetary charge. (Partha Dasgupta)"
-, "Moreover, aspects of Nature are mobile; some are invisible, such as in the soils; and many are silent. These features mean that the effects of many of our actions on ourselves and others – including our descendants – are hard to trace and go unaccounted for, giving rise to widespread ‘externalities’ and making it hard for markets to function well. (Partha Dasgupta)"
+, "Moreover, aspects of Nature are mobile; some are invisible, such as in the soils; and many are silent. These features mean that the effects of many of our actions on ourselves and others are hard to trace and go unaccounted for. (Partha Dasgupta)"
 , "Our economies are embedded within Nature, not external to it. (Partha Dasgupta)"
 , "None of the macroeconomic forecasts of the future have ever built a model of the human economy as embedded in nature. (Partha Dasgupta)"
 , "Many of the most prominent economists today have a math background, and most have no knowledge of ecology. (Partha Dasgupta)"
@@ -85,6 +83,9 @@ var quotes = [
   
 
 /*
+, "We do not know them, we do not wish to know them, it is not our business to know them, it is our businuess not to know them! (Edsger Dijkstra)"
+, "Carter had solar collectors on the White House roof and Reagan took them off. (A Fierce Green Fire)"
+, "Moreover, aspects of Nature are mobile; some are invisible, such as in the soils; and many are silent. These features mean that the effects of many of our actions on ourselves and others – including our descendants – are hard to trace and go unaccounted for, giving rise to widespread ‘externalities’ and making it hard for markets to function well. (Partha Dasgupta)"
 , "The competing systems of power in the United States are divided between oligarchy and autocracy. (Chris Hedges)"
 , "The bankruptcy of the liberal class is important, for it effectively turns liberal democratic values into the empty platitudes those who embrace autocracy condemn and despise. (Chris Hedges)"
 , "The alliance between the oligarchs and the autocrats gives birth to fascism. (Chris Hedges)"
