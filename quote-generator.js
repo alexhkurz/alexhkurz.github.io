@@ -28,7 +28,6 @@ var quotes = [
 */
 , "But very often, and even most often, choice is utterly and stubbornly opposed to reason. (Dostoyevsky)"
 , "Stability of strong liberals under pseudopullback implies each strong liberal is a coinverter of some 2-cell. (Carboni etal)"
-, "The bankruptcy of the liberal class is important, for it effectively turns liberal democratic values into the empty platitudes those who embrace autocracy condemn and despise. (Chris Hedges)"
 , "But the line dividing good and evil cuts through the heart of every human being. And who is willing to destroy a piece of his own heart? (Solzhenitsyn)"
 , "Deep learning is not computationally expensive by accident, but by design. (Thompson etal)"
 , "Acting alone, seeing ourselves as consumers, fixating on mind-numbing trivia, even as systemic environmental collapse looms: these are forms of obedience. (George Monbiot)"
@@ -66,10 +65,24 @@ var quotes = [
 , "As long as we regard computers primarily as tools, we might grossly underestimate their significance. Their influence as tools might turn out to be but a ripple on the surface of our culture.  (Edsger Dijkstra)"
 , "This is the privilege of champions: even when you’re not at your best, oppositions still have to pretend you are. (Jonathan Liew)"
 , "I find that the most objectionable feature of the conservative attitude is its propensity to reject well-substantiated new knowledge because it dislikes some of the consequences which seem to follow from it. (Hayek)"
+, "To inoculate us against the possibility of this kind of manipulative invasion it's actually more efficient to make us moral than to make us cunning. (Peter Railton)"
+, "If we replicate the cowardice of the liberal class, if we sell out to the oligarchs as a way to blunt the rise of autocracy, we will discredit the core values of a civil society and fuel the very autocracy we seek to defeat. (Chris Hedges)"
+, "Computers are useless. They can only give you answers. (Picasso)"
+, "Many of the processes that shape our natural world are silent and invisible. (Partha Dasgupta)"
+, "It is not possible to trace very many of the harms inflicted on Nature (and by extension, on humanity too) to those who are responsible. (Partha Dasgupta)"
+, "While humanity has prospered immensely in recent decades, the ways in which we have achieved such prosperity means that it has come at a devastating cost to Nature. (Partha Dasgupta)"
+, "Estimates of our total impact on Nature suggest that we would require 1.6 Earths to maintain the world’s current living standards. (Partha Dasgupta)"
+, "Biodiversity is declining faster than at any time in human history. Current extinction rates, for example, are around 100 to 1,000 times higher than the baseline rate, and they are increasing. (Partha Dasgupta)"
+, "Nature’s worth to society – the true value of the various goods and services it provides – is not reflected in market prices because much of it is open to all at no monetary charge. (Partha Dasgupta)"
+, "Moreover, aspects of Nature are mobile; some are invisible, such as in the soils; and many are silent. These features mean that the effects of many of our actions on ourselves and others – including our descendants – are hard to trace and go unaccounted for, giving rise to widespread ‘externalities’ and making it hard for markets to function well. (Partha Dasgupta)"
+, "Our economies are embedded within Nature, not external to it. (Partha Dasgupta)"
 ]
   
 
 /*
+, "The competing systems of power in the United States are divided between oligarchy and autocracy. (Chris Hedges)"
+, "The bankruptcy of the liberal class is important, for it effectively turns liberal democratic values into the empty platitudes those who embrace autocracy condemn and despise. (Chris Hedges)"
+, "The alliance between the oligarchs and the autocrats gives birth to fascism. (Chris Hedges)"
 , "Mathematics is not the rigid and rigidity-producing schema that the layman thinks it is; rather, in it we find ourselves at that meeting point of constraint and freedom that is the very essence of human nature. — Hermann Weyl"
 , "As soon as the land of any country has all become private property, the landlords, like all other men, love to reap where they never sowed, and demand a rent even for its natural produce. (Adam Smith)"
 , "The barbarous gold barons - they did not find the gold, they did not mine the gold, they did not mill the gold, but by some weird alchemy all the gold belonged to them. (Bill Haywood)"
