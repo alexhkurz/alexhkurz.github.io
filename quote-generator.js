@@ -33,6 +33,7 @@ var quotes = [
 , "We would rather face civilisational death than the social embarrassment caused by raising awkward subjects. (George Monbiot)"
 , "The obedience reflex is our greatest flaw, the kink in the human brain that threatens our lives. (George Monbiot)"
 , "Capitalism, which sounds so reasonable when explained by a mainstream economist, is in ecological terms nothing but a pyramid scheme. (George Monbiot)"
+, "Our private luxury deprives other people of their private sufficiency. (George Monbiot)"
 , "I am more of the technology world's old country doctor ... I don't know the actual edge things ... I don't know how to program in Haskell. (Douglas Rushkoff)"
 , "The very same things you could do to prepare for the event, are the things you would do to prevent the event. (Douglas Rushkoff)"
 , "There is nothing special human about grammar, it is really the stuff which goes on in the world in some sort of process logic. (Bob Coecke)"
