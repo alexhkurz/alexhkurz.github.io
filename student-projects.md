@@ -12,7 +12,7 @@ I [directed various PhDs](phd-students.html) in logic, category theory, and comp
 
 I offer various research projects, see eg [291/491 Student-Faculty Research and Creative Activity for Course Credit](https://www.chapman.edu/research/center-for-undergraduate-excellence/research-creative-course.aspx) for one way of formalizing this.
 
-I maintain a changing [lists of topics I am interested]() in.
+I maintain a changing [lists of topics I am interested](https://hackmd.io/@alexhkurz/SyhGOHYhK) in.
 
 ### Big Questions
 
