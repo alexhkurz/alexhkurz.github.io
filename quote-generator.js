@@ -21,6 +21,7 @@ var quotes = [
 , "Anything we can actually do, we can afford. (John Maynard Keynes)"
 , "When I was a young man I lost many cases that I should have won, but when I grew older I won many that I should have lost, so on the average justice was done. (Anonymous Lawyer)"
 , "And when you do live at the center of a private world, reverse-engineered from your own search history, you begin to notice patterns that others can’t. (Edward Snowden)"
+, "Computer science was born out of the ruins of Hilbert's Program. (Moshe Vardi)"
 /*
 , "But I repeat for the hundredth time, there is one case, one only, when man may consciously, purposely, desire what is injurious to himself, what is stupid, very stupid--simply in order to have the right to desire for himself even what is very stupid and not to be bound by an obligation to desire only what is sensible. (Dostoyevsky)"
 , "Of course, this very stupid thing, this caprice of ours, may be in reality, gentlemen, more advantageous for us than anything else on earth, especially in certain cases. And in particular it may be more advantageous than any advantage even when it does us obvious harm, and contradicts the soundest conclusions of our reason concerning our advantage--for in any circumstances it preserves for us what is most precious and most important--that is, our personality, our individuality. (Dostoyevsky)"
@@ -81,7 +82,10 @@ var quotes = [
 , "Mathematical models of ecosystems bear a strong resemblance to models of economic systems, so it should be relatively easy for economics courses to include natural capital. (Partha Dasgupta)"
 , "Estimates show that between 1992 and 2014, produced capital per person doubled, and human capital per person increased by about 13% globally; but the stock of natural capital per person declined by nearly 40%. (Partha Dasgupta)"
 , "Is anybody paying rent for the use of the oceans? (Partha Dasgupta)"
-]
+, "Every individual person must find himself a gainer, on ballancing the account; since, without justice, society must immediately dissolve. (Hume)"
+, "He who appropriates land to himself by his labour, does not lessen, but increase the common stock of mankind: for the provisions serving to the support of human life, produced by one acre of inclosed and cultivated land, are (to speak much within compass) ten times more than those which are yielded by an acre of land of an equal richness lying waste in common. (Locke)"
+, "When you are dead, you do not know you are dead. It is only painful for others. The same applies when you are stupid. (Ricky Gervais)"
+, "Every measure which becomes a target becomes a bad measure. (Goodhart/Hoskins)"]
   
 
 /*
