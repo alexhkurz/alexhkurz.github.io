@@ -16,10 +16,10 @@ Formerly University of Leicester, CWI Amsterdam, Masaryk University Brno, LMU Mu
 
 
 ---
-a
-<p id="quoteDisplay" >
+*Random Quote:*
+<span id="quoteDisplay" >
   <!-- Quotes will display here -->
-</p>
+</span>
 <script src="quote-generator.js"></script>
 
 ---
