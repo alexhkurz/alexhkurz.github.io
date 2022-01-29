@@ -64,7 +64,6 @@ var quotes = [
 , "Men seldom eulogize the wisdom and virtues of their fathers, but to excuse some folly or wickedness of their own.(Fredrick Douglass)"
 , "The art of programming is the art of organizing complexity. (Edsger Dijkstra)"
 , "As long as we regard computers primarily as tools, we might grossly underestimate their significance. Their influence as tools might turn out to be but a ripple on the surface of our culture.  (Edsger Dijkstra)"
-, "This is the privilege of champions: even when you’re not at your best, oppositions still have to pretend you are. (Jonathan Liew)"
 , "I find that the most objectionable feature of the conservative attitude is its propensity to reject well-substantiated new knowledge because it dislikes some of the consequences which seem to follow from it. (Hayek)"
 , "To inoculate us against the possibility of this kind of manipulative invasion it's actually more efficient to make us moral than to make us cunning. (Peter Railton)"
 , "If we replicate the cowardice of the liberal class, if we sell out to the oligarchs as a way to blunt the rise of autocracy, we will discredit the core values of a civil society and fuel the very autocracy we seek to defeat. (Chris Hedges)"
@@ -85,10 +84,15 @@ var quotes = [
 , "Every individual person must find himself a gainer, on ballancing the account; since, without justice, society must immediately dissolve. (Hume)"
 , "He who appropriates land to himself by his labour, does not lessen, but increase the common stock of mankind: for the provisions serving to the support of human life, produced by one acre of inclosed and cultivated land, are (to speak much within compass) ten times more than those which are yielded by an acre of land of an equal richness lying waste in common. (Locke)"
 , "When you are dead, you do not know you are dead. It is only painful for others. The same applies when you are stupid. (Ricky Gervais)"
-, "Every measure which becomes a target becomes a bad measure. (Goodhart/Hoskins)"]
+, "Every measure which becomes a target becomes a bad measure. (Goodhart/Hoskins)"
+, "Our program calls for a redistribution of economic power. (Martin Luther King)"
+, "Every man is an heir to a legacy of dignity and worth. (Martin Luther King)"
+, "And I tell you if this country does not see its poor — if it lets them remain in their poverty and misery — it will surely go to hell! (Martin Luther King)"
+]
   
 
 /*
+, "This is the privilege of champions: even when you’re not at your best, oppositions still have to pretend you are. (Jonathan Liew)"
 , "We do not know them, we do not wish to know them, it is not our business to know them, it is our businuess not to know them! (Edsger Dijkstra)"
 , "Carter had solar collectors on the White House roof and Reagan took them off. (A Fierce Green Fire)"
 , "Moreover, aspects of Nature are mobile; some are invisible, such as in the soils; and many are silent. These features mean that the effects of many of our actions on ourselves and others – including our descendants – are hard to trace and go unaccounted for, giving rise to widespread ‘externalities’ and making it hard for markets to function well. (Partha Dasgupta)"
