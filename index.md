@@ -17,9 +17,9 @@ Formerly University of Leicester, CWI Amsterdam, Masaryk University Brno, LMU Mu
 
 ---
 
-<p id="quoteDisplay" >
+<input id="quoteDisplay" >
   <!-- Quotes will display here -->
-</p>
+
 <script src="quote-generator.js"></script>
 
 ---
