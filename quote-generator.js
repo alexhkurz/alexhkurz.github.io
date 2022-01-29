@@ -86,12 +86,12 @@ var quotes = [
 , "When you are dead, you do not know you are dead. It is only painful for others. The same applies when you are stupid. (Ricky Gervais)"
 , "Every measure which becomes a target becomes a bad measure. (Goodhart/Hoskins)"
 , "Our program calls for a redistribution of economic power. (Martin Luther King)"
-, "Every man is an heir to a legacy of dignity and worth. (Martin Luther King)"
 , "And I tell you if this country does not see its poor — if it lets them remain in their poverty and misery — it will surely go to hell! (Martin Luther King)"
 ]
   
 
 /*
+, "Every man is an heir to a legacy of dignity and worth. (Martin Luther King)"
 , "This is the privilege of champions: even when you’re not at your best, oppositions still have to pretend you are. (Jonathan Liew)"
 , "We do not know them, we do not wish to know them, it is not our business to know them, it is our businuess not to know them! (Edsger Dijkstra)"
 , "Carter had solar collectors on the White House roof and Reagan took them off. (A Fierce Green Fire)"
