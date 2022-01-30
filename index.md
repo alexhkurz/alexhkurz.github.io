@@ -53,7 +53,7 @@ If we want to survive on this planet, we need to respect [planetary boundaries](
 (teaching)
 
 [Programming Languages](https://github.com/alexhkurz/programming-languages-2021) (Fall 2021)  
-[Compiler Construction](https://github.com/alexhkurz/compiler-construction-2021) (Spring 2021)  
+[Compiler Construction](https://github.com/alexhkurz/compiler-construction-2022) (Spring 2022)  
 Short Courses: [Automata and Haskell](https://hackmd.io/@alexhkurz/HylLKujCP) and [Monads in Mathematics and Haskell](https://hackmd.io/@alexhkurz/H1OxumxRP)   
 [Student Projects](student-projects.html)  
 [Postgraduate teaching](teaching-phd-courses.md)  

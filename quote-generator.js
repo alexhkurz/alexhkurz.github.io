@@ -87,6 +87,7 @@ var quotes = [
 , "Every measure which becomes a target becomes a bad measure. (Goodhart/Hoskins)"
 , "Our program calls for a redistribution of economic power. (Martin Luther King)"
 , "And I tell you if this country does not see its poor — if it lets them remain in their poverty and misery — it will surely go to hell! (Martin Luther King)"
+, "The numerous anthropogenic causes of today's mass extinction are deeply unrelated to the known causes of earlier ones. (J. Alroy)"
 ]
   
 
