@@ -12,7 +12,7 @@
 Alexander Kurz  
 Home-educating parent, Professor of Computer Science at Chapman University    
 Formerly University of Leicester, CWI Amsterdam, Masaryk University Brno, LMU Munich   
-[Google Scholar](https://scholar.google.com/citations?user=hnsJeJMAAAAJ&hl=en), [DBLP](https://dblp.uni-trier.de/pers/hd/k/Kurz_0001:Alexander), [Airquality](https://air.plumelabs.com/air-quality-in-orange-aw-331970?utm_source=accuweather&utm_medium=current_aq_widget&utm_campaign=now_page#ae16)  
+[Google Scholar](https://scholar.google.com/citations?user=hnsJeJMAAAAJ&hl=en), [DBLP](https://dblp.uni-trier.de/pers/hd/k/Kurz_0001:Alexander)
 
 
 ---
@@ -44,7 +44,7 @@ If we want to survive on this planet, we need to respect [planetary boundaries](
 
 [Projects](research-projects.html)  
 [Publications](publications.html)    
-[Talks](talks.html)
+[Talks](talks.html)  
 <!--[Events](events.html)-->
 <!--[Chapman University Engineering Seminars](engineering-seminars.html)-->
 [PhD students](phd-students.html)   
@@ -99,6 +99,7 @@ See [climate change with your own eyes](notes/glaciers.html). The longer we wait
 
 <!-- [Home-Education](home-education.md) -->
 <!-- [Coronavirus Blog](notes/covid-19.html) -->
+[Airquality in Orange, CA](https://air.plumelabs.com/air-quality-in-orange-aw-331970?utm_source=accuweather&utm_medium=current_aq_widget&utm_campaign=now_page#ae16)  
 [Climate and Environment News](https://hackmd.io/@alexhkurz/By5ehZRgt)   
 [Language of the 21st Century](https://hackmd.io/@alexhkurz/Sya0jrLMY)  
 [Predatory Publishers](notes/WASET.html)  
