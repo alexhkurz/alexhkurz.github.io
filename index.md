@@ -44,8 +44,9 @@ If we want to survive on this planet, we need to respect [planetary boundaries](
 
 [Projects](research-projects.html)  
 [Publications](publications.html)    
-[Events](events.html)   
-[Chapman University Engineering Seminars](engineering-seminars.html)   
+[Talks](talks.html)
+<!--[Events](events.html)-->
+<!--[Chapman University Engineering Seminars](engineering-seminars.html)-->
 [PhD students](phd-students.html)   
 
 ---  

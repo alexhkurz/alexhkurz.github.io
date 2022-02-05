@@ -22,7 +22,7 @@ Big questions are not always easy to turn into concrete research questions, but 
 
 - Theorem proving has been a very successful application of computer science to mathematics ... but we have not been getting much closer to the point where mathematicians who dislike programming feel comfortable to make use of this technology. Why? What are the next steps needed to close this gap?
 
-- Machine learning is great as long as we have, or can generate, large amounts of data. But humans are capable to learn successfully from small numbers of examples. One of the ideas to tackle this gap is to bring together symbolic and statistical AI. While there is work along these lines, I am sure there is much more to discover.
+- Machine learning is great as long as we have, or can generate, large amounts of data. But humans are capable to learn successfully from small numbers of examples. One of the ideas to tackle this gap is to bring together symbolic and statistical AI. While there is work along these lines, there is much more to discover.
 
 - What is a proof? What is an algorithm? What is information?
 
