@@ -90,6 +90,7 @@ var quotes = [
 , "The numerous anthropogenic causes of today's mass extinction are deeply unrelated to the known causes of earlier ones. (J. Alroy)"
 , "I want to uncover the stories that built us, and examine which of them we want to hold onto and which we are prepared to let go of. The story of living by the sword no longer has a future. (Yuli Novak)"
 , "Because even if I should speak, no one would believe me. And they would not believe me precisely because they would know that what I said was true. (James Baldwin)"
+, "Switching costs may seem technological, but they’re actually legal. (Cory Doctorow)"
 ]
   
 
