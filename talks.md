@@ -4,3 +4,4 @@
 
 [Dimensions of Coalgebraic Logic](https://hackmd.io/@alexhkurz/Skc7tOx6F), Jan 2022.
 
+
