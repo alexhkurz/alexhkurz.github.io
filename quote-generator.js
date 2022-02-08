@@ -91,6 +91,10 @@ var quotes = [
 , "I want to uncover the stories that built us, and examine which of them we want to hold onto and which we are prepared to let go of. The story of living by the sword no longer has a future. (Yuli Novak)"
 , "Because even if I should speak, no one would believe me. And they would not believe me precisely because they would know that what I said was true. (James Baldwin)"
 , "Switching costs may seem technological, but they’re actually legal. (Cory Doctorow)"
+, "Legal structures seek to anchor themselves in some more solid foundation than that provided by more or less widely accepted and deliberate societal agreement. (Adam Tooze)"
+, "Money is a tool of collective organization. (Adam Tooze)"
+, "Privacy is the power to selectively reveal oneself to the world. (Eric Hughes)"
+, "As long as there has been digital real estate, there have been digital housing crises, which stem from a shortage of digital land. (Lars Doucet)"
 ]
   
 
