@@ -99,9 +99,8 @@ var quotes = [
 , "Sustained growth is exponential. Exponential growth is not sustainable. (John Coleman)"
 , "The invisible hand does not write code. (John Coleman)"
 , "The presence of a commons is key to limiting, or checking, certain forms of governmental control. (Lawrence Lessig)"
-, "The ‘iPad Native’ generation will continue to mature. Most are still consumers, a few are creators, and almost none are business leaders. They will be. And their frames of reference will lead to transformative change. (Matthew Ball)")
-
-"]
+, "The ‘iPad Native’ generation will continue to mature. Most are still consumers, a few are creators, and almost none are business leaders. They will be. And their frames of reference will lead to transformative change. (Matthew Ball)"
+]
   
 
 /*
