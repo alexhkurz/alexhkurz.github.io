@@ -95,7 +95,13 @@ var quotes = [
 , "Money is a tool of collective organization. (Adam Tooze)"
 , "Privacy is the power to selectively reveal oneself to the world. (Eric Hughes)"
 , "As long as there has been digital real estate, there have been digital housing crises, which stem from a shortage of digital land. (Lars Doucet)"
-]
+, "We build a world where freedom can flourish not by removing from society any self-conscious control; we build a world where freedom can flourish by setting it in a place where a particular kind of self-conscious control survives. (Lawrence Lessig)"
+, "Sustained growth is exponential. Exponential growth is not sustainable. (John Coleman)"
+, "The invisible hand does not write code. (John Coleman)"
+, "The presence of a commons is key to limiting, or checking, certain forms of governmental control. (Lawrence Lessig)"
+, "The ‘iPad Native’ generation will continue to mature. Most are still consumers, a few are creators, and almost none are business leaders. They will be. And their frames of reference will lead to transformative change. (Matthew Ball)")
+
+"]
   
 
 /*
