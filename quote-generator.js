@@ -49,7 +49,7 @@ var quotes = [
 , "This is the 21st century. It’s not OK for politicians not to understand the internet anymore. (Aaron Swartz)"
 , "No, you can’t force other people to change. You can, however, change just about everything else. And usually, that’s enough. (Aaron Swartz)"
 , "What is the most important thing you could be working on in the world right now? ... And if you're not working on that, why aren't you? (Aaron Swartz)"
-, "In 2016, the Google-incubated augmented reality game, Pokémon Go, tested economies of action on the streets. Game players did not know that they were pawns in the real game of behavior modification for profit, as the rewards and punishments of hunting imaginary creatures were used to herd people to the McDonald’s, Starbucks and local pizza joints that were paying the company for “footfall,” in exactly the same way that online advertisers pay for “click through” to their websites. (Zuboff)"
+/*, "In 2016, the Google-incubated augmented reality game, Pokémon Go, tested economies of action on the streets. Game players did not know that they were pawns in the real game of behavior modification for profit, as the rewards and punishments of hunting imaginary creatures were used to herd people to the McDonald’s, Starbucks and local pizza joints that were paying the company for “footfall,” in exactly the same way that online advertisers pay for “click through” to their websites. (Zuboff)"*/
 , "Let us not become the evil that we deplore. (Barbara Lee)"
 , "Fixing things is innately human: we make things and they break and we fix them. We are constantly at war with entropy, pushing back the forces of chaos a little bit at a time. (Kyle Wiens)"
 , "The arithmetical world is there for me only when and for so long as I occupy the arithmetical standpoint. (Husserl)"
@@ -58,8 +58,8 @@ var quotes = [
 , "Well, God has arrived. I met him on the 5.15 train. (Keynes)"
 , "The fundamental economic problem is not scarcity but mismanagement. (attributed to Keynes)"
 , "We lose a battle whenever we accept some false opinion and we need much more skill afterwards to regain our former position than we do to make good progress when we already have principles which are well founded. (Descartes)"
-, "The multiplicity of laws often provides excuses for vices. (Descartes)"
-, "You live and must die, and you must do your work. (Fredrick Douglass)"
+/*, "The multiplicity of laws often provides excuses for vices. (Descartes)"*/
+/*, "You live and must die, and you must do your work. (Fredrick Douglass)"*/
 , "You have no right to enjoy a child’s share in the labor of your fathers, unless your children are to be blest by your labors. (Fredrick Douglass)"
 , "Men seldom eulogize the wisdom and virtues of their fathers, but to excuse some folly or wickedness of their own.(Fredrick Douglass)"
 , "The art of programming is the art of organizing complexity. (Edsger Dijkstra)"
