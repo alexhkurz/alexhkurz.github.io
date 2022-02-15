@@ -83,6 +83,7 @@ var quotes = [
 , "Is anybody paying rent for the use of the oceans? (Partha Dasgupta)"
 , "Every individual person must find himself a gainer, on ballancing the account; since, without justice, society must immediately dissolve. (Hume)"
 , "He who appropriates land to himself by his labour, does not lessen, but increase the common stock of mankind: for the provisions serving to the support of human life, produced by one acre of inclosed and cultivated land, are (to speak much within compass) ten times more than those which are yielded by an acre of land of an equal richness lying waste in common. (Locke)"
+, "But though this be a state of liberty, yet it is not a state of license. (Locke)"
 , "When you are dead, you do not know you are dead. It is only painful for others. The same applies when you are stupid. (Ricky Gervais)"
 , "Every measure which becomes a target becomes a bad measure. (Goodhart/Hoskins)"
 , "Our program calls for a redistribution of economic power. (Martin Luther King)"
@@ -106,14 +107,14 @@ var quotes = [
 /*, "It has often and confidently been asserted, that man's origin can never be known: but ignorance more frequently begets confidence than does knowledge: it is those who know little, and not those who know much, who so positively assert that this or that problem will never be solved by science. (Darwin)"*/
 , "Ignorance more frequently begets confidence than does knowledge. (Darwin)"
 , "This virtue, one of the noblest with which man is endowed, seems to arise incidentally from our sympathies becoming more tender and more widely diffused, until they are extended to all sentient beings. (Darwin)"
-/*, "Since 1920, the vast increase in welfare beneficiaries and the extension of the franchise to women — two constituencies that are notoriously tough for libertarians — have rendered the notion of “capitalist democracy” into an oxymoron. (Peter Thiel)"*/
 , "VCs are pouring money into cryptocurrency and web3 companies. This money is not going to build systems with low barriers to entry. Thus the systems that will result from this flood of money will not be decentralized, no matter what the sales pitch says. (David Rosenthal)"
-, "The problem here is that since the systems are not actually decentralized, we get the externalities but don't get the benefits. (David Rosenthal)"
-, "The problem here is that the amount of actual money you can get out of a cryptocurrency equals the amount of actual money that has been put in, minus the actual costs of mining. (David Rosenthal)"
+/*, "The problem here is that since the systems are not actually decentralized, we get the externalities but don't get the benefits. (David Rosenthal)"
+, "The problem here is that the amount of actual money you can get out of a cryptocurrency equals the amount of actual money that has been put in, minus the actual costs of mining. (David Rosenthal)"*/
 ]
   
 
 /*
+, "Since 1920, the vast increase in welfare beneficiaries and the extension of the franchise to women — two constituencies that are notoriously tough for libertarians — have rendered the notion of “capitalist democracy” into an oxymoron. (Peter Thiel)"
 , "Every man is an heir to a legacy of dignity and worth. (Martin Luther King)"
 , "This is the privilege of champions: even when you’re not at your best, oppositions still have to pretend you are. (Jonathan Liew)"
 , "We do not know them, we do not wish to know them, it is not our business to know them, it is our businuess not to know them! (Edsger Dijkstra)"
