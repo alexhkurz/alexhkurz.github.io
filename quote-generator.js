@@ -97,9 +97,19 @@ var quotes = [
 , "As long as there has been digital real estate, there have been digital housing crises, which stem from a shortage of digital land. (Lars Doucet)"
 , "We build a world where freedom can flourish not by removing from society any self-conscious control; we build a world where freedom can flourish by setting it in a place where a particular kind of self-conscious control survives. (Lawrence Lessig)"
 , "Sustained growth is exponential. Exponential growth is not sustainable. (John Coleman)"
-, "The invisible hand does not write code. (John Coleman)"
+, "Most externalities are invisible. (John Coleman)"
+, "The invisible hand does not write code. But code runs the invisible hand. (John Coleman)"
 , "The presence of a commons is key to limiting, or checking, certain forms of governmental control. (Lawrence Lessig)"
 , "The ‘iPad Native’ generation will continue to mature. Most are still consumers, a few are creators, and almost none are business leaders. They will be. And their frames of reference will lead to transformative change. (Matthew Ball)"
+/*, "Make no little plans; they have no magic to stir mens’ blood and probably themselves will not be realized. Make big plans; aim high in hope and work, remembering that a noble, logical diagram once recorded will never die. (Daniel Burnham)"*/
+, "Make big plans; aim high in hope and work, remembering that a noble, logical diagram once recorded will never die. (Daniel Burnham)"
+/*, "It has often and confidently been asserted, that man's origin can never be known: but ignorance more frequently begets confidence than does knowledge: it is those who know little, and not those who know much, who so positively assert that this or that problem will never be solved by science. (Darwin)"*/
+, "Ignorance more frequently begets confidence than does knowledge. (Darwin)"
+, "This virtue, one of the noblest with which man is endowed, seems to arise incidentally from our sympathies becoming more tender and more widely diffused, until they are extended to all sentient beings. (Darwin)"
+/*, "Since 1920, the vast increase in welfare beneficiaries and the extension of the franchise to women — two constituencies that are notoriously tough for libertarians — have rendered the notion of “capitalist democracy” into an oxymoron. (Peter Thiel)"*/
+, "VCs are pouring money into cryptocurrency and web3 companies. This money is not going to build systems with low barriers to entry. Thus the systems that will result from this flood of money will not be decentralized, no matter what the sales pitch says. (David Rosenthal)"
+, "The problem here is that since the systems are not actually decentralized, we get the externalities but don't get the benefits. (David Rosenthal)"
+, "The problem here is that the amount of actual money you can get out of a cryptocurrency equals the amount of actual money that has been put in, minus the actual costs of mining. (David Rosenthal)"
 ]
   
 
