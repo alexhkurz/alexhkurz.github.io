@@ -110,6 +110,7 @@ var quotes = [
 , "VCs are pouring money into cryptocurrency and web3 companies. This money is not going to build systems with low barriers to entry. Thus the systems that will result from this flood of money will not be decentralized, no matter what the sales pitch says. (David Rosenthal)"
 /*, "The problem here is that since the systems are not actually decentralized, we get the externalities but don't get the benefits. (David Rosenthal)"
 , "The problem here is that the amount of actual money you can get out of a cryptocurrency equals the amount of actual money that has been put in, minus the actual costs of mining. (David Rosenthal)"*/
+, "The Cloud now has a greater carbon footprint than the airline industry. (Steven Gonzalez Monserrate)"
 ]
   
 
