@@ -111,6 +111,10 @@ var quotes = [
 /*, "The problem here is that since the systems are not actually decentralized, we get the externalities but don't get the benefits. (David Rosenthal)"
 , "The problem here is that the amount of actual money you can get out of a cryptocurrency equals the amount of actual money that has been put in, minus the actual costs of mining. (David Rosenthal)"*/
 , "The Cloud now has a greater carbon footprint than the airline industry. (Steven Gonzalez Monserrate)"
+, "Everyone thinks they think. But if you don't write down your thoughts you are fooling yourself. (Leslie Lamport)"
+, "You should think before you code. A spec is simply what you write before coding. (Leslie Lamport)"
+, "Thinking is hard. It is easier to think you are thinking. (Leslie Lamport)"
+, "If you don't start with a spec every piece of code your write is a patch. (Leslie Lamport)"
 ]
   
 
