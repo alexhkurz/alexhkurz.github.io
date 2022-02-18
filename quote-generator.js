@@ -114,7 +114,7 @@ var quotes = [
 , "Everyone thinks they think. But if you don't write down your thoughts you are fooling yourself. (Leslie Lamport)"
 , "You should think before you code. A spec is simply what you write before coding. (Leslie Lamport)"
 , "Thinking is hard. It is easier to think you are thinking. (Leslie Lamport)"
-, "If you don't start with a spec every piece of code your write is a patch. (Leslie Lamport)"
+, "If you don't start with a spec every piece of code you write is a patch. (Leslie Lamport)"
 ]
   
 
