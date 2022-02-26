@@ -18,7 +18,8 @@ var quotes = [
 , "As Aristotle seemed immune to scriptural authority, the theologians were forced to use the language and weapons of reason. How the Greek philosopher would have smiled to see so many world shaking faiths pay hommage to his thought. (Will Durant)"
 , "I hope we shall take warning from the example and crush in it’s birth the aristocracy of our monied corporations which dare already to challenge our government to a trial of strength, and to bid defiance to the laws of their country. (Thomas Jefferson)"
 , "The first truth is that the liberty of a democracy is not safe if the people tolerate the growth of private power to a point where it becomes stronger than their democratic state itself. (Franklin D Roosevelt)"
-, "Anything we can actually do, we can afford. (John Maynard Keynes)"
+, "Anything we can actually do, we can afford. (Keynes)"
+, "Economists set themselves too easy, too useless a task if in tempestuous seasons they can only tell us that when the storm is long past the ocean is flat again. (Keynes)"
 , "When I was a young man I lost many cases that I should have won, but when I grew older I won many that I should have lost, so on the average justice was done. (Anonymous Lawyer)"
 , "And when you do live at the center of a private world, reverse-engineered from your own search history, you begin to notice patterns that others can’t. (Edward Snowden)"
 , "Computer science was born out of the ruins of Hilbert's Program. (Moshe Vardi)"
@@ -115,6 +116,9 @@ var quotes = [
 , "You should think before you code. A spec is simply what you write before coding. (Leslie Lamport)"
 , "Thinking is hard. It is easier to think you are thinking. (Leslie Lamport)"
 , "If you don't start with a spec every piece of code you write is a patch. (Leslie Lamport)"
+, "The Planet Is A Political Orphan. (Dipesh Chakrabarty)"
+, "Defining the meaning of inequality and justifying the position of the winners is a matter of vital importance. (Thomas Piketty)"
+, "The central question to be answered in this textbook is the extent to which moral values play a role as productive forces for the economy. (Christian Conrad)"
 ]
   
 
