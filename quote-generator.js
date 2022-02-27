@@ -119,10 +119,14 @@ var quotes = [
 , "The Planet Is A Political Orphan. (Dipesh Chakrabarty)"
 , "Defining the meaning of inequality and justifying the position of the winners is a matter of vital importance. (Thomas Piketty)"
 , "The central question to be answered in this textbook is the extent to which moral values play a role as productive forces for the economy. (Christian Conrad)"
+, "Once we have surrendered our senses and nervous systems to the private manipulation of those who would try to benefit from taking a lease on our eyes and ears and nerves, we don't really have any rights left. (McLuhan)"
 ]
   
 
 /*
+, "Net worth is highly concentrated, with the richest 1 percent (as ranked by wealth) owning 39.6
+percent of total household wealth in 2016 and the top 20 percent owning 89.9 percent. (Edward Wolff)"
+, "Factors which encourage systemic corruption include conflicting incentives, discretionary powers; monopolistic powers; lack of transparency; low pay; and a culture of impunity. (Wkipedia)"
 , "Since 1920, the vast increase in welfare beneficiaries and the extension of the franchise to women — two constituencies that are notoriously tough for libertarians — have rendered the notion of “capitalist democracy” into an oxymoron. (Peter Thiel)"
 , "Every man is an heir to a legacy of dignity and worth. (Martin Luther King)"
 , "This is the privilege of champions: even when you’re not at your best, oppositions still have to pretend you are. (Jonathan Liew)"
