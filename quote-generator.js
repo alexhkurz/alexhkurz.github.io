@@ -124,6 +124,9 @@ var quotes = [
   
 
 /*
+, "People can have the old Internet back whenever they want. (Marc Andreessen)"
+, "The pointy end of the spear of WEIRD in our time is woke; woke is currently America's #1 cultural export. (Marc Andreessen)"
+, "To build a strong position towards China, the best would be to go full woke, including universal health care and basic income. (John Coleman)"
 , "Net worth is highly concentrated, with the richest 1 percent (as ranked by wealth) owning 39.6
 percent of total household wealth in 2016 and the top 20 percent owning 89.9 percent. (Edward Wolff)"
 , "Factors which encourage systemic corruption include conflicting incentives, discretionary powers; monopolistic powers; lack of transparency; low pay; and a culture of impunity. (Wkipedia)"
