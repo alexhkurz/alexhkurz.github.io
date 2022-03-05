@@ -120,7 +120,7 @@ var quotes = [
 , "Defining the meaning of inequality and justifying the position of the winners is a matter of vital importance. (Thomas Piketty)"
 , "The central question to be answered in this textbook is the extent to which moral values play a role as productive forces for the economy. (Christian Conrad)"
 , "Once we have surrendered our senses and nervous systems to the private manipulation of those who would try to benefit from taking a lease on our eyes and ears and nerves, we don't really have any rights left. (McLuhan)"
-]
+, "Work is accomplished by those employees who have not yet reached their level of incompetence. (Lawrence Peter) "]
   
 
 /*

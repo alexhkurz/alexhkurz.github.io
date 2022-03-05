@@ -14,6 +14,9 @@ Home-educating parent, Professor of Computer Science at Chapman University
 Formerly University of Leicester, CWI Amsterdam, Masaryk University Brno, LMU Munich   
 [Google Scholar](https://scholar.google.com/citations?user=hnsJeJMAAAAJ&hl=en), [DBLP](https://dblp.uni-trier.de/pers/hd/k/Kurz_0001:Alexander)
 
+---
+
+[Emilio Morenatti](https://twitter.com/EmilioMorenatti)
 
 ---
 *A Quote:*
