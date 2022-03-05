@@ -16,7 +16,7 @@ Formerly University of Leicester, CWI Amsterdam, Masaryk University Brno, LMU Mu
 
 ---
 
-[Emilio Morenatti](https://twitter.com/EmilioMorenatti)
+[Pictures](https://twitter.com/EmilioMorenatti). 
 
 ---
 *A Quote:*
