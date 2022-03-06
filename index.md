@@ -38,9 +38,9 @@ If we want to survive on this planet, we need to respect [planetary boundaries](
 
 ---
 
-[En-ROADS climate policy simulations](https://en-roads.climateinteractive.org/scenario.html?p16=-0.03&p39=60&p41=1&p42=850&p43=2021&p44=40&p47=3&p49=10&p50=2&p53=3&p55=3&p59=-10&p65=75&g0=2&g1=62&v=2.7.36)
+<!--[En-ROADS climate policy simulations](https://en-roads.climateinteractive.org/scenario.html?p16=-0.03&p39=60&p41=1&p42=850&p43=2021&p44=40&p47=3&p49=10&p50=2&p53=3&p55=3&p59=-10&p65=75&g0=2&g1=62&v=2.7.36)
 
----
+--->
 
 ([research](research.html))
 
