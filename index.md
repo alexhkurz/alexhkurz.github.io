@@ -18,12 +18,12 @@ Formerly University of Leicester, CWI Amsterdam, Masaryk University Brno, LMU Mu
 
 [Pictures](https://twitter.com/EmilioMorenatti), [2](https://www.reuters.com/news/picture/in-pictures-inside-the-battle-for-ukrain-idUSRTS5UQLA).
 
----
+<!---
 *A Quote:*
 <span id="quoteDisplay" >
   <!-- Quotes will display here -->
 </span>
-<script src="quote-generator.js"></script>
+<script src="quote-generator.js"></script-->
 
 ---
 
