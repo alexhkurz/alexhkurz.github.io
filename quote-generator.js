@@ -126,7 +126,7 @@ var quotes = [
 , "We are as yet unable to account for the role that procedures and institutions play in fostering corruption through their normal functioning. (Camila Vergara)"
 , "Norms allowing for increased license bring ruin even to the most glorious men and institutions. (Camila Vergara),"
 , "Laws play a key role in allowing for inequality, which ultimately makes the protection of liberty and the republican project impossible. (Camila Vergara)"
-, ""
+, "Good law is only the result of the conflict between the few and the many. (Camila Vergara)"
 ]
   
 
