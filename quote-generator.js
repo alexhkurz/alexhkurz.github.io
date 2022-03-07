@@ -10,18 +10,18 @@ var quotes = [
 , "Our government must avoid the impulse to live only for today, plundering, for our own ease and convenience, the precious resources of tomorrow. (Dwight D. Eisenhower)"
 , "The mind seeks coherent stories. What determines our confidence is not whether they are true. (Daniel Kahnemann)"
 , "The diagrams and the whole business that I got the Nobel Prize for came from that piddling around with the wobbling plate. (Richard Feynman)"
-, "We have to recognize that there are no really trustworthy standards of rigor in a mathematics that has embraced the theory of infinite sets. (E. T. Jaynes)"
-, "Philosophy is too important to be left to the philosophers. (John Archibald Wheeler)"
+/*, "We have to recognize that there are no really trustworthy standards of rigor in a mathematics that has embraced the theory of infinite sets. (E. T. Jaynes)"*/
+/*, "Philosophy is too important to be left to the philosophers. (John Archibald Wheeler)"*/
 , "Learning happens when you think hard. (Rob Coe)"
 , "For to be free is not merely to cast off one's chains, but to live in a way that respects and enhances the freedom of others. (Nelson Mandela)"
 , "Somewhere between ridiculous pedantry and erroneous formulation there presumably exists a reasonably precise way of specifying a problem in English. (Tony Dodd)"
 , "As Aristotle seemed immune to scriptural authority, the theologians were forced to use the language and weapons of reason. How the Greek philosopher would have smiled to see so many world shaking faiths pay hommage to his thought. (Will Durant)"
-, "I hope we shall take warning from the example and crush in it’s birth the aristocracy of our monied corporations which dare already to challenge our government to a trial of strength, and to bid defiance to the laws of their country. (Thomas Jefferson)"
+/*, "I hope we shall take warning from the example and crush in it's birth the aristocracy of our monied corporations which dare already to challenge our government to a trial of strength, and to bid defiance to the laws of their country. (Thomas Jefferson)"*/
 , "The first truth is that the liberty of a democracy is not safe if the people tolerate the growth of private power to a point where it becomes stronger than their democratic state itself. (Franklin D Roosevelt)"
 , "Anything we can actually do, we can afford. (Keynes)"
-, "Economists set themselves too easy, too useless a task if in tempestuous seasons they can only tell us that when the storm is long past the ocean is flat again. (Keynes)"
+/*, "Economists set themselves too easy, too useless a task if in tempestuous seasons they can only tell us that when the storm is long past the ocean is flat again. (Keynes)"*/
 , "When I was a young man I lost many cases that I should have won, but when I grew older I won many that I should have lost, so on the average justice was done. (Anonymous Lawyer)"
-, "And when you do live at the center of a private world, reverse-engineered from your own search history, you begin to notice patterns that others can’t. (Edward Snowden)"
+, "And when you do live at the center of a private world, reverse-engineered from your own search history, you begin to notice patterns that others can't. (Edward Snowden)"
 , "Computer science was born out of the ruins of Hilbert's Program. (Moshe Vardi)"
 /*
 , "But I repeat for the hundredth time, there is one case, one only, when man may consciously, purposely, desire what is injurious to himself, what is stupid, very stupid--simply in order to have the right to desire for himself even what is very stupid and not to be bound by an obligation to desire only what is sensible. (Dostoyevsky)"
@@ -29,7 +29,7 @@ var quotes = [
 , "Some, you see, maintain that this really is the most precious thing for mankind; choice can, of course, if it chooses, be in agreement with reason; and especially if this be not abused but kept within bounds. It is profitable and sometimes even praiseworthy. But very often, and even most often, choice is utterly and stubbornly opposed to reason. (Dostoyevsky)"
 */
 , "But very often, and even most often, choice is utterly and stubbornly opposed to reason. (Dostoyevsky)"
-, "Stability of strong liberals under pseudopullback implies each strong liberal is a coinverter of some 2-cell. (Carboni etal)"
+/*, "Stability of strong liberals under pseudopullback implies each strong liberal is a coinverter of some 2-cell. (Carboni etal)"*/
 , "But the line dividing good and evil cuts through the heart of every human being. And who is willing to destroy a piece of his own heart? (Solzhenitsyn)"
 , "Deep learning is not computationally expensive by accident, but by design. (Thompson etal)"
 , "Acting alone, seeing ourselves as consumers, fixating on mind-numbing trivia, even as systemic environmental collapse looms: these are forms of obedience. (George Monbiot)"
@@ -41,7 +41,7 @@ var quotes = [
 , "The very same things you could do to prepare for the event, are the things you would do to prevent the event. (Douglas Rushkoff)"
 , "There is nothing special human about grammar, it is really the stuff which goes on in the world in some sort of process logic. (Bob Coecke)"
 , "There is one and only one social responsibility of business — to use its resources and engage in activities designed to increase its profits so long as it stays within the rules of the game. (Milton Friedman)"
-, "Surveillance capitalism originates in the discovery that companies can stake a claim to people’s lives as free raw material for the extraction of behavioral data, which they then declare their private property. (Zuboff)"
+, "Surveillance capitalism originates in the discovery that companies can stake a claim to people's lives as free raw material for the extraction of behavioral data, which they then declare their private property. (Zuboff)"
 , "We thought that we search Google, but now we understand that Google searches us. (Zuboff)"
 , "Privacy policies are actually surveillance policies. (Zuboff)"
 , "The most treacherous hallucination of them all: the belief that privacy is private. (Zuboff)"
@@ -74,14 +74,14 @@ var quotes = [
 , "While humanity has prospered immensely in recent decades, the ways in which we have achieved such prosperity means that it has come at a devastating cost to Nature. (Partha Dasgupta)"
 , "Estimates of our total impact on Nature suggest that we would require 1.6 Earths to maintain the world’s current living standards. (Partha Dasgupta)"
 , "Biodiversity is declining faster than at any time in human history. Current extinction rates, for example, are around 100 to 1,000 times higher than the baseline rate, and they are increasing. (Partha Dasgupta)"
-, "Nature’s worth to society – the true value of the various goods and services it provides – is not reflected in market prices because much of it is open to all at no monetary charge. (Partha Dasgupta)"
+, "Nature’s worth to society - the true value of the various goods and services it provides - is not reflected in market prices because much of it is open to all at no monetary charge. (Partha Dasgupta)"
 , "Moreover, aspects of Nature are mobile; some are invisible, such as in the soils; and many are silent. These features mean that the effects of many of our actions on ourselves and others are hard to trace and go unaccounted for. (Partha Dasgupta)"
 , "Our economies are embedded within Nature, not external to it. (Partha Dasgupta)"
 , "None of the macroeconomic forecasts of the future have ever built a model of the human economy as embedded in nature. (Partha Dasgupta)"
 , "Many of the most prominent economists today have a math background, and most have no knowledge of ecology. (Partha Dasgupta)"
 , "Mathematical models of ecosystems bear a strong resemblance to models of economic systems, so it should be relatively easy for economics courses to include natural capital. (Partha Dasgupta)"
 , "Estimates show that between 1992 and 2014, produced capital per person doubled, and human capital per person increased by about 13% globally; but the stock of natural capital per person declined by nearly 40%. (Partha Dasgupta)"
-, "Is anybody paying rent for the use of the oceans? (Partha Dasgupta)"
+/*, "Is anybody paying rent for the use of the oceans? (Partha Dasgupta)"*/
 , "Every individual person must find himself a gainer, on ballancing the account; since, without justice, society must immediately dissolve. (Hume)"
 , "He who appropriates land to himself by his labour, does not lessen, but increase the common stock of mankind: for the provisions serving to the support of human life, produced by one acre of inclosed and cultivated land, are (to speak much within compass) ten times more than those which are yielded by an acre of land of an equal richness lying waste in common. (Locke)"
 , "But though this be a state of liberty, yet it is not a state of license. (Locke)"
@@ -93,7 +93,7 @@ var quotes = [
 , "I want to uncover the stories that built us, and examine which of them we want to hold onto and which we are prepared to let go of. The story of living by the sword no longer has a future. (Yuli Novak)"
 , "Because even if I should speak, no one would believe me. And they would not believe me precisely because they would know that what I said was true. (James Baldwin)"
 , "Switching costs may seem technological, but they’re actually legal. (Cory Doctorow)"
-, "Legal structures seek to anchor themselves in some more solid foundation than that provided by more or less widely accepted and deliberate societal agreement. (Adam Tooze)"
+, "Legal structures seek to anchor themselves in some more solid foundation provided by more or less widely accepted and deliberate societal agreement. (Adam Tooze)"
 , "Money is a tool of collective organization. (Adam Tooze)"
 , "Privacy is the power to selectively reveal oneself to the world. (Eric Hughes)"
 , "As long as there has been digital real estate, there have been digital housing crises, which stem from a shortage of digital land. (Lars Doucet)"
@@ -104,7 +104,7 @@ var quotes = [
 , "The presence of a commons is key to limiting, or checking, certain forms of governmental control. (Lawrence Lessig)"
 , "The ‘iPad Native’ generation will continue to mature. Most are still consumers, a few are creators, and almost none are business leaders. They will be. And their frames of reference will lead to transformative change. (Matthew Ball)"
 /*, "Make no little plans; they have no magic to stir mens’ blood and probably themselves will not be realized. Make big plans; aim high in hope and work, remembering that a noble, logical diagram once recorded will never die. (Daniel Burnham)"*/
-, "Make big plans; aim high in hope and work, remembering that a noble, logical diagram once recorded will never die. (Daniel Burnham)"
+/*, "Make big plans; aim high in hope and work, remembering that a noble, logical diagram once recorded will never die. (Daniel Burnham)"*/
 /*, "It has often and confidently been asserted, that man's origin can never be known: but ignorance more frequently begets confidence than does knowledge: it is those who know little, and not those who know much, who so positively assert that this or that problem will never be solved by science. (Darwin)"*/
 , "Ignorance more frequently begets confidence than does knowledge. (Darwin)"
 , "This virtue, one of the noblest with which man is endowed, seems to arise incidentally from our sympathies becoming more tender and more widely diffused, until they are extended to all sentient beings. (Darwin)"
@@ -120,7 +120,14 @@ var quotes = [
 , "Defining the meaning of inequality and justifying the position of the winners is a matter of vital importance. (Thomas Piketty)"
 , "The central question to be answered in this textbook is the extent to which moral values play a role as productive forces for the economy. (Christian Conrad)"
 , "Once we have surrendered our senses and nervous systems to the private manipulation of those who would try to benefit from taking a lease on our eyes and ears and nerves, we don't really have any rights left. (McLuhan)"
-, "Work is accomplished by those employees who have not yet reached their level of incompetence. (Lawrence Peter) "]
+, "Work is accomplished by those employees who have not yet reached their level of incompetence. (Lawrence Peter) "
+, "There is a strategic and a moral dimension involved with almost every issue in international politics. I think that sometimes those moral and strategic dimensions line up with each other. (Mearsheimer)"
+, "A complex system that works is invariably found to have evolved from a simple system that worked. A complex system designed from scratch never works and cannot be patched up to make it work. You have to start over with a working simple system. (John Gall)"
+, "We are as yet unable to account for the role that procedures and institutions play in fostering corruption through their normal functioning. (Camila Vergara)"
+, "Norms allowing for increased license bring ruin even to the most glorious men and institutions. (Camila Vergara),"
+, "Laws play a key role in allowing for inequality, which ultimately makes the protection of liberty and the republican project impossible. (Camila Vergara)"
+, ""
+]
   
 
 /*
