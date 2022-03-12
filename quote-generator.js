@@ -127,10 +127,16 @@ var quotes = [
 , "Norms allowing for increased license bring ruin even to the most glorious men and institutions. (Camila Vergara),"
 , "Laws play a key role in allowing for inequality, which ultimately makes the protection of liberty and the republican project impossible. (Camila Vergara)"
 , "Good law is only the result of the conflict between the few and the many. (Camila Vergara)"
+, "This process — finding some idiot who said something ridiculous and aggregating whatever they said into a form that fits a trending algorithm — is now, hilariously, how all of American culture works. (Ryan Broderick)"
+, "The only 'laws' [of history] are those we make up ourselves. (Graeber/Wengrow)"
+, "There is the security of knowing one has a statistically smaller chance of getting shot with an arrow. And then there's the security of knowing that there are people in the world who will care deeply if one is. (Graeber/Wengrow)"
+, "One must simplify the world to discover something new about it. The problem comes when, long after the discovery has been made, people continue to simplify. (Graeber/Wengrow)"
 ]
   
 
 /*
+, "Hobbes and Rousseau told their contemporaries things that were startling, profound and opened new doors of imagination. Now their ideas are just tired common sense. (Graeber/Wengrow)"
+, "Lack of imagination is not itself an argument. (Graeber/Wengrow)"
 , "People can have the old Internet back whenever they want. (Marc Andreessen)"
 , "The pointy end of the spear of WEIRD in our time is woke; woke is currently America's #1 cultural export. (Marc Andreessen)"
 , "To build a strong position towards China, the best would be to go full woke, including universal health care and basic income. (John Coleman)"
