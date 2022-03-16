@@ -1,5 +1,5 @@
 
-# A Chapter in Academic Leadership from the University of Leicester
+# Academic Leadership at the University of Leicester
 
 I had joined Leicester in 2002. The University of Leicester was an excellent place, great colleagues, fun to work at, open to creating new degrees (eg in software engineering) and had top research in many subjects. In fact, at the time, it aspired to be the best UK university outside the elite Russell group.
 
