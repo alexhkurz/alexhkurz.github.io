@@ -1,9 +1,9 @@
 
 # A Chapter in Academic Leadership from the University of Leicester
 
-I had joined Leicester in 2002. The University of Leicester was an excellent place, great colleagues, fun to work at, open to creating new degrees (eg in software engineering) and had top research in many subjects. 
+I had joined Leicester in 2002. The University of Leicester was an excellent place, great colleagues, fun to work at, open to creating new degrees (eg in software engineering) and had top research in many subjects. In fact, at the time, it aspired to be the best UK university outside the elite Russell group.
 
-In 2016, the university leadership team decided, without coherent reasoning, to terminate the contracts of some of the finest mathematicians I know. While they did retract this after wide publicity and resistance, the university leadership team, in its wisdom, did decide to close the research group on nanotechnology and quantum physics. 
+In 2016, the university leadership team decided, without coherent reasoning, to terminate the contracts of some of the finest mathematicians I know. While this was retracted after wide publicity and resistance, the university leadership team, in its wisdom, did decide to close the research group on nanotechnology and quantum physics. 
 
 I left in 2018, not least because I couldn't trust a management which made seemingly arbitrary decisions that were never explained and justified from the point of view of teaching and research. 
 
