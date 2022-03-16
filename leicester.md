@@ -1,5 +1,5 @@
 
-# Attack on Academic Freedom by the University of Leicester
+# A Chapter in Academic Leadership from the University of Leicester
 
 I had joined Leicester in 2002. The University of Leicester was an excellent place, great colleagues, fun to work at, open to creating new degrees (eg in software engineering) and had top research in many subjects. 
 
@@ -7,7 +7,7 @@ In 2016, the university leadership team decided, without coherent reasoning, to 
 
 I left in 2018, not least because I couldn't trust a management which made seemingly arbitrary decisions that were never explained and justified from the point of view of teaching and research. 
 
-Then, in 2021, under new but hardly more qualified management, the university leadership team decided to close pure mathematics and theoretical computer science. I should add that Computer Science has been a profitable department for a long time. Indeed, the University never said that the redundancies were due to economic constraints. Rather top researchers and teachers where forced out by what looked like arbitrary decisions by a management, which---from my own experience---was not only unqualified but also refused to consult and listen to external expertise. [Prof Burrell’s correspondence with the VC](https://ulsb.uculeicester.org.uk/prof-burrells-correspondence-with-the-vc/) shows that not only maths and computer science, but also other areas were treated with a similarly embarrassing mix of arrogance and incompetence.
+Then, in 2021, under new but hardly more qualified management, the university leadership team decided to close pure mathematics and theoretical computer science. I should add that Computer Science had been a profitable department for a long time. Indeed, the University never said that the redundancies were due to economic constraints. Rather top researchers and teachers where forced out by administrators, who---from my own first-hand experience---were not only unqualified but also refused to consult and listen to external expertise. [Prof Burrell’s correspondence with the VC](https://ulsb.uculeicester.org.uk/prof-burrells-correspondence-with-the-vc/) shows that not only maths and computer science, but also other areas were treated with a similarly embarrassing mix of arrogance and incompetence.
 
 
 - [Mathematics is not redundant](https://www.ipetitions.com/petition/mathematics-is-not-redundant)
