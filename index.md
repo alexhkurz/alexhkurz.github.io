@@ -19,10 +19,12 @@ Formerly University of Leicester, CWI Amsterdam, Masaryk University Brno, LMU Mu
 [Pictures](https://twitter.com/EmilioMorenatti), [2](https://www.instagram.com/lynseyaddario/), [3](https://www.reuters.com/news/picture/in-pictures-inside-the-battle-for-ukrain-idUSRTS5UQLA), [4](https://www.reuters.com/news/picture/from-molotov-cocktails-to-anti-tank-barr-idUSRTS62SIY), [5](https://www.reuters.com/news/picture/ukraine-exodus-europes-fastest-growing-r-idUSRTS65QIX).
 
 <!---
-*A Quote:*
 <span id="quoteDisplay" >
 </span>
 <script src="quote-generator.js"></script-->
+
+---
+"The scientific evidence is unequivocal: climate change is a threat to human well-being and the health of the planet. Any further delay in concerted global action will miss a brief and rapidly closing window to secure a liveable future." (2022 IPCC report on climate change)
 
 ---
 

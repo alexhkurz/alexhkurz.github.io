@@ -3,7 +3,6 @@ window.addEventListener('load', newQuote, true);
 var quotes = [
 "'Is there a difference between harmony and agreement?' asked the Marquis. Yen Tzu replied, 'There is. Harmony is like making broth'. (Tso-chuan)"
 , "When what had been done in the heart of darkness was repeated in the heart of Europe, no one wished to recognize what everyone knew. (Raoul Peck)"
-, "Therefore geometry is founded in mechanical practice, and is nothing but that part of universal mechanics which accurately proposes and demonstrates the art of measuring. (Isaac Newton)"
 , "Quantum physics arises from nonlocal interactions left over when space emerges. (Lee Smolin)"
 , "Poverty is a lack of cash. (Rutger Bregman)"
 , "Theories are not refuted; they are embarrassed. (Amos Tversky)"
@@ -13,7 +12,6 @@ var quotes = [
 /*, "We have to recognize that there are no really trustworthy standards of rigor in a mathematics that has embraced the theory of infinite sets. (E. T. Jaynes)"*/
 /*, "Philosophy is too important to be left to the philosophers. (John Archibald Wheeler)"*/
 , "Learning happens when you think hard. (Rob Coe)"
-, "For to be free is not merely to cast off one's chains, but to live in a way that respects and enhances the freedom of others. (Nelson Mandela)"
 , "Somewhere between ridiculous pedantry and erroneous formulation there presumably exists a reasonably precise way of specifying a problem in English. (Tony Dodd)"
 , "As Aristotle seemed immune to scriptural authority, the theologians were forced to use the language and weapons of reason. How the Greek philosopher would have smiled to see so many world shaking faiths pay hommage to his thought. (Will Durant)"
 /*, "I hope we shall take warning from the example and crush in it's birth the aristocracy of our monied corporations which dare already to challenge our government to a trial of strength, and to bid defiance to the laws of their country. (Thomas Jefferson)"*/
@@ -132,9 +130,19 @@ var quotes = [
 , "There is the security of knowing one has a statistically smaller chance of getting shot with an arrow. And then there's the security of knowing that there are people in the world who will care deeply if one is. (Graeber/Wengrow)"
 , "One must simplify the world to discover something new about it. The problem comes when, long after the discovery has been made, people continue to simplify. (Graeber/Wengrow)"
 , "You insist that there is something a machine cannot do. If you will tell me precisely what it is that a machine cannot do, then I can always make a machine which will do just that! (John von Neumann)"
+, "Politics is the entertainment division of the military industrial complex. (Frank Zappa)"
+, "I never set out to be weird. It was always other people who called me weird. (Frank Zappa)"
+, "The illusion of freedom will continue as long as it's profitable to continue the illusion. At the point where the illusion becomes too expensive to maintain, they will just take down the scenery, they will pull back the curtains, they will move the tables and chairs out of the way and you will see the brick wall at the back of the theater. (Frank Zappa)"
+, "All the good music has already been written by people with wigs and stuff. (Frank Zappa)"
+, "You can't be a real country unless you have a beer and an airline - it helps if you have some kind of football team, or some nuclear weapons, but in the very least you need a beer. (Frank Zappa)"
+, "Since the bourgeoisie claimed to the guardian of Western traditions and confounded all moral issues by parading publicly virtues which it not only did not posess in private and in business life, but actually held in contempt, it seemed revolutionary to admit cruelty, disregard of human values, and general amorality, because this at least destroyed the duplicity upon which the existing society seemed to rest. (Hannah Arendt)"
+, "The price, we think, the price is worth it. (Madeleine Albright)"
+, "The political problem of mankind is to combine three things: economic efficiency, social justice and individual liberty. (John Maynard Keynes)"
 ]
 
 /*
+, "For to be free is not merely to cast off one's chains, but to live in a way that respects and enhances the freedom of others. (Nelson Mandela)"
+, "Therefore geometry is founded in mechanical practice, and is nothing but that part of universal mechanics which accurately proposes and demonstrates the art of measuring. (Isaac Newton)"
 , "Hobbes and Rousseau told their contemporaries things that were startling, profound and opened new doors of imagination. Now their ideas are just tired common sense. (Graeber/Wengrow)"
 , "Lack of imagination is not itself an argument. (Graeber/Wengrow)"
 , "People can have the old Internet back whenever they want. (Marc Andreessen)"
