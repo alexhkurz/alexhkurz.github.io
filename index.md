@@ -16,7 +16,7 @@ Formerly University of Leicester, CWI Amsterdam, Masaryk University Brno, LMU Mu
 
 ---
 
-[Pictures](https://twitter.com/EmilioMorenatti), [2](https://www.instagram.com/lynseyaddario/), [3](https://www.reuters.com/news/picture/in-pictures-inside-the-battle-for-ukrain-idUSRTS5UQLA), [4](https://www.reuters.com/news/picture/from-molotov-cocktails-to-anti-tank-barr-idUSRTS62SIY), [5](https://www.reuters.com/news/picture/ukraine-exodus-europes-fastest-growing-r-idUSRTS65QIX).
+[Pictures](https://twitter.com/EmilioMorenatti), [2](https://www.instagram.com/lynseyaddario/), [3](https://www.reuters.com/news/picture/in-pictures-inside-the-battle-for-ukrain-idUSRTS5UQLA), [4](https://www.reuters.com/news/picture/from-molotov-cocktails-to-anti-tank-barr-idUSRTS62SIY), [5](https://www.reuters.com/news/picture/ukraine-exodus-europes-fastest-growing-r-idUSRTS65QIX), [6](https://www.reuters.com/news/picture/inside-war-besieged-ukraine-idUSRTS6PVM4), [7](https://www.reuters.com/news/picture/faces-of-russias-invasion-of-ukraine-idUSRTS6PTQH).
 
 <!---
 <span id="quoteDisplay" >

@@ -138,6 +138,8 @@ var quotes = [
 , "Since the bourgeoisie claimed to the guardian of Western traditions and confounded all moral issues by parading publicly virtues which it not only did not posess in private and in business life, but actually held in contempt, it seemed revolutionary to admit cruelty, disregard of human values, and general amorality, because this at least destroyed the duplicity upon which the existing society seemed to rest. (Hannah Arendt)"
 , "The price, we think, the price is worth it. (Madeleine Albright)"
 , "The political problem of mankind is to combine three things: economic efficiency, social justice and individual liberty. (John Maynard Keynes)"
+, "Modeling all these things as one system of which part is realized as software, part is peopleware, part is hardware. (Margaret Hamilton)"
+, "About 109 billion people have lived and died. It is these 109 billion people we have to thank for the civilization that we live in. The languages we speak, the food we cook, the music we enjoy, the tools we use - what we know we learned from them. (Max Roser)"
 ]
 
 /*
