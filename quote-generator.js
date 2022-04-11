@@ -140,6 +140,12 @@ var quotes = [
 , "The political problem of mankind is to combine three things: economic efficiency, social justice and individual liberty. (John Maynard Keynes)"
 , "Modeling all these things as one system of which part is realized as software, part is peopleware, part is hardware. (Margaret Hamilton)"
 , "About 109 billion people have lived and died. It is these 109 billion people we have to thank for the civilization that we live in. The languages we speak, the food we cook, the music we enjoy, the tools we use - what we know we learned from them. (Max Roser)"
+, "The Iron Law of Liberalism: Any market reform, any government initiative intended to reduce red tape and promote market forces will have the ultimate effect of increasing the total number of regulations, the total amount of paperwork, and the total number of bureaucrats. (David Graeber)"
+, "When managers began trying to come up with scientific studies of the most time- and energy-efficient ways to deploy human labor, they never applied those same techniques to themselves—or if they did, the effect appears to have been the opposite of what they intended. (David Graeber)"
+, "We should not normalize the idea that our computers are there to control us, rather than to empower us. (Cory Doctorow)"
+, "The struggle over automation has always been about control. (Cory Doctorow)"
+, "People who want to control you with your computer put a lot of energy into blurring the line between enforcement and automation. (Cory Doctorow)"
+, "The difference between the white slave, and the black slave, is this: the latter belongs to one slaveholder, and the former belongs to all the slaveholders, collectively. (Frederick Douglass)"
 ]
 
 /*
