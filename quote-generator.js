@@ -13,7 +13,7 @@ var quotes = [
 /*, "Philosophy is too important to be left to the philosophers. (John Archibald Wheeler)"*/
 , "Learning happens when you think hard. (Rob Coe)"
 , "Somewhere between ridiculous pedantry and erroneous formulation there presumably exists a reasonably precise way of specifying a problem in English. (Tony Dodd)"
-, "As Aristotle seemed immune to scriptural authority, the theologians were forced to use the language and weapons of reason. How the Greek philosopher would have smiled to see so many world shaking faiths pay hommage to his thought. (Will Durant)"
+/*, "As Aristotle seemed immune to scriptural authority, the theologians were forced to use the language and weapons of reason. How the Greek philosopher would have smiled to see so many world shaking faiths pay hommage to his thought. (Will Durant)"*/
 /*, "I hope we shall take warning from the example and crush in it's birth the aristocracy of our monied corporations which dare already to challenge our government to a trial of strength, and to bid defiance to the laws of their country. (Thomas Jefferson)"*/
 , "The first truth is that the liberty of a democracy is not safe if the people tolerate the growth of private power to a point where it becomes stronger than their democratic state itself. (Franklin D Roosevelt)"
 , "Anything we can actually do, we can afford. (Keynes)"
@@ -54,25 +54,25 @@ var quotes = [
 , "The arithmetical world is there for me only when and for so long as I occupy the arithmetical standpoint. (Husserl)"
 , "In mathematics we find ourselves at that meeting point of constraint and freedom that is the very essence of human nature. (Hermann Weyl)"
 , "Paradoxically, then, it appears that the more precision philosophers attain in their concepts the more difficult it becomes to be precise about the differences in the positions. (Candice Shelby)"
-, "Well, God has arrived. I met him on the 5.15 train. (Keynes)"
+/*, "Well, God has arrived. I met him on the 5.15 train. (Keynes)"*/
 , "The fundamental economic problem is not scarcity but mismanagement. (attributed to Keynes)"
 , "We lose a battle whenever we accept some false opinion and we need much more skill afterwards to regain our former position than we do to make good progress when we already have principles which are well founded. (Descartes)"
 /*, "The multiplicity of laws often provides excuses for vices. (Descartes)"*/
-/*, "You live and must die, and you must do your work. (Fredrick Douglass)"*/
-, "You have no right to enjoy a child’s share in the labor of your fathers, unless your children are to be blest by your labors. (Fredrick Douglass)"
-, "Men seldom eulogize the wisdom and virtues of their fathers, but to excuse some folly or wickedness of their own.(Fredrick Douglass)"
+, "You live and must die, and you must do your work. (Fredrick Douglass)"
+, "You have no right to enjoy a child's share in the labor of your fathers, unless your children are to be blest by your labors. (Fredrick Douglass)"
+, "Men seldom eulogize the wisdom and virtues of their fathers, but to excuse some folly or wickedness of their own. (Fredrick Douglass)"
 , "The art of programming is the art of organizing complexity. (Edsger Dijkstra)"
 , "As long as we regard computers primarily as tools, we might grossly underestimate their significance. Their influence as tools might turn out to be but a ripple on the surface of our culture.  (Edsger Dijkstra)"
-, "I find that the most objectionable feature of the conservative attitude is its propensity to reject well-substantiated new knowledge because it dislikes some of the consequences which seem to follow from it. (Hayek)"
+/*, "I find that the most objectionable feature of the conservative attitude is its propensity to reject well-substantiated new knowledge because it dislikes some of the consequences which seem to follow from it. (Hayek)"*/
 , "To inoculate us against the possibility of this kind of manipulative invasion it's actually more efficient to make us moral than to make us cunning. (Peter Railton)"
 , "If we replicate the cowardice of the liberal class, if we sell out to the oligarchs as a way to blunt the rise of autocracy, we will discredit the core values of a civil society and fuel the very autocracy we seek to defeat. (Chris Hedges)"
-, "Computers are useless. They can only give you answers. (Picasso)"
+/*, "Computers are useless. They can only give you answers. (Picasso)"*/
 , "Many of the processes that shape our natural world are silent and invisible. (Partha Dasgupta)"
 , "It is not possible to trace very many of the harms inflicted on Nature (and by extension, on humanity too) to those who are responsible. (Partha Dasgupta)"
 , "While humanity has prospered immensely in recent decades, the ways in which we have achieved such prosperity means that it has come at a devastating cost to Nature. (Partha Dasgupta)"
-, "Estimates of our total impact on Nature suggest that we would require 1.6 Earths to maintain the world’s current living standards. (Partha Dasgupta)"
+, "Estimates of our total impact on Nature suggest that we would require 1.6 Earths to maintain the world's current living standards. (Partha Dasgupta)"
 , "Biodiversity is declining faster than at any time in human history. Current extinction rates, for example, are around 100 to 1,000 times higher than the baseline rate, and they are increasing. (Partha Dasgupta)"
-, "Nature’s worth to society - the true value of the various goods and services it provides - is not reflected in market prices because much of it is open to all at no monetary charge. (Partha Dasgupta)"
+, "Nature's worth to society - the true value of the various goods and services it provides - is not reflected in market prices because much of it is open to all at no monetary charge. (Partha Dasgupta)"
 , "Moreover, aspects of Nature are mobile; some are invisible, such as in the soils; and many are silent. These features mean that the effects of many of our actions on ourselves and others are hard to trace and go unaccounted for. (Partha Dasgupta)"
 , "Our economies are embedded within Nature, not external to it. (Partha Dasgupta)"
 , "None of the macroeconomic forecasts of the future have ever built a model of the human economy as embedded in nature. (Partha Dasgupta)"
@@ -90,17 +90,14 @@ var quotes = [
 , "The numerous anthropogenic causes of today's mass extinction are deeply unrelated to the known causes of earlier ones. (J. Alroy)"
 , "I want to uncover the stories that built us, and examine which of them we want to hold onto and which we are prepared to let go of. The story of living by the sword no longer has a future. (Yuli Novak)"
 , "Because even if I should speak, no one would believe me. And they would not believe me precisely because they would know that what I said was true. (James Baldwin)"
-, "Switching costs may seem technological, but they’re actually legal. (Cory Doctorow)"
+, "Switching costs may seem technological, but they're actually legal. (Cory Doctorow)"
 , "Legal structures seek to anchor themselves in some more solid foundation provided by more or less widely accepted and deliberate societal agreement. (Adam Tooze)"
 , "Money is a tool of collective organization. (Adam Tooze)"
 , "Privacy is the power to selectively reveal oneself to the world. (Eric Hughes)"
 , "As long as there has been digital real estate, there have been digital housing crises, which stem from a shortage of digital land. (Lars Doucet)"
-, "We build a world where freedom can flourish not by removing from society any self-conscious control; we build a world where freedom can flourish by setting it in a place where a particular kind of self-conscious control survives. (Lawrence Lessig)"
-, "Sustained growth is exponential. Exponential growth is not sustainable. (John Coleman)"
-, "Most externalities are invisible. (John Coleman)"
-, "The invisible hand does not write code. But code runs the invisible hand. (John Coleman)"
+/*, "We build a world where freedom can flourish not by removing from society any self-conscious control; we build a world where freedom can flourish by setting it in a place where a particular kind of self-conscious control survives. (Lawrence Lessig)"*/
 , "The presence of a commons is key to limiting, or checking, certain forms of governmental control. (Lawrence Lessig)"
-, "The ‘iPad Native’ generation will continue to mature. Most are still consumers, a few are creators, and almost none are business leaders. They will be. And their frames of reference will lead to transformative change. (Matthew Ball)"
+, "The 'iPad Native' generation will continue to mature. Most are still consumers, a few are creators, and almost none are business leaders. They will be. And their frames of reference will lead to transformative change. (Matthew Ball)"
 /*, "Make no little plans; they have no magic to stir mens’ blood and probably themselves will not be realized. Make big plans; aim high in hope and work, remembering that a noble, logical diagram once recorded will never die. (Daniel Burnham)"*/
 /*, "Make big plans; aim high in hope and work, remembering that a noble, logical diagram once recorded will never die. (Daniel Burnham)"*/
 /*, "It has often and confidently been asserted, that man's origin can never be known: but ignorance more frequently begets confidence than does knowledge: it is those who know little, and not those who know much, who so positively assert that this or that problem will never be solved by science. (Darwin)"*/
@@ -115,18 +112,18 @@ var quotes = [
 , "Thinking is hard. It is easier to think you are thinking. (Leslie Lamport)"
 , "If you don't start with a spec every piece of code you write is a patch. (Leslie Lamport)"
 , "The Planet Is A Political Orphan. (Dipesh Chakrabarty)"
-, "Defining the meaning of inequality and justifying the position of the winners is a matter of vital importance. (Thomas Piketty)"
-, "The central question to be answered in this textbook is the extent to which moral values play a role as productive forces for the economy. (Christian Conrad)"
+/*, "Defining the meaning of inequality and justifying the position of the winners is a matter of vital importance. (Thomas Piketty)"
+, "The central question to be answered in this textbook is the extent to which moral values play a role as productive forces for the economy. (Christian Conrad)"*/
 , "Once we have surrendered our senses and nervous systems to the private manipulation of those who would try to benefit from taking a lease on our eyes and ears and nerves, we don't really have any rights left. (McLuhan)"
-, "Work is accomplished by those employees who have not yet reached their level of incompetence. (Lawrence Peter) "
+/*, "Work is accomplished by those employees who have not yet reached their level of incompetence. (Lawrence Peter) "*/
 , "There is a strategic and a moral dimension involved with almost every issue in international politics. I think that sometimes those moral and strategic dimensions line up with each other. (Mearsheimer)"
 , "A complex system that works is invariably found to have evolved from a simple system that worked. A complex system designed from scratch never works and cannot be patched up to make it work. You have to start over with a working simple system. (John Gall)"
 , "We are as yet unable to account for the role that procedures and institutions play in fostering corruption through their normal functioning. (Camila Vergara)"
-, "Norms allowing for increased license bring ruin even to the most glorious men and institutions. (Camila Vergara),"
-, "Laws play a key role in allowing for inequality, which ultimately makes the protection of liberty and the republican project impossible. (Camila Vergara)"
+/*, "Norms allowing for increased license bring ruin even to the most glorious men and institutions. (Camila Vergara),"*/
+/*, "Laws play a key role in allowing for inequality, which ultimately makes the protection of liberty and the republican project impossible. (Camila Vergara)"*/
 , "Good law is only the result of the conflict between the few and the many. (Camila Vergara)"
-, "This process — finding some idiot who said something ridiculous and aggregating whatever they said into a form that fits a trending algorithm — is now, hilariously, how all of American culture works. (Ryan Broderick)"
-, "The only 'laws' [of history] are those we make up ourselves. (Graeber/Wengrow)"
+/*, "This process — finding some idiot who said something ridiculous and aggregating whatever they said into a form that fits a trending algorithm — is now, hilariously, how all of American culture works. (Ryan Broderick)"*/
+/*, "The only 'laws' [of history] are those we make up ourselves. (Graeber/Wengrow)"*/
 , "There is the security of knowing one has a statistically smaller chance of getting shot with an arrow. And then there's the security of knowing that there are people in the world who will care deeply if one is. (Graeber/Wengrow)"
 , "One must simplify the world to discover something new about it. The problem comes when, long after the discovery has been made, people continue to simplify. (Graeber/Wengrow)"
 , "You insist that there is something a machine cannot do. If you will tell me precisely what it is that a machine cannot do, then I can always make a machine which will do just that! (John von Neumann)"
@@ -140,26 +137,32 @@ var quotes = [
 , "The political problem of mankind is to combine three things: economic efficiency, social justice and individual liberty. (John Maynard Keynes)"
 , "Modeling all these things as one system of which part is realized as software, part is peopleware, part is hardware. (Margaret Hamilton)"
 , "About 109 billion people have lived and died. It is these 109 billion people we have to thank for the civilization that we live in. The languages we speak, the food we cook, the music we enjoy, the tools we use - what we know we learned from them. (Max Roser)"
-, "The Iron Law of Liberalism: Any market reform, any government initiative intended to reduce red tape and promote market forces will have the ultimate effect of increasing the total number of regulations, the total amount of paperwork, and the total number of bureaucrats. (David Graeber)"
-, "When managers began trying to come up with scientific studies of the most time- and energy-efficient ways to deploy human labor, they never applied those same techniques to themselves—or if they did, the effect appears to have been the opposite of what they intended. (David Graeber)"
-, "Policy is the negation of politics. (David Graeber)"
-, "It’s this very unavailability of absolute knowledge which makes a commitment to optimism a moral imperative. (David Graeber)"
+/*, "The Iron Law of Liberalism: Any market reform, any government initiative intended to reduce red tape and promote market forces will have the ultimate effect of increasing the total number of regulations, the total amount of paperwork, and the total number of bureaucrats. (David Graeber)"*/
+/*, "When managers began trying to come up with scientific studies of the most time- and energy-efficient ways to deploy human labor, they never applied those same techniques to themselves—or if they did, the effect appears to have been the opposite of what they intended. (David Graeber)"*/
+/*, "Policy is the negation of politics. (David Graeber)"*/
+, "It's this very unavailability of absolute knowledge which makes a commitment to optimism a moral imperative. (David Graeber)"
 , "We should not normalize the idea that our computers are there to control us, rather than to empower us. (Cory Doctorow)"
 , "The struggle over automation has always been about control. (Cory Doctorow)"
 , "People who want to control you with your computer put a lot of energy into blurring the line between enforcement and automation. (Cory Doctorow)"
 , "The difference between the white slave, and the black slave, is this: the latter belongs to one slaveholder, and the former belongs to all the slaveholders, collectively. (Frederick Douglass)"
+, "Elitism does not necessarily obstruct the exercise of liberal values, but it eviscerates their potential to enhance individual and social development. (John Ryder))"
+, "One should organize around shared practical interests, not opinions. (John Coleman)"
+, "Sustained growth is exponential. Exponential growth is not sustainable. (John Coleman)"
+, "Most externalities are invisible. (John Coleman)"
+, "Property is only another name for monopoly. (Posner and Glen Weyl)"
+, "Any system which claims to be non-finance, but does not actually make an effort to prevent collusion, will eventually acquire the characteristics of finance, if not something worse. (Vitalik Buterin)"
 ]
 
 /*
+, "The invisible hand does not write code. But code runs the invisible hand. (John Coleman)"
+, "To build a strong position towards China, the best would be to go full woke, including universal health care and basic income. (John Coleman)"
 , "For to be free is not merely to cast off one's chains, but to live in a way that respects and enhances the freedom of others. (Nelson Mandela)"
 , "Therefore geometry is founded in mechanical practice, and is nothing but that part of universal mechanics which accurately proposes and demonstrates the art of measuring. (Isaac Newton)"
 , "Hobbes and Rousseau told their contemporaries things that were startling, profound and opened new doors of imagination. Now their ideas are just tired common sense. (Graeber/Wengrow)"
 , "Lack of imagination is not itself an argument. (Graeber/Wengrow)"
 , "People can have the old Internet back whenever they want. (Marc Andreessen)"
 , "The pointy end of the spear of WEIRD in our time is woke; woke is currently America's #1 cultural export. (Marc Andreessen)"
-, "To build a strong position towards China, the best would be to go full woke, including universal health care and basic income. (John Coleman)"
-, "Net worth is highly concentrated, with the richest 1 percent (as ranked by wealth) owning 39.6
-percent of total household wealth in 2016 and the top 20 percent owning 89.9 percent. (Edward Wolff)"
+, "Net worth is highly concentrated, with the richest 1 percent (as ranked by wealth) owning 39.6 percent of total household wealth in 2016 and the top 20 percent owning 89.9 percent. (Edward Wolff)"
 , "Factors which encourage systemic corruption include conflicting incentives, discretionary powers; monopolistic powers; lack of transparency; low pay; and a culture of impunity. (Wkipedia)"
 , "Since 1920, the vast increase in welfare beneficiaries and the extension of the franchise to women — two constituencies that are notoriously tough for libertarians — have rendered the notion of “capitalist democracy” into an oxymoron. (Peter Thiel)"
 , "Every man is an heir to a legacy of dignity and worth. (Martin Luther King)"
