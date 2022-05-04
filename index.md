@@ -26,6 +26,8 @@ Formerly University of Leicester, CWI Amsterdam, Masaryk University Brno, LMU Mu
 <script src="quote-generator.js"></script-->
 
 ---
+<a href="resources/Guardian-Headlines-2022-05-02.png">Media Priorities</a>
+---
 "The scientific evidence is unequivocal: climate change is a threat to human well-being and the health of the planet. Any further delay in concerted global action will miss a brief and rapidly closing window to secure a liveable future." (2022 IPCC report on climate change)
 
 ---

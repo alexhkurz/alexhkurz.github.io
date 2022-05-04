@@ -66,6 +66,7 @@ var quotes = [
 /*, "I find that the most objectionable feature of the conservative attitude is its propensity to reject well-substantiated new knowledge because it dislikes some of the consequences which seem to follow from it. (Hayek)"*/
 , "To inoculate us against the possibility of this kind of manipulative invasion it's actually more efficient to make us moral than to make us cunning. (Peter Railton)"
 , "If we replicate the cowardice of the liberal class, if we sell out to the oligarchs as a way to blunt the rise of autocracy, we will discredit the core values of a civil society and fuel the very autocracy we seek to defeat. (Chris Hedges)"
+, "Resistance entails suffering. It requires self-sacrifice. It accepts that we may be destroyed. It is not rational. It is not about the pursuit of happiness. It is about the pursuit of freedom. (Chris Hedges)"
 /*, "Computers are useless. They can only give you answers. (Picasso)"*/
 , "Many of the processes that shape our natural world are silent and invisible. (Partha Dasgupta)"
 , "It is not possible to trace very many of the harms inflicted on Nature (and by extension, on humanity too) to those who are responsible. (Partha Dasgupta)"
@@ -151,6 +152,9 @@ var quotes = [
 , "Most externalities are invisible. (John Coleman)"
 , "Property is only another name for monopoly. (Posner and Glen Weyl)"
 , "Any system which claims to be non-finance, but does not actually make an effort to prevent collusion, will eventually acquire the characteristics of finance, if not something worse. (Vitalik Buterin)"
+, "A society is best thought of as an ecosystem of interdependent institutions. When those institutions are well-designed and functional, society flourishes. (Samo Burja)"
+, "Water scarcity will be the biggest climate-related threat to corporate assets within the next few decades. (Reuters)"
+, "In essence, the conflict that exists today is no more than an old-style struggle for power, once again presented to mankind in semireligious trappings. The difference is that this time, the development of atomic power has imbued that struggle with a ghostly character; for both parties know and admit that, this time, should the struggle deteriorate into actual war, mankind is doomed. (Albert Einstein)"
 ]
 
 /*
