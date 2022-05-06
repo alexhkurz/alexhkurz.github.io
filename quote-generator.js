@@ -155,6 +155,7 @@ var quotes = [
 , "A society is best thought of as an ecosystem of interdependent institutions. When those institutions are well-designed and functional, society flourishes. (Samo Burja)"
 , "Water scarcity will be the biggest climate-related threat to corporate assets within the next few decades. (Reuters)"
 , "In essence, the conflict that exists today is no more than an old-style struggle for power, once again presented to mankind in semireligious trappings. The difference is that this time, the development of atomic power has imbued that struggle with a ghostly character; for both parties know and admit that, this time, should the struggle deteriorate into actual war, mankind is doomed. (Albert Einstein)"
+, "Watching an ad is like watching a corporation dream. Waking up, however, you realize. It's a living nightmare for human beings.(Indrajit Samarajiva)"
 ]
 
 /*
