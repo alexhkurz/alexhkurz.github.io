@@ -11,7 +11,7 @@
 </head>
 
 Alexander Kurz  
-Home-educating parent, Professor of Computer Science at Chapman University
+Home-educating parent, Professor of Computer Science at Chapman University  
 Researcher in logic, category theory, and computer science    
 Formerly University of Leicester, CWI Amsterdam, Masaryk University Brno, LMU Munich   
 [Google Scholar](https://scholar.google.com/citations?user=hnsJeJMAAAAJ&hl=en), [DBLP](https://dblp.uni-trier.de/pers/hd/k/Kurz_0001:Alexander)
