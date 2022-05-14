@@ -18,7 +18,7 @@ Formerly University of Leicester, CWI Amsterdam, Masaryk University Brno, LMU Mu
 
 ---
 
-[Pictures](https://twitter.com/EmilioMorenatti), 
+[Ukraine Pictures](https://twitter.com/EmilioMorenatti), 
 [2](https://www.instagram.com/lynseyaddario/), 
 [3](https://www.instagram.com/abdrodrigo/), 
 Reuters [1](https://www.reuters.com/news/picture/in-pictures-inside-the-battle-for-ukrain-idUSRTS5UQLA), 
