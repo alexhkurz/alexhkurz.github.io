@@ -156,9 +156,11 @@ var quotes = [
 , "Water scarcity will be the biggest climate-related threat to corporate assets within the next few decades. (Reuters)"
 , "In essence, the conflict that exists today is no more than an old-style struggle for power, once again presented to mankind in semireligious trappings. The difference is that this time, the development of atomic power has imbued that struggle with a ghostly character; for both parties know and admit that, this time, should the struggle deteriorate into actual war, mankind is doomed. (Albert Einstein)"
 , "Watching an ad is like watching a corporation dream. Waking up, however, you realize. It's a living nightmare for human beings.(Indrajit Samarajiva)"
+, "Degrowth calls for a planned reduction of excess resource use and energy use in high income nations in a manner that is safe, just and equitable. (Jason Hickel)"
 ]
 
 /*
+, "Show me your network and I tell you who your are. (John Coleman)"
 , "The invisible hand does not write code. But code runs the invisible hand. (John Coleman)"
 , "To build a strong position towards China, the best would be to go full woke, including universal health care and basic income. (John Coleman)"
 , "For to be free is not merely to cast off one's chains, but to live in a way that respects and enhances the freedom of others. (Nelson Mandela)"

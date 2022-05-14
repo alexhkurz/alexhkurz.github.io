@@ -18,8 +18,18 @@ Formerly University of Leicester, CWI Amsterdam, Masaryk University Brno, LMU Mu
 
 ---
 
-[Pictures](https://twitter.com/EmilioMorenatti), [2](https://www.instagram.com/lynseyaddario/), [3](https://www.instagram.com/abdrodrigo/), Reuters [1](https://www.reuters.com/news/picture/in-pictures-inside-the-battle-for-ukrain-idUSRTS5UQLA), [2](https://www.reuters.com/news/picture/from-molotov-cocktails-to-anti-tank-barr-idUSRTS62SIY), [3](https://www.reuters.com/news/picture/ukraine-exodus-europes-fastest-growing-r-idUSRTS65QIX), [4](https://www.reuters.com/news/picture/inside-war-besieged-ukraine-idUSRTS6PVM4), [5](https://www.reuters.com/news/picture/faces-of-russias-invasion-of-ukraine-idUSRTS6PTQH) <br>
-<a href="resources/Guardian-Headlines-2022-05-02.png">Media Priorities</a>
+[Pictures](https://twitter.com/EmilioMorenatti), 
+[2](https://www.instagram.com/lynseyaddario/), 
+[3](https://www.instagram.com/abdrodrigo/), 
+Reuters [1](https://www.reuters.com/news/picture/in-pictures-inside-the-battle-for-ukrain-idUSRTS5UQLA), 
+[2](https://www.reuters.com/news/picture/from-molotov-cocktails-to-anti-tank-barr-idUSRTS62SIY), 
+[3](https://www.reuters.com/news/picture/ukraine-exodus-europes-fastest-growing-r-idUSRTS65QIX), 
+[4](https://www.reuters.com/news/picture/inside-war-besieged-ukraine-idUSRTS6PVM4), 
+[5](https://www.reuters.com/news/picture/faces-of-russias-invasion-of-ukraine-idUSRTS6PTQH),
+[6](https://www.reuters.com/news/picture/in-pictures-russias-victory-in-mariupol-idUKRTS7DDTJ),
+[7](https://www.reuters.com/news/picture/ukraines-civilians-caught-in-the-crossfi-idUSRTS7RJPE), 
+[8](https://www.reuters.com/news/picture/russias-invasion-of-ukraine-from-above-idUSRTS7RFXQ),  <br>
+<a href="resources/Guardian-Headlines-2022-05-02.png">Media Priorities</a>, [Wildfires](https://www.reuters.com/news/picture/wildfire-destroys-homes-in-california-idUSRTS7SG74) 
 
 
 <!---
