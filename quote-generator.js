@@ -61,6 +61,7 @@ var quotes = [
 , "You live and must die, and you must do your work. (Fredrick Douglass)"
 , "You have no right to enjoy a child's share in the labor of your fathers, unless your children are to be blest by your labors. (Fredrick Douglass)"
 , "Men seldom eulogize the wisdom and virtues of their fathers, but to excuse some folly or wickedness of their own. (Fredrick Douglass)"
+, "Education means emancipation. It means light and liberty. It means the uplifting of the soul of man into the glorious light of truth, the light only by which men can be free. (Frederick Douglass)"
 , "The art of programming is the art of organizing complexity. (Edsger Dijkstra)"
 , "As long as we regard computers primarily as tools, we might grossly underestimate their significance. Their influence as tools might turn out to be but a ripple on the surface of our culture.  (Edsger Dijkstra)"
 /*, "I find that the most objectionable feature of the conservative attitude is its propensity to reject well-substantiated new knowledge because it dislikes some of the consequences which seem to follow from it. (Hayek)"*/
@@ -157,6 +158,7 @@ var quotes = [
 , "In essence, the conflict that exists today is no more than an old-style struggle for power, once again presented to mankind in semireligious trappings. The difference is that this time, the development of atomic power has imbued that struggle with a ghostly character; for both parties know and admit that, this time, should the struggle deteriorate into actual war, mankind is doomed. (Albert Einstein)"
 , "Watching an ad is like watching a corporation dream. Waking up, however, you realize. It's a living nightmare for human beings.(Indrajit Samarajiva)"
 , "Degrowth calls for a planned reduction of excess resource use and energy use in high income nations in a manner that is safe, just and equitable. (Jason Hickel)"
+, "Oligarchy is a grinding machine, no matter how charming the oligarch. (Ben Hunt)"
 ]
 
 /*

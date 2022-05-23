@@ -29,7 +29,7 @@ Reuters [1](https://www.reuters.com/news/picture/in-pictures-inside-the-battle-f
 [6](https://www.reuters.com/news/picture/in-pictures-russias-victory-in-mariupol-idUKRTS7DDTJ),
 [7](https://www.reuters.com/news/picture/ukraines-civilians-caught-in-the-crossfi-idUSRTS7RJPE), 
 [8](https://www.reuters.com/news/picture/russias-invasion-of-ukraine-from-above-idUSRTS7RFXQ),  <br>
-<a href="resources/Guardian-Headlines-2022-05-02.png">Media Priorities</a>, [Wildfires](https://www.reuters.com/news/picture/wildfire-destroys-homes-in-california-idUSRTS7SG74) 
+<a href="resources/Guardian-Headlines-2022-05-02.png">Media Priorities</a>, a documentary on the [Anthropocene](https://www.kanopy.com/en/chapman/video/6016074) 
 
 
 <!---
