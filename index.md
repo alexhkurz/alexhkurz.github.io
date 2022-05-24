@@ -46,11 +46,11 @@ Reuters [1](https://www.reuters.com/news/picture/in-pictures-inside-the-battle-f
 
 If we want to survive on this planet, we need to respect [planetary boundaries](https://en.wikipedia.org/wiki/Planetary_boundaries) and transition to a sustainable economy. To achieve this, we need to get away from the idea that a good economy is a growing economy. Growth is not sustainable because sustained growth is exponential growth. For example, an average growth of [2% per year](https://ourworldindata.org/grapher/average-gdp-growth-rate-1960-2011-versus-gdp-per-capita-in-1960) equals growth of 724% over 100 years and of 1,995,657% over 500 years. While the [Limits to Growth](https://en.wikipedia.org/wiki/The_Limits_to_Growth) have been recognised for a long time, recent accounts are Dasgupta's Review on [The Economics of Biodiversity](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/957291/Dasgupta_Review_-_Full_Report.pdf) and the IPBES Global Assessment Report on [Biodiversity and Ecosystem Services](https://ipbes.net/global-assessment).
 
+[Books](notes/books.html)  
+
 ---
 
 In early 2021, the **University of Leicester** threatened with redundancy some of the best mathematicians and computer scientists I know, former colleagues of mine. By the end of the academic year, if I counted correctly, 16 academics in mathematics and computer science either left their job "voluntarily" or were made redundant ... [support the Leicester boycott](https://www.ucu.org.uk/article/11533/Global-boycott-of-University-of-Leicester-begins-today) ...  [more](leicester.md).
-
-[Books](notes/books.html)  
 
 ---
 
