@@ -37,13 +37,17 @@ Reuters [1](https://www.reuters.com/news/picture/in-pictures-inside-the-battle-f
 </span>
 <script src="quote-generator.js"></script-->
 
----
+<!---
 
 "The scientific evidence is unequivocal: climate change is a threat to human well-being and the health of the planet. Any further delay in concerted global action will miss a brief and rapidly closing window to secure a liveable future." (2022 IPCC report on climate change)
+
+-->
 
 ---
 
 In early 2021, the **University of Leicester** threatened with redundancy some of the best mathematicians and computer scientists I know, former colleagues of mine. By the end of the academic year, if I counted correctly, 16 academics in mathematics and computer science either left their job "voluntarily" or were made redundant ... [support the Leicester boycott](https://www.ucu.org.uk/article/11533/Global-boycott-of-University-of-Leicester-begins-today) ...  [more](leicester.md).
+
+[Books](notes/books.html)  
 
 ---
 
@@ -118,7 +122,6 @@ See [climate change with your own eyes](notes/glaciers.html). The longer we wait
 
 <!-- [Home-Education](home-education.md) -->
 <!-- [Coronavirus Blog](notes/covid-19.html)-->
-[Books](notes/books.html)  
 [Airquality in Orange, CA](https://air.plumelabs.com/air-quality-in-orange-aw-331970?utm_source=accuweather&utm_medium=current_aq_widget&utm_campaign=now_page#ae16)  
 <!--[Climate and Environment News](https://hackmd.io/@alexhkurz/By5ehZRgt)   
 [Language of the 21st Century](https://hackmd.io/@alexhkurz/Sya0jrLMY)-->
