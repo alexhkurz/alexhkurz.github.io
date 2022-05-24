@@ -1,30 +1,19 @@
-books.md
+How will the world look like in 2050? Will we be on the path of extinction, beyond the point where we can address the climate crisis and ecological system destruction? Or will we have laid the foundation for humanity embedded in Nature to thrive for hundred and thousands of years to come?
 
-## Science
+I list some books I read recently that helped me to understand these questions better. I'd be [curious to know](mailto:akurz@chapman.edu?subject=How%20will%20the%20world%20look%20like%20in%202050?) what you have on your list. 
 
-[The annotated Turing](). The book takes the reader sentence by sentence through one of the most famous papers in all of science, Alan Turing's ... At the time enough fascinating background is provided so that this never gets boring. One of the best books combining science with history.
+- Jason Hickel. Less is More: How Degrowth Will Save the World. 2021.
+- Joseph Henrich. The WEIRDest People of the World. 2020.
+- Camila Vergara. Systemic Corruption: Constitutional Ideas for an Anti-Oligarchic Republic. 2020.
+- Zachary Carter. The Price of Peace: Money, Democracy, and the Life of John Maynard Keynes. 2020.
+- Eric Posner and Glen Weyl. Radical Markets: Uprooting Capitalism and Democracy for a Just Society. 2018.
+- Jeremy Lent. The Patterning Instinct. 2017.
+- Kate Raworth. Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist. 2017.
+- [CORE - The Economy](https://www.core-econ.org/project/core-the-economy/). 2017.
+- Martin Gurri. The Revolt of The Public and the Crisis of Authority in the New Millennium. 2014/2018.
+- Jonathan Haidt. The Righteous Mind. 2012.
+- Jeffrey Winters. Oligarchy. 2011.
+- Graeber. Debt: The First 5,000 Years. 2011.
+- John Maynard Keynes. The Economic Consequence of the Peace. 1919.
 
-[Caclulus as a Liberal Art]()
-
-Holzmann []() Holzmann is one of the most influential computer scientists of his generation, with a wide range of contributions from mathematical logic to the building of the model checker SPIN. In this book he proves himself to also be a first-rate historian who tells the fascinating story of ...
-
-[Goedel, Escher, Bach](). This book appeared in ... and every computer science student of my generation read this. Unfortunately, it a bit forgotten. But thinking back over all the science books I read since, this is probably still my number one.
-
-## Politics
-
-Michelle Alexander. [The New Jim Crow](), 2010. At the example of the mass incarceration, this book presents one of the most convincing studies of the continuing systemic racism in America. In a nutshell, the argument is that while drug use is the same in all races and classes, it is largely Black men who are sent to prison for it. Putting this into a historical perspective, the claim is that racism only changed its form since the times of slavery. And while the War on Drugs has received some  bipartisan criticism since the book first appeared, the preface of the 10th anniversary edition explains how this only means that systemic racism is changing its form again,  now shifting to immigration.
-
-Anne Applebaum. [Twighlight of Democracy](), 2020. Does the rise of authoritarianism spell the end of democracy in the world? This book takes a detailed look at how the many of the elites, she calls them the *clerks*, abandoned democracy. In particular, she looks at Poland, Hungary, Britain and the US, all countries the politics of which she understands deeply.
-
-..., [The Rise of the Warrior Cop](). The book charts the history of the militarization of the police. While current calls for "defunding the police" may seem radical, the book certainly presents a powerful case for the demilitarization of the police.
-
-..., [The Disappearing Center]() A lot is written about the rising partisanship of American politic. This is the topic of the book which, interestingly, appeared in  ...
-
-Akhil Amar, [The Unwritten Constitution](). There is a debate on how to interpret the Constitution. ... Through masterful retelling of the history of the American Constitution ...
-
-Lessig
-
-The Doughnut Economy
-
-Fukuyama [Trust]()
-
+(to be continued)  

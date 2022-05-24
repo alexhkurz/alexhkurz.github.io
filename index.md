@@ -29,7 +29,7 @@ Reuters [1](https://www.reuters.com/news/picture/in-pictures-inside-the-battle-f
 [6](https://www.reuters.com/news/picture/in-pictures-russias-victory-in-mariupol-idUKRTS7DDTJ),
 [7](https://www.reuters.com/news/picture/ukraines-civilians-caught-in-the-crossfi-idUSRTS7RJPE), 
 [8](https://www.reuters.com/news/picture/russias-invasion-of-ukraine-from-above-idUSRTS7RFXQ),  <br>
-<a href="resources/Guardian-Headlines-2022-05-02.png">Media Priorities</a>, a documentary on the [Anthropocene](https://www.kanopy.com/en/chapman/video/6016074) 
+<a href="resources/Guardian-Headlines-2022-05-02.png">Media Priorities</a>, a documentary on the [Anthropocene](https://www.kanopy.com/en/chapman/video/6016074), How to make [OpenCola](https://www.wikihow.com/Make-OpenCola)  
 
 
 <!---
@@ -118,9 +118,10 @@ See [climate change with your own eyes](notes/glaciers.html). The longer we wait
 
 <!-- [Home-Education](home-education.md) -->
 <!-- [Coronavirus Blog](notes/covid-19.html) -->
+[Books](notes/books.html) -->
 [Airquality in Orange, CA](https://air.plumelabs.com/air-quality-in-orange-aw-331970?utm_source=accuweather&utm_medium=current_aq_widget&utm_campaign=now_page#ae16)  
-[Climate and Environment News](https://hackmd.io/@alexhkurz/By5ehZRgt)   
-[Language of the 21st Century](https://hackmd.io/@alexhkurz/Sya0jrLMY)  
+<!--[Climate and Environment News](https://hackmd.io/@alexhkurz/By5ehZRgt)   
+[Language of the 21st Century](https://hackmd.io/@alexhkurz/Sya0jrLMY)-->
 [Predatory Publishers](notes/WASET.html)  
 [Mathematical Genealogy](mathematical-genealogy.png), see [here](https://www.genealogy.math.ndsu.nodak.edu/index.php) and <a href="https://www.davidalber.net/geneagrapher/">here</a>  
 [How to](how-to-make-a-webpage.html) make the simplest possible webpage   
