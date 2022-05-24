@@ -31,8 +31,9 @@ Reuters [1](https://www.reuters.com/news/picture/in-pictures-inside-the-battle-f
 [8](https://www.reuters.com/news/picture/russias-invasion-of-ukraine-from-above-idUSRTS7RFXQ),  <br>
 <a href="resources/Guardian-Headlines-2022-05-02.png">Media Priorities</a>, a documentary on the [Anthropocene](https://www.kanopy.com/en/chapman/video/6016074), How to make [OpenCola](https://www.wikihow.com/Make-OpenCola)  
 
+---
 
-<!---
+<!--
 <span id="quoteDisplay" >
 </span>
 <script src="quote-generator.js"></script-->
@@ -42,6 +43,8 @@ Reuters [1](https://www.reuters.com/news/picture/in-pictures-inside-the-battle-f
 "The scientific evidence is unequivocal: climate change is a threat to human well-being and the health of the planet. Any further delay in concerted global action will miss a brief and rapidly closing window to secure a liveable future." (2022 IPCC report on climate change)
 
 -->
+
+If we want to survive on this planet, we need to respect [planetary boundaries](https://en.wikipedia.org/wiki/Planetary_boundaries) and transition to a sustainable economy. To achieve this, we need to get away from the idea that a good economy is a growing economy. Growth is not sustainable because sustained growth is exponential growth. For example, an average growth of [2% per year](https://ourworldindata.org/grapher/average-gdp-growth-rate-1960-2011-versus-gdp-per-capita-in-1960) equals growth of 724% over 100 years and of 1,995,657% over 500 years. While the [Limits to Growth](https://en.wikipedia.org/wiki/The_Limits_to_Growth) have been recognised for a long time, recent accounts are Dasgupta's Review on [The Economics of Biodiversity](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/957291/Dasgupta_Review_-_Full_Report.pdf) and the IPBES Global Assessment Report on [Biodiversity and Ecosystem Services](https://ipbes.net/global-assessment).
 
 ---
 
@@ -55,9 +58,6 @@ In early 2021, the **University of Leicester** threatened with redundancy some o
 
 --->
 
-If we want to survive on this planet, we need to respect [planetary boundaries](https://en.wikipedia.org/wiki/Planetary_boundaries) and transition to a sustainable economy. To achieve this, we need to get away from the idea that a good economy is a growing economy. Growth is not sustainable because sustained growth is exponential growth. For example, an average growth of [2% per year](https://ourworldindata.org/grapher/average-gdp-growth-rate-1960-2011-versus-gdp-per-capita-in-1960) equals growth of 724% over 100 years and of 1,995,657% over 500 years. While the [Limits to Growth](https://en.wikipedia.org/wiki/The_Limits_to_Growth) have been recognised for a long time, recent accounts are Dasgupta's Review on [The Economics of Biodiversity](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/957291/Dasgupta_Review_-_Full_Report.pdf) and the IPBES Global Assessment Report on [Biodiversity and Ecosystem Services](https://ipbes.net/global-assessment).
-
----
 
 <!--[En-ROADS climate policy simulations](https://en-roads.climateinteractive.org/scenario.html?p16=-0.03&p39=60&p41=1&p42=850&p43=2021&p44=40&p47=3&p49=10&p50=2&p53=3&p55=3&p59=-10&p65=75&g0=2&g1=62&v=2.7.36)
 
