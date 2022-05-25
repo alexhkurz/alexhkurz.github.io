@@ -1,4 +1,4 @@
-How will the world look like in 2050? Will we be on the path of extinction, beyond the point where we can address the climate crisis and ecological system destruction? Or will we have laid the foundation for humanity embedded in Nature to thrive for hundred and thousands of years to come?
+How will the world look like in 2050? Will 10bn people be on the path to a dystopian future, beyond the point where we can address the climate crisis and ecological system destruction? Or will we have laid the foundation for humanity embedded in Nature to thrive for hundred and thousands of years to come?
 
 I list some books I read recently that helped me to understand these questions better. I'd be [curious to know](mailto:akurz@chapman.edu?subject=How%20will%20the%20world%20look%20like%20in%202050?) what you have on your list. 
 
