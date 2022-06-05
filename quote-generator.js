@@ -158,10 +158,13 @@ var quotes = [
 , "In essence, the conflict that exists today is no more than an old-style struggle for power, once again presented to mankind in semireligious trappings. The difference is that this time, the development of atomic power has imbued that struggle with a ghostly character; for both parties know and admit that, this time, should the struggle deteriorate into actual war, mankind is doomed. (Albert Einstein)"
 , "Watching an ad is like watching a corporation dream. Waking up, however, you realize. It's a living nightmare for human beings.(Indrajit Samarajiva)"
 , "Degrowth calls for a planned reduction of excess resource use and energy use in high income nations in a manner that is safe, just and equitable. (Jason Hickel)"
-, "Oligarchy is a grinding machine, no matter how charming the oligarch. (Ben Hunt)"
+, "Economic inequality, corruption and global corporations are viewed as the most significant threats to democracy. (Democracy Perception Index 2022)"
+, "The countries considered most democratic by their citizens are China, Vietnam, and Taiwan. (Democracy Percpetion Index 2022)"
 ]
 
 /*
+, "I know no country in which, speaking generally, there is less independence of mind and true freedom of discussion than in America. (Alexis the Toqueville)"
+, "Oligarchy is a grinding machine, no matter how charming the oligarch. (Ben Hunt)"
 , "Show me your network and I tell you who your are. (John Coleman)"
 , "The invisible hand does not write code. But code runs the invisible hand. (John Coleman)"
 , "To build a strong position towards China, the best would be to go full woke, including universal health care and basic income. (John Coleman)"
