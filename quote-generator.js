@@ -160,9 +160,11 @@ var quotes = [
 , "Degrowth calls for a planned reduction of excess resource use and energy use in high income nations in a manner that is safe, just and equitable. (Jason Hickel)"
 , "Economic inequality, corruption and global corporations are viewed as the most significant threats to democracy. (Democracy Perception Index 2022)"
 , "The countries considered most democratic by their citizens are China, Vietnam, and Taiwan. (Democracy Percpetion Index 2022)"
+, "But you're the only person in your bubble. (Eli Pariser)"
 ]
 
 /*
+, "Care is about reparing our world. (John Coleman)"
 , "I know no country in which, speaking generally, there is less independence of mind and true freedom of discussion than in America. (Alexis the Toqueville)"
 , "Oligarchy is a grinding machine, no matter how charming the oligarch. (Ben Hunt)"
 , "Show me your network and I tell you who your are. (John Coleman)"
