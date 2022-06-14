@@ -17,6 +17,7 @@ I list some books I read recently that helped me to understand these questions b
 - Jonathan Haidt. The Righteous Mind. 2012.
 - Jeffrey Winters. Oligarchy. 2011.
 - Graeber. Debt: The First 5,000 Years. 2011.
+- Will and Ariel Durant. The Story of Civilization. 1935–1975.
 - John Maynard Keynes. The Economic Consequence of the Peace. 1919.
 
 (to be continued)  
