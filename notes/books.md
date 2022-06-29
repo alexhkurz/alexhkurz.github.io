@@ -3,8 +3,7 @@ How will the world look like in 2050? Will 10bn people be on the path to a dysto
 I list some books I read recently that helped me to understand these questions better. I'd be [curious to know](mailto:akurz@chapman.edu?subject=How%20will%20the%20world%20look%20like%20in%202050?) what you have on your list. 
 
 
-- Kathryn Judge. [Direct: The Rise of the Middleman Economy and the Power of Going to the Source](https://bookshop.org/books/direct-the-rise-of-the-middleman-economy-and-the-power-of-going-to-the-source/9780063041974). 2022. [Review](https://doctorow.medium.com/direct-the-problem-of-middlemen-a3651c62a207
-).
+- Kathryn Judge. [Direct: The Rise of the Middleman Economy and the Power of Going to the Source](https://bookshop.org/books/direct-the-rise-of-the-middleman-economy-and-the-power-of-going-to-the-source/9780063041974) (2022). [Review](https://doctorow.medium.com/direct-the-problem-of-middlemen-a3651c62a207).
 - Jason Hickel. Less is More: How Degrowth Will Save the World (2021).
 - Joseph Henrich. The WEIRDest People of the World (2020).
 - Camila Vergara. Systemic Corruption: Constitutional Ideas for an Anti-Oligarchic Republic (2020).
