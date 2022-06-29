@@ -161,6 +161,7 @@ var quotes = [
 , "Economic inequality, corruption and global corporations are viewed as the most significant threats to democracy. (Democracy Perception Index 2022)"
 , "The countries considered most democratic by their citizens are China, Vietnam, and Taiwan. (Democracy Percpetion Index 2022)"
 , "But you're the only person in your bubble. (Eli Pariser)"
+, "One of the most important insights about people is that they can form social relationships with almost anything. Animals, the deceased, spirits, Gods, inanimate objects—humans look across nature and find new allies or adversaries everywhere they go. (William Buckley)"
 ]
 
 /*
