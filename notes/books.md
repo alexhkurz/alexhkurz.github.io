@@ -5,7 +5,7 @@ I list some books I read recently that helped me to understand these questions b
 
 - Kathryn Judge. [Direct: The Rise of the Middleman Economy and the Power of Going to the Source](https://bookshop.org/books/direct-the-rise-of-the-middleman-economy-and-the-power-of-going-to-the-source/9780063041974) (2022). [Review](https://doctorow.medium.com/direct-the-problem-of-middlemen-a3651c62a207).
 - Jason Hickel. Less is More: How Degrowth Will Save the World (2021).
-- Joseph Henrich. The WEIRDest People of the World (2020).
+- Joseph Henrich. The WEIRDest People in the World (2020).
 - Camila Vergara. Systemic Corruption: Constitutional Ideas for an Anti-Oligarchic Republic (2020).
 - Zachary Carter. The Price of Peace: Money, Democracy, and the Life of John Maynard Keynes (2020).
 - Eric Posner and Glen Weyl. Radical Markets: Uprooting Capitalism and Democracy for a Just Society (2018).
@@ -17,7 +17,7 @@ I list some books I read recently that helped me to understand these questions b
 - Jeffrey Winters. Oligarchy (2011).
 - David Graeber. Debt: The First 5,000 Years (2011).
 - Jürgen Habermas. The Structural Transformation of the Public Sphere (1962). The Theory of Communicative Action (1981).  
-- Will and Ariel Durant. The Story of Civilization. 1935–1975.
-- John Maynard Keynes. The Economic Consequences of the Peace. 1919.
+- Will and Ariel Durant. The Story of Civilization (1935–1975).
+- John Maynard Keynes. The Economic Consequences of the Peace (1919).
 
 (to be continued)  
