@@ -1,0 +1,2481 @@
+% ----------------------------------------------------------------
+% AMS-LaTeX Paper ************************************************
+% **** -----------------------------------------------------------
+\documentclass{book}
+\usepackage{aiml08}
+\usepackage{graphicx}
+\usepackage{bussproofs}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{latexsym}
+\usepackage{amstext}
+\usepackage{amsmath}
+\usepackage[all]{xy}
+\usepackage{bbm} %Blackbord
+\usepackage{enumerate}
+%\usepackage{amsthm}
+% ----------------------------------------------------------------
+%\vfuzz2pt % Don't report over-full v-boxes if over-edge is small
+%\hfuzz2pt % Don't report over-full h-boxes if over-edge is small
+% THEOREMS -------------------------------------------------------
+%\newtheorem{thm}{Theorem}[section]
+%\newtheorem{cor}[thm]{Corollary}
+%\newtheorem{lem}[thm]{Lemma}
+%\newtheorem{prop}[thm]{Proposition}
+%\theoremstyle{definition}
+%\newtheorem{defn}[thm]{Definition}
+%\theoremstyle{remark}
+%\newtheorem{rem}[thm]{Remark}
+%\newtheorem{ex}[thm]{Example}
+%\numberwithin{equation}{section}
+%\newenvironment{proofof}[1]{\begin{trivlist}\item[\hskip\labelsep{\sc
+%Proof~of~{#1}.\ }]}{\hspace*{\fill} {\sc qed}\end{trivlist}}
+% ----------------------------------------------------------------
+
+%\bibliographystyle{plain}
+\collection
+\begin{document}
+\paper[Completeness of the finitary Moss logic]{Completeness of the finitary Moss logic}
+{Clemens Kupke\thanks{Supported by NWO under FOCUS/BRICKS grant 642.000.502.},
+Alexander Kurz\thanks{Partially supported by EPSRC grant EP/C014014/1 }, 
+Yde Venema\thanks{The research of this author has been made possible by 
+    VICI grant 639.073.501 of the Netherlands Organization for Scientific
+    Research (NWO).}}
+
+%%%%%%%%%%% kkv macros %%%%%%%%%%%
+
+% some abbreviations
+\newcommand{\xxviom}{\omega}
+
+% Functors & category-theoretic notions
+\newcommand{\xxviSet}{\mathsf{Set}}
+\newcommand{\xxviBA}{\mathsf{BA}}
+
+\newcommand{\xxviId}{\mathit{Id}}
+\newcommand{\xxviF}{T}
+\newcommand{\xxviFom}{\xxviF_{\omega}}
+\newcommand{\xxviPw}{\mathcal{P}} %covariantpowerset
+\newcommand{\xxviPc}{P} %contravariant powerset
+\newcommand{\xxviPom}{\xxviPw_{\omega}}
+\newcommand{\xxviMoss}{M}
+\newcommand{\xxviFree}{\mathbb{F}}
+\newcommand{\xxviFalg}{\mathbb{L}_0}
+
+\newcommand{\xxviPal}{\mathbb{P}}
+\newcommand{\xxviLbb}{{\mathbb{L}}} %\L already in use
+\newcommand{\xxviM}{\mathbb{M}}
+
+\newcommand{\xxviol}[1]{\overline{#1}}
+\newcommand{\xxviid}{{\mathrm{id}}}
+
+
+% Language
+\newcommand{\xxviLang}{\mathcal{L}}
+\newcommand{\xxviLcal}{\mathcal{L}}
+\newcommand{\xxviBase}{\mathit{Base}}
+\newcommand{\xxvinb}{\nabla}
+\newcommand{\xxvibw}{\bigwedge}
+\newcommand{\xxvibv}{\bigvee}
+
+\newcommand{\xxviSRD}{\mathit{SRD}}
+
+\newcommand{\xxviis}{\approx}
+\newcommand{\xxviissm}{\preceq}
+
+% Proofs etc
+\newcommand{\xxviD}{\mathcal{D}}
+\newcommand{\xxvinax}{\mathbf{M}}
+
+% Coalgebras
+\newcommand{\xxvibbS}{\mathbb{S}}
+
+% Algebras
+\newcommand{\xxviLTn}{\xxviLang_{n}/{\equiv}}
+%\newcommand{\xxviLTM}{\mathbb{H}_{\xxviM}}
+\newcommand{\xxviLTM}{\mathcal{M}}
+\newcommand{\xxvibbA}{\mathbb{A}}
+\newcommand{\xxvibbB}{\mathbb{B}}
+\newcommand{\xxvibbtwo}{\mathbbm{2}}
+
+\newcommand{\xxvibap}[2]{\mathrm{BA}\langle #1, #2 \rangle}
+
+\newcommand{\xxvilsem}{\mathopen{[\![}}
+\newcommand{\xxvirsem}{\mathclose{]\!]}}
+\newcommand{\xxvisem}[1]{\xxvilsem #1 \xxvirsem}
+\newcommand{\xxvirst}[1]{\!\upharpoonright_{#1}\,}
+\newcommand{\xxviterm}{\mathsf{T}_\xxviBA}
+\newcommand{\xxviquo}{\mathfrak{q}}
+\newcommand{\xxvicoloneqq}{\mathrel{:=}}
+\newcommand{\xxviGraph}{\mathrm{Gr}}
+\newcommand{\xxviconv}[1]{#1\breve{\hspace*{1mm}}}
+
+\newcommand{\xxviproofspace}{\vspace{-8pt}} %one has to experiment a bit to find the best value. -10pt or -12 pt 
+% \newcommand{\xxvisingleton}{\{\cdot\}}
+\newcommand{\xxvisingleton}{\eta}
+
+% Use the following only during the writing process
+
+%\newenvironment{tbs}{%
+%   \small\tt
+%   \renewcommand{\labelitemi}{$\blacktriangleright$}%
+%   \begin{itemize}}{\end{itemize}}
+%\newcommand{\btbs}{\begin{tbs}}                       
+%\newcommand{\etbs}{\end{tbs}}
+%\newcommand{\shtbs}[1]{\begin{tbs} \item #1 \end{tbs}}
+
+% \newcommand{\xxvilatjoin}{\bigsqcup}
+\newcommand{\xxvilatjoin}{\xxvibv}
+\newcommand{\xxvigen}{\mathcal{G}}
+\newcommand{\xxviProp}{\mathrm{Prop}}
+\newcommand{\xxviPres}{\mathsf{PRS}}
+\newcommand{\xxvip}[1]{[#1]}
+
+\newcommand{\xxviverberg}[1]{}
+
+%%%%%%%%%%% kkv macros %%%%%%%%%%%
+
+\begin{abstract}
+  We give a sound and complete derivation system for the valid
+  formulas in the finitary version of Moss' coalgebraic logic, for
+  coalgebras of arbitrary type.
+\end{abstract}
+
+\textbf{Keywords:} coalgebra, modal logic, coalgebraic logic, 
+   completeness
+
+
+%\maketitle
+% ----------------------------------------------------------------
+\EnableBpAbbreviations
+
+%\input{introduction_final}
+\section{Introduction}
+
+Generalizing Kripke models and frames, coalgebras provide a general,
+category theoretic account of state-based evolving systems.  This
+point of view was emphasized by Rutten~\cite{rutten:uc-j}, who
+developed, in analogy with Universal Algebra, the basics of Universal
+Coalgebra as a general theory of systems.  One of the strengths of the
+coalgebraic approach is that a substantial part of the theory of
+systems can be developed uniformly in a functor $\xxviF$ (on the
+category $\xxviSet$ of sets and functions), which intuitively
+represents the type of the transition system.  For example, as
+discovered by Aczel~\cite{aczel:nwfs}, any functor $\xxviF$ induces a
+canonical notion of bisimilarity on $\xxviF$-coalgebras.
+
+The research programme of Coalgebraic Logic is to extend this uniform
+approach to logics for specifying and reasoning about the behavior of
+coalgebras.  This research direction was initiated by
+Moss~\cite{moss:cl}, who described a logic for $\xxviF$-coalgebras
+uniformly for all set functors $\xxviF$ (satisfying a mild condition).
+Moss' fascinating idea was, roughly, to take $\xxviF$ itself as a
+modality.  In the case of the power set functor $\xxviPw$, this
+modality, denoted as $\xxvinb$,
+% and known under the name of `cover modality', 
+has surfaced in modal logic from time to time, for instance in Fine's
+work~\cite{fine:norm75} on normal forms.  It can be defined using the
+standard box and diamond: With $\alpha \in \xxviPw\xxviLang$ a set of
+formulas, the formula $\xxvinb\alpha$ can be seen as an abbreviation:
+$\nabla\alpha = \Box\bigvee \alpha\wedge \bigwedge \!\Diamond\alpha$,
+where $\Diamond\alpha$ denotes the set $\{ \Diamond a \mid a \in
+\alpha \}$.  The \emph{semantics} of $\xxvinb$ can be expressed in terms
+of the so-called Egli-Milner \emph{lifting} of the satisfaction
+relation ${\Vdash} \subseteq S \times \xxviLang$ between states and
+formulas to a relation $\xxviol{\Vdash}$ between $\xxviPw S$ (sets of
+states) and $\xxviPw\xxviLang$ (sets of formulas):
+\begin{equation}
+\label{eq:pwnb}
+\xxvibbS,s \Vdash \xxvinb\alpha \mbox{ iff } \sigma(s) \;\xxviol{\Vdash}\; \alpha,
+\end{equation}
+where $\sigma: S \to \xxviPw S$ denotes the successor function.
+Since one may associate a reasonable notion of relation lifting with other
+set functors as well, the observation (\ref{eq:pwnb}) paves the way for
+generalization to an arbitrary functor $\xxviF$.
+Moss shows that his coalgebraic logic, based on a modality $\xxvinb_{\xxviF}$, is
+invariant under bisimilarity, and, in the presence of infinitary conjunctions,
+characterizes bisimilarity.
+
+% Whereas the cover modality $\xxvinb_{\xxviPw}$ has surfaced in modal logic from time
+% to time, the 
+The operator $\xxvinb_{\xxviF}$ associated with an arbitrary functor
+$T$ looks strikingly different from the usual $\Box$ and $\Diamond$
+modalities.  Following on from \cite{moss:cl}, attention turned to the
+question how to obtain modal languages for $\xxviF$-coalgebras which
+use more standard modalities
+\cite{kurz:cmcs98-j,roessiger:ml98-j,jacobs:many-sorted}, and how to
+find derivation systems for these formalisms.  This approach is now
+usually described in terms of predicate
+liftings~\cite{pattinson:cml-j,schroeder:fossacs05} or, equivalently,
+Stone duality~\cite{bons-kurz:fossacs05,kurz:sigact06}.  For a while,
+this approach displaced the interest in Moss' logic and the
+relationship between the two was not completely clear.
+
+Interest in Moss' logic revived when it became clear that even in
+standard modal logic, a $\xxvinb$-based approach has some advantages.
+In fact, independently of Moss' work, Janin \&
+Walukiewicz~\cite{jani:auto95} already observed that the connectives
+$\xxvinb$ and $\lor$ may in some sense replace the set $\{
+\Box,\Diamond,\land,\lor \}$.  This observation, which is closely
+linked to fundamental automata-theoretic constructions, lies at the
+heart of the theory of the modal $\mu$-calculus, and has many
+applications, see for instance~\cite{dago:moda06,sant:comp07}.
+Generalizing the link between fixpoint logics and automata theory to
+the coalgebraic level of generality, Kupke \&
+Venema~\cite{kupk:coal08} generalized some of these observations to
+show that many fundamental results in automata theory are really
+theorems of universal coalgebra.
+
+This paper addresses the main problem left open by
+Moss~\cite{moss:cl}.  Moss' approach focuses on semantics, and he
+provides only some sound logical principles which do not constitute a
+complete syntactic calculus.  As a first result in the direction of a
+derivation system for $\nabla$ modalities, Palmigiano \&
+Venema~\cite{palm:nabl07} gave a complete axiomatization for the cover
+modality (i.e., $\nabla_{\xxviPw}$ for the power set functor $\xxviPw$).  This
+calculus was streamlined by B{\'\i}lkov\'a, Palmigiano \&
+Venema~\cite{bilk:proo08} into a formulation that admits a
+straightforward generalization to an arbitrary set functor $\xxviF$.
+
+Our main contribution here is a uniform completeness proof.  That is,
+in this paper we provide, uniformly in the functor $\xxviF$, a derivation
+system $\xxvinax$ which is sound and complete with respect to the
+semantics of the coalgebraic language based on the modality
+$\xxvinb_{\xxviF}$.  The main idea of the completeness proof is based on the
+Stone duality approach to coalgebraic logic and, as a byproduct,
+we also see how Moss' language fits into this approach.
+
+In the Stone duality approach to coalgebraic logic, the relationship
+between logic and semantic is based on the following situation
+\begin{equation}\label{diag:duality}
+\xymatrix{
+  {\xxviM\textsf{-Alg}}\ar[d] %\ar@/_/[r]_{} 
+  & {T\textsf{-Coalg}}\  \ar@/_/[l]_{} \ar[d]\\
+  {\ \xxviBA} \ar@(dl,ul)[]^{\xxviM} %\ar@/_/[r]_{}
+   & {\xxviSet\ } \ar@/_/[l]_{\xxviPal} \ar@(dr,ur)[]_{T}
+   }
+\end{equation}
+where $\xxviM$ is the functor on Boolean algebras given by the proof
+system of the logic under consideration and $\xxviPal$ is the
+contravariant powerset functor. The semantics of the logic appears in
+this setting as a natural transformation $\delta:\xxviM\xxviPal\to \xxviPal T$
+(using $\delta$, $\xxviPal$ lifts to a functor in the upper row, which
+maps a $T$-coalgebra to its `complex' $\xxviM$-algebra). The proof system
+is complete if $\delta$ is injective (Proposition~\ref{p:3}). One
+advantage of this approach is its flexibility. For example,
+descriptive-general-frame semantics corresponds to replacing $\xxviSet$ by
+Stone spaces. On the algebra side, one can treat positive logic by
+replacing $\xxviBA$ by distributive lattices or infinitary logic (like in
+Moss' original work) by replacing $\xxviBA$ by complete atomic Boolean
+algebras. This paper treats the case of $\xxviBA$ and $\xxviSet$ which is of
+particular interest to us and leaves the others for future work. This
+means, in particular, that we will concentrate on the finitary version
+of Moss' logic first introduced in \cite{venema:coalg-aut}.
+
+
+
+%\input{preliminaries_final}
+\section{Preliminaries}
+
+In this section we settle on notation and terminology, and we introduce the
+finitary version of Moss' logic.
+For background on coalgebra the reader is referred to \cite{vene:alge06}.
+
+\paragraph{General}
+Two categories play a major role in our paper: the category $\xxviSet$ with
+sets as objects and functions as arrows, and the category $\xxviBA$ of Boolean 
+algebras and homomorphisms.
+The categories $\xxviSet$ and $\xxviBA$ are related by the contravariant functor
+$\xxviPal: \xxviSet\to\xxviBA$,
+%that turns a set $X$ into its power set algebra $\xxviPal(X) \in \xxviBA$
+%and that maps a function $f:X \to Y$ to the inverse image function $f^{-1}: 
+%\xxviPal(Y) \to \xxviPal(X)$.
+by the forgetful functor $U:\xxviBA\to\xxviSet$, and by the left adjoint
+$\xxviFree$ of $U$ mapping a set $X$ to the free Boolean algebra over
+$X$. We write $P$ for $U\xxviPal$, $\xxvibbtwo$ for the two-element Boolean
+algebra and $1$ for a one-element set.
+
+\paragraph{Coalgebra}
+A coalgebra (over $\xxviSet$) for a functor $\xxviF:\xxviSet \to \xxviSet$, 
+also called $\xxviF$-coalgebra, is a pair 
+$(S,\sigma)$ where $S$ is a set (of ``states'') and 
+$\sigma:S \to \xxviF S$ is a function (the ``transition structure'').
+A $\xxviF$-coalgebra morphism from a $\xxviF$-coalgebra
+$(S_1,\sigma_1)$ to a $\xxviF$-coalgebra $(S_2,\sigma_2)$ 
+is a function $f:S_1 \to
+S_2$ such that $\xxviF f \circ \sigma_1 = \sigma_2 \circ f$.
+ 
+For a modal logician, the prime examples of coalgebras are Kripke frames
+and Kripke models.
+%% 
+ % \begin{example}\label{ex:kripke}
+ %    Let $\xxviProp$ be a set (of propositional variables) 
+ %    and consider the functor $\xxviPw \Phi \times \xxviPw$, that maps
+ %    a set $X$ to the set $\xxviPw \xxviProp \times \xxviPw X$ and a function
+ %    $f:X \to Y$ to the function $\xxviid_{\xxviPw \xxviProp} \times \xxviPw (f)$.
+ %    Then a Kripke model $(W,R,V:\xxviProp \to \xxviPw(W))$
+ %    corresponds to the $\xxviPw \xxviProp \times \xxviPw$-coalgebra
+ %         $(W,
+ %         \langle V^\sharp , \lambda x.R[x] \rangle : W \to \xxviPw \xxviProp 
+ %         \times \xxviPw W)$ 
+ %         where $p \in V^\sharp(w)$ if $w \in V(p)$.
+ %    Furthermore $f:(W_1,R_1,V_1) \to (W_2,R_2,V_2)$ is a bounded
+ %    morphism between Kripke models iff $f$ is a 
+ %    morphism between the corresponding coalgebras.
+ %    A similar correspondence holds between $\xxviPw$-coalgebras 
+ %    and Kripke frames.
+ % \end{example}
+ %%
+Bisimulations between Kripke structures also have their natural coalgebraic
+generalization: a relation $Z$ between the carrier sets of two
+coalgebras is a bisimulation if for all $(s_{1},s_{2})\in Z$, the pair
+$(\sigma_1(s_1),\sigma_2(s_2))$ belongs to the \emph{relation lifting}
+$\xxviol{Z}$ of $Z$.
+
+\begin{definition} \label{d:rellift}
+Let $\xxviF$ be a set functor.
+Given a binary relation $Z$ between two sets $S_1$
+and $S_2$, we define the relation $\xxviol{Z} \subseteq \xxviF S_1 \times \xxviF S_2$
+as follows:
+\[
+\xxviol{Z} := \{ ((\xxviF\pi_{1}) \phi, (\xxviF\pi_{2})\phi) \mid \phi \in \xxviF Z \},
+\]
+where $\pi_i: Z \to S_i$ for $i=1,2$ are the projection functions.
+\end{definition}
+
+In this paper we will confine attention to set functors that are
+\emph{standard} (that is, inclusions are mapped to inclusions), and
+that \emph{preserve weak pullbacks}.  We will not define the latter
+property, but simply note that it is equivalent to requiring that the
+composition of two bisimulations is again a bisimulation, or,
+equivalently, that for all relations $Z_1,Z_2$ we have
+$\xxviol{Z_1\circ Z_2}=\xxviol{Z_1}\circ\xxviol{Z_2}$ (and it will be
+apparent from the development below that this property is essential to
+work with the Moss modality).  The requirement of standardness is not
+essential and only serves to keep the notation a bit smoother.  The
+class of standard and weak pullback preserving functors includes the
+ones that are used to model infinite words, infinite binary trees,
+Kripke frames and probabilistic transition systems as coalgebras.  A
+more detailed discussion of these examples can be found in
+\cite{kupk:coal08}.  For reasons of space limitations we cannot go
+into further detail here.
+
+\begin{convention}
+Throughout this paper we fix a standard and weak pullback preserving set
+functor $\xxviF$.
+\end{convention}
+
+The following fact lists the properties of relation lifting that we use in our
+paper. 
+(Here $\xxviGraph(f) \subseteq S \times S'$ denotes the graph of a function $f:
+S \to S'$.)
+For proofs we refer to \cite{moss:cl}
+%,baltag:cmcs00}, 
+and references therein.
+
+\begin{fact}\label{fact:wpb}
+Let $\xxviF$ be a set functor that is standard and weak pullback preserving. 
+Then relation lifting 
+\\ (1)  extends $\xxviF$: $\xxviol{\xxviGraph(f)} = \xxviGraph(\xxviF f)$,  and 
+  preserves the diagonal: $\xxviol{\xxviId_{S}} = \xxviId_{\xxviF S}$; 
+\\ (2) is monotone: $R \subseteq Q$ implies $\xxviol{R} \subseteq \xxviol{Q}$;
+%\item
+\\ (3) commutes with taking restrictions:
+$\xxviol{R\xxvirst{U\times U'}} = \xxviol{R}\xxvirst{\xxviF U \times \xxviF U'}$;
+\\ (4) preserves composition: $\xxviol{R \circ Q} = \xxviol{R} \circ \xxviol{Q}$ ,
+  and converse: $\xxviol{(\xxviconv{R})} = \xxviconv{(\xxviol{R})}$;
+%, if $\xxviF$ preserves weak pullbacks.
+%% 
+ % \begin{enumerate}[(i)]
+ % \item  $\xxviol{\xxviGraph(f)} = \xxviGraph(\xxviF f)$ (extends $\xxviF$), 
+ % $\xxviol{(\xxviId_{S})} = \xxviId_{\xxviF S}$ (preserves the diagonal) and 
+ % $\xxviol{(\xxviconv{R})} = \xxviconv{\xxviol{R})}$ (commutes with converse);
+ % %(3) $\xxviol{(\_)}$ commutes with relation converse:
+ % %$ \xxviol{(\xxviconv{R})} = \xxviconv{\xxviol{R})}$;
+ % \item $R \subseteq Q$ implies $\xxviol{R} \subseteq \xxviol{Q}$
+ %   (monotonicity);
+ % %\item
+ % \item\label{restr} $\xxviol{R\xxvirst{U\times U'}} =
+ %   \xxviol{R}\xxvirst{\xxviF U \times \xxviF U'}$ (commutes with
+ %   taking restrictions);
+ % \item\label{comp} $\xxviol{R \circ Q} = \xxviol{R} \circ
+ %   \xxviol{Q}$ (preserves composition)
+ % %, if $\xxviF$ preserves weak pullbacks.
+ % \end{enumerate}
+ %%
+\end{fact}
+ 
+We let $\xxviFom$ denote the \emph{finitary}, or,
+\emph{$\xxviom$-accessible}, version of $\xxviF$, that is, the set
+functor $\xxviFom$ which agrees with $\xxviF$ on finite sets, while
+for an infinite set $X$,
+\[
+\xxviFom(X) := \bigcup \{ \xxviF Y \mid Y \in \xxviPom(X) \}.
+\]
+On maps, $\xxviFom$ simply agrees with $\xxviF$.  It is not hard to
+see that $\xxviFom$ is a well-defined subfunctor of $\xxviF$
+(cf.~\cite[p.314]{adam-trnk:automata}) and that $\xxviFom X \subseteq
+\xxviF X$ for all sets $X$.  Furthermore, as any standard set functor
+preserves finite intersections (\cite[III,
+Prop.~4.6]{adam-trnk:automata}), for any set $X$, and any element
+$\alpha \in \xxviFom X$, there is a \emph{smallest, finite} subset
+$X_{0} \subseteq X$ such that $\alpha \in \xxviFom X_{0}$.  This set
+$X_{0}$ is called the \emph{base} of $\alpha$, notation:
+$\xxviBase(\alpha)$.
+
+
+
+
+\subsection*{Moss' language}
+
+\begin{definition}\label{def:moss-lang}
+Given a set $X$ of proposition letters, we define the
+following.  $\xxviLang_{0}(X)$ is the smallest superset of $X$ which is
+closed under taking negations and finitary conjunctions and
+disjunctions.
+% such that $\xxvibv\phi,\xxvibw\phi
+% \in Y$ for all $\phi\in\xxviPom(Y)$, and $\neg a \in Y$ if $a \in Y$.
+$\xxviLang_{n+1}(X):= \xxviLang_{0}(\{ \xxvinb\alpha \mid \alpha \in
+\xxviFom\xxviLang_{n}(X)\})$ is the smallest set containing the formula
+$\xxvinb\alpha$ for each $\alpha \in \xxviFom\xxviLang_{n}(X)$, which is closed
+under taking negations and finitary conjunctions and disjunctions.
+% and such that $\xxvibv\phi,\xxvibw\phi \in Y$ for all $\phi\in\xxviPom(Y)$.
+$\xxviLang(X) := \bigcup_{n \in \xxviom} \xxviLang_{n}(X)$ is the set of
+\emph{formulas in $X$}; in case $X = \emptyset$ we write $\xxviLang_{n}$
+and $\xxviLang$ instead of $\xxviLang_{n}(\emptyset)$ or $\xxviLang(\emptyset)$.
+The \emph{depth} of a formula $a$ is the smallest $n$ such that $\phi
+\in \xxviLang_{n}$.
+\end{definition}
+
+We write $\top := \xxvibw\emptyset$ and $\bot := \xxvibv\emptyset$.  Then by
+definition, $\top$ and $\bot$ belong to every layer of the language.
+While it is not hard to prove that $\xxviLang_{n} \subseteq \xxviLang_{n+1}$,
+for all $n \in \xxviom$, it is in general not the case that $X \subseteq
+\xxviLang_{n}$ for $n>0$.
+
+It will occasionally be useful to think of $\xxviLang_{0}(X)$ as the
+(carrier of the) absolutely free algebra of Boolean type, or the
+\emph{Boolean term algebra}, generated by $X$, and of $\xxviLang_{n+1}$ as
+the Boolean term algebra generated by the set $\{ \xxvinb\alpha \mid
+\alpha \in \xxviFom\xxviLang_{n} \}$.
+
+%\begin{definition}
+%\label{d:Falg}
+%\marginpar{\tiny Apologies: \emph{this} notation is what I had in
+%  mind.  Now $\xxviLang_{0}(X) = U \xxviFalg(X)$. (yv) If we consider
+%  $\xxviFalg$ as a functor on set, then $\xxviLang_0$ would be more
+%  in accordance with the use of $\xxviLang_1$ in the completeness
+%  section (ak 22-3)} Let $\xxviFalg$ be the functor taking a set $X$
+% to the Boolean term algebra.
+%\end{definition}
+
+The language can be seen as an initial algebra for a functor.
+
+\begin{proposition}
+\label{p:mossinit}
+Let $\xxviMoss$ be the set functor $\xxviId + \xxviId\times\xxviId +
+\xxviId\times\xxviId + \xxviFom$.  Then
+$(\xxviLang,\neg,\wedge,\vee,\xxvinb)$ is the initial
+$\xxviMoss$-algebra.
+\end{proposition}
+
+\begin{remark}\label{rmk:moss-lang-fun} 
+  For the category theoretic minded reader we note that,
+  identifying formulas up to Boolean equivalence, Moss' language
+  $\xxviLang$ is the initial algebra for the functor
+  $\xxviLbb=\xxviFree\xxviF_\omega U: \xxviBA \to \xxviBA$.
+\end{remark}
+
+While we will refer to the above language as \emph{Moss'} coalgebraic
+language, there are actually some differences.  The most important of
+these is that by defining $\xxvinb\alpha$ to be a formula only for
+elements $\alpha \in \xxviFom\xxviLang$ (rather than for all $\alpha
+\in \xxviF\xxviLang$), we construct a language that is \emph{finitary}
+in the sense that every formula has a finite number of
+\emph{subformulas}.  This notion can be defined inductively, the key
+clause being that the subformulas of $\xxvinb\alpha$ are given as the
+closure of the set $\xxviBase(\alpha)$ under subformulas.
+
+Concerning the semantics of $\xxviLang$, we only give the clause for
+the $\xxvinb$ modality.
+
+\begin{definition}\label{def:Lang-sem}
+Given a coalgebra $\xxvibbS=(S,\sigma)$, we define $s\Vdash\nabla\alpha$
+if
+$\sigma(s)\xxviol{\Vdash}\alpha$.
+\end{definition}
+
+\begin{example}
+Let $\xxviProp$ be a set of propositional variables and recall 
+% from Example~\ref{ex:kripke} 
+that coalgebras for the functor $K = \xxviPw \xxviProp \times \xxviPw$
+correspond to Kripke models.  Then any formula $\xxvinb_{K} \alpha$ is
+of the form $\xxvinb_{K}\alpha=\xxvinb_{K}(P,A)$ where $P\subseteq
+\xxviProp$ is a set of proposition letters and $A \subseteq \xxviLang$ is
+a finite set of formulas.  If the set $\xxviProp$ is finite it is easy to
+see that one can define a translation $t$ of formulas in $\xxviLang$
+into the basic modal language by putting
+\[ t(\xxvinb_{K} (P,A)) \xxvicoloneqq
+\xxvibw_{p \in P} p \wedge \xxvibw_{p \notin P} \neg p
+\wedge \xxvibw_{a \in A} \Diamond t(a) \wedge \Box (\xxvibv_{a \in A} t(a))
+\]
+such that $(S,\sigma),s \Vdash a$ iff $(S,\sigma),s \Vdash t(a)$ for all $a
+\in \xxviLang$.
+\end{example}
+
+The semantics of a $\xxvinb$-formula can be also expressed using the
+following natural transformation which plays a central role in our
+paper.
+\begin{definition}
+\label{def:TP-PT}
+We define a natural transformation $\rho: \xxviF\xxviPc \to
+\xxviPc\xxviF$ by putting $\rho_{X}(\Phi) := \{ \alpha \in \xxviF X
+\mid \alpha \xxviol{\in} \Phi \}$.
+\end{definition}
+\begin{remark}
+  $\rho$ is natural if $T$ preserves weak-pullbacks. This is also true
+  if one replaces the contravariant $P$ with the covariant $\cal P$.
+\end{remark}
+In order to gain some intuitions about the $\xxvinb$-operator and 
+the transformation $\rho$, the reader is invited to prove the following
+easy lemma.
+\begin{lemma}
+\label{l:altsem}
+For any $\xxvinb \alpha \in \xxviLang$ we have $s\Vdash\nabla\alpha$ iff
+$s\in\sigma^{-1}\circ\rho_S(\xxviF\mu (\alpha))$, where
+$\mu: \xxviLang \to \xxviPw S$ is the function that maps a formula
+to its semantics. 
+\end{lemma}
+
+\begin{remark}\label{rmk:moss-lang-fun-2}
+Following on from  Remark~\ref{rmk:moss-lang-fun}, freely extending $\rho$
+to Boolean algebras yields a natural transformation
+$\gamma:\xxviLbb\xxviPal\to\xxviPal T$. $\gamma$  
+allows us to associate with any coalgebra $(S,\sigma)$ a `complex
+$\xxviLbb$-algebra' $\xxviLbb\xxviPal S \stackrel{\gamma_{S}}{\to} \xxviPal\xxviF S
+\stackrel{\xxviPal\sigma}{\to} \xxviPal S$.  Denote by $\xxviLcal'$ the language
+$\xxviLang$ quotiented by Boolean equivalence.  Then $\xxviLcal'$ is the
+initial $\xxviLbb$-algebra. For each coalgebra $(S,\sigma)$, initiality of
+$\xxviLcal'$ gives us a map $\xxvisem{\cdot}:\xxviLcal'\to\xxviPal S$ interpreting
+elements of $\xxviLcal'$ as propositions on $S$. This definition agrees
+with Definition~\ref{def:Lang-sem} (because $\gamma$ is the free
+extension of $\rho$).
+\end{remark}
+
+% \btbs
+% \item define validity
+% \etbs
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "nax"
+%%% End: 
+
+%\input{derivation_final}
+\section{The derivation system}
+
+In this section we will define and discuss the derivation system $\xxvinax$.
+Before we can provide the actual definition of $\xxvinax$, we need a few
+preparatory remarks and definitions.
+
+First of all, it will be convenient for us to have the derivation
+system operating on \emph{inequalities}, that is, expressions of the
+form $a \xxviissm b$, with $a,b \in \xxviLang$.  The main reason for this is
+that we like our system to stay close to equational reasoning. Indeed,
+in any logic with an underlying algebraic semi-lattice structure,
+inequalities can be seen as (special) \emph{equations}: we may for
+instance identify the inequality $a \xxviissm b$ with the equation $a
+\land b \xxviis a$.  Conversely, we may think of an equation $a \xxviis b$ as
+a \emph{pair} of inequalities $a\xxviissm b$, $b\xxviissm a$.
+
+\begin{definition}
+  An inequality $a \xxviissm b$ is \emph{valid in a coalgebra}
+  $\xxvibbS = (S,\sigma)$, notation: $\xxvibbS \Vdash a \xxviissm b$,
+  if $\xxvibbS,s \Vdash a$ implies $\xxvibbS,s \Vdash b$ for all $s
+  \in S$, and \emph{valid} simpliciter if it is valid in every
+  coalgebra, notation: $a \models b$.
+\end{definition}
+
+Note that the set of valid formulas can be obtained from the set of valid 
+inequalities: a formula $a$ is true in every state in every coalgebra iff the 
+inequality $\top \xxviissm a$ is valid.
+
+In the sequel we will need symbols to refer to formulas ($\xxviLang$),
+and to elements of the sets $\xxviPom\xxviLang$, $\xxviFom\xxviLang$,
+$\xxviFom\xxviPom\xxviLang$ and $\xxviPom\xxviFom\xxviLang$.  For
+convenience we fix our notation for such objects as follows:
+\begin{center}
+\begin{tabular}{|c|c||c|c|}
+  % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+  \hline
+  $\xxviLang$       & $a,b,c,\ldots$ &
+  $\xxviFom\xxviLang$   & $\alpha,\beta,\gamma\ldots$ \\
+  $\xxviPom\xxviLang$   & $\phi,\psi,\ldots$ &
+  $\xxviFom\xxviPom\xxviLang$ & $\Phi,\Psi,\ldots$ \\
+  $\xxviPom\xxviFom\xxviLang$ & $A, B, C \ldots$ & &\\ \hline
+\end{tabular}
+\end{center}
+The same notation will be used for variants where $\xxviLang$ is replaced
+by an arbitrary set or $\xxviPom,\xxviFom$ are replaced by $\xxviPw,\xxviF$.
+
+An important role in the definition of $\xxvinax$ is played by the notion of a
+\emph{slim redistribution}.
+
+\begin{definition}
+  A set $\Phi \in \xxviF\xxviPw(X)$ is a \emph{redistribution} of a
+  set $A \in \xxviPw\xxviF(X)$ if $A \subseteq \rho_{X}(\Phi)$.  In
+  case $A \in \xxviPom\xxviFom(X)$, we call a redistribution $\Phi$
+  \emph{slim} if $\Phi \in\xxviFom \xxviPom \big(\bigcup_{\alpha\in A}
+  \xxviBase(\alpha) \big)$.  The set of slim redistributions of $A$ is
+  denoted as $\xxviSRD(A)$.
+\end{definition}
+
+\subsection*{A special case} 
+
+Our derivation system is given in Definition~\ref{def:nax}.  It turns
+out, however, that we can give a somewhat simpler version in case the
+functor $\xxviF$ restricts to finite sets (that is, if $\xxviF X$ is finite
+whenever $X$ is finite).  This simpler system is the direct
+generalization of the system for $\xxviF=\xxviPw$ (that is, where the
+coalgebras are Kripke structures) given by B\'{i}lkov\'a, Palmigiano
+and the third author in~\cite{bilk:proo08}. \footnote{In~\cite{bilk:proo08}
+it was shown that for $\xxviF = \xxviPw$ axiom ($\xxvinb 4$) is derivable from
+($\xxvinb 1$)-($\xxvinb 3$). We recently discovered that this is also 
+true for the case of an arbitrary functor $\xxviF$.} 
+
+$\xxvinax$ is given as follows.  On top of a complete set of axioms
+and rules for classical propositional logic, and the cut rule (from $a
+\xxviissm b$ and $b \xxviissm c$ derive $a \xxviissm c$), it has the
+axioms and derivation rules given in Table~\ref{tb:naxfin}.
+
+\begin{table}[bht]
+\begin{center}
+\begin{tabular}{|ll|}
+\hline 
+\\[-4mm]
+% ($\xxvinb0$) & 
+%   Axioms and rules for Classical Propositional Logic
+($\xxvinb1$) & 
+From $\alpha\xxviol{\xxviissm}\beta$ infer $\vdash \xxvinb\alpha\xxviissm\xxvinb\beta$
+\\ ($\xxvinb2$) &
+$\xxvibw \{ \xxvinb\alpha \mid \alpha \in A \} \xxviissm
+\xxvibv \{ \xxvinb (\xxviF\xxvibw)(\Phi) \mid \Phi \in \xxviSRD(A) \}$
+\\ ($\xxvinb3$) &
+$\xxvinb(\xxviF\xxvibv)(\Phi) \xxviissm \xxvibv \{ \xxvinb\alpha \mid \alpha \xxviol{\in} \Phi \}$
+\\ ($\xxvinb4$) &
+From $\vdash \top \xxviissm \xxvibv\phi$ infer $\vdash \top \xxviissm \xxvibv \{ \xxvinb\alpha \mid 
+\alpha \in \xxviF\phi \}$ 
+\\ \hline
+\end{tabular}
+\caption{Axioms and rules of the system $\xxvinax$, if $\xxviF$ restricts to
+finite sets}
+\label{tb:naxfin}
+\end{center}
+\end{table}
+
+Let us hasten to give some explanation of the system.  To start with,
+the reader may be slightly puzzled by our formulation of the
+derivation rule ($\xxvinb1$), since its premiss
+`$\alpha\xxviol{\xxviissm}\beta$' uses syntax that has not been
+defined as part of the object language.  The proper way to read this
+premiss is as follows: `the relation $Z := \{ (a,b) \in
+\xxviBase(\alpha) \times \xxviBase(\beta) \mid \vdash a \xxviissm b
+\}$ is such that $(\alpha,\beta)\in \xxviol{Z}$'.  In order to see
+this, note that using Fact~\ref{fact:wpb}(3) one can show that for all
+$\alpha,\beta \in \xxviFom \xxviLang$ and all $Z \subseteq \xxviLang
+\times \xxviLang$
+\[ 
+(\alpha,\beta) \in \xxviol{Z} \quad \mbox{iff} \quad 
+(\alpha,\beta) \in \xxviol{Z'}, 
+\]    
+where $Z' := Z\xxvirst{\xxviBase(\alpha) \times \xxviBase(\beta)}$ is
+the restriction of $Z$ to the finite sets $\xxviBase(\alpha)$ and
+$\xxviBase(\beta)$.  An alternative formulation of this rule would
+therefore say that `if there is a relation $Z \subseteq
+\xxviBase(\alpha) \times \xxviBase(\beta)$ such that $(\alpha,\beta)
+\in \xxviol{Z}$, and $\vdash a \xxviissm b$ for all $(a,b) \in Z$,
+then infer $\vdash \xxvinb\alpha\xxviissm\xxvinb\beta$'.  But the
+presentation in Table~\ref{tb:naxfin} is shorter and reveals more
+clearly that the rule is in fact the inequality version of a
+\emph{congruence} rule.  Our discussion shows that ($\xxvinb1$) is a
+\emph{finitary} rule, because its set of premisses can be assumed to
+be contained in the finite set $\xxviBase(\alpha) \times
+\xxviBase(\beta)$ if we want to derive $\xxvinb \alpha \xxviissm
+\xxvinb \beta$.
+
+
+
+The axioms ($\xxvinb2$) and ($\xxvinb3$) could in fact both be
+replaced with identities, since in both cases, the reverse inequality
+of the axiom can be derived as a theorem.  In order to be able to
+\emph{read} the axioms $\xxvinb2$ and $\xxvinb3$, recall that
+$\xxvibw$ and $\xxvibv$ are maps from $\xxviPom\xxviLang$ to
+$\xxviLang$, so that $\xxviF\xxvibw: \xxviF\xxviPom\xxviLang \to
+\xxviF\xxviLang$, and likewise for $\xxviF\xxvibv$.  Hence for $\Phi
+\in \xxviFom\xxviPom\xxviLang$, $(\xxviF\xxvibw)(\Phi)$ and
+$(\xxviF\xxvibv)(\Phi)$ belong to $\xxviFom\xxviLang$, and thus
+$\xxvinb(\xxviF\xxvibw)(\Phi)$ and $\xxvinb(\xxviF\xxvibv)(\Phi)$ are
+well-formed formulas.  In addition, if $\xxviF$ restricts to finite
+sets, every $A \in \xxviPom\xxviFom \xxviLang$ can have at most
+finitely many slim redistributions, and every
+$\Phi\in\xxviFom\xxviPom\Phi$ can have at most finitely many lifted
+members.  So the two axioms ($\xxvinb2$) and ($\xxvinb3$) are at least
+well-defined.  What these axioms have in common further is that they
+can be seen as \emph{distributive principles}.  This is the clearest
+in the case of ($\xxvinb3$), which states that $\xxvinb$ distributes
+over certain disjunctions.  In the case of ($\xxvinb2$) the
+distributivity is a bit more involved, but basically, the axiom states
+that any conjunction of $\xxvinb$s can be replaced with a disjunction
+of $\xxvinb$s of conjunctions.
+
+Finally, although the formulation of ($\xxvinb4$) does not use the
+actual symbol, it is here that the interaction of the coalgebraic
+modality with negation is dealt with.  To see why this is so, observe
+that the conclusion of ($\xxvinb4$) implies that $\neg \xxvinb\beta
+\xxviissm \xxvibv \{ \xxvinb\alpha \mid \beta \neq \alpha \in
+\xxviF\phi \}$.
+
+\subsection*{The general case}
+
+In the case of a general functor, that is, one that does not
+necessarily restricts to finite sets, some of the axioms and rules in
+Table~\ref{tb:naxfin} above may involve ill-defined syntax.  In
+particular, none of the disjunctions on the right-hand side of the
+axioms ($\xxvinb2$) and ($\xxvinb3$) will be taken over a \emph{finite} set.
+(Algebraically, however, it will often be convenient to think of e.g.\
+($\xxvinb2$) as stating that \emph{in case} that the least upper bound
+given on the right hand side \emph{exists}, it is greater than the
+object denoted by the left hand side.)  The solution is to replace the
+axioms ($\xxvinb2$) and ($\xxvinb3$) with \emph{infinitary derivation rules}
+(and to do something similar for the conclusion of ($\xxvinb4$)),
+according to the following principle.  An axiom of the form $s \xxviissm
+\xxvibv_{i\in I} t_{i}$ is replaced with the derivation rule: `from $\{
+\vdash t_{i} \xxviissm a \mid i \in I \}$, infer $\vdash s \xxviissm a$'.
+Applying this principle to the above axiom system, we obtain the
+following derivation system.
+
+
+\begin{definition}\label{def:nax}
+The derivation system $\xxvinax$ is given by the axioms and derivation rules 
+of Table~\ref{tb:nax}, on top of a complete set of axioms and rules
+for classical propositional logic, and the cut rule.
+
+\begin{table}
+\begin{center}
+\begin{tabular}{|c|}
+%\begin{enumerate}
+% \item[($\xxvinb0$)] a complete set of axioms for Boolean algebras
+\hline \\
+%\item[($\xxvinb1$)]
+%\begin{prooftree}
+\AXC{$\{ b_1 \xxviissm b_2 \mid (b_1,b_2) \in Z \}$}
+\RL{$(\alpha,\beta) \in \xxviol{Z}$}
+\LL{($\xxvinb1$) \hspace{0.2cm}}
+\UIC{$\xxvinb\alpha \xxviissm \xxvinb\beta$}
+\DisplayProof \\ \\
+%\end{prooftree}
+
+%\item[($\xxvinb2$)] 
+%\begin{prooftree}
+\AXC{$\{ \xxvinb (\xxviF\xxvibw)(\Phi) \xxviissm a \mid \Phi\in \xxviSRD(A)\}$}
+\LL{($\xxvinb2$) \hspace{0.2cm}}
+\UIC{$\xxvibw\{\xxvinb\alpha \mid \alpha\in A\} \xxviissm a$}
+\DisplayProof \\ \\
+%\end{prooftree}
+
+%%\item[($\xxvinb3$)] 
+%\begin{prooftree}
+\AXC{$ \{ \xxvinb\alpha \xxviissm a \mid \alpha \xxviol{\in} \Phi \}$}
+\LL{($\xxvinb3$) \hspace{0.2cm}}
+\UIC{$\xxvinb(\xxviF\xxvibv)(\Phi) \xxviissm a$}
+\DisplayProof \\ \\
+%\end{prooftree}
+
+%%\item[($\xxvinb4$)]
+%\begin{prooftree}
+\AXC{$ \{ a \land \xxvinb\alpha' \xxviissm \bot \mid \alpha' \in \xxviFom(\phi), 
+   \alpha' \neq \alpha \}$}
+\AXC{$\top \xxviissm \xxvibv\phi$}
+\LL{($\xxvinb4$) \hspace{0.2cm}}
+\BIC{$a \xxviissm \xxvinb\alpha$}
+\DisplayProof \\ \\ 
+\hline
+%\end{prooftree}
+% \item[(CUT)]
+%\end{enumerate}
+\end{tabular}
+\end{center}
+\caption{Axioms and rules of the system $\xxvinax$}
+\label{tb:nax}
+\end{table}
+
+A \emph{derivation} is a well-founded tree, labelled with
+inequalities, such that the leaves of the tree are labelled with
+axioms of $\xxvinax$, whereas with each parent node we may associate a
+derivation rule of which the conclusion labels the parent node itself,
+and the premisses label its children.  If $\xxviD$ is a derivation of the
+inequality $a\xxviissm b$, we write $\xxviD \vdash_{\xxvinax} a \xxviissm b$.  We
+write $\vdash_{\xxvinax} a \xxviissm b$ if we want to suppress the actual
+derivation and we write $a \equiv b$ if $\vdash_{\xxvinax} a \xxviissm b$ and
+$\vdash_{\xxvinax} b \xxviissm a$.
+\end{definition}
+
+
+\subsection*{The main result}
+
+\begin{theorem}
+\label{t:main}
+Let $\xxviF$ be a standard functor that preserves weak pullbacks. 
+Then for any pair $a$ and $b$ of formulas in $\xxviLang$:
+\[
+\vdash_{\xxvinax} a \xxviissm b
+\iff
+ a \models b.
+\]
+\end{theorem}
+
+% Soundness (the direction from left to right of Theorem~\ref{t:main})
+% can be proved by a straightforward induction on the complexity of
+% derivations.  The key steps in this proof are to show that the rules
+% ($\xxvinb1$)--($\xxvinb4$) preserve validity.  Because of space
+% limitations, the details are left to the reader.
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "nax"
+%%% End: 
+
+
+%\input{soundness_final}
+\section{Soundness}
+\label{s:sound}
+
+Soundness is the direction from left to right of Theorem~\ref{t:main}.
+It is proved by induction on the complexity of
+derivations.
+The key steps are to show that the rules ($\xxvinb1$)--($\xxvinb4$)
+preserve validity.
+
+First we consider the rule ($\xxvinb1$).  Suppose that $\xxvibbS
+\Vdash a \xxviissm b$ for all pairs $(a,b)$ belonging to some relation
+$Z \subseteq \xxviLang\times\xxviLang$ such that $(\alpha,\beta) \in
+\xxviol{Z}$.  From the first assumption it follows that ${\Vdash}\circ
+Z \subseteq {\Vdash}$, and so, by the properties of relation lifting,
+we see that $\xxviol{\Vdash} \circ \xxviol{Z} \subseteq
+\xxviol{\Vdash}$.  In order to show that $\xxvibbS \Vdash
+\xxvinb\alpha \xxviissm \xxvinb\beta$, take an arbitrary state $s$
+such that $\xxvibbS,s \Vdash \xxvinb\alpha$.  Hence, by the truth
+definition of $\xxvinb$, we see that $\sigma(s)\;\xxviol{\Vdash}\;
+\alpha$, and so from $(\alpha,\beta) \in \xxviol{Z}$ we may infer that
+$(\sigma(s),\beta) \in \xxviol{\Vdash} \circ \xxviol{Z} \subseteq
+\xxviol{\Vdash}$.  But then, again by the truth definition of
+$\xxvinb$, we see that, indeed, $\xxvibbS,s \Vdash \xxvinb\beta$.
+
+
+For the rule ($\xxvinb2$), fix a set $A \in
+\xxviPom\xxviFom\xxviLang$, and some formula $a\in \xxviLang$.
+Suppose that $\xxvibbS$ validates all the premisses of the rule, that
+is, $\xxvibbS \Vdash \xxvinb (\xxviFom\xxvibw)(\Phi) \xxviissm a$, for
+all slim redistributions $\Phi$ of $A$.  In order to prove that
+$\xxvibbS$ validates the conclusion of ($\xxvinb2$), assume that
+$\xxvibbS,s \Vdash \xxvibw \{ \xxvinb\alpha \mid \alpha \in A \}$.
+Clearly it suffices to come up with a slim redistribution $\Phi_{s}$
+of $A$ such that $\xxvibbS,s \Vdash \xxvinb (\xxviF\xxvibw)(\Phi)$.
+
+For the definition of $\Phi_{s}$, first associate, with any state $t$
+in $\xxvibbS$, the finite set 
+\[
+\phi(t) := \{ b \in \bigcup_{\alpha\in A} \xxviBase(\alpha) \mid \xxvibbS,t 
+\Vdash b \},
+\]
+and define $\Phi_{s} := (\xxviF\phi)(\sigma(s))$.
+
+First we show that $\xxvibbS,s \Vdash \xxvinb (\xxviF\xxvibw)(\Phi_{s})$.
+For that purpose, observe that by definition of $\phi$, the map 
+$\xxvibw\circ\,\phi:
+S \to \xxviLang$ is such that $\xxviGraph(\xxvibw\circ\,\phi) \subset {\Vdash}$.
+From this it follows by the properties of relation lifting that $\xxviGraph 
+\big( (\xxviF\xxvibw) \circ (\xxviF\phi) \big) \subseteq \xxviol{\Vdash}$.
+In other words, for every element $\tau \in \xxviF S$ we have that $\tau 
+\,\xxviol{\Vdash}\, \big( (\xxviF\xxvibw) \circ (\xxviF\phi) \big) (\tau)$.
+Taking $\tau = \sigma(s)$, we obtain immediately by the definitions that
+$\xxvibbS,s \Vdash \xxvinb (\xxviF\xxvibw)(\Phi_{s})$.
+
+In order to see that $\Phi_{s}$ is a slim redistribution of $A$, observe
+%\marginpar{\tiny Please check this! (yv)}
+that by definition of $\phi$, $\xxviGraph(\phi)\circ \xxviconv{{\in}}
+= {\Vdash}$ when restricted to elements of $\bigcup_{\alpha\in A}
+\xxviBase(\alpha)$.  Then by the properties of relation lifting, it
+follows that $\xxviGraph(\xxviF\phi \circ \xxviconv{\xxviol{\in}}) =
+\xxviol{\Vdash}$.  But then for every $\alpha\in A$ it follows from
+$\sigma(s)\,\xxviol{\Vdash}\, \alpha$ that there is some object $\Psi$
+such that the pair $(\sigma(s),\Psi)$ belongs to the relation
+$\xxviGraph(\xxviF\phi)$, and $\alpha \xxviol{{\in}}\Psi$.  From the
+first fact it follows that $\Psi = \Phi_{s}$, and so we find that each
+$\alpha\in A$ is a lifted member of $\Phi_{s}$.  In other words,
+$\Phi_{s}$ is a redistribution of $A$; but then by its definition it
+is slim.
+
+In order to understand the soundness of ($\xxvinb3$), first consider
+the statement $\xxvibbS,s \Vdash \xxvibv\phi$.  This statement can be
+reformulated equivalently by saying that the pair $(s,\phi)$ belongs
+to the relation ${\Vdash} \circ {\in}$, since there is some element
+$a\in\phi$ such that $s \Vdash a$.  Alternatively, $s \Vdash
+\xxvibv\phi$ iff $(s,\phi) \in {\Vdash} \circ
+\xxviconv{\xxviGraph(\xxvibv)}$.  In other words, we find that the
+relations ${\Vdash} \circ {\in}$ and ${\Vdash} \circ
+\xxviconv{\xxviGraph(\xxvibv)}$ coincide.  From this it follows that
+\begin{equation}
+\label{eq:soundbv}
+\xxviol{{\Vdash} \circ {\in}} \;=\;
+\xxviol{{\Vdash}\circ \xxviconv{\xxviGraph(\xxvibv)}}.
+\end{equation}
+
+Fix some object $\Phi \in \xxviFom\xxviPom\xxviLang$ and some formula
+$a$, and suppose that the coalgebra $\xxvibbS$ validates all the
+premisses of ($\xxvinb3$), i.e., $\xxvibbS \Vdash \xxvinb\alpha
+\xxviissm a$, for all $\alpha \xxviol{\in} \Phi$.  In order to prove
+that $\xxvibbS$ also validates the conclusion of the rule, take an
+arbitrary state $s$ such that $\xxvibbS,s \Vdash \xxvinb
+(\xxviF\xxvibv)(\Phi)$.  From this it follows that
+$(\sigma(s),(\xxviF\xxvibv)(\Phi))$ belongs to the relation
+$\xxviol{\Vdash}$, and so $(\sigma(s),\Phi)$ belongs to
+$\xxviol{\Vdash} \circ \xxviconv{\xxviGraph(\xxviF\xxvibv)} =
+\xxviol{{\Vdash}\circ \xxviconv{\xxviGraph(\xxvibv)}}$.  But then by
+(\ref{eq:soundbv}), $(\sigma(s),\Phi)$ belongs to the relation
+$\xxviol{{\Vdash} \circ {\in}} = \xxviol{\Vdash} \circ \xxviol{\in}$.
+In other words, there is some object $\alpha$ such that $\sigma(s)
+\,\xxviol{\Vdash}\,\alpha$ and $\alpha \xxviol{\in} \Phi$.  Clearly
+then $\xxvibbS,s \Vdash \xxvinb\alpha$, and so by the assumption we
+have $\xxvibbS,s \Vdash a$.
+
+Finally, for the rule $(\xxvinb4$), fix some finite set $\phi$ of
+formulas.  It suffices to prove that, for an arbitrary
+$\xxviF$-coalgebra $\xxvibbS = (S,\sigma)$, if $\xxvibbS \Vdash \top
+\xxviissm \xxvibv\phi$, then for every point $s \in \xxvibbS$ we can
+find an $\alpha \in \xxviF(\phi)$ such that $\xxvibbS,s \Vdash
+\xxvinb\alpha$.
+% (In other words, it suffices to prove the axiom version of the rule.)
+From the assumption it follows that every state in $\xxvibbS$
+satisfies some formula in $\phi$.  We may formulate this using a
+function $f: S \to \phi$ such that $\xxvibbS, s\Vdash f(s)$, for all
+$s \in S$, or, equivalently, $\xxviGraph(f) \subseteq {\Vdash}$.  But
+then by the properties of relation lifting, we find that
+$\xxviGraph(\xxviF f) \subseteq \xxviol{\Vdash}$.  Now consider an
+arbitrary state $s$ in $\xxvibbS$, and let $\alpha \in \xxviF(\phi)$
+be the element $(\xxviF f)(\sigma(s))$.  Then $(\sigma(s),\alpha) \in
+\xxviGraph(\xxviF f) \subseteq \xxviol{\Vdash}$, and so by the truth
+definition of $\xxvinb$, we find that $\xxvibbS,s \Vdash
+\xxvinb\alpha$.  That is, we have found our $\alpha$.
+
+
+
+%\input{completeness_final}
+\section{Completeness}
+\newcommand{\xxviLift}{\mathfrak{L}}
+
+The completeness proof will use a standard coalgebraic technique,
+namely to prove completeness via one-step-completeness. This is
+well-known in domain theory (see e.g.  Abramsky~\cite{abramsky:dtlf})
+and was introduced to coalgebra by Pattinson~\cite{pattinson:cml-j}.
+Subsequently, it was used in for instance
+\cite{cirs-patt:concur04-j,kkp:cmcs04,kurz-petr:cmcs08}.
+
+The main idea is the following.  First, we show that Moss' logic
+$(\xxviLang,\equiv)$ can be stratified into layers
+$(\xxviLang_n,\equiv_n)$, with all layers at $n+1$ arising in a
+uniform way from layers at $n$ (Proposition~\ref{prop:equiv-n}).  This
+uniform construction can be described by means of a `one-step version'
+of the derivation system $\xxvinax$.  Technically, it is described by
+a functor $\xxviM:\xxviBA\to\xxviBA$, which constructs
+$(\xxviLang_{n+1}/{\equiv_{n+1}})$ as
+$\xxviM(\xxviLang_{n}/{\equiv_{n}})$.  Our main technical result
+consists of showing that this one-step proof system is complete in a
+suitable sense (Proposition~\ref{p:3}).  Then, using a standard
+argument, completeness follows from one-step completeness
+(Proposition~\ref{prop:coalg-compl}).
+
+\begin{remark}\label{rmk:stone-duality} 
+  Continuing from Remark~\ref{rmk:moss-lang-fun-2}, the proof system
+  $\xxvinax$ defines a quotient $\xxviLbb\to\xxviM$. Then
+  $\delta_X:\xxviM\xxviPal X\to\xxviPal\xxviF X$ is given by factoring
+  $\gamma:\xxviLbb\xxviPal\to\xxviPal T$.  $\xxviM$-algebras are the
+  Boolean algebras with operator for the Moss modality. The initial
+  $\xxviM$-algebra $\xxviLTM$ is Lindenbaum algebra of Moss' logic
+  (Proposition~\ref{prop:Lang-M}) and $\delta_X$ is injective
+  (Proposition~\ref{p:3}), which then implies completeness.
+  % In the Stone duality approach to coalgebraic logic, a logic for
+  % $\xxviF$-coalgebras is given by a functor $\xxviM$ on $\xxviBA$
+  % and a natural transformation $\delta_X:\xxviM\xxviPal
+  % X\to\xxviPal\xxviF X$. The initial $\xxviM$-algebra $\xxviLTM$ can
+  % then be considered as an (abstract) logic for $\xxviF$-coalgebras,
+  % since for any coalgebra $(S,\sigma)$ we have a `complex
+  % $\xxviM$-algebra' $\xxviM\xxviPal S \stackrel{\delta_{S}}{\to}
+  % \xxviPal\xxviF S \stackrel{\xxviPal\sigma}{\to} \xxviPal S$ and,
+  % by initiality of $\xxviLTM$, a map
+  % $\xxvisem{\cdot}:\xxviLTM\to\xxviPal S$ interpreting `formulas' in
+  % $\xxviLTM$ as propositions on $S$.  This section shows that if we
+  % take for $\xxviM$ the functor associated with the one-step proof
+  % system of $\xxvinax$, then $\xxviLTM$ is the Lindenbaum algebra of
+  % Moss' logic (Proposition~\ref{prop:Lang-M}) and $\delta_X$ is
+  % injective (Proposition~\ref{p:3}), which then implies
+  % completeness.
+\end{remark}
+
+\subsection{A one-step proof system}
+
+Recall the definition of $\xxviLang_{n}(X)$ from
+Definition~\ref{def:moss-lang}.
+
+\begin{definition}
+  Let $\xxviLift(X)=\xxviLang_0\{\xxvinb\alpha\mid\alpha\in\xxviFom X\}$.
+  In the following we consider $\xxviLift$ to be a functor
+  $\xxviSet\to\xxviSet$, which maps $f:X \to Y$ to the function
+  $\xxviLift(f):\xxviLift(X)\to\xxviLift(Y)$ that extends the map $\xxvinb \alpha
+  \mapsto \xxvinb (\xxviF f)(\alpha)$ via Boolean operations.
+\end{definition}
+
+\noindent $\xxviLift$ constructs formulas step-wise:
+$\xxviLang_n=\xxviLift^n(\xxviLang_0)$.  Next we show how to construct
+$\equiv_n$ step-wise.  In order to smooth our presentation, it is
+convenient in the following definition to assume that the generators
+are already closed under Boolean operations.
+
+% \begin{definition}
+% 	We denote by $\Sigma_\xxviBA$ the category of algebras for 
+% 	the Boolean signature and the usual homormophisms betwen them. 
+% \end{definition}
+
+\begin{definition}
+  Let $A$ be the carrier of an algebra for the Boolean signature and
+  let $R \subseteq \xxviLang_0(A) \times \xxviLang_0(A)$ be a set of pairs
+  called \emph{relations}.  Using the laws of Boolean algebra, with
+  pairs $(a,a') \in R$ as additional axioms $a \xxviissm a'$, one may
+  generate a congruence relation $\equiv_{R}$ on the set $A \times A$.
+  We say that the pair $(A,R)$ is a \emph{presentation of} the Boolean
+  algebra $A/{\equiv_{R}}$ and denote this algebra as $\xxvibap{A}{R}$.  A
+  homomorphism $f:A \to B$ of algebras for the Boolean signature is a
+  presentation morphism from $(A,\equiv_R)$ to $(B,\equiv_{S})$ if
+  $a_1 \equiv_R a_2$ implies $f(a_1) \equiv_{S} f(a_2)$ for all
+  $a_1,a_2 \in A$.  The category of presentations and presentation
+  morphisms is denoted by $\xxviPres$.
+\end{definition}
+
+The notion of a presentation morphism is motivated by the following lemma
+which is not difficult to prove.
+
+\begin{lemma}\label{lem:presmor}
+Let $f:(A,R) \to (B,S)$ be a presentation morphism. 
+Then the function $\xxvip{f}: A/{\equiv_R} \to B/{\equiv_S}$ that maps the
+equivalence class of an element $a\in A$ to the equivalence class of $f(a)$
+is well-defined.
+Moreover $\xxvip{f}$ is a Boolean homomorphism. 
+\end{lemma}
+
+\begin{example}
+  The {\em standard presentation} of a Boolean algebra $\xxvibbB$ is the
+  pair $(U\xxvibbB,\leq)$ where ${\leq}$ is the relation on terms over
+  $U\xxvibbB$ induced by the partial order of $\xxvibbB$.
+\end{example}
+
+The derivation system $\xxvinax$ is essentially a `one-step' derivation system
+since in every rule involving the modality, every occurrence of $\alpha$
+is under the scope of exactly one $\xxvinb$.
+The following definition makes this precise.
+
+\begin{definition}\label{def:M-one-step}
+  Let $(X,R)$ be a presentation.  The \emph{one-step proof system}
+  $\xxvinax(X,R)$ is the version of $\xxvinax$ in which all inequalities
+  $b_{1} \xxviissm b_{2}$ from $R$ (that is, with $(b_{1},b_{2}) \in R$)
+  are additional axioms, and in which \emph{only} elements from $X$
+  and $\xxviLift(X)$ may be used.\footnote{In $(\xxvinb1)-(\xxvinb4)$, the $b_i$
+    range over $X$, the $a,a'$ over $\xxviLift(X)$, $\alpha,\alpha'\in\xxviFom
+    X$, $\phi\subseteq X$.}  We denote the associated notion of
+  derivability by $\vdash_{\xxvinax(X,R)}$.  Furthermore, for
+  $a_{1},a_{2}$ in $\xxviLift(X)$, we write $a_{1} \xxviissm_{\xxvinax(X,R)}
+  a_{2}$ if $\vdash_{\xxvinax(X,R)} a_{1} \xxviissm a_{2}$; and $a_{1}
+  \equiv_{\xxvinax(X,R)} a_{2}$ iff $a_{1} \xxviissm_{\xxvinax(X,R)} a_{2}$ and
+  $a_{2} \xxviissm_{\xxvinax(X,R)} a_{1}$.  We let $\xxviM(X,R)$ denote the
+  Boolean algebra presented by $(\xxviLift(X),{\xxviissm_{\xxvinax(X,R)}})$.
+
+  In case $(X,R)$ is the standard representation of a Boolean algebra
+  $\xxvibbA$, we write $\xxvinax(\xxvibbA)$ for the one-step proof
+  system based on the standard presentation of $\xxvibbA$, and
+  $\vdash_{\xxvinax(\xxvibbA)}$, $\xxviissm_{\xxvinax(\xxvibbA)}$,
+  $\equiv_{\xxvinax(A)}$ and $\xxviM(\xxvibbA)$ for the associated
+  notions.
+\end{definition}
+
+The next subsection shows that $\xxviM(\xxvibbA)$ is not only a
+Boolean algebra, but that $\xxviM$ is a functor on the category of
+Boolean algebras. This will allow us, in
+Section~\ref{sec:stratification}, to recover the Lindenbaum algebra of
+$\xxvinax$ as the union of algebras $(\xxviM^n\xxvibbtwo)_{n<\omega}$,
+where $\xxviM^{n+1}\xxvibbtwo=\xxviM(\xxviM^n\xxvibbtwo)$.
+
+Sections \ref{sec:M-functor} and \ref{sec:stratification} are rather
+technical and are needed mainly\footnote{But Propositions~\ref{p:1}
+  (via \ref{prop:liftfun}), \ref{p:2} and \ref{prop:equiv-n} have a
+  proof-theoretic interpretation and are of independent interest.} to
+deduce completeness from one-step completeness. Our main result, the
+one-step completeness (Proposition~\ref{p:3}), does not depend on
+Sections \ref{sec:M-functor} and \ref{sec:stratification} and the
+reader might wish to go directly to Section~\ref{sec:semantics-of-M}.
+
+\subsection{Technical Interlude: $\xxviM$ as a functor of Boolean algebras}
+\label{sec:M-functor}
+
+We want to define a functor $\xxviM: \xxviBA \to \xxviBA$ associated with the
+one-step proof system.  As a first step in this direction we note that
+$\xxviLift$ can be seen as a functor on the category $\xxviPres$.  The
+proof-theoretic content of this is that a morphism $f:(A,R) \to (B,S)$
+between presentations extends to a map of derivations between the
+one-step proof systems $\xxvinax(A,R)$ and $\xxvinax(B,S)$.
+
+\begin{proposition}
+\label{prop:liftfun}
+Let $(A,R)$ and $(B,S)$ be presentations in $\xxviPres$ and let $f:(A,R)
+\to (B,S)$ be a presentation morphism.  The function $\xxviLift(f)$ is a
+presentation morphism from $(\xxviLift(A),\xxviissm_{\xxvinax(A,R)})$ to
+$(\xxviLift(B),\xxviissm_{\xxvinax(B,S)})$, i.e., for all $a',a'' \in \xxviLift(A)$,
+\begin{equation}\label{equ:hompres}
+\vdash_{\xxvinax(A,R)} a' \xxviissm a'' \quad \mbox{implies}  \quad
+\vdash_{\xxvinax(B,S)} \xxviLift(f)(a') \xxviissm \xxviLift(f)(a'').
+\end{equation}
+\end{proposition}
+\xxviproofspace
+\begin{proof}
+  Let $c',c'' \in \xxviLift(A)$ or $c',c'' \in A$.  One shows by
+  structural induction on the derivation of $c' \xxviissm_{\xxvinax(A,R)} c''$
+  that substituting, in the derivation, each occurrence of $a\in A$
+  with $f(a)\in B$ and each occurrence of $a' \in \xxviLift(A)$ with
+  $\xxviLift f(a') \in \xxviLift(B)$ yields a proof of
+  $\xxviLift(f)(c')\xxviissm_{\xxvinax(B,S)} \xxviLift(f)(c'')$ or $f(c')
+  \xxviissm_{\xxvinax(B,S)} f(c'')$, respectively.
+%Hence $\xxviquo_\xxvibbA(b')=\xxviquo_\xxvibbA(b'')$
+%implies $\xxviquo_\xxvibbB(\xxviLift(f)(b'))=\xxviquo_\xxvibbB(\xxviLift(f)(b''))$.
+  Let us give some details of the induction argument (the case in
+  which the derivation ends by an application of ($\xxvinb2$) is similar
+  to the cases ($\xxvinb 1$), ($\xxvinb 3$) and ($\xxvinb 4$) and has been omitted
+  due to
+  space limitations).\\
+
+  {\bf Case} $c' \xxviissm_{\xxvinax(A,R)} c''$ is a (Boolean) axiom.  If
+  $c',c'' \in \xxviLift(A)$ it is clear from the definition of $\xxviLift$
+  that $\xxviLift(f)(c') \xxviissm_{\xxvinax(B,S)} \xxviLift(f)(c'')$ is an axiom as
+  well. If $c,c'' \in A$, $f(c') \xxviissm_{\xxvinax(B,S)} f(c'')$ follows
+  from the fact that
+  $f$ is a morphism in $\xxviPres$. \\
+
+  {\bf Case} $c' \xxviissm_{\xxvinax(A,R)} c''$ is obtained by a derivation
+  that ends by the application of some rule $R$ for classical
+  propositional logic.  Then $\xxviLift(f)(c') \xxviissm_{\xxvinax(B,S)}
+  \xxviLift(f)(c'')$ or $f(c') \xxviissm_{\xxvinax(B,S)} f(c'')$ can be easily
+  obtained by applying the inductive hypothesis to the
+  premises of $R$. \\
+
+  {\bf Case ($\xxvinb 1$)} Suppose $c'= \xxvinb \alpha$ and $c'' = \xxvinb \beta$
+  and suppose that there is a derivation $\xxviD$ of $c' \xxviissm_{\xxvinax(A,R)}
+  c''$ such that ($\xxvinb 1$) is the last ruled applied in $\xxviD$, i.e.,
+  $\xxviD$ ends with
+%    By the definition of $\xxvinax(\xxvibbA)$ this means that $\xxviD$ 
+%    of the form
+   \begin{prooftree}
+	\AXC{$\{ b_1 \xxviissm b_2 \mid (b_1,b_2) \in Z \}$}
+	\RL{$(\alpha,\beta) \in \xxviol{Z}$}
+	\UIC{$\xxvinb\alpha \xxviissm \xxvinb\beta$}
+   \end{prooftree}
+   Because $f$ is a Boolean homomorphism we get $f(b_1) \leq f(b_2)$
+   for all $(b_1,b_2) \in Z$. Moreover one can easily calculate that
+   $(\xxvinb(\xxviF f)(\alpha), \xxvinb (\xxviF f)(\beta)) \in \xxviol{Z'}$ with $Z'
+   \xxvicoloneqq \{(f(b_1),f(b_2))\mid (b_1,b_2) \in Z\}$.  Therefore we
+   can apply rule ($\xxvinb 1$) again: from the premisses $\{a_1 \xxviissm a_2
+   \mid (a_1,a_2) \in Z' \}$ we obtain $\xxviLift(f)(\xxvinb \alpha)=\xxvinb(\xxviF
+   f)(\alpha) \xxviissm_{\xxvinax(B,S)} \xxvinb(\xxviF f)(\beta) = \xxviLift(f)(\xxvinb
+   \beta)$
+   as required.\\
+
+
+%{\bf Case ($\xxvinb 2$)} Suppose $b' = \xxvibw \{\xxvinb \alpha \mid \alpha \in
+%C\}$ for some $C \in \xxviPom \xxviF(A)$ 
+%    and suppose we have a derivation in $\xxviD$ of $b' \xxviissm_{
+%    \xxvinax(A,R)} b''$ ending with an application of the rule
+%    ($\xxvinb 2$), i.e., the last proof step in $\xxviD$ is
+%	\begin{prooftree}
+%   \AXC{$\{ \xxvinb (\xxviF\xxvibw)(\Phi) \xxviissm b''\mid \Phi\in
+%     \xxviSRD(C)\}$} \UIC{$\xxvibw\{\xxvinb\alpha \mid \alpha\in C\}
+%     \xxviissm b''$}
+%	\end{prooftree}
+%	By I.H.\ we have 
+%        \begin{equation}\label{equ:ih2}
+%           \xxvinb (\xxviF f) \left((\xxviF\xxvibw)(\Phi)\right) \xxviissm \xxviLift(f)(b'')
+%           %\quad \mbox{for all} 
+%           \quad \Phi \in \xxviSRD(C).
+%        \end{equation}
+%        Let now $C' \xxvicoloneqq \{ (\xxviF f)(\alpha) \mid \alpha
+%        \in C\}$.  If we manage to prove for an arbitrary $\Phi' \in
+%        \xxviSRD(C')$ that $\xxvinb (\xxviF\xxvibw)(\Phi')
+%        \xxviissm_{\xxvinax(B,S)} \xxviLift(f)(b'')$ we can conclude by
+%        ($\xxvinb 2$) that $\xxviLift(f)(\xxvibw\{\xxvinb\alpha \mid
+%        \alpha\in C\})=\xxvibw\{\xxvinb\alpha' \mid \alpha'\in C'\}
+%        \xxviissm_{\xxvinax(B,S)} \xxviLift(f)(b'')$.
+
+%        Consider now an arbitrary $\Phi' \in \xxviSRD(C')$. By the
+%        definition of $C'$ and by the definition of a slim
+%        redistribution we have $(\alpha,\Phi') \in
+%        \xxviol{\xxviGraph(f)} \circ \xxviol{\in}$ for all $\alpha
+%        \in C$.  Furthermore it is easy to check that $\xxviGraph(f)
+%        \circ \in \; = \; \in \circ \xxviconv{\xxviGraph(f^{-1})}$
+%        and thus we get $(\alpha,\Phi') \in \; \xxviol{\in} \circ
+%        \xxviconv{\xxviol{\xxviGraph(f^{-1})}}$.  In other words
+%        $\Phi\xxvicoloneqq (\xxviF f^{-1})(\Phi') \in \xxviSRD(C)$.
+%        By (\ref{equ:ih2}) we therefore have $\xxvinb \alpha'
+%        \xxviissm_{\xxvinax(B,S)} \xxviLift(f)(b'')$ with
+%	\begin{eqnarray*} 
+%	    %	   \alpha' & = & \xxviLang(f)(\xxviF \xxvibw (\Phi) = (\xxviF f)\left(\xxviF \xxvibw
+%	    %(\Phi)\right)	
+%	    \stackrel{\mbox{\tiny{$f$ homom.}}}{=}  (\xxviF \xxvibw)(\xxviF \xxviPw f)
+%	    %\left(\Phi\right).
+%	\end{eqnarray*}
+%	Because $\xxviPw f \circ f^{-1} \subseteq \; {\subseteq}$ we
+% get
+%	\[ \xxviF \xxviPw f (\Phi) = \xxviF \xxviPw f (\xxviF
+% (f^{-1})(\Phi')) \; \xxviol{\subseteq} \; \Phi'\] and thus
+% $(\alpha',\Phi') \in \; \xxviconv{\xxviol{\xxviGraph(\xxvibw})}
+% \circ \xxviol{\subseteq}$.  It follows from propositional logic that
+%	\[(\xxviconv{\xxviGraph(\xxvibw)} \circ \subseteq) \quad  \subseteq \quad (\geq
+%\circ \xxviconv{\xxviGraph(\xxvibw)}),\] 
+%	because this inclusion is
+%	just a complicated way of expressing that $X \subseteq X'$ implies
+%$\xxvibw X \geq \xxvibw X'$ for all 
+%	sets of formulas $X$ and $X'$. 
+%	Hence $(\alpha',\Phi') \in \xxviol{\geq} \circ \xxviconv{\xxviol{\xxviGraph(\xxvibw)}}$
+%which can be rewritten
+%	as $(\xxviF \xxvibw)(\Phi') \xxviol{\xxviissm} \alpha'$. Using ($\xxvinb 1$) one can show
+%that the latter
+%	yields $\xxvinb (\xxviF \xxvibw)(\Phi') \xxviissm_{\xxvinax(B,S)} \xxvinb \alpha'$. Together
+%with 
+%	 $\xxvinb \alpha' \xxviissm_{\xxvinax(B,S)} \xxviLift(f)(b'')$ transitivity of $\xxviissm$
+%	(the ``cut rule'') gives us that $\xxvinb (\xxviF \xxvibw)(\Phi') \xxviissm_{\xxvinax(B,S)}
+%	\xxviLift(f)(b'')$ which proves our claim. \\
+  
+   {\bf Case ($\xxvinb 3$)} Suppose $b' = \xxvinb (\xxviF \xxvibv)(\Phi)$ and suppose
+   that there is a derivation $\xxviD$ of $\xxvinb (\xxviF \xxvibv)(\Phi)
+   \xxviissm_{\xxvinax(A,R)} b''$ that ends with the following rule:
+	\begin{prooftree}
+		\AXC{$ \{ \xxvinb\alpha \xxviissm b'' \mid \alpha \xxviol{\in} \Phi \}$}
+		\UIC{$\xxvinb(\xxviF\xxvibv)(\Phi) \xxviissm b''$}
+	\end{prooftree}
+        By the inductive hypothesis we have 
+	\begin{equation}\label{equ:ih3}
+	   \xxvinb (\xxviF f)(\alpha) \xxviissm_{\xxvinax(B,S)} \xxviLift(f)(b'') \quad
+\mbox{for all} \quad  \alpha \xxviol{\in} \Phi. 
+	\end{equation}
+	Furthermore we get
+	\begin{eqnarray}
+	   \xxviLift(f)\left( \xxvinb (\xxviF \xxvibv) (\Phi) \right) &
+\stackrel{\mbox{\tiny by Def.}}{=} & \xxvinb (\xxviF f) ((\xxviF \xxvibv) (\Phi)) \\	
+	   & \stackrel{\mbox{\tiny $f$ is hom.}}{=} & \xxvinb (\xxviF \xxvibv) \left(
+(\xxviF \xxviPw f)(\Phi)\right).\label{equ:applyL}
+	\end{eqnarray}
+        Moreover the following chain of equivalences holds:
+	\begin{eqnarray*}
+	   \alpha' \xxviol{\in} (\xxviF \xxviPw f)(\Phi) & \mbox{iff} & (\alpha',\Phi)
+\in \; (\xxviol{\in \circ \xxviconv{\xxviGraph(\xxviPw f)}})
+	    = \xxviol{\xxviconv{\xxviGraph(f)} \circ \in}  \\
+	    & \mbox{iff} & \alpha' = (\xxviF f)(\alpha) \; \mbox{for some} \;
+\alpha \xxviol{\in} \Phi  
+	\end{eqnarray*}
+	The latter equivalence together with (\ref{equ:ih3}) yields 
+	$ \xxvinb \alpha' \xxviissm_{\xxvinax(B,S)} \xxviLift(f)(b'') $ for all $\alpha'
+\;\xxviol{\in}\; (\xxviF \xxviPw f)(\Phi)$.
+By applying rule ($\xxvinb 3$) we obtain 
+\[ 
+\xxviLift(f)\left( \xxvinb (\xxviF \xxvibv) (\Phi) \right) 
+  \stackrel{\mbox{\tiny (\ref{equ:applyL})}}{=}
+  \xxvinb (\xxviF \xxvibv)  \left( (\xxviF \xxviPw f)(\Phi)\right) \xxviissm_{\xxvinax(B,S)} \xxviLift(f)(b'')
+\]
+as required.\\
+
+{\bf Case($\xxvinb 4$)} Consider now the case that $b'' = \xxvinb \alpha$ and
+that there is a derivation $\xxviD$ of $b' \le_{\xxvinax(A,R)} \xxvinb \alpha$
+that ends as follows:
+	\begin{prooftree}
+		\AXC{$ \{ b' \land \xxvinb\alpha' \xxviissm \bot \mid \alpha' \in
+\xxviFom(\phi), 
+   		\alpha' \neq \alpha \}$}
+		\AXC{$\top \xxviissm \xxvibv\phi$}
+		\BIC{$b' \xxviissm \xxvinb\alpha$}
+	\end{prooftree}
+        Again we can inductively assume that
+	\begin{equation}\label{equ:ih4}
+	     \xxviLift(f)(b') \wedge \xxvinb (\xxviF f)(\alpha') \xxviissm \bot \quad
+\mbox{for all} \; \alpha' \in \xxviFom (\phi) \; 
+		\mbox{s.t.} \; \alpha' \not= \alpha.
+	\end{equation}
+ 	Let us put $\psi \xxvicoloneqq f[\phi]$ . 
+	Then by the fact that $f$ is a homomorphism
+	of Boolean algebras we get $\top \xxviissm \xxvibv \psi$. It is clear  	
+	that for all $\beta' \in \xxviFom(\psi)$ such that
+	$\beta' \not= \xxviF f (\alpha)$ there is an $\alpha' \not= \alpha$
+	such that $\xxviF f (\alpha') = \beta'$.
+%	\[ \{ \beta' \in \xxviFom(\psi) \mid  \xxviF f (\alpha) \not= \beta' \}
+%	\subseteq
+%	   \{ \beta' \mid \exists \alpha' \in \xxviFom(\phi). \alpha \not=
+%\alpha' \; \& \; (\xxviF f)(\alpha')= \beta' \}
+%	\]
+        Together with (\ref{equ:ih4}) this implies that $\xxviLift(f)(b')
+        \wedge \xxvinb\beta' \xxviissm \bot$ for all $\beta' \in
+        \xxviFom(\psi)$ such that $(\xxviF f)(\alpha) \not= \beta'$.
+        Now we can apply rule ($\xxvinb 4$) which yields
+        $\xxviLift(f)(b') \xxviissm \xxvinb (\xxviF f)(\alpha)$.  This is
+        what we had to show, because $\xxviLift(f) (\xxvinb \alpha) =
+        \xxvinb (\xxviF f) (\alpha)$.
+%\end{description}
+\end{proof}
+
+As a consequence, one obtains that the value of $\xxviM$ does not depend
+on a choice of presentation.
+
+\begin{proposition}
+\label{p:Mwelldef}
+If $(X,R)$ and $(X',R')$ generate isomorphic Boolean algebras, then 
+$\xxviM(X,R) \cong \xxviM(X',R')$.
+%$(\xxviLang_{1}(X),{\leq_{(X,R)}})$ and $(\xxviLang_{1}(X'),{\leq_{(X',R')}})$
+\end{proposition}
+\xxviproofspace
+\begin{proof}
+   Clearly it suffices to prove that $\xxviM(X,R) \cong \xxviM(B,\leq)$, where
+$(B,\leq)$
+is the standard presentation of $\xxvibbB := \xxvibap{X}{R}$. 
+Recall that $B$ consists of equivalence classes of the set
+$\xxviLang_{0}(X)$, 
+let $f: \xxviLang_{0}(X) \to B$ be the quotient map,
+and let
+$m: B \to \xxviLang_0(X)$ be a function such that 
+$f \circ m = \xxviid_B$. 
+Then it is clear that 
+$f$ and $m$ are presentation morphisms between $(X,R)$ 
+and $(B,\leq)$. Then by Proposition~\ref{prop:liftfun}
+also $\xxviLift(f)$ and $\xxviLift(m)$ are 
+presentation morphisms and $\xxvip{\xxviLift(f)}$ is
+an surjective $\xxviBA$-homomorphism from
+$\xxviM(X,R)$ to $\xxviM(B\leq)$. In order to prove the claim
+we show that $\xxvip{\xxviLift(f)}$ is also injective.
+Note first that for all $x \in X$
+we have $m(f(x)) \equiv_R x$. Using axiom ($\xxvinb 1$)
+it can be shown that this implies $\xxviLift(m)(\xxviLift(f)(\xxvinb \alpha))
+\equiv \xxvinb \alpha$ for all $\xxvinb \alpha \in \xxviLift(X)$ which can
+be inductively extended to $\xxviLift(m)(\xxviLift(f)(a)) \equiv a$
+for all $a \in \xxviLift(X)$. But then for all $a,a' \in \xxviLift(A)$
+such that $\xxviLift(f)(a) \equiv \xxviLift(f)(a')$ we have
+\[
+	a \equiv \xxviLift(m)(\xxviLift(f)(a)) \equiv
+	\xxviLift(m)(\xxviLift(f)(a')) \equiv a',
+\]
+which implies that $\xxvip{\xxviLift(f)}$ has to be injective
+as required.
+\end{proof}
+
+%\subsection{$\xxviM$ as a functor of Boolean algebras}
+
+Recall that, given a Boolean algebra $\xxvibbA$ with standard presentation
+$(A,{\leq})$, we let $\xxviM\xxvibbA$ denote the Boolean algebra
+$\xxviM(A,{\leq})$
+(Definition~\ref{def:M-one-step}).
+$\xxviM$ is thus an operation on the class of Boolean algebras. 
+We will now see that in fact it is (or can be extended to) a
+\emph{functor} on
+the category of Boolean algebras.
+
+\begin{definition}  
+The quotient map from $\xxviLift(U\xxvibbA)$ to
+$\xxviM\xxvibbA = (\xxviLift(U\xxvibbA)/{\equiv_{\xxvinax(\xxvibbA)}})$
+will be denoted by $\xxviquo_\xxvibbA$.
+\end{definition}
+
+Another consequence of Proposition~\ref{prop:liftfun} is:
+
+\begin{proposition}
+\label{p:1}
+$\xxviM$ is a functor on the category of Boolean algebras. 
+\end{proposition}
+\xxviproofspace
+\begin{proof}
+%$\xxviLbb$ is a functor on $\xxviBA$. 
+Let $f:\xxvibbA\to \xxvibbB$ be a Boolean homomorphism and let $A$ and $B$
+denote the
+underlying sets of $\xxvibbA$ and $\xxvibbB$, respectively.
+%For $t \in \xxviM \xxvibbA$ 
+%we define $\xxviM f(t)$ to be $\xxviquo_\xxvibbB \circ \xxviLift(f)(b')$ where $b'$
+%is any element 
+%in $\xxviLift(A)$ such that $\xxviquo_\xxvibbA(b')=t$.
+Obviously any homomorphism 
+$f:\xxvibbA \to \xxvibbB$ is a presentation morphism from
+$(A,\leq)$ to $(B,\leq)$ where $(A,\leq)$ and $(B,\leq)$ denote the standard
+presentations of $\xxvibbA$ and $\xxvibbB$. 
+So by Proposition~\ref{prop:liftfun}, 
+$\xxviLift(f): (\xxviLift(A),\xxviissm_{\xxvinax(A,\leq)}) \to
+(\xxviLift(B),\xxviissm_{\xxvinax(B,\leq)})$ is also a presentation morphism and we can
+define a Boolean homomorphism $\xxviM f: \xxviM \xxvibbA \to \xxviM \xxvibbB$ by putting
+$\xxviM f \xxvicoloneqq \xxvip{\xxviLift(f)}$.
+It is easy to see that this $\xxviM$ satisfies the usual functor conditions,
+i.e., that $\xxviM (\xxviid) = \xxviid$ and $\xxviM(f \circ g) = \xxviM f \circ \xxviM g$.
+% 
+%We have to show that this is well-defined, i.e.\ assuming
+%$\xxviquo_\xxvibbA(b')=
+%\xxviquo_\xxvibbA(b'')$ we want to prove that $\xxviquo_\xxvibbB(\xxviLift(f)(b'))=
+%\xxviquo_\xxvibbB(\xxviLift(f)(b''))$.
+%It suffices to show that for all $b',b'' \in \xxviLift(B)$
+%\begin{equation}\label{equ:hompres}
+% 	\vdash_{\xxvinax(\xxvibbA)} b' \xxviissm b'' \quad \mbox{implies}  \quad
+%\vdash_{\xxvinax(\xxvibbB)} \xxviLift(f)(b') 
+%	\xxviissm \xxviLift(f)(b'').
+%\end{equation}
+%
+%\shtbs{Check $\leq$ vs $\xxviissm$ in remainder of proof}
+%
+\end{proof}
+
+\begin{remark}\label{rmk:L-M}
+  Wrt Remark~\ref{rmk:moss-lang-fun-2}, we note that $\xxviM$ is
+  a quotient $\xxviLbb\to\xxviM$.
+\end{remark}
+
+It turns out that $\xxviM$ has some nice properties, which will be of use
+later on.  In particular, we will show that $\xxviM$ is \emph{finitary}
+(or $\omega$-accessible) which means, proof-theoretically, that for any
+Boolean algebra $\xxvibbA$, a derivation of $\vdash_{\xxviM(\xxvibbA)}a_{1}\xxviissm
+a_{2}$ can be carried out in a \emph{finite} subalgebra of $\xxvibbA$.  A
+fairly easy consequence of this is the second useful property given
+below, namely, that $\xxviM$ \emph{preserves embeddings}.
+
+\begin{proposition}
+\label{p:2}
+\label{prop:M-finitary}
+$\xxviM$ is a finitary functor that preserves embeddings.
+\end{proposition}
+\xxviproofspace
+\begin{proof}
+Fix a Boolean algebra $\xxvibbA$ with carrier set $A := U\xxvibbA$.
+Given two elements $a_{1},a_{2} \in \xxviLift(A)$, 
+% let $A_{a_{1}a_{2}}$ be 
+consider the collection of elements of $A$ that occur as
+\emph{subformulas} of 
+$a_{1}$ and $a_{2}$.
+It follows from our earlier remarks on subformulas that this is a
+\emph{finite}
+set, which then generates a finite subalgebra $\xxvibbA'$ of $\xxvibbA$.
+By definition we have $a_{1},a_{2} \in \xxviLift(A')$.
+
+We claim \vspace{-0.5ex} 
+\begin{equation}
+\label{eq:2-4}
+\vdash_{\xxvinax(\xxvibbA)} a_{1} \xxviissm a_{2} \mbox{ iff }
+\vdash_{\xxvinax(\xxvibbA')} a_{1} \xxviissm a_{2}.
+\end{equation}
+The interesting direction of (\ref{eq:2-4}) is from left to right.
+The key observation here is that from the fact that $\xxvibbA'$ is a
+finite
+subalgebra of $\xxvibbA$, we may infer the existence of a
+\emph{surjective}
+homomorphism $f: \xxvibbA \to \xxvibbA'$ such that $f(a') = a'$ for all $a'
+\in A'$.
+(In other words, $\xxvibbA'$ is a \emph{retract} of $\xxvibbA$.)
+There are various ways to prove this statement; here we refer to
+Sikorski's
+theorem that complete Boolean algebras are
+injective~\cite{siko:theo48}.
+But if $f$ is a homomorphism, by Proposition~\ref{prop:liftfun} it follows
+%\marginpar{$\xxviLift$: correct notation?}
+from $\vdash_{\xxvinax(\xxvibbA)} a_{1} \xxviissm a_{2}$ that $\vdash_{\xxvinax(\xxvibbA')}
+\xxviLift(f)(a_{1}) \xxviissm \xxviLift(f)(a_{2})$.
+Since $a_{1},a_{2} \in \xxviLift(A')$ and $f$ restricts to the identity on
+$A'$, we may conclude that $\xxviLift(f)(a_{i}) = a_{i}$, 
+for both $i = 1,2$.
+Thus, indeed, $\vdash_{\xxvinax(\xxvibbA')} a_{1} \xxviissm a_{2}$.
+Using the fact that every  $\xxviBA$ is the directed colimit (union) of finite
+Boolean algebras, the finitariness of $\xxviM$ follows by a standard argument.
+
+For the second part of the proof, let $e: \xxvibbA \to \xxvibbB$ be an
+embedding.
+Without loss of generality we will assume that $e$ is actually the
+inclusion (that is, $\xxvibbA$ is a subalgebra of $\xxvibbB$).
+In order to prove that $\xxviM e: \xxviM\xxvibbA \to \xxviM\xxvibbB$ is also injective, it
+suffices to prove the following, for all $a_{1},a_{2} \in A$:
+\begin{equation}
+\label{eq:2-5}
+\vdash_{\xxvinax(\xxvibbB)} a_{1} \xxviissm a_{2} \mbox{ implies } 
+\vdash_{\xxvinax(\xxvibbA)} a_{1} \xxviissm a_{2}.
+\end{equation}
+But the proof of (\ref{eq:2-5}) simply follows from two applications
+of 
+(\ref{eq:2-4}).
+\end{proof}
+
+As a straightforward corollary of Proposition~\ref{p:2}, we obtain the
+existence of an \emph{initial} $\xxviM$-algebra.  Furthermore, this
+initial algebra is obtained as the union of the initial $\xxviM$-sequence
+to be defined now.
+
+\begin{definition}
+%Recall that $\xxvibbtwo$ denotes the initial (two-element) Boolean
+%algebra.  
+We define $j_0: \xxvibbtwo \to \xxviM \xxvibbtwo$ to be the unique
+embedding of the two-element Boolean algebra 
+$\xxvibbtwo$ into $\xxviM \xxvibbtwo$, and inductively we define
+$j_{n+1}:\xxviM^n\mathbbm{2}\to \xxviM(\xxviM^n\mathbbm{2})$ to be $\xxviM j_n$.  Let
+$\xxviLTM$ be the colimit of the sequence $(\xxviM^n\mathbbm{2})_{n<\omega}$.
+\end{definition}
+
+We take the liberty to consider $\xxviLTM$ as an $\xxviM$-algebra, a Boolean
+algebra, or a set, depending on the context.  Since $\xxviM$ is finitary
+(Proposition~\ref{prop:M-finitary}), we have the following.
+
+\begin{corollary}
+\label{c:LTM}
+$\xxviLTM$ is the initial $\xxviM$-algebra.
+\end{corollary}
+
+Because $\xxviM$ preserves embeddings, all maps in the initial sequence
+$(\xxviM^n\mathbbm{2})_{n<\omega}$ are injective. 
+This means that
+we can consider the initial $\xxviM$-algebra as a \emph{union} of its
+approximants $\xxviM^n\mathbbm{2}$.
+
+\subsection{Technical Interlude: Stratification of the Moss logic}
+\label{sec:stratification}
+
+As we will see now, the one-step version of $\xxvinax$ allows for a
+layer-wise
+construction of the (inter)derivability relation between formulas.
+
+\begin{definition}\label{def:equiv-n}
+For each $n$, we define relations $\le_{n}$ and $\equiv_{n}$ on
+$\xxviLang_{n}$.  For $n=0$, we simply let $\leq_{0}$ on the set $\xxviLang_0$
+of all closed Boolean formulas denote derivability (in Boolean logic).
+% Note that $\xxviLang_0/{\leq_0}$ is the two-element Boolean algebra.
+% Assuming that $\xxviLang_n/{\le_n}$ is a Boolean algebra, we define
+% $\le_{n+1}$ as derivability in the one-step proof system
+% $\xxvinax(\xxviLang_n/\le_n)$.
+Inductively, we define $\le_{n+1}$ as derivability in the one-step
+proof system $\xxvinax(\xxviLang_{n},{\le_{n}})$.  Finally, $a \equiv_n b
+\ \Leftrightarrow \ (a\le_n b \ \textrm{ and } a \le_n b)$.
+\end{definition}
+
+
+The following proposition reveals the crucial role of $\xxviM$ in this
+stratification.  Its proof proceeds via a straightforward inductive
+argument, of which the inductive step is an immediate consequence of
+Proposition~\ref{p:Mwelldef}.
+
+\begin{proposition}
+For all $n$, $\xxviLang_n/{\equiv_n}\cong \xxviM^{n} \xxvibbtwo$.
+\end{proposition}
+
+\begin{definition}\label{def:qn}
+For every $n \in \omega$ we let $\xxviquo_n$ be the quotient map from
+$\xxviLang_n$ onto $U \xxviM^n \xxvibbtwo \cong \xxviLang_n/{\equiv_n}$.  Furthermore we
+let $i_{0}: \xxviLang_0 \to \xxviLang_1$ be the obvious embedding, and
+inductively we define $i_{n+1}=\xxviLift (i_{n})$.
+\end{definition}
+
+\begin{proposition}
+We have $\xxviLang_n = \xxviLift^n(\xxviLang_0)$
+and for all $n \in \omega$ the map $i_{n}$ is the inclusion of $\xxviLang_n$ into $\xxviLang_{n+1}$.
+\end{proposition}
+%\begin{proof}
+%	a simple induction
+%\end{proof}
+Due to lack of space we omit the simple induction argument.
+The next proposition establishes a connection between 
+the embeddings $j_{n}: \xxviM^n \xxvibbtwo \to \xxviM^{n+1} \xxvibbtwo$ and the inclusions
+$i_{n}: \xxviLang_n \to \xxviLang_{n+1}$. The proof is based on the following lemma. (i) is proved using ($\xxvinb1$) and (ii) follows from Proposition~\ref{p:1}.
+
+\begin{lemma}\label{lem:tech_use}
+For all $n<\omega$, we have  (i) $\xxviquo_{n+1}  = \xxviquo_{\xxviM^{n} \xxvibbtwo} \circ \xxviLift
+(\xxviquo_n)$ and (ii) $U j_{n} \circ \xxviquo_{\xxviM^{n-1} \xxvibbtwo}=\xxviquo_{\xxviM^{n}
+\xxvibbtwo} \circ \xxviLift(U j_{n-1})$:\\
+%
+\centerline{\xymatrix@C=4pt{
+\xxviLift(\xxviLang_n) \ar[rd]_{\xxviLift(\xxviquo_n)} \ar[rr]^{\xxviquo_{n+1}} && U \xxviM^{n+1} \xxvibbtwo  \\
+& \xxviLift(U\xxviM^n \xxvibbtwo) \ar[ru]_{\xxviquo_{\xxviM^n \xxvibbtwo}} & } 
+            \quad\quad 
+  \xymatrix@C=14pt{\xxviLift(U \xxviM^{n-1} \xxvibbtwo) \ar[d]_{\xxviquo_{\xxviM^{n-1} \xxvibbtwo}} 
+	\ar[rr]^{\xxviLift(U j_{n-1})} & & \xxviLift(U \xxviM^n \xxvibbtwo) 
+	\ar[d]^{\xxviquo_{\xxviM^n \xxvibbtwo}} \\
+	U \xxviM^n \xxvibbtwo \ar[rr]_{U j_n} & & U \xxviM(\xxviM^n \xxvibbtwo)}} 
+\end{lemma}
+
+\begin{proposition}
+\label{p:sq1}
+For all $n \in \omega$ we have 
+$U j_{n} \circ \xxviquo_n = \xxviquo_{n+1} \circ i_{n}$:\\
+\centerline{\xymatrix{\xxviLang_{n} \ar[d]_{\xxviquo_n} \ar[r]^{i_n} & \xxviLang_{n+1} 
+\ar[d]^{\xxviquo_{n+1}} \\
+U \xxviM^n \xxvibbtwo \ar[r]_{U j_n} & U\xxviM^{n+1} \xxvibbtwo}}
+\end{proposition}
+\xxviproofspace
+\begin{proof}
+  The case $n = 0$ can be easily checked.  Consider now $n=m+1$ and
+  some $\xxvinb \alpha \in \xxviLang_{m+1} =
+  \xxviLift^m(\xxviLang_0)$. Then
+\begin{eqnarray*}
+j_{m+1} (\xxviquo_{m+1} (\xxvinb \alpha )) 
+   & \stackrel{\mbox{\tiny (i)}}{=}
+   & j_{m+1}(\xxviquo_{\xxviM^{m} \xxvibbtwo}(\xxviLift (\xxviquo_m)(\xxvinb \alpha))
+\\ &  \stackrel{\mbox{\tiny (ii)}}{=} 
+   & \xxviquo_{\xxviM^{m+1}\xxvibbtwo} (\xxviLift(j_{m})(\xxviLift (\xxviquo_m)(\xxvinb
+\alpha)) 
+% \\		 & = & \xxviquo_{\xxviM^{m+2}\xxvibbtwo} (
+%		 \xxviLift(\xxviLift^{m}(j) \circ \xxviquo_m)
+%		 (\xxvinb\alpha)) 
+\\ & = & \xxviquo_{\xxviM^{m+1}\xxvibbtwo}	(\xxviLift (j_{m}\circ \xxviquo_m)(\xxvinb
+\alpha)) 
+\\ & \stackrel{\mbox{\tiny I.H.}}{=}  
+   & \xxviquo_{\xxviM^{m+1}\xxvibbtwo}(\xxviLift(\xxviquo_{m+1} \circ
+i_{m})(\xxvinb\alpha))	 \\
+		 & \stackrel{\mbox{\tiny (i)}}{=} &
+		 (\xxviquo_{m+2} \circ i_{m+1}) (\xxvinb \alpha)
+	\end{eqnarray*}\vspace{-1cm} \\
+	\phantom{blabla} 
+\end{proof}
+
+The following proposition
+%, of which the proof is sketched in the appendix,
+is crucial. 
+It shows that if we have
+$\vdash_{\xxvinax} a \xxviissm b$ for formulas $a,b$ of depth $n$, there
+always is a derivation that does not employ formulas of depth greater
+than $n$. This is typical for axiomatisations where each variable is
+under the scope of precisely one modal operator. The situation here is
+slightly more complicated than usual since our rules allow infinite
+sets of premises.
+
+
+\begin{proposition}\label{prop:equiv-n}
+Let $a$ and $b$ be formulas.
+Then 
+\begin{enumerate}
+\item
+If $a,b \in \xxviLang_{n}$, and $a \leq_{m} b$ for some $m>n$, then $a
+\leq_{n} b$.
+\item
+If $a,b \in \xxviLang_{n}$, then $\vdash_{\xxvinax} a \xxviissm b$ iff $a \le_{n}
+b$.
+\end{enumerate}
+\end{proposition}
+\xxviproofspace
+\begin{proof}
+  For Part~1 of the proposition, it suffices to confine attention to
+  the case where $m=n+1$, which is a consequence of
+  Proposition~\ref{p:sq1} and the fact that the injective
+  $\xxviBA$-morphism $j_n$ reflects the order.
+
+  Part~2 of the proposition is proved by induction on the complexity
+  of derivations in $\xxvinax$.  Here we discuss a sample case of the
+  inductive step, namely, where the last applied rule was ($\xxvinb4$):
+\begin{prooftree}
+  \AXC{$ \{ a \land \xxvinb\alpha' \xxviissm \bot \mid \alpha' \in \xxviFom(\phi),
+    \alpha' \neq \alpha \}$} \AXC{$\top \xxviissm \xxvibv\phi$} \BIC{$a \xxviissm
+    \xxvinb\alpha$}
+\end{prooftree}
+Inductively, there is some natural number $k$ such that $\top \leq_{k}
+\phi$.  Let $m := \max\big\{ d(b) \mid b \in \phi \cup \{ a \}
+\big\}$, where $d(b)$ denotes the depth of the formula $b$.  Then
+clearly $m$ is (well-defined as) a finite natural number since $\phi$
+is a finite set by assumption.  Then $\phi \subseteq \xxviLang_{m}$, and
+so $\xxvinb\beta\in \xxviLang_{m+1}$ for all $\beta\in\xxviFom\phi$.  Since also
+$a \in \xxviLang_{m}$, by the first part of the proposition we obtain $a
+\land \xxvinb\alpha' \leq_{m+1} \bot$ for all $\alpha' \in \xxviFom(\phi)
+\setminus \{ \alpha \}$.  Thus, with $p = \max\{m+1,k\}$, we see that
+all premisses of the final rule are $p$-derivable.  But then the
+conclusion is $p+1$-derivable, and then, by part 1, $n$-derivable
+(where we assumed that $a,\xxvinb\alpha \in \xxviLang_{n}$).
+\end{proof}
+
+
+The next proposition shows that $\xxviLTM$ is the Lindenbaum algebra of
+$\xxviLang$ modulo the proof system $\xxvinax$.  To see this, recall from
+Proposition~\ref{p:mossinit} that $(\xxviLang,\neg,\wedge,\vee,\xxvinb)$ is
+the initial algebra for the functor $\xxviMoss =\xxviId + \xxviId\times\xxviId +
+\xxviId\times\xxviId + \xxviFom$.  Since $\xxviLTM$ can also be seen as an algebra of
+this kind, it follows from initiality of $\xxviLang$ that there is a
+unique quotient $\xxviquo:\xxviLang\to\xxviLTM$.  The next proposition states that
+the kernel of $\xxviquo$ is the interderivability relation $\equiv$
+according to the proof system $\xxvinax$.
+
+\begin{lemma}\label{lem:qrestriction}
+    The quotient maps $\xxviquo_n: \xxviLang_n \to U \xxviM^n \xxvibbtwo$ 
+    are the restrictions of $\xxviquo:\xxviLang \to \xxviLTM$. More precisely 
+    denote  by $k_n:M^n\xxvibbtwo\to\xxviLTM$ the embeddings of the initial 	
+    sequence of $\xxviLTM$ and by $l_n:\xxviLang_n\to\xxviLang$ the inclusions. 
+    Then the claim is that $q\circ l_n=k_n\circ\xxviquo_n$. 
+\end{lemma}
+\xxviproofspace
+\begin{proof}    
+  To prove this we need to observe that, by definition,
+  $\xxviquo:\xxviLang\to\xxviLTM$ is the unique map for which $\xxviquo\circ l_n=f_n$,
+  where the $f_n:\xxviLang_n\to\xxviLTM$ are given inductively by
+  $f_{n+1}=\mu\circ\xxviquo_\xxviLTM\circ\xxviLift(f_n)$ and $\mu:\xxviM\xxviLTM\to\xxviLTM$
+  is the structure map of the $\xxviM$-algebra $\xxviLTM$. We then proceed to
+  show by induction that $k_n\circ\xxviquo_n=f_n$. Indeed,
+%
+$f_{n+1} = %Der
+\mu\circ\xxviquo_\xxviLTM\circ\xxviLift(f_n) \stackrel{\tiny\mathrm{ind hyp}}{=} %
+\mu\circ\xxviquo_\xxviLTM\circ\xxviLift(k_n)\circ\xxviLift{\xxviquo_n} = %
+%\stackrel{\textrm{naturality of $\xxviquo$}}{=} %
+\mu\circ\xxviM k_n\circ \xxviquo_{\xxviM^n\xxvibbtwo}\circ\xxviLift{\xxviquo_n} = %initial seq
+k_{n+1} \circ \xxviquo_{\xxviM^n\xxvibbtwo}\circ\xxviLift{\xxviquo_n} = %
+k_{n+1} \circ \xxviquo_{n+1}$. 
+% \footnote{ Wrt the third = : We need naturality of $\xxviquo$, mabye
+%   this should be an extra lemma. Wrt the last = : I assumed that it
+%   is clear that $\xxviquo_{M^n\xxvibbtwo}\circ\xxviLift{\xxviquo_n} = \xxviquo_{n+1}$
+%   but maybe it should be an extra Lemma (ak)}
+where the third equation holds by definition of $\xxviM k_n =
+\xxvip{\xxviLift(k_n)}$ and the last equation is an instance of
+Lemma~\ref{lem:tech_use}(i).
+\end{proof}
+
+\begin{proposition}\label{prop:Lang-M}
+The kernel of the quotient map $\xxviquo:\xxviLang\to\xxviLTM$ is $\equiv$.
+\end{proposition}
+\xxviproofspace
+\begin{proof}
+Recall that $\xxviLTM$ can be seen as the union of the initial sequence 
+$(\xxviM^n\mathbbm{2})_{n<\omega}$, that $\xxviLang=\bigcup\xxviLang_n$, and that
+the maps $\xxviquo_n:\xxviLang_n\to\xxviM^n\xxvibbtwo$ map formulas to their equivalence
+classes. By Lemma~\ref{lem:qrestriction}, each $\xxviquo_n$ is the restriction
+of $\xxviquo:\xxviLang\to\xxviLTM$ to $\xxviLang_n\to\xxviM^n\xxvibbtwo$.
+Then, $\xxviquo(a) = \xxviquo(b)$ iff there is an $n$ such that $\xxviquo_n(a)=\xxviquo_n(b)$.
+This, in turn, is equivalent to $a\equiv_n b$ (by Definition~\ref{def:qn})
+and then to $a\equiv b$ by Proposition~\ref{prop:equiv-n}. 
+\end{proof}
+
+
+\subsection{Semantics of $\xxviM$ and Moss algebras}
+\label{sec:semantics-of-M}
+Let us first summarise the two preceding sections in the following diagram:
+\begin{equation*}
+\xymatrix{
+\xxviLang_0 \ar[r]^{i_0}\ar[d]_{\xxviquo_0} & 
+\xxviLang_1\ar[d]_{\xxviquo_1} \ar[r]^{i_1} & 
+\xxviLang_2 \ar[d]_{\xxviquo_2} & \ldots & 
+\xxviLang \ar[d]_{\xxviquo}\\ 
+%
+\xxvibbtwo \ar[r]^{j_0} & 
+\xxviM\xxvibbtwo \ar[r]^{j_1} & 
+\xxviM^2\xxvibbtwo & \ldots & 
+\xxviLTM \\ 
+}
+\end{equation*}
+$\xxviLang$ is the union of the $\xxviLang_n$. $\xxviM$ is a functor on $\xxviBA$,
+$\xxvibbtwo$ is the initial $\xxviBA$ and $\xxviLTM$ is the colimit of the
+sequence $\xxviM^n\xxvibbtwo$. Since $\xxviM$ preserves injections and is
+finitary, $\xxviLTM$ is the initial $\xxviM$-algebra and can be considered to
+be the union of the $\xxviM^n\xxvibbtwo$. $\xxviquo$ is the quotient of $\xxviLang$
+wrt interderivability $\equiv$ and the $\xxviquo_n$ are the restrictions
+of $\xxviquo$.
+
+Thus, up to interderivability, we can work with $\xxviM$ and $\xxviLTM$
+instead of $\xxviLang$.  In this section, we define the semantics of the
+logic directly in terms of $\xxviM$ and show that it agrees with the
+previously given one.
+
+The relationship between $\xxviM$ and $\xxviF$ is provided by a natural
+transformation $\delta: \xxviM\xxviPal \to \xxviPal\xxviF$.  For the definition of
+$\delta$, recall the natural transformation $\rho$ from
+Definition~\ref{def:TP-PT}.
+
+\begin{definition}
+Given a set $S$, define the map $\tilde{\rho}: \xxviLift(\xxviPc S) \to
+\xxviPc\xxviF S$ as follows. 
+%\footnote{ the def is now much simpler with the new definition of $
+%\xxviLift$. we should mention in the preliminaries that we can consider 
+%\xxviFom Y$ as a subset of $\xxviF Y$ because this is used implicitly here 
+%(ak) }
+For $\alpha \in \xxviFom \xxviPc S$, we let
+$\tilde\rho(\xxvinb\alpha)=\rho(\alpha)$ and then extend it freely to
+Boolean terms.
+\end{definition}
+
+\noindent
+The soundness of the one-step proof system is enshrined in the next
+proposition.  The proof is essentially the same as that of the
+soundness direction in Theorem~\ref{t:main}.
+
+\begin{proposition}
+\label{p:3-11}
+$a_{1} \!\equiv_{\xxvinax(\xxviPal X)}\! a_{2}$ implies $\tilde{\rho}(a_{1}) =
+\tilde{\rho}(a_{2})$, for $a_i \in \xxviLift(\xxviPc X)$.
+\end{proposition}
+
+\xxviverberg{\xxviproofspace
+\begin{proof}
+   One-step soundness can be proven by induction on the derivation of
+   $a_{1} \!\equiv_{\xxvinax(\xxviPal X)}\! a_{2}$. The proof is 
+   essentially the same as the soundness proof in 
+   Section~\ref{s:sound} and is therefore omitted.
+\end{proof}
+}
+
+By Proposition~\ref{p:3-11}, the following is well-defined.
+
+\begin{definition}
+\label{d:3-11}
+Given a set $X$, let $\delta_{X}: \xxviLift(\xxviPc X)/{\equiv_{\xxvinax(\xxviPal
+X)}} \to
+\xxviPc\xxviF X$ be the map given by 
+$
+\tilde{\rho}_{X} = \delta_{X}\circ \xxviquo_{\xxviPal (X)}.
+$
+\end{definition}
+
+\begin{proposition}
+\label{p:3-12}
+The collection of maps given by Definition~\ref{d:3-11} form a natural
+transformation $\delta: \xxviM\xxviPal \to \xxviPal\xxviF$.
+\end{proposition}
+
+\xxviproofspace
+\begin{proof}
+  We need to show that for each $X$, $\delta_{X}$ is a (Boolean)
+  homomorphism, and that $\delta$ is natural. Both proofs are
+  straightforward.
+\end{proof}
+
+\begin{remark}
+  Continuing from Remark~\ref{rmk:L-M}, $\delta$ is given by factoring
+  $\gamma:\xxviLbb\xxviPal\to\xxviPal\xxviF$ (Remark~\ref{rmk:moss-lang-fun}) through
+  $\xxviLbb\xxviPal\to\xxviM\xxviPal$.
+\end{remark}
+%
+
+The natural transformation $\delta$ allows us to associate with a
+coalgebra $(S,\sigma)$ its `complex $\xxviM$-algebra'
+$\xxviPal\sigma\circ\delta_{S}: \xxviM\xxviPal S \to \xxviPal S$.  Recall that $\xxviLTM$
+denotes the initial $\xxviM$-algebra.  For each coalgebra $(S,\sigma)$,
+initiality of $\xxviLTM$ gives us a map
+\begin{equation}\label{equ:M-sem}
+\xxvisem{\cdot}:\xxviLTM\to\xxviPal S
+\end{equation} 
+interpreting elements of $\xxviLTM$ as propositions on $S$.  Note that
+this map is an arrow in the category of Boolean algebras.
+
+The next proposition ensures that the coalgebraic semantics of $\xxviLTM$
+(see (\ref{equ:M-sem})) and of $\xxviLang$ (Definition~\ref{def:Lang-sem})
+agree.
+
+\begin{proposition}\label{prop:Lang-M-sem}
+  Denote by $\xxviquo:\xxviLang\to\xxviLTM$ the quotient map.  Given a coalgebra
+  $(S,\sigma)$ and $a\in\xxviLang$, we have $s\Vdash a$ iff
+  $s\in\xxvisem{\xxviquo(a)}$.
+\end{proposition}
+
+\xxviproofspace
+\begin{proof}
+  The semantic map $\mu:\xxviLang \to \xxviPw S$ can be written as $\mu= f
+  \circ \xxviquo$ for some $f: \xxviLTM \to \xxviPw S$ by putting $f(\xxviquo(a))
+  \xxvicoloneqq \mu(a)$.  The function $f$ is well-defined because of
+  soundness of our logic: if $\xxviquo(a) = \xxviquo(a')$ then $a \equiv a'$
+  by Proposition~\ref{prop:Lang-M} and therefore by soundness we get
+  $\mu(a) = \mu(a')$.  Using Lemma~\ref{l:altsem} it is not
+  difficult to see that $f$ is in fact an $\xxviM$-algebra morphism from
+  the initial $\xxviM$-algebra $\xxviLTM$ to the $\xxviM$-algebra $(\xxviPal S, \xxviPal
+  \sigma \circ \delta_S)$.  Therefore by initiality we get
+  $f=\xxvisem{\cdot}$ and thus $\mu(a)=\xxvisem{\xxviquo(a)}$.
+\end{proof}
+
+%
+%\xxviproofspace
+%\begin{proof}
+%This is a straightforward induction. The case of $\xxvinb$ is handled by
+%the following observations. 
+%First, $s \Vdash \xxvinb\alpha$ iff $\sigma(s)\in \rho_{S}(\alpha)$, see
+%Lemma~\ref{l:altsem}.
+%By definition of $\delta$, this is equivalent to $\sigma(s) \in
+%\delta_{S}\circ\xxviquo (\xxvinb\alpha)$,
+%and hence, to $s \in \sigma^{-1}(\delta_{S}\circ\xxviquo (\xxvinb\alpha))$.
+%Finally, by the definition of the algebraic semantics $\xxvisem{\cdot}$,
+%the
+%latter statement amounts to saying that $s \in \xxvisem{\xxviquo
+%(\xxvinb\alpha)}$.
+%\end{proof}
+
+\begin{remark}
+  We have now finished the functorial presentation of Moss' logic. A
+  central role play the \emph{Moss algebras}, that is, the algebras
+  for the functor $\xxviM$. In the case of $\xxviF=\xxviPw$, the category of Moss
+  algebras is isomorphic to the category of Boolean algebras with
+  operators. (\ref{equ:M-sem}) corresponds to the fact that formulas
+  are evaluated on a Kripke frame $S$ by the morphism from the
+  Lindenbaum BAO $\xxviLTM$ to the complex algebra $\xxviPal S$ of $S$. The
+  completeness proof in the next section generalises the well-known
+  fact that we have an injection (iso for finite $X$)
+  $d_X:\mathbb{K}\xxviPal X \to \xxviPal\xxviPw X$ where $\mathbb{K}$ is the
+  functor $\xxviBA\to\xxviBA$ mapping $\xxvibbA$ to the algebra freely generated
+  by $\Box a, a\in\xxvibbA$, modulo the equations expressing that $\Box$
+  preserves finite meets ($d_X$ is given by $\Box
+  a\mapsto\{b\subseteq X \mid b\subseteq a\}$).
+\end{remark}
+
+
+
+\subsection{One-step completeness}
+
+Completeness of $\xxvinax$ is enshrined in the injectivity of
+$\delta_{X}$. To show this we use the following basic fact about
+Boolean algebras.
+
+\begin{lemma}\label{lem:bafact}
+  Let $\xxvibbA$ and $\xxvibbB$ be Boolean algebras and $f:\xxvibbA \to \xxvibbB$ be a
+  homomorphism. Furthermore assume that $\xxvibbA$ is join-generated by
+  $\xxvigen \subseteq A$, i.e., assume that for every $a \in A$ we have $a
+  = \xxvilatjoin \{b \in \xxvigen \mid b \leq a\}$.  Then $f(b) \not=
+  \perp_\xxvibbB$ for all $b \in \xxvigen$ implies that $f$ is injective.
+\end{lemma}
+\xxviproofspace
+\begin{proof}
+%    The lemma follows from a standard Boolean reasoning.
+  In order to prove the claim note first that for all $a \in A$ we
+  clearly have $\perp_\xxvibbA < a$ implies $\perp_\xxvibbB < f(a)$.  Let now
+  $a,a'$ be elements of $A$ such that $a \not= a'$.  By our assumption
+  we have w.l.o.g. that there is some $b \in \xxvigen$ with $b\leq a$ and
+  $b \not \leq a'$. Therefore $\perp_\xxvibbA < \neg a' \wedge b$ which
+  implies by our first observation and the fact that $f$ is a
+  homomorphism that $\perp_\xxvibbB < \neg f(a') \wedge f(b)$ and thus
+  $f(b) \not\leq f(a')$. On the other hand we clearly have $f(b) \leq
+  f(a)$ which yields $f(a) \not= f(a')$.  As $a,a'$ where assumed to
+  be arbitrary we showed that $f$ is injective.
+\end{proof}
+
+%The proof of the following Proposition is given in the Appendix.
+\begin{proposition}
+\label{p:3}
+For every set $X$, the map $\delta_{X}: \xxviM\xxviPal(X) \to \xxviPal\xxviF(X)$ is an
+embedding.
+\end{proposition}
+\xxviproofspace
+\begin{proof}
+   The basic idea of the proof is to work with the map
+$\xxviF\xxvisingleton:\xxviF X\to\xxviF P X$, 
+%\marginpar{Notation $\eta$: just to see how it looks (YV)}
+where we write $\xxvisingleton_X:X\to P X$ 
+for the singleton map
+$x\mapsto \{x\}$.
+% (we drop the subscript on $\xxvisingleton_X$ if no
+%confusion is likely). \footnote{careful: $\xxvisingleton$ is natural only
+%  with $\xxviPw$ instead of $P$. I dont think it matters but keep in mind
+%  (ak).} 
+The crucial property is that 
+% \vspace{-0.3cm}
+\begin{equation}\label{equ:singleton}
+  \rho_X\circ\xxviF(\xxvisingleton_X)=\xxvisingleton_{\xxviF X}.
+\end{equation}
+The proof of (\ref{equ:singleton}) is based on the observation that 
+$\xxviGraph(\xxvisingleton_{X}) \circ \xxviconv{{\in}} = \xxviId_{X}$.
+From this it follows by the properties of relation lifting, that 
+$\xxviGraph(\xxviF\xxvisingleton_{X}) \circ \xxviconv{\xxviol{\in}} = \xxviId_{\xxviF X}$
+and thus $\rho_X(\xxviF \xxvisingleton_X(\alpha)) = \{\beta \mid \beta 
+\; \xxviol{\in} \;  
+\xxviF \xxvisingleton_X(\alpha) \} = \{\alpha\}$.
+
+%\marginpar{Is this what you had in mind? But how to move from here?}
+%% 
+ % which is immediate from (i) that $\xxviF$ preserves weak pullbacks and hence the
+ % composition of relations and (ii) that `singleton relation composed with
+ % membership relation is the identity'. 
+ %%
+
+We define the set of ``$\xxviF$-singletons'' by putting
+$\xxvigen \xxvicoloneqq \{ \xxvinb \xxviF(\xxvisingleton_X)(\alpha)
+\mid \alpha \in \xxviFom X\}$.
+In order to prove the proposition it now suffices to show that the Boolean 
+algebra $\xxviM\xxviPal(X)$ is \emph{join-generated} by the $\xxviF$-singletons: 
+% every element $a \in \xxviM\xxviPal(X)$\footnote{by writing $a$ I mean
+%   $\xxviquo_{\xxviPal(X)}(a)$ for some $a \in \xxviLift U \xxviPal(X)$} is the
+% (possibly infinite) join of elements of $\xxvigen$:
+\begin{equation}
+\label{equ:joingen}
+\forall a \in \xxviM\xxviPal(X). 
+%   \exists A_a \subseteq \xxvigen \; \mbox{s.t.} 
+\; a = \xxvilatjoin \{\xxvinb \beta \in \xxvigen \mid \xxvinb \beta \leq a\}.
+\end{equation}
+(Note that the algebra $\xxviM\xxviPal(X)$ need not be complete.  The intended
+reading of (\ref{equ:joingen}) is that every element of $\xxviM\xxviPal(X)$ is
+the join of the $\xxviF$-singletons below it, not that every set of
+$\xxviF$-singletons has a join.)  To see why the injectivity of
+$\delta_{X}$ follows from this, note that by (\ref{equ:singleton}) we
+have $\delta_X(\xxvinb \xxviF\xxvisingleton(\alpha)) =
+\rho_X(\xxviF\xxvisingleton(\alpha)) = \{ \alpha \} \not = \emptyset =
+\bot_{\xxviPal(\xxviF X)}$ for all $\xxvinb \xxviF\xxvisingleton(\alpha)\in \xxvigen$.
+%But a straightforward argument shows that if $f: \xxvibbA \to 
+%\xxvibbB$ is a
+%homomorphism between two Boolean algebras, such that $f(g) \neq \bot_{B}$
+%for all $g$ belonging to some join-generating set for $\xxvibbA$, then
+Therefore an application of Lemma~\ref{lem:bafact} yields that $f$ is 
+injective.
+
+\noindent
+Turning to the proof of (\ref{equ:joingen}), we distinguish cases as to the 
+nature of the element $a$.
+
+{\em Case 1:} Consider first an element of $\xxviM \xxviPal(X)$ of the form
+$\xxvinb \beta$ with $\beta \in \xxviFom U \xxviPal X$. 
+It can be easily shown that
+    \[ \xxvinb \beta = \xxvinb (\xxviFom \bigvee)(\xxviFom \xxviPom 
+    \xxvisingleton_X (\beta))
+    = \xxvilatjoin_{\gamma \in 
+    \rho_{\xxviPw X}(\xxviFom \xxviPom \xxvisingleton (\beta))} 
+    \xxvinb \gamma \]
+    where the first equality follows from 
+    the fact that $\bigvee {\circ} \xxviPom \xxvisingleton_X = \xxviid_{\xxviPom X}$
+%     ($\xxvinb 1$)
+%     and the fact that
+%     $\bigvee {\circ} \xxviPw \xxvisingleton_X \subseteq 
+%     \equiv$
+    and the second equality is an instance of 
+    axiom ($\xxvinb 3$). 
+    Furthermore one calculates (a detailed proof can be found 
+    in~\cite{jaco04:trace}) that
+%    \footnote{To be expanded. 
+%    Result can be found in Bart's paper.}  
+    \[ \rho_{\xxviPw X}(\xxviFom \xxviPom \xxvisingleton (\beta)) = \xxviFom\xxvisingleton [ 
+    \rho_X (\beta) ] = \{ \xxviFom\xxvisingleton(\alpha) \mid 
+    \alpha \in \rho_X(\beta)  
+    \}. \]
+    By combining the latter equality with the
+	preceding ones we obtain
+	\[ \xxvinb \beta = \xxvilatjoin_{\alpha \in \rho_X(\beta)} 
+	\xxvinb (\xxviF \xxvisingleton)(\alpha) ,\]
+	which shows that $\xxvinb \beta$ is the join of elements of $\xxvigen$. 
+
+{\em Case 2:} Consider now an element of $\xxviM \xxviPal(X)$ of the form
+$\neg \xxvinb \beta$. Let
+$\xxvibbB$ be the subalgebra of $\xxviPal(X)$ 
+generated by $\xxviBase(\beta) \subseteq_\xxviom U \xxviPal(X)$.
+We write $B$ for the carrier of $\xxvibbB$. 
+As $\xxviBase(\beta)$ is finite, the Boolean algebra 
+$\xxvibbB$ is finite as well. 
+Let $\phi \in \xxviPom (X)$ be the
+(finite) set of atoms of $\xxvibbB$.
+Then clearly $\bigvee \phi = \top$, while $a \wedge a' = \bot$ for any two
+distinct $a,a' \in \phi$.
+Furthermore $\xxvibv$ induces an isomorphism from
+$\xxviPom \phi$ to $B$ that lifts to
+an isomorphism $T \xxvibv$ between $\xxviFom \xxviPom \phi$
+and $\xxviFom B$. As $\xxviBase(\beta)\subseteq B$ we have   
+$\beta \in \xxviFom B$ and thus there exists some
+$\Phi_\beta \in \xxviFom \xxviPom \phi$ such that
+$(\xxviF \xxvibv)(\Phi_\beta) = \beta$. 
+Now axiom ($\xxvinb 3$) entails that
+\begin{equation}\label{e:item1}
+   \xxvinb \beta = \xxvibv \{ \xxvinb \gamma \mid \gamma \in \xxviFom\phi,
+   \gamma \xxviol{\in} \Phi_\beta \}.
+\end{equation}
+Our claim is now that 
+\begin{eqnarray}
+   \top & \xxviissm & \xxvibv \{ \xxvinb\gamma \mid \gamma \in \xxviFom\phi\} \qquad \mbox{and} \label{e:item2} \\
+   \xxvinb \gamma \wedge \xxvinb \gamma' & \xxviissm & \bot \qquad \mbox{for all} \; \gamma,\gamma' \in \xxviFom \phi
+   \quad \mbox{s.t.} \; \gamma \not= \gamma'. \label{e:item3}
+\end{eqnarray}
+Items (\ref{e:item1}), (\ref{e:item2}) and (\ref{e:item3}) 
+together entail that 
+\begin{equation}\label{equ:equalityholds}
+\neg \xxvinb \beta = \xxvibv \{ \xxvinb \gamma \mid 
+\gamma \in \xxviFom \phi \mbox{\ and not} \; \gamma \xxviol{\in} \Phi_\beta \}.
+\end{equation}
+From Case~1 we know that all elements $\xxvinb \gamma$ that occur on the righthand side 
+of equation (\ref{equ:equalityholds}) can be written as joins of
+elements of $\xxvigen$ and therefore the same applies to $\neg\xxvinb\beta$.
+
+We now turn to the proof of (\ref{e:item2}) and (\ref{e:item3}). 
+First note that because $\bigvee \phi = \top$ an application
+of ($\xxvinb 4$) shows that $\top \xxviissm \xxvilatjoin 
+\{ \xxvinb\gamma \in \xxviFom \phi \mid \gamma \in \xxviFom \phi\} $
+which proves (\ref{e:item2}).
+% 
+% 
+% Because $\beta = (\xxviF\xxvisingleton)(\alpha)$ we have
+% $\xxviBase(\beta)\subseteq \xxvisingleton[X]$ and thus
+% $\xxviBase(\beta)\subseteq \phi$. 
+% Therefore $\beta \in \xxviFom \phi$ and an application of ($\xxvinb 4$)
+% %\footnote{At the moment I assume the 
+% %``stricter'' version of this axiom.} 
+% yields now $\neg \xxvinb \beta \xxviissm
+% \xxvilatjoin \{ \xxvinb\beta' \in \xxviFom U \xxviPal(X) \mid \beta' \in \xxviFom \phi
+% \; \mbox{and} \; \beta' \not= \beta \}$.
+% We are going to show that in fact 
+% \begin{equation}
+% \neg \xxvinb \beta =
+% \xxvilatjoin \{ \xxvinb\beta' \in \xxviFom U \xxviPal(X) \mid \beta' \in \xxviFom \phi
+% \; \mbox{and} \; \beta' \not= \beta \}
+% \end{equation}
+% by proving that for all
+% $\beta,\beta' \in \xxviFom \phi$, $\xxvinb \beta \wedge \xxvinb \beta' 
+% \xxviissm \bot$ if $\beta \not= \beta'$. 
+For the proof of (\ref{e:item3}) consider $\gamma,\gamma' \in \xxviFom \phi$ 
+with $\gamma \not= \gamma'$.  
+Let $\Phi \in \xxviSRD(C)$ be a slim redistribution of 
+$C \xxvicoloneqq \{\gamma,\gamma'\}$. We want to show that
+$\xxvinb(\xxviF \xxvibw)(\Phi) \xxviissm \bot$. As $\Phi$ is an arbitrary redistribution of $C$ this will imply by ($\xxvinb 2$) that
+$\xxvinb \gamma \wedge \xxvinb \gamma' \xxviissm \bot$ as required.
+
+By assumption we have $(\gamma,\Phi), (\gamma',\Phi) \in \xxviol{\in}$.
+This shows that $\emptyset \not\in\xxviBase(\Phi)$. 
+Suppose now for a contradiction that $B_\Phi \xxvicoloneqq 
+\xxviBase(\Phi) \subseteq \xxviPw \phi$ contains only singleton sets
+and put $\in' \xxvicoloneqq {\in\xxvirst{\phi \times B_\Phi}}$.
+Then $\in' \circ \xxviconv{\in'} \subseteq \xxviId_{\phi}$.
+As a consequence we get $(\gamma,\gamma') \in \xxviol{\in' \circ \xxviconv{(\in')}}
+\subseteq \xxviId_{\xxviF\phi}$ which means $\gamma = \gamma'$ --- a contradiction.
+Hence we can assume that $B_\Phi$ contains at least one set 
+$\psi^* \subseteq \phi$ such that $|\psi^*|>1$.
+
+In order to prove that $\xxvinb(\xxviF \xxvibw)(\Phi) \xxviissm \bot$, define a function
+$d: \xxviPw \phi \to  \xxviPw \phi$ by letting 
+\[	 d(\psi)  \xxvicoloneqq  \left\{ 
+	    \begin{array}{lcl}
+	    		\emptyset & \mbox{if} & |\psi| \geq 1 \\ 
+			\psi & \mbox{if} & |\psi| = 1 \\
+			\phi & \mbox{if} & \psi = \emptyset
+		\end{array} \right.
+\]
+It follows from our assumptions on the set $\phi$ that $\vdash \xxvibw\psi \xxviissm
+\xxvibv d(\psi)$, for all $\psi \in \xxviPw\phi$.
+Then an application of axiom ($\xxvinb 1$) shows that 
+$\xxvinb (\xxviF \xxvibw)(\Phi) \xxviissm \xxvinb (\xxviF \xxvibv)(\xxviF d (\Phi))$.
+Because $\xxviBase(\xxviF d(\Phi)) = d[B_\Phi]$ and 
+$d(\psi^*) = \emptyset$ we obtain $\emptyset \in \xxviBase(\xxviF d(\Phi))$.
+It is now a matter of routine checking that
+$A \xxvicoloneqq \{ \alpha \in \xxviFom U \xxviPal(X) \mid \alpha \xxviol{\in} 
+\xxviF d(\Phi)\} = \emptyset$. By axiom $(\xxvinb 3)$ we have
+$\xxvinb (\xxviF \xxvibv)(\xxviF d (\Phi)) \xxviissm \xxvilatjoin_{\alpha \in A} 
+\xxvinb \alpha = \bot$, and thus $\xxvinb (\xxviF \xxvibw)(\Phi) \xxviissm \bot$
+which finishes the argument for proving (\ref{e:item3}) and hence
+also of (\ref{equ:equalityholds}).
+
+% \[ 
+% \neg \xxvinb \beta = 
+% \xxvilatjoin \{ \xxvinb (\xxviF \xxvisingleton)(\alpha) \in \xxvigen \mid 
+%  \xxvinb (\xxviF \xxvisingleton)(\alpha) \leq \neg \xxvinb \beta \} .
+% \]
+\medskip
+
+{\em Case 3:} Consider an element of $\xxviM \xxviPal(X)$ of the form
+$\xxvibw_{i \in I} \xxvinb \beta_i$ for some finite set $A=
+\{ \xxvinb \beta_i \in
+\xxviFom U \xxviPal(X) \mid i\in I\}$. Then by axiom ($\xxvinb 2$)
+we have
+\begin{eqnarray*}
+ 	 \xxvibw_{i \in I} \xxvinb \beta_i & = & \xxvilatjoin_{\Phi \in \xxviSRD(A)}
+	\xxvinb (\xxviFom \xxvibw)(\Phi)\\
+	& \stackrel{\mbox{\tiny Case 1}}{=} & \xxvilatjoin_{\Phi \in \xxviSRD(A)} \{ \xxvinb (\xxviF \xxvisingleton)(\alpha) \in \xxvigen \mid  
+	\xxvinb (\xxviF \xxvisingleton)(\alpha) \leq \xxvinb (\xxviFom \xxvibw)(\Phi)\}.
+\end{eqnarray*}
+
+Finally, the general case (that is, for an arbitrary element of $\xxviM 
+\xxviPal (X)$)
+can be obtained 
+%as follows: Let $a$ be an arbitrary element of
+%$\xxviM \xxviPal (X)$, ie., $a$ is a Boolean combination of formulas
+%%
+%
+%
+from the cases above using standard Boolean reasoning.
+% When dealing with formulas of the form $\neg\xxvinb \beta\in
+% \xxviM \xxviPal (X)$ one uses that
+% \[
+% 	\neg\xxvinb\beta \stackrel{\mbox{\tiny Case~1}}{=} 
+% 	\neg (\xxvibv \xxvinb(\xxviF\xxvisingleton)(\alpha)) = 
+% 	\xxvibw \neg \xxvinb(\xxviF\xxvisingleton)(\alpha) \]
+% and then Case~2 takes care of the negated $\xxvinb$-formulas
+% on the righthand side.
+\end{proof}	
+
+
+As a corollary of the proof of Proposition~\ref{p:3} we obtain the
+following one-step normal form theorem.
+
+\begin{corollary}
+For $a\in\xxviLift\xxviPc X$ we have 
+\[ a=\xxvilatjoin\{\xxvinb(\xxviF \xxvisingleton)(\alpha)
+\mid\alpha\in\delta_X(a) \cap \xxviFom X\}.\]
+\end{corollary}
+
+\noindent In case that $\xxviF$ preserves finite sets, the join is finite
+for finite sets $X$ and can be expressed in the language.  Induction
+along the sequence of the $\xxviLang_n$ then yields a normal form theorem
+for $\xxviLang$.
+% For the case $\xxviF=\xxviPw$ this yields the normal forms of
+% Fine~\cite{fine:normal-forms}.  ((and the disjunctive formulas of
+% (what is the righ reference?  Janin/Walukiewicz ??))).
+
+\subsection{Completeness}
+
+The following proposition, going back to \cite{kkp:cmcs04}, is a
+standard result in coalgebra based on $\delta$ being injective and
+$\xxviM$ being finitary and preserving injective maps.
+
+\begin{proposition}\label{prop:coalg-compl}
+  Suppose $a\not\le b$ in the initial $\xxviM$-algebra. Then there is
+  a $\xxviF$-coalgebra $(S,\sigma)$ and $s\in S$ such that $s\Vdash a$
+  and not $s\Vdash b$. 
+\end{proposition}
+\xxviproofspace
+\begin{proof} (Sketch) \hspace{0.1cm} To explain the idea of the proof
+  assume first that a final $\xxviF$-coalgebra $\zeta:Z\to \xxviF Z$ exists.
+  Then we would prove that the unique $\xxviM$-algebra morphism
+  $\xxvisem{\cdot}$ from the initial $\xxviM$-algebra to $\xxviM\xxviPal Z
+  \stackrel{\delta}{\longrightarrow}
+  \xxviF\xxviPal\stackrel{\zeta^{-1}}{\longrightarrow}\xxviPal Z$ is injective.
+  Indeed, $a\not\le b$ then implies $\xxvisem{a}\not\subseteq\xxvisem{b}$, ie
+  there is $z\in Z$ such that $(Z,\zeta),z\Vdash a$ and
+  $(Z,\zeta),z\not\Vdash b$.
+
+  Since the assumption of the existence of a final coalgebra excludes
+  important examples such as Kripke frames or models, we replace the
+  final coalgebra by the corresponding final sequence
+  $(\xxviF^n1)_{n<\omega}$, which is defined as follows.  We denote by
+  $1=\xxviF^01$ the final object in $\xxviSet$.  The map $p_0:\xxviF{1}\to{1}$ is
+  given by finality and $p_{n+1}:\xxviF(\xxviF^n{1})\to \xxviF^n{1}$ is defined to
+  be $\xxviF p_n$.  It is easy to see that each $p_{n}$ is surjective.  We
+  think of the $\xxviF^n{1}$ as approximating the final coalgebra.
+  (Indeed, if we let run the final sequence through all ordinals, we
+  obtain the final coalgebra as a limit if it exists, 
+  see~\cite{adam-koub:gfp}.)  In the same way as any coalgebra
+  $\xi:X\to \xxviF X$ has a unique arrow into the final coalgebra, there
+  are canonical `$n$-step behavior maps', that is, arrows $\xi_n:X\to
+  \xxviF^n{1}$ to the approximants of the final coalgebra: $\xi_0:X\to 1$
+  is given by finality and $\xi_{n+1}=\xxviF(\xi_n)\circ\xi$.
+
+  Recall that we may consider $\xxviLTM$, the initial $\xxviM$-algebra, as a
+  union of its approximants $\xxviM^n\mathbbm{2}$.  Elements of
+  $\xxviM^n\mathbbm{2}$ correspond to formulas of depth $n$ and we define
+  their semantics wrt the final sequence of $\xxviF$ as a $\xxviBA$-morphism
+  $\xxvisem{-}_n:\xxviM^n\mathbbm{2}\to \xxviPal\xxviF^n 1$ as follows.
+\begin{equation}
+  \xymatrix{
+    \xxviPal 1\ar[r]^{\xxviPal p_0} & \ldots
+    & \xxviPal\xxviF^n 1\ar[r]^{\xxviPal p_n}
+    & \xxviPal\xxviF^{n+1} 1 & \ldots\\
+    \mathbbm{2}\ar[u]_{\xxvisem{-}_0}\ar[r]_{j_0} & \ldots
+    & \xxviM^n\mathbbm{2}\ar[u]_{\xxvisem{-}_n}\ar[r]_{j_n}
+    & \xxviM^{n+1}\mathbbm{2}\ar[u]_{\xxvisem{-}_{n+1}} & \ldots
+  }
+\end{equation}
+$\xxvisem{-}_0$ is given by initiality (and is actually the identity).
+For the definition of $\xxvisem{-}_{n+1}$, recall that $\delta_{\xxviF^{n}1}:
+\xxviM\xxviPal \xxviF^{n}1 \to \xxviPal \xxviF^{n+1} 1$, and assume inductively that
+$\xxvisem{-}_{n}: \xxviM^{n}\xxvibbtwo \to \xxviPal \xxviF^{n}1$ has been defined, so that
+$\xxviM (\xxvisem{-}_{n}) : \xxviM^{n+1}\xxvibbtwo \to \xxviM\xxviPal \xxviF^{n}1$.  Composing
+these two maps, we obtain $\xxvisem{-}_{n+1} := \delta_{\xxviF^n 1}
+\circ\xxviM(\xxvisem{-}_n)$.
+
+Observe that the semantics of a formula is independent of the
+particular approximant we choose (all squares in the diagram commute).
+Moreover, given a coalgebra $\xi:X\to \xxviF X$ and $a\in\xxviM^n\mathbbm{2}$,
+the semantics via the initial $\xxviM$-algebra and the semantics via the
+final sequence coincide: $\xxvisem{a}_{(X,\xi)}=\xi_n^{-1}(\xxvisem{a}_n)$.
+Since $\delta$ is injective (Proposition~\ref{p:3}) and $\xxviM$ preserves
+embeddings (Proposition~\ref{p:2}), a straightforward inductive proof
+shows that all $\xxvisem{-}_n$, $n\in\omega$, are injective.
+
+To show the claim now, suppose $a\not\le b$ in the initial
+$\xxviM$-algebra.  We find an approximant $\xxviM^n\mathbbm{2}$, in which
+$a\not\le_n b$.  Choosing a half-inverse $h$ of $p_0$, we let $\xi:
+\xxviF^{n}1 \to \xxviF\xxviF^{n}1$ be $\xxviF^n(h)$. $\xi$ provides $\xxviF^n{1}$ with
+$\xxviF$-coalgebra structure.  Now injectivity of $\xxvisem{-}_n$ shows that
+$(\xxviF^n{1},\xi)$ provides a counter-example for $a\le b$.
+\end{proof}
+
+\noindent The proof of Theorem~\ref{t:main} is now a corollary.
+Reasoning by contraposition, take formulas $a,b \in \xxviLang$ such that
+$\not\vdash_{\xxvinax} a \leq b$. By Proposition~\ref{prop:Lang-M},
+$a\not\le b$ in $\xxviLTM$. Now, completeness follows from
+Propositions~\ref{prop:coalg-compl} and \ref{prop:Lang-M-sem}.
+
+
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "nax"
+%%% End: 
+
+
+%%
+%%
+% \bibliographystyle{abbrv}%same as plain, but first names abbreviated
+% \bibliography{coalg-short,nabla}
+%%
+
+\begin{thebibliography}{10}
+
+\bibitem{abramsky:dtlf}
+S.~Abramsky.
+\newblock Domain theory in logical form.
+\newblock {\em Ann.\ Pure Appl.\ Logic}, 51, 1991.
+
+\bibitem{aczel:nwfs}
+P.~Aczel.
+\newblock {\em Non-Well-Founded Sets}.
+\newblock CSLI, Stanford, 1988.
+
+\bibitem{adam-koub:gfp}
+J.~Ad{\'a}mek and V.~Koubek.
+\newblock On the greatest fixed point of a set functor.
+\newblock {\em Theoret.\ Comput.\ Sci.}, 150, 1995.
+
+\bibitem{adam-trnk:automata}
+J.~Ad{\'a}mek and V.~Trnkov{\'a}.
+\newblock {\em Automata and Algebras in Categories}.
+\newblock Kluwer, 1990.
+
+\bibitem{bilk:proo08}
+M.~B\'{\i}lkov\'a, A.~Palmigiano, and Y.~Venema.
+\newblock Proof systems for the coalgebraic cover modality, 2008.
+\newblock Same volume.
+
+\bibitem{bons-kurz:fossacs05}
+M.~Bonsangue and A.~Kurz.
+\newblock Duality for logics of transition systems.
+\newblock In {\em FoSSaCS'05}.
+
+\bibitem{cirs-patt:concur04-j}
+C.~C{\^\i}rstea and D.~Pattinson.
+\newblock Modular proof systems for coalgebraic logics.
+\newblock {\em Theoret.\ Comp.\ Sci.}, 338, 2007.
+
+\bibitem{dago:moda06}
+G.~D'Agostino and G.~Lenzi.
+\newblock On modal $\mu$-calculus with explicit interpolants.
+\newblock {\em Journal of applied logic}, 338, 2006.
+
+\bibitem{fine:norm75}
+K.~Fine.
+\newblock Normal forms in modal logic.
+\newblock {\em Notre Dame Journal of Formal Logic}, 16, 1975.
+
+\bibitem{jaco04:trace}
+B.~Jacobs.
+\newblock Trace {S}emantics for {C}oalgebras.
+\newblock In {\em CMCS'04}.
+
+\bibitem{jacobs:many-sorted}
+B.~Jacobs.
+\newblock Many-sorted coalgebraic modal logic: a model-theoretic study.
+\newblock {\em Theor.\ Inform.\ Appl.}, 35, 2001.
+
+\bibitem{jani:auto95}
+D.~Janin and I.~Walukiewicz.
+\newblock Automata for the modal $\mu$-calculus and related results.
+\newblock In {\em Proc.~MFCS'95}.
+
+\bibitem{kkp:cmcs04}
+C.~Kupke, A.~Kurz, and D.~Pattinson.
+\newblock Algebraic semantics for coalgebraic logics.
+\newblock In {\em CMCS'04}.
+
+\bibitem{kupk:coal08}
+C.~Kupke and Y.~Venema.
+\newblock Coalgebraic automata theory: basic results.
+\newblock {\em Logical Methods in Computer Science}, to appear.
+
+\bibitem{kurz:cmcs98-j}
+A.~Kurz.
+\newblock Specifying coalgebras with modal logic.
+\newblock {\em Theoret.\ Comput.\ Sci.}, 260, 2001.
+
+\bibitem{kurz:sigact06}
+A.~Kurz.
+\newblock Coalgebras and their logics.
+\newblock {\em SIGACT News}, 37, 2006.
+
+\bibitem{kurz-petr:cmcs08}
+A.~Kurz and D.~Petri{\c s}an.
+\newblock Functorial coalgebraic logic: The case of many-sorted varieties.
+\newblock In {\em CMCS'08}.
+
+\bibitem{moss:cl}
+L.~Moss.
+\newblock Coalgebraic logic.
+\newblock {\em Ann.\ Pure Appl.\ Logic}, 96, 1999.
+
+\bibitem{palm:nabl07}
+A.~Palmigiano and Y.~Venema.
+\newblock Nabla algebras and {C}hu spaces.
+\newblock In {\em CALCO'07}.
+
+\bibitem{pattinson:cml-j}
+D.~Pattinson.
+\newblock Coalgebraic modal logic: Soundness, completeness and decidability of
+  local consequence.
+\newblock {\em Theoret.\ Comput.\ Sci.}, 309, 2003.
+
+\bibitem{roessiger:ml98-j}
+M.~R{\"o}{\ss}iger.
+\newblock From modal logic to terminal coalgebras.
+\newblock {\em Theoret.\ Comput.\ Sci.}, 260, 2001.
+
+\bibitem{rutten:uc-j}
+J.~Rutten.
+\newblock Universal coalgebra: {A} theory of systems.
+\newblock {\em Theoret.\ Comput.\ Sci.}, 249, 2000.
+
+\bibitem{sant:comp07}
+L.~Santocanale and Y.~Venema.
+\newblock Completeness for flat modal fixpoint logics (extended abstract).
+\newblock In {\em LPAR'07}.
+
+\bibitem{schroeder:fossacs05}
+L.~Schr\"oder.
+\newblock Expressivity of {C}oalgebraic {M}odal {L}ogic: {T}he {L}imits and
+  {B}eyond.
+\newblock In {\em FoSSaCS'05}.
+
+\bibitem{siko:theo48}
+R.~Sikorski.
+\newblock A theorem on extensions of homomorphisms.
+\newblock {\em Annals of Polish Mathematical Society}, 21, 1948.
+
+\bibitem{vene:alge06}
+Y.~Venema.
+\newblock Algebras and coalgebras.
+\newblock In P.~Blackburn, J.~van Benthem, and F.~Wolter, editors, {\em
+  Handbook of Modal Logic}, pages 331--426. Elsevier, 2006.
+
+\bibitem{venema:coalg-aut}
+Y.~Venema.
+\newblock Automata and fixed point logics: a coalgebraic perspective.
+\newblock {\em Inf.\ Comput.}, 204, 2006.
+
+\end{thebibliography}
+
+
+%% or
+%% for the proceedings please include the bbl here
+%%
+% \begin{thebibliography}{99}
+% %to be in "plain style"
+% \end{thebibliography}
+
+\begin{description}
+%\bigskip\noindent
+\item[\rm Clemens Kupke:]
+Centrum voor Wiskunde en Informatica (CWI),
+Kruislaan 413,
+1098 SJ Amsterdam.
+\emph{E-mail:} kupke@cwi.nl
+\item[\rm Alexander Kurz:]
+Department of Computer Science,
+University of Leicester, UK.
+\emph{E-mail:} kurz@mcs.le.ac.uk 
+\item[\rm Yde Venema:]
+Institute for Logic, Language and Computation,
+Universiteit van Amsterdam,
+Plantage Muidergracht 24,
+1018 TV Amsterdam.
+\emph{E-mail:} yde@science.uva.nl
+\end{description}
+
+\end{document}
+

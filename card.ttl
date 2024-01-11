@@ -1,0 +1,25 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix contact: <http://www.w3.org/2000/10/swap/pim/contact#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix wiki: <http://wikipedia.org/wiki/> .
+@prefix : <#> .
+
+<> a foaf:PersonalProfileDocument ; 
+    foaf:primaryTopic :me .
+
+<https://bblfish.net/people/henry/card#me>
+    a foaf:Person ;
+    foaf:homepage <https://bblfish.net> ;
+    foaf:name "Henry Story" .
+
+:me
+    a foaf:Person ;
+    foaf:name "Alexander Kurz" ;
+    foaf:homepage <https://alexhkurz.github.io/> ;
+    contact:home [
+        a contact:ContactLocation ;
+        contact:address [
+            contact:city "Orange California" ;
+            contact:country "United States" ;
+        ]
+    ] .
