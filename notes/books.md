@@ -29,6 +29,7 @@ My current working title for this topic is **Democratic Governance**. In the fol
 
 #### Currently Reading
 
+- Schweik and English (2012) **Internet Success - A Study of Open-Source Software Commons**.
 - Matthew Jackson (2019) **The Human Network: How Your Social Position Determines Your Power, Beliefs, and Behaviors**. 
 - Robert Sapolski (2017) **Behave: The Biology of Humans at Our Best and Worst**.
 - Josiah Ober (2017) **Demopolis - Democracy before Liberalism in Theory and Practice**. "I hope to show liberals why it is wrong to regard citizen participation in government as a cost that can or should be minimized. And that it is a mistake to view a preference for citizen self-government and a fear of government captured by self-interested elites as uniquely appropriate to populists, anarchists, or Schmittian agonists." What can we learn from ancient Athens about democratic resilience?
