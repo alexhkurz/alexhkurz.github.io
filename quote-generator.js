@@ -1,7 +1,10 @@
 window.addEventListener('load', newQuote, true);
 
 var quotes = [
-"The greatest of evils and the worst of crimes is poverty. (George Bernard Shaw)"
+"Institutions are the humanly devised constraints that structure political, economic and social interaction. (Douglass C. North)"
+, "Democracy does not give the people the most skillful government, but what it does even the most skillful government is powerless to achieve: it spreads throughout society a restless activity, a superabundant strength, and energy that never exists without it, and which, if circumstances are even slightly favorable, can accomplish miracles. (Alexis de Tocqueville)"
+, "Once one agent learns how to become more competitive by sacrificing a common value, all its competitors must also sacrifice that value or be outcompeted and replaced by the less scrupulous. Therefore, the system is likely to end up with everyone once again equally competitive, but the sacrificed value is gone forever. (Scott Alexander)"
+, "The greatest of evils and the worst of crimes is poverty. (George Bernard Shaw)"
 , "Remember, democracy never lasts long. It soon wastes, exhausts, and murders itself. There never was a democracy yet that did not commit suicide. (John Adams)"
 , "The only known defense against malware is free software (Richard M Stallman)"
 , "Every proprietary program is either known malware or possible malware (Richard M Stallman)"
@@ -284,4 +287,38 @@ function newQuote() {
 
 /*
   "What an artist does is not to create, but to discover. To discover natural potentials in the physical elements of this world. The musician doesn't create music, he discovers the potential in the physics of sound. (<a href="https://www.youtube.com/watch?v=kLKHpSPoNKI#t=21m20s">Aristotle-Holmes</a>)",
+*/
+
+/*
+
+Tocqueville, Alexis de. Democracy in America. 1835.
+
+To set foot on American soil is to find oneself in tumultuous surroundings. A confused clamor proceeds from every quarter. A thousand voices assail the ear simultaneously, each giving expression to some social need. Everywhere things are in an uproar.
+
+The great political fervor that keeps American legislatures in a state of constant agitation is the only part of this vast movement that can be seen from abroad, but it is merely an episode in something much larger, and in a way an extension of it; something that begins in the lowest ranks of the populace and from there spreads through all classes of citizens one after another.
+
+No one can work harder at being happy than Americans do.
+
+It is difficult to say what place political concerns occupy in the lives of Americans. For them, to take an interest in and talk about the government of society is life’s most important activity and, in a way, its only pleasure…
+
+Americans do not converse; they argue. They do not talk; they lecture. They always speak to you as though addressing a meeting, and if for some reason, they warm to the topic, they will say “Gentlemen” even when addressing a single person.
+
+The inhabitants of some countries accept the political rights granted them by law only with a kind of repugnance. It seems as though they value their time too much to spend it on the interests of the community, and they would rather confine themselves within the narrow limits of self-interest, precisely defined by four ditches lined with hedges.
+
+If, by contrast, an American were reduced to minding only his own business, half of his life would be stolen from him. He would feel as though an immense void had hollowed out his days, and he would become incredibly unhappy.
+
+I am convinced that if despotism ever takes hold in America, it will find conquering the habits to which liberty has given rise even more difficult than subduing the love of liberty itself.
+
+If an American were reduced to minding only his own business, half of his life would be stolen from him.
+
+The ceaseless agitation that democratic government introduces into politics then spreads to civil society. I am not sure that in the end this is not the greatest benefit of democratic government, so that I praise it far more for what it causes to be done than for what it does….
+
+I have no doubt that democratic institutions, combined with the physical nature of the country, are responsible for the prodigious development of industry that one sees in the United States — not the direct cause, as so many say, but rather the indirect cause. It is not that the laws are responsible for this development, but rather that the people, in making the laws, learn how to make it happen.
+
+Democracy does not give the people the most skillful government, but what it does even the most skillful government is powerless to achieve: it spreads throughout society a restless activity, a superabundant strength, an energy that never exists without it, and which, if circumstances are even slightly favorable, can accomplish miracles. These are (democracy’s) true advantages.
+
+In this century, when the fate of the Christian world seems to hang in the balance, some are quick to attack democracy as a hostile power, while it is still growing; others already worship it as a new god emerged from the void.
+
+What do you want from society and government?… If it seems useful to you to turn man’s intellectual and moral efforts to the necessities of life and use them to improve his well-being; if reason strikes you as more profitable to man than genius; if your purpose is to create not heroic virtues but tranquil habits; if you are willing to settle for a prosperous (society); and if the principal purpose of a government is not to make the nation as a whole as glorious or powerful as it can be but to achieve for each individual the greatest possible well-being while avoiding misery as much as possible, then constitute a democratic government.
+
 */
