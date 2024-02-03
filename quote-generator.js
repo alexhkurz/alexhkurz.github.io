@@ -1,7 +1,8 @@
 window.addEventListener('load', newQuote, true);
 
 var quotes = [
-"Institutions are the humanly devised constraints that structure political, economic and social interaction. (Douglass C. North)"
+"Human nature is not a machine to be built after a model, and set to do exactly the work prescribed for it, but a tree which requires to grow and develop itself on all sides, according to the tendency of the inward forces which make it a living thing. (John Stuart Mill and Harriet Taylor)"
+, "Institutions are the humanly devised constraints that structure political, economic and social interaction. (Douglass C. North)"
 , "Democracy does not give the people the most skillful government, but what it does even the most skillful government is powerless to achieve: it spreads throughout society a restless activity, a superabundant strength, and energy that never exists without it, and which, if circumstances are even slightly favorable, can accomplish miracles. (Alexis de Tocqueville)"
 , "Once one agent learns how to become more competitive by sacrificing a common value, all its competitors must also sacrifice that value or be outcompeted and replaced by the less scrupulous. Therefore, the system is likely to end up with everyone once again equally competitive, but the sacrificed value is gone forever. (Scott Alexander)"
 , "The greatest of evils and the worst of crimes is poverty. (George Bernard Shaw)"
