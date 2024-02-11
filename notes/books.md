@@ -29,13 +29,16 @@ My current working title for this topic is **Democratic Governance**. In the fol
 
 #### Currently Reading
 
+- Patricia Nelson Limerick (1987) **The Legacy of Conquest: The Unbroken Past of the American West**.
+- Michael Graziano (2019) **Rethinking Consciousness: A Scientific Theory of Subjective Experience**.
+- Martha Nussbaum (2011) **Creating Capabilities - The Human Development Approach**.
 - Schweik and English (2012) **Internet Success - A Study of Open-Source Software Commons**.
 - Matthew Jackson (2019) **The Human Network: How Your Social Position Determines Your Power, Beliefs, and Behaviors**. 
 - Robert Sapolski (2017) **Behave: The Biology of Humans at Our Best and Worst**.
 - Josiah Ober (2017) **Demopolis - Democracy before Liberalism in Theory and Practice**. "I hope to show liberals why it is wrong to regard citizen participation in government as a cost that can or should be minimized. And that it is a mistake to view a preference for citizen self-government and a fear of government captured by self-interested elites as uniquely appropriate to populists, anarchists, or Schmittian agonists." What can we learn from ancient Athens about democratic resilience?
 - David Montgomery (2007) **Dirt: The Erosion of Civilizations**. A history of how the loss of agricultural soil contributed to the collapse of civilizations.
 - Hannah Arendt (1963) **On Revolution**. A philosophical history of modernity and how it was shaped by the American and French revolutions.
-- Martha Nussbaum (2018) **The Monarchy of Fear- A Philosopher Looks at Our Political Crisis**. 
+- Martha Nussbaum (2018) **The Monarchy of Fear - A Philosopher Looks at Our Political Crisis**. 
 - Bruce Schneier (2023) **A Hacker's Mind - How the Powerful Bend Society's Rules, and How to Bend them Back**.
 - Ben Buchanan. **The Hacker and the State - Cyber Attacks and the New Normal of Geopolitics**. (2020). Will AI make governments and other technology-based organizations more fragile?
 - Geoffrey West (2017) **Scale: The Universal Laws of Life, Growth, and Death in Organisms, Cities, and Companies**. What are the quantitative laws (network effects,...) shared by vastly different complex systems such as animals and cities? What do they tell us about growth as a special case of scaling phenomenon?
