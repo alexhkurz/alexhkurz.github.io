@@ -28,7 +28,7 @@ Formerly University of Leicester, CWI Amsterdam, Masaryk University Brno, LMU Mu
 
 ---
 
-LLMs cannot be more reliable and trustworthy than the data they are trained on. The fact that LLMs have emerged as powerful instruments for programming is a testament to the half-century long collective efforts of the software engineering community to create robust open-source software.
+LLMs cannot be more reliable and trustworthy than the data they are trained on. The fact that LLMs have emerged as powerful tools for programming is a testament to the half-century long collective efforts of the software engineering community to create robust open-source software.
 
 <!---
 
