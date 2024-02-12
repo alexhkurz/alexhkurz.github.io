@@ -28,7 +28,12 @@ Formerly University of Leicester, CWI Amsterdam, Masaryk University Brno, LMU Mu
 
 ---
 
+LLMs cannot be more reliable and trustworthy than the data they are trained on. The fact that LLMs have emerged as powerful instruments for programming is a testament to the half-century long collective efforts of the software engineering community to create robust open-source code.
+
+<!---
+
 [Jaron Lanier](https://en.wikipedia.org/wiki/Jaron_Lanier): *"And so I can't call these things social networks anymore. I call them behavior modification empires. ... I don't believe our species can survive unless we fix this. We cannot have a society in which, if two people wish to communicate, the only way that can happen is if it's financed by a third person who wishes to manipulate them."* 
+-->
 
 <!--
 
