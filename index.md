@@ -30,10 +30,7 @@ Formerly University of Leicester, CWI Amsterdam, Masaryk University Brno, LMU Mu
 
 LLMs cannot be more reliable and trustworthy than the data they are trained on. The fact that LLMs have emerged as powerful tools for programming is a testament to the half-century long collective efforts of the software engineering community to create robust open-source software.
 
-<!---
-
 [Jaron Lanier](https://en.wikipedia.org/wiki/Jaron_Lanier): *"And so I can't call these things social networks anymore. I call them behavior modification empires. ... I don't believe our species can survive unless we fix this. We cannot have a society in which, if two people wish to communicate, the only way that can happen is if it's financed by a third person who wishes to manipulate them."* 
--->
 
 <!--
 
@@ -79,7 +76,7 @@ If we want to survive on this planet, we need to respect [planetary boundaries](
 
 ---
 
-In early 2021, the **University of Leicester** threatened with redundancy some of the best mathematicians and computer scientists I know, former colleagues of mine. By the end of the academic year, if I counted correctly, 16 academics in mathematics and computer science either left their job "voluntarily" or were made redundant ... [more](leicester.md).
+In early 2021, the **University of Leicester** threatened with redundancy some of the best mathematicians and computer scientists I know, former colleagues of mine. By the end of the academic year, if I counted correctly, 16 academics in mathematics and computer science either left their job "voluntarily" or were made redundant ... [more](leicester.md). [Kent](https://www.change.org/p/save-arts-humanities-and-social-sciences-subjects-at-the-university-of-kent), 
 
 ---
 
