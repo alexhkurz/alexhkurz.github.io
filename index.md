@@ -30,7 +30,11 @@ Formerly University of Leicester, CWI Amsterdam, Masaryk University Brno, LMU Mu
 
 LLMs cannot be more reliable and trustworthy than the data they are trained on. The fact that LLMs have emerged as powerful tools for programming is a testament to the half-century long collective efforts of the software engineering community to create robust open-source software.
 
+<!--
+
 [Jaron Lanier](https://en.wikipedia.org/wiki/Jaron_Lanier): *"And so I can't call these things social networks anymore. I call them behavior modification empires. ... I don't believe our species can survive unless we fix this. We cannot have a society in which, if two people wish to communicate, the only way that can happen is if it's financed by a third person who wishes to manipulate them."* 
+
+-->
 
 <!--
 
@@ -66,11 +70,13 @@ Reuters [1](https://www.reuters.com/news/picture/in-pictures-inside-the-battle-f
 
 <!-- The primary problem created by Climate Change is not temperature rise, sea-level rise, or extreme weather. It’s starvation. Without mitigation, around a billion people will starve by the end of this century. Crop productivity is virtually zero when national average temperatures are below -2° or above 25°C and peaks around 15°C. Over the past 60 years, productivity has risen with agri-tech developments, but in the countries near the equator, it is now falling as average temperature increases outweigh further technology gains. In the second half of this century a large band of equatorial countries will neither be able to supply their food nor have the resources to purchase it. [Julian Allwood](https://www.uselessgroup.org/) -->
 
----
+<!---
 
-If we want to survive on this planet, we need to respect [planetary boundaries](https://en.wikipedia.org/wiki/Planetary_boundaries). <!-- and transition to a sustainable economy.--> Are our old ideas about economic growth still viable? What kind of growth[^growth] do we want? Growth (at least naively construed) is not sustainable because sustained growth is exponential growth. (Even a modest [2% per year](https://en.wikipedia.org/wiki/List_of_countries_by_GDP_(real)_per_capita_growth_rate) equals growth of 724% over 100 years and of 1,995,657% over 500 years.) While the [Limits to Growth](https://en.wikipedia.org/wiki/The_Limits_to_Growth) have been recognised for a long time, recent accounts are Dasgupta's Review on [The Economics of Biodiversity](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/957291/Dasgupta_Review_-_Full_Report.pdf) and the IPBES Global Assessment Report on [Biodiversity and Ecosystem Services](https://ipbes.net/global-assessment).
+If we want to survive on this planet, we need to respect [planetary boundaries](https://en.wikipedia.org/wiki/Planetary_boundaries). Are our old ideas about economic growth still viable? What kind of growth[^growth] do we want? Growth (at least naively construed) is not sustainable because sustained growth is exponential growth. (Even a modest [2% per year](https://en.wikipedia.org/wiki/List_of_countries_by_GDP_(real)_per_capita_growth_rate) equals growth of 724% over 100 years and of 1,995,657% over 500 years.) While the [Limits to Growth](https://en.wikipedia.org/wiki/The_Limits_to_Growth) have been recognised for a long time, recent accounts are Dasgupta's Review on [The Economics of Biodiversity](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/957291/Dasgupta_Review_-_Full_Report.pdf) and the IPBES Global Assessment Report on [Biodiversity and Ecosystem Services](https://ipbes.net/global-assessment).
 
 [^growth]: For example, I believe that progress in software engineering allows us to argue that exponential growth of knowledge will be sustainable for a long time to come.
+
+-->
 
 [Books](notes/books.html)  
 
