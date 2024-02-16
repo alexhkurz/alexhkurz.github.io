@@ -33,6 +33,16 @@ Formerly University of Leicester, CWI Amsterdam, Masaryk University Brno, LMU Mu
 
 LLMs cannot be more reliable and trustworthy than the data they are trained on. The fact that LLMs have emerged as powerful tools for programming is a testament to the half-century long collective efforts of the software engineering community to create robust open-source software.
 
+---
+
+AI is like sugar. 
+
+Humans craving sugar was good as long as calories were important for survival. In times where we are swamped by industrial sugar, this craving is a danger to our health (and to healthcare more generally). At least, we agreed on laws that the sugar content of food and drinks must be labelled.
+
+Humans craving attention was good as long as this craving forced us to seek attention from other humans. In times were we are swamped by AI generated content, this craving is a danger to mental health (and to the fabric of our society more generally). Shouldn't we agree on laws that AI generated content must be labelled?
+
+---
+
 <!--
 
 [Jaron Lanier](https://en.wikipedia.org/wiki/Jaron_Lanier): *"And so I can't call these things social networks anymore. I call them behavior modification empires. ... I don't believe our species can survive unless we fix this. We cannot have a society in which, if two people wish to communicate, the only way that can happen is if it's financed by a third person who wishes to manipulate them."* 
