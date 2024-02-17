@@ -43,11 +43,9 @@ Humans craving attention was good as long as this craving forced us to seek atte
 
 ---
 
-<!--
+[Jaromil](https://jaromil.dyne.org/): *"Are we developing tech for machines to perceive us or are we developing tech for people to understand machines?"*
 
 [Jaron Lanier](https://en.wikipedia.org/wiki/Jaron_Lanier): *"And so I can't call these things social networks anymore. I call them behavior modification empires. ... I don't believe our species can survive unless we fix this. We cannot have a society in which, if two people wish to communicate, the only way that can happen is if it's financed by a third person who wishes to manipulate them."* 
-
--->
 
 <!--
 
