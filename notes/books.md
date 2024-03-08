@@ -35,29 +35,34 @@ My current working titles for this topic are **Democratic Governance** or **Tech
   - Joseph LeDoux (2019) **The Deep History of Ourselves: The Four-Billion-Year Story of How We Got Conscious Brains**
   - Robert Sapolski (2017) **Behave: The Biology of Humans at Our Best and Worst**.
   - Robert Wright (1995) **Moral Animal**
-- Patricia Nelson Limerick (1987) **The Legacy of Conquest: The Unbroken Past of the American West**. What does the wild west teach us about the "wild web"?
-- Michael Graziano (2019) **Rethinking Consciousness: A Scientific Theory of Subjective Experience**.
-- Martha Nussbaum (2011) **Creating Capabilities - The Human Development Approach**.
-- Schweik and English (2012) **Internet Success - A Study of Open-Source Software Commons**.
-- Matthew Jackson (2019) **The Human Network: How Your Social Position Determines Your Power, Beliefs, and Behaviors**. 
-- Josiah Ober (2017) **Demopolis - Democracy before Liberalism in Theory and Practice**. "I hope to show liberals why it is wrong to regard citizen participation in government as a cost that can or should be minimized. And that it is a mistake to view a preference for citizen self-government and a fear of government captured by self-interested elites as uniquely appropriate to populists, anarchists, or Schmittian agonists." What can we learn from ancient Athens about democratic resilience?
-- David Montgomery (2007) **Dirt: The Erosion of Civilizations**. A history of how the loss of agricultural soil contributed to the collapse of civilizations.
-- Hannah Arendt (1963) **On Revolution**. A philosophical history of modernity and how it was shaped by the American and French revolutions.
-- Martha Nussbaum (2018) **The Monarchy of Fear - A Philosopher Looks at Our Political Crisis**. 
-- Bruce Schneier (2023) **A Hacker's Mind - How the Powerful Bend Society's Rules, and How to Bend them Back**.
-- Ben Buchanan. **The Hacker and the State - Cyber Attacks and the New Normal of Geopolitics**. (2020). Will AI make governments and other technology-based organizations more fragile?
-- Geoffrey West (2017) **Scale: The Universal Laws of Life, Growth, and Death in Organisms, Cities, and Companies**. What are the quantitative laws (network effects,...) shared by vastly different complex systems such as animals and cities? What do they tell us about growth as a special case of scaling phenomenon?
-- Yochai Benkler (2011) **The Penguin and the Leviathan: How Cooperation Triumphs over Self-Interest**. How does economic theory explain the success of open source software?
-- Nessa Carey (2012) **The Epigenetics Revolution - How Modern Biology Is Rewriting Our Understanding of Genetics, Disease, and Inheritance**. What interplay between genetic and epigenetic factors explains how a growing organism self-regulates? 
-- Zephyr Teachout (2014) **[Corruption in America: From Benjamin Franklin's Snuff Box to Citizens United](https://www.jstor.org/stable/j.ctt7zswx5)**. 
-- Joe Studwell (2013) **How Asia Works: Success and Failure In the World's Most Dynamic Region**. An economic history of industrialization. Why does successful industrialization start with land reform and proctectionism? What implications do these insights have on economic theory?
-- Mancur Olson (1982) **The Rise and Decline of Nations: Economic Growth, Stagflation, and Social Rigidness**.
-- David M. Potter (1976) **The Impending Crisis: America Before the Civil War, 1848-1861**. <!--The comparison between liberal nationalism in the America and Europe of 1848 seems important.-->
-- Peter Turchin (2023) **End times: elites, counter-elites, and the path of political disintegration**. Are popular immiseration and elite overproduction two of the most significant factors in the decline of states?
-- Richard Rothstein (2018) **The Color of Law: A Forgotten History of How Our Government Segregated America**.
-- Patrick Sharkey (2013) **Stuck in Place: Urban Neighborhoods and the End of Progress toward Racial Equality**.
-- Cory Doctorow (2023) **The Internet Con: How to Seize the Means of Computation** An uptodate account on how Big Tech created monopolies and the importance of interoperability.
-- Noah Feldman. **The Three Lives of James Madison: Genius, Partisan, President**. 2017.
+- Economics:
+  - Mancur Olson (1982) **The Rise and Decline of Nations: Economic Growth, Stagflation, and Social Rigidness**.
+- History:
+  - Peter Turchin (2023) **End times: elites, counter-elites, and the path of political disintegration**. Are popular immiseration and elite overproduction two of the most significant factors in the decline of states?
+  - Joe Studwell (2013) **How Asia Works: Success and Failure In the World's Most Dynamic Region**. An economic history of industrialization. Why does successful industrialization start with land reform and proctectionism? What implications do these insights have on economic theory?
+  - Zephyr Teachout (2014) **[Corruption in America: From Benjamin Franklin's Snuff Box to Citizens United](https://www.jstor.org/stable/j.ctt7zswx5)**. 
+  - David Montgomery (2007) **Dirt: The Erosion of Civilizations**. A history of how the loss of agricultural soil contributed to the collapse of civilizations.
+  - Josiah Ober (2017) **Demopolis - Democracy before Liberalism in Theory and Practice**. "I hope to show liberals why it is wrong to regard citizen participation in government as a cost that can or should be minimized. And that it is a mistake to view a preference for citizen self-government and a fear of government captured by self-interested elites as uniquely appropriate to populists, anarchists, or Schmittian agonists." What can we learn from ancient Athens about democratic resilience?
+  - Patricia Nelson Limerick (1987) **The Legacy of Conquest: The Unbroken Past of the American West**. What does the wild west teach us about the "wild web"?
+  - David M. Potter (1976) **The Impending Crisis: America Before the Civil War, 1848-1861**. <!--The comparison between liberal nationalism in the America and Europe of 1848 seems important.-->
+  - Richard Rothstein (2018) **The Color of Law: A Forgotten History of How Our Government Segregated America**.
+  - Patrick Sharkey (2013) **Stuck in Place: Urban Neighborhoods and the End of Progress toward Racial Equality**.
+  - Noah Feldman. **The Three Lives of James Madison: Genius, Partisan, President**. 2017.
+- Science:
+  - Nessa Carey (2012) **The Epigenetics Revolution - How Modern Biology Is Rewriting Our Understanding of Genetics, Disease, and Inheritance**. What interplay between genetic and epigenetic factors explains how a growing organism self-regulates? 
+  - Geoffrey West (2017) **Scale: The Universal Laws of Life, Growth, and Death in Organisms, Cities, and Companies**. What are the quantitative laws (network effects,...) shared by vastly different complex systems such as animals and cities? What do they tell us about growth as a special case of scaling phenomenon?
+  - Michael Graziano (2019) **Rethinking Consciousness: A Scientific Theory of Subjective Experience**.
+- Philosophy:
+  - Hannah Arendt (1963) **On Revolution**. A philosophical history of modernity and how it was shaped by the American and French revolutions.
+  - Martha Nussbaum (2011) **Creating Capabilities - The Human Development Approach**.
+  - Martha Nussbaum (2018) **The Monarchy of Fear - A Philosopher Looks at Our Political Crisis**. 
+- Technology:
+  - Cory Doctorow (2023) **The Internet Con: How to Seize the Means of Computation** An uptodate account on how Big Tech created monopolies and the importance of interoperability.
+  - Yochai Benkler (2011) **The Penguin and the Leviathan: How Cooperation Triumphs over Self-Interest**. How does economic theory explain the success of open source software?
+  - Schweik and English (2012) **Internet Success - A Study of Open-Source Software Commons**.
+  - Matthew Jackson (2019) **The Human Network: How Your Social Position Determines Your Power, Beliefs, and Behaviors**. 
+  - Bruce Schneier (2023) **A Hacker's Mind - How the Powerful Bend Society's Rules, and How to Bend them Back**.
+  - Ben Buchanan. **The Hacker and the State - Cyber Attacks and the New Normal of Geopolitics**. (2020). Will AI make governments and other technology-based organizations more fragile?
 
 #### US History
 
