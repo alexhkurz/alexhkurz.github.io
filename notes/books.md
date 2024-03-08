@@ -25,16 +25,17 @@ One of the many important question that our civilization faces (which include cl
 An example of a question in the intersection of technology and democracy is which technologies can contribute to increasing transparency of governments and corporations while protecting citizens from surveillance.
 -->
 
-My current working titles for this topic are **Democratic Governance** and/or **Technology and Culture**.  In the following, I list some books that help me to understand the issues around this topic. The principles that guide my search for solutions can be summarized by three well-known slogans:  [Jevons paradox](https://en.wikipedia.org/wiki/Jevons_paradox) which makes it unlikely that technology (alone) will be the solution, [Gall's law](https://en.wikipedia.org/wiki/John_Gall_(author)#Gall's_law) which emphasizes the importance of choosing the right direction rather than to hope for revolutionary change, and [Goodhart's law](https://en.wikipedia.org/wiki/Goodhart's_law) which implies that any solution must build on democracy, diversity and inclusion. 
+My current working titles for this topic are **Democratic Governance** or **Technology and Culture** or **Macrofoundations of Software Engineering**.  In the following, I list some books that help me to understand the issues. The principles that guide my search for solutions can be summarized by three well-known slogans:  [Jevons paradox](https://en.wikipedia.org/wiki/Jevons_paradox) which makes it unlikely that technology (alone) will be the solution, [Gall's law](https://en.wikipedia.org/wiki/John_Gall_(author)#Gall's_law) which emphasizes the importance of choosing the right direction rather than to hope for revolutionary change, and [Goodhart's law](https://en.wikipedia.org/wiki/Goodhart's_law) which implies that any solution must build on democracy, diversity and inclusion. 
 
 #### Currently Reading
 
+- Eric J. Johnson (2021) **The Elements of Choice: Why the Way We Decide Matters** 
 - Evolutionary Psychology:
   - David Buss (2016) **Evolutionary Psychology**
   - Joseph LeDoux (2019) **The Deep History of Ourselves: The Four-Billion-Year Story of How We Got Conscious Brains**
   - Robert Sapolski (2017) **Behave: The Biology of Humans at Our Best and Worst**.
   - Robert Wright (1995) **Moral Animal**
-- Patricia Nelson Limerick (1987) **The Legacy of Conquest: The Unbroken Past of the American West**.
+- Patricia Nelson Limerick (1987) **The Legacy of Conquest: The Unbroken Past of the American West**. What does the wild west teach us about the "wild web"?
 - Michael Graziano (2019) **Rethinking Consciousness: A Scientific Theory of Subjective Experience**.
 - Martha Nussbaum (2011) **Creating Capabilities - The Human Development Approach**.
 - Schweik and English (2012) **Internet Success - A Study of Open-Source Software Commons**.
