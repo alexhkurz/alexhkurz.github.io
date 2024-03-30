@@ -29,7 +29,7 @@ Formerly University of Leicester, CWI Amsterdam, Masaryk University Brno, LMU Mu
 
 --->
 
----
+<!---
 
 LLMs cannot be more reliable and trustworthy than the data they are trained on. The fact that LLMs have emerged as powerful tools for programming is a testament to the half-century long collective efforts of the software engineering community to create robust open-source software.
 
@@ -40,6 +40,8 @@ AI is like sugar.
 Humans craving sugar was good as long as calories were important for survival. In times where we are swamped by industrial sugar, this craving is a danger to our health (and to healthcare more generally). At least, we agreed on laws that the sugar content of food and drinks must be labelled.
 
 Humans craving attention was good as long as this craving forced us to seek attention from other humans. In times were we are swamped by AI generated content, this craving is a danger to mental health (and to the fabric of our society more generally). Shouldn't we agree on laws that AI generated content must be labelled?
+
+-->
 
 ---
 
@@ -120,9 +122,10 @@ Ongoing Petitions: [Aberdeen](https://www.change.org/p/save-language-translation
 
 (teaching)
 
-[Programming Languages](https://github.com/alexhkurz/programming-languages-2022/blob/main/README.md) (Fall 2023), [Algorithm Analysis](https://github.com/alexhkurz/algorithm-analysis-2023/blob/main/README.md) (Spring 2023), [Compiler Construction](https://github.com/alexhkurz/compiler-construction-2022/blob/main/README.md) (Spring 2022)  
+[Programming Languages](https://github.com/alexhkurz/programming-languages-2022/blob/main/README.md) (Fall 2023), [Algorithm Analysis](https://github.com/alexhkurz/algorithm-analysis-2024/blob/main/README.md) (Spring 2024), [Compiler Construction](https://github.com/alexhkurz/compiler-construction-2022/blob/main/README.md) (Spring 2022)  
 [Software](software.md)  
 Short Courses: [Automata and Haskell](https://hackmd.io/@alexhkurz/HylLKujCP) and [Monads in Mathematics and Haskell](https://hackmd.io/@alexhkurz/H1OxumxRP)   
+[High-School Students](high-school.md)
 [Student Projects](student-projects.html)  
 [Postgraduate teaching](teaching-phd-courses.md)  
 

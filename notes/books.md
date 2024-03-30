@@ -31,6 +31,7 @@ My current working titles for this topic are **Democratic Governance** or **Tech
 
 - Eric J. Johnson (2021) **The Elements of Choice: Why the Way We Decide Matters** 
 - Evolutionary Psychology:
+  - Robert Trivers (2011) **The Folly of Fools: The Logic of Deceit and Self-Deception in Human Life**. Intelligence evolved as an armsrace between deceivers and detectors and self-deception evolved to counter detection. What does this tell us about social media and current politics?
   - David Buss (2016) **Evolutionary Psychology**
   - Joseph LeDoux (2019) **The Deep History of Ourselves: The Four-Billion-Year Story of How We Got Conscious Brains**
   - Robert Sapolski (2017) **Behave: The Biology of Humans at Our Best and Worst**.
