@@ -1,6 +1,6 @@
 # High-School Students
 
-If you are a high-school student who is interested in joining either a software engineering project or to sneak into mathematics research I may have sth for you. 
+If you are a high-school student who is interested in joining either a software engineering project or to sneak into mathematics research I may have sth for you. (So far I only mentored students from Orange County, CA, but thanks to zoom it is easy to collaborate anywhere in the world.) 
 
 Btw, if you are wondering, yes, the math side and the software-engineering side are closely related, but that takes more time to explain.
 
