@@ -177,7 +177,7 @@ See [climate change with your own eyes](notes/glaciers.html). The longer we wait
 [US Drought Monitor](https://droughtmonitor.unl.edu/CurrentMap.aspx)-->
 <!-- [Home-Education](home-education.md) -->
 <!-- [Coronavirus Blog](notes/covid-19.html)-->
-[Airquality in Orange, CA](https://air.plumelabs.com/air-quality-in-orange-aw-331970?utm_source=accuweather&utm_medium=current_aq_widget&utm_campaign=now_page#ae16), [`aqmd.gov/aqimap`](www.aqmd.gov/aqimap)
+[Airquality in Orange, CA](https://air.plumelabs.com/air-quality-in-orange-aw-331970?utm_source=accuweather&utm_medium=current_aq_widget&utm_campaign=now_page#ae16), [`aqmd.gov/aqimap`](www.aqmd.gov/aqimap)  
 <!--[Language of the 21st Century](https://hackmd.io/@alexhkurz/Sya0jrLMY)-->
 [Predatory Publishers](notes/WASET.html)  
 [Mathematical Genealogy](mathematical-genealogy.png), see [here](https://www.genealogy.math.ndsu.nodak.edu/index.php) and <a href="https://www.davidalber.net/geneagrapher/">here</a>  
