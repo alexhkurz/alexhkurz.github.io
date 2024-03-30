@@ -122,7 +122,7 @@ Ongoing Petitions: [Aberdeen](https://www.change.org/p/save-language-translation
 
 (teaching)
 
-[Programming Languages](https://github.com/alexhkurz/programming-languages-2022/blob/main/README.md) (Fall 2023), [Algorithm Analysis](https://github.com/alexhkurz/algorithm-analysis-2024/blob/main/README.md) (Spring 2024), [Compiler Construction](https://github.com/alexhkurz/compiler-construction-2022/blob/main/README.md) (Spring 2022)  
+[Programming Languages](https://github.com/alexhkurz/programming-languages-2023/blob/main/README.md) (Fall 2023), [Algorithm Analysis](https://github.com/alexhkurz/algorithm-analysis-2024/blob/main/README.md) (Spring 2024), [Compiler Construction](https://github.com/alexhkurz/compiler-construction-2022/blob/main/README.md) (Spring 2022)  
 [Software](software.md)  
 Short Courses: [Automata and Haskell](https://hackmd.io/@alexhkurz/HylLKujCP) and [Monads in Mathematics and Haskell](https://hackmd.io/@alexhkurz/H1OxumxRP)   
 [High-School Students](high-school.md)  
