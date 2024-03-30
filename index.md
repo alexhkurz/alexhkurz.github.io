@@ -96,7 +96,7 @@ If we want to survive on this planet, we need to respect [planetary boundaries](
 
 In early 2021, the **University of Leicester** threatened with redundancy some of the best mathematicians and computer scientists I know, former colleagues of mine. By the end of the academic year, if I counted correctly, 16 academics in mathematics and computer science either left their job "voluntarily" or were made redundant ... [more](leicester.md) ... 
 
-Ongoing Petitions: [Aberdeen](https://www.change.org/p/save-language-translation-interpreting-degrees-at-the-university-of-aberdeen) ...  [Kent](https://www.change.org/p/save-arts-humanities-and-social-sciences-subjects-at-the-university-of-kent) ...
+Ongoing Petitions: [Aberdeen](https://www.change.org/p/save-language-translation-interpreting-degrees-at-the-university-of-aberdeen) ...  [Kent](https://www.change.org/p/save-arts-humanities-and-social-sciences-subjects-at-the-university-of-kent) ... A recent [article](https://www.theguardian.com/commentisfree/2024/mar/29/britain-universities-freefall-saving-them-funding-international-students) on the ongoing decline of British academia.
 
 ---
 
