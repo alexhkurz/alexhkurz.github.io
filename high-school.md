@@ -10,7 +10,7 @@ If you want to learn how to make your own proofs in mathematics from a programmi
 
 If you want to learn more traditional pen and paper mathematics, you can start on the exercises on [Stone Duality](https://hackmd.io/@alexhkurz/BkRcYBe1o). So far I only had one high-school student who got through this, so don't hesitate to ask for help. It is worth the effort, there is much to learn here.
 
-If you do both the math-as-programming and the pen-and-paper math, you will that while closely related, there is a big gap between the two. To bridge this gap using machine learning tools (such as large language models) is a cutting edge research topic.
+If you do both the math-as-programming and the pen-and-paper math, you will see that while closely related, there is a big gap between the two. To bridge this gap using machine learning tools (such as large language models) is a cutting edge research topic.
 
 ## Software Engineering
 
