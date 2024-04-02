@@ -25,10 +25,18 @@ One of the many important question that our civilization faces (which include cl
 An example of a question in the intersection of technology and democracy is which technologies can contribute to increasing transparency of governments and corporations while protecting citizens from surveillance.
 -->
 
-My current working titles for this topic are **Democratic Governance** or **Technology and Culture** or **Macrofoundations of Software Engineering**.  In the following, I list some books that help me to understand the issues. The principles that guide my search for solutions can be summarized by three well-known slogans:  [Jevons paradox](https://en.wikipedia.org/wiki/Jevons_paradox) which makes it unlikely that technology (alone) will be the solution, [Gall's law](https://en.wikipedia.org/wiki/John_Gall_(author)#Gall's_law) which emphasizes the importance of choosing the right direction rather than to hope for revolutionary change, and [Goodhart's law](https://en.wikipedia.org/wiki/Goodhart's_law) which implies that any solution must build on democracy, diversity and inclusion. 
+My current working titles for this topic are 
+
+- Democratic Governance or
+- Macrofoundations of Software Engineering
+- Technology and Culture or 
+- Designing Algortighms for Cooperation.  
+  
+In the following, I list some books that help me to understand the issues. The principles that guide my search for solutions can be summarized by three well-known slogans:  [Jevons paradox](https://en.wikipedia.org/wiki/Jevons_paradox) which makes it unlikely that technology (alone) will be the solution, [Gall's law](https://en.wikipedia.org/wiki/John_Gall_(author)#Gall's_law) which emphasizes the importance of choosing the right direction rather than to hope for revolutionary change, and [Goodhart's law](https://en.wikipedia.org/wiki/Goodhart's_law) which implies that any solution must build on democracy, diversity and inclusion. 
 
 #### Currently Reading
 
+- Lee Vinsel, Andrew L. Russell (2020) **The Innovation Delusion: How Our Obsession with the New Has Disrupted the Work That Matters Most** What is technology? What role does maintenance vs innovation plays in technology based prosperity?
 - Eric J. Johnson (2021) **The Elements of Choice: Why the Way We Decide Matters** 
 - Evolutionary Psychology:
   - Robert Trivers (2011) **The Folly of Fools: The Logic of Deceit and Self-Deception in Human Life**. Intelligence evolved as an armsrace between deceivers and detectors and self-deception evolved to counter detection. What does this tell us about social media and current politics?
