@@ -28,7 +28,7 @@ An example of a question in the intersection of technology and democracy is whic
 My current working titles for this topic are 
 
 - Democratic Governance or
-- Macrofoundations of Software Engineering
+- Macrofoundations of Software Engineering or
 - Technology and Culture or 
 - Designing Algortighms for Cooperation.  
   
