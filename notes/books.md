@@ -36,7 +36,7 @@ In the following, I list some books that help me to understand the issues. The p
 
 #### Currently Reading
 
-- Lee Vinsel, Andrew L. Russell (2020) **The Innovation Delusion: How Our Obsession with the New Has Disrupted the Work That Matters Most** What is technology? What role does maintenance vs innovation play in technology based prosperity?
+- Lee Vinsel, Andrew L. Russell (2020) **The Innovation Delusion: How Our Obsession with the New Has Disrupted the Work That Matters Most** What is technology? What role does maintenance vs innovation play in technology-based prosperity?
 - Eric J. Johnson (2021) **The Elements of Choice: Why the Way We Decide Matters** 
 - Evolutionary Psychology:
   - Robert Trivers (2011) **The Folly of Fools: The Logic of Deceit and Self-Deception in Human Life**. Intelligence evolved as an armsrace between deceivers and detectors and self-deception evolved to counter detection. What does this tell us about social media and current politics?
