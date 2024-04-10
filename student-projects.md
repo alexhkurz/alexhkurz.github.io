@@ -25,8 +25,9 @@ Big questions are not easy to turn into concrete research questions, but that on
 - Machine learning is great as long as we have, or can generate, large amounts of data. But humans are capable to learn successfully from small numbers of examples. One of the ideas to tackle this gap is to bring together symbolic and statistical AI. While there is work along these lines, there is much more to discover.
 
 - What is a proof? What is an algorithm? What is information?
+  
+- [Algorithms](https://en.wikipedia.org/wiki/Algorithm) run on [machines](https://en.wikipedia.org/wiki/Turing_machine), [mechanisms](https://en.wikipedia.org/wiki/Mechanism_design) run on [rational agents](https://en.wikipedia.org/wiki/Rational_choice_theory). But what are the right theoretical foundations for human cooperation?
 
-- ( ... more to come ... )
 
 
 
