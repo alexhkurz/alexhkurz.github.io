@@ -25,7 +25,7 @@ One of the many important question that our civilization faces (which include cl
 An example of a question in the intersection of technology and democracy is which technologies can contribute to increasing transparency of governments and corporations while protecting citizens from surveillance.
 -->
 
-My current working titles for this topic are 
+My current working titles for this topic are (most recent last)
 
 - Democratic Governance or
 - Macrofoundations of Software Engineering or
