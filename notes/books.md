@@ -27,10 +27,10 @@ An example of a question in the intersection of technology and democracy is whic
 
 My current working titles for this topic are (most recent last)
 
-- Democratic Governance or
-- Macrofoundations of Software Engineering or
-- Technology and Culture or 
-- Designing Algorithms for Cooperation or
+- Democratic Governance 
+- Macrofoundations of Software Engineering 
+- Technology and Culture 
+- Designing Algorithms for Cooperation 
 - Cooperative Systems Science.
   
 In the following, I list some books that help me to understand the issues. The principles that guide my search for solutions can be summarized by three well-known slogans:  [Jevons paradox](https://en.wikipedia.org/wiki/Jevons_paradox) which makes it unlikely that technology (alone) will be the solution, [Gall's law](https://en.wikipedia.org/wiki/John_Gall_(author)#Gall's_law) which emphasizes the importance of choosing the right direction rather than to hope for revolutionary change, and [Goodhart's law](https://en.wikipedia.org/wiki/Goodhart's_law) which implies that any solution must build on democracy, diversity and inclusion. 
