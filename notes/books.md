@@ -40,6 +40,7 @@ In the following, I list some books that help me to understand the issues. The p
 #### Currently Reading
 
 - Tim Wu (2016) **The Attention Merchants**. A history of advertising from 1833 until today.
+- Sean B. Carroll (2005) **Endless Forms Most Beautiful: The New Science of Evo Devo and the Making of the Animal Kingdom** What can we learn from embryology about biological evolution and the organization of cooperation? 
 - Lee Vinsel, Andrew L. Russell (2020) **The Innovation Delusion: How Our Obsession with the New Has Disrupted the Work That Matters Most** What is technology? What role does maintenance vs innovation play in technology-based prosperity?
 - Eric J. Johnson (2021) **The Elements of Choice: Why the Way We Decide Matters** 
 - Evolutionary Psychology:
