@@ -40,6 +40,7 @@ In the following, I list some books that help me to understand the issues. The p
 #### Currently Reading
 
 - Tim Wu (2016) **The Attention Merchants**. A history of advertising from 1833 until today.
+- Cory Doctorow (2023) **The Internet Con: How to Seize the Means of Computation** An account on how Big Tech created monopolies and the importance of interoperability.
 - Sean B. Carroll (2005) **Endless Forms Most Beautiful: The New Science of Evo Devo and the Making of the Animal Kingdom** What can we learn from embryology about biological evolution and the organization of cooperation? 
 - Patrick Sharkey (2018) **Uneasy Peace: The Great Crime Decline, the Renewal of City Life, and the Next War on Violence**. How did American society organize to start bringing down crime rates in the 1990s?
 - Lee Vinsel, Andrew L. Russell (2020) **The Innovation Delusion: How Our Obsession with the New Has Disrupted the Work That Matters Most** What is technology? What role does maintenance vs innovation play in technology-based prosperity?
@@ -72,7 +73,6 @@ In the following, I list some books that help me to understand the issues. The p
   - Martha Nussbaum (2011) **Creating Capabilities - The Human Development Approach**.
   - Martha Nussbaum (2018) **The Monarchy of Fear - A Philosopher Looks at Our Political Crisis**. 
 - Technology:
-  - Cory Doctorow (2023) **The Internet Con: How to Seize the Means of Computation** An uptodate account on how Big Tech created monopolies and the importance of interoperability.
   - Yochai Benkler (2011) **The Penguin and the Leviathan: How Cooperation Triumphs over Self-Interest**. How does economic theory explain the success of open source software?
   - Schweik and English (2012) **Internet Success - A Study of Open-Source Software Commons**.
   - Matthew Jackson (2019) **The Human Network: How Your Social Position Determines Your Power, Beliefs, and Behaviors**. 
