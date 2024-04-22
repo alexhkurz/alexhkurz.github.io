@@ -38,6 +38,8 @@ In the following, I list some books that help me to understand the issues. The p
 
 #### Currently Reading
 
+- Ed Conway (2014) **The Summit**. A history of the 1944 Bretton Woods agreement.
+- Cecilia Hayes (2018) **Cognitive Gadgets: The Cultural Evolution of Thinking**.
 - Tim Wu (2016) **The Attention Merchants**. A history of advertising from 1833 until today.
 - Cory Doctorow (2023) **The Internet Con: How to Seize the Means of Computation** An account on how Big Tech created monopolies and the importance of interoperability.
 - Sean B. Carroll (2005) **Endless Forms Most Beautiful: The New Science of Evo Devo and the Making of the Animal Kingdom** What can we learn from embryology about biological evolution and the organization of cooperation? 
