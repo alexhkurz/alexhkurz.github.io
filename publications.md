@@ -15,6 +15,10 @@ The files made available here may be preprints or postprints and can be slightly
 
 ### Chapman 2018-
 
+Alexander Kurz, Wolfgang Poiger, Bruno Teheux: [Many-valued coalgebraic logic over semi-primal varieties](https://arxiv.org/abs/2308.14581). Aug 2023. 
+
+Alexander Kurz, Wolfgang Poiger, Bruno Teheux: [New perspectives on semi-primal varieties](https://arxiv.org/abs/2301.13406). Jan 2023.
+
 Alexander Kurz and Wolfgang Poiger. [Many-Valued Coalgebraic Logic: From Boolean Algebras to Primal Varieties](https://drops.dagstuhl.de/opus/volltexte/2023/18814/). CALCO 2023.
 
 Alexander Kurz, Wolfgang Poiger and Bruno Teheux: [New perspectives on semi-primal varieties](https://arxiv.org/abs/2301.13406). Preprint, 2023. Journal of Pure and Applied Algebra, 2024. https://doi.org/10.1016/j.jpaa.2023.107525
