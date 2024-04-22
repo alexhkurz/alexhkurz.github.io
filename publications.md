@@ -17,11 +17,9 @@ The files made available here may be preprints or postprints and can be slightly
 
 Alexander Kurz, Wolfgang Poiger, Bruno Teheux: [Many-valued coalgebraic logic over semi-primal varieties](https://arxiv.org/abs/2308.14581). Accepted for LMCS. 
 
-Alexander Kurz, Wolfgang Poiger, Bruno Teheux: [New perspectives on semi-primal varieties](https://arxiv.org/abs/2301.13406). Journal of Pure and Applied Algebra, Volume 228, Issue 4, April 2024.
+Alexander Kurz, Wolfgang Poiger, Bruno Teheux: [New perspectives on semi-primal varieties](https://arxiv.org/abs/2301.13406). Journal of Pure and Applied Algebra, Volume 228, Issue 4, April 2024. [doi](https://doi.org/10.1016/j.jpaa.2023.107525).
 
 Alexander Kurz and Wolfgang Poiger. [Many-Valued Coalgebraic Logic: From Boolean Algebras to Primal Varieties](https://drops.dagstuhl.de/opus/volltexte/2023/18814/). CALCO 2023.
-
-Alexander Kurz, Wolfgang Poiger and Bruno Teheux: [New perspectives on semi-primal varieties](https://arxiv.org/abs/2301.13406). Preprint, 2023. Journal of Pure and Applied Algebra, 2024. https://doi.org/10.1016/j.jpaa.2023.107525
 
 Alexander Kurz: [Dualities from Double Categories of Relations](papers/Abstract-BLAST2022-duality-from-double-categories-of-relations.pdf). Presented at BLAST 2022. [Slides](https://hackmd.io/@alexhkurz/BkqMo0FT5#/).
 
