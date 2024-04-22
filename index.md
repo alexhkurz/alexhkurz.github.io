@@ -132,8 +132,8 @@ Short Courses: [Automata and Haskell](https://hackmd.io/@alexhkurz/HylLKujCP) an
 (mentoring)
 
 [High-School Students](high-school.md)  
-[Student Projects](student-projects.html)  
-[Postgraduate teaching](teaching-phd-courses.md)  
+[Undergraduate Projects](student-projects.html)  
+[Postgraduate Students](teaching-phd-courses.md)  
 
 ---
 <!-- 

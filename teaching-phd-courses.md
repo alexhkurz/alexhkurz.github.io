@@ -2,7 +2,7 @@
 
 (under construction)
 
-The following are notes from summer schools and a couple of survey papers on coalgebra, modal logic, and category theory.
+I am always happy to talk about category theory. If you are interested in category theory feel free to get in touch. Here are some notes that I have been using for teaching category theory in the past.
 
 - [Coalgebras and Modal Logic](/papers/cml.pdf). ESSLLI, Helsinki 2001.
 
@@ -16,7 +16,7 @@ The following are notes from summer schools and a couple of survey papers on coa
 
 - [Modal Logics are Coalgebraic](papers/BCS08/ModalCoalg.pdf) with Cirstea, Pattinson, Schröder, Venema. BCS, 2008.
 
-- [A Short Introduction to Quantale Enriched Categories](papers/short-introduction-quantale-enriched-categories.pdf). 2020.
+- [A Short Introduction to Quantale Enriched Categories](https://www.overleaf.com/read/jrkxdxmyqmyd#59fe08). 2020.
 
 I also have notes, from various teaching opportunities that I did not find the time to finish and polish ...  I put some of them here anyway, partly to motivate myself to take them up again when another opportunity arises.
 
