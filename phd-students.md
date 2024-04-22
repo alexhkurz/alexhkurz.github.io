@@ -4,7 +4,7 @@ PhD students I supervised or co-supervised.
 
 ---
 
-Wolfgang Poiger. Many-valued coalgebraic logic. University of Luxembourg. 2024.
+[Wolfgang Poiger](https://sites.google.com/view/wolfgangpoiger/). Algebraic and Coalgebraic Analysis of Some Many-Valued Modal Logics. University of Luxembourg. 2024.
 
 [Samuel Balco](https://gdlyrttnap.pl/). Display calculi and nominal string diagrams. Leicester, 2020.
 
