@@ -27,7 +27,7 @@ An example of a question in the intersection of technology and democracy is whic
 
 My current working titles for this topic are (most recent last) Democratic Governance, Macrofoundations of Software Engineering, Technology and Culture, Designing Algorithms for Cooperation, Cooperative Systems Science, Cooperative Decision Theory (now we circled back to Democratic Governance).
 
-With the rise of generative AI, all of this also has an AI angle to it. Here are three questions:
+With the rise of generative AI, all of this also has an AI angle. Here are three questions:
 - Can there be a mathematical theory of human behaviour that does not model people as machines?
 - Can we define a notion of human intelligence that distinguishes human intelligence from machine intelligence?
 - Once we develop machines that show human intelligence, what will distinguish people from machines?
