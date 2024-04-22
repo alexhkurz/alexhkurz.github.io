@@ -16,7 +16,7 @@ I am always happy to talk about category theory. If you are interested in catego
 
 - [Modal Logics are Coalgebraic](papers/BCS08/ModalCoalg.pdf) with Cirstea, Pattinson, Schröder, Venema. BCS, 2008.
 
-- [A Short Introduction to Quantale Enriched Categories](https://www.overleaf.com/read/jrkxdxmyqmyd#59fe08). 2020.
+- [A Short Introduction to Quantale Enriched Categories](https://www.overleaf.com/project/6626b619594908e83eb5ace9). 2020.
 
 I also have notes, from various teaching opportunities that I did not find the time to finish and polish ...  I put some of them here anyway, partly to motivate myself to take them up again when another opportunity arises.
 
