@@ -38,6 +38,8 @@ In the following, I list some books that help me to understand the issues. The p
 
 #### Currently Reading
 
+- David Lewis, Wim Vandekerckhove (2011) **[Whistleblowing and Democratic Values](https://papers.ssrn.com/sol3/Delivery.cfm/SSRN_ID1998293_code1348120.pdf?abstractid=1998293&mirid=1)**.
+- Danny Dorling (2020) **Slowdown: The End of the Great Acceleration** ... [animation](https://www.youtube.com/watch?v=G6P2h1NV6R0)
 - Ed Conway (2014) **The Summit**. A history of the 1944 Bretton Woods agreement.
 - Cecilia Hayes (2018) **Cognitive Gadgets: The Cultural Evolution of Thinking**.
 - Tim Wu (2016) **The Attention Merchants**. A history of advertising from 1833 until today.
