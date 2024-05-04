@@ -38,6 +38,8 @@ In the following, I list some books that help me to understand the issues. The p
 
 #### Currently Reading
 
+- Menelaos Apostolou (2017) **https://batrachos.com/sites/default/files/pictures/1_5_HN_Books/Apostolou_2017_Sexual%20Selection%20in%20Homo%20sapiens.pdf**
+- Sean Carroll (2016) **The Serengeti Rules: The Quest to Discover How Life Works and Why It Matters**. Keystone species, trophic cascades, cancer, ... which regulations allow human and animal bodies to survive? Which of these regulatory mechanisms scale to whole ecosystems? How is this knowledge used to support the health both of individuals and of societies? [film](https://pbswisconsin.org/watch/nature/the-serengeti-rules-41dfru/), [video lecture](https://www.youtube.com/watch?v=ppTK710PMBE).
 - David Lewis, Wim Vandekerckhove (2011) **[Whistleblowing and Democratic Values](https://papers.ssrn.com/sol3/Delivery.cfm/SSRN_ID1998293_code1348120.pdf?abstractid=1998293&mirid=1)**.
 - Danny Dorling (2020) **Slowdown: The End of the Great Acceleration** ... [animation](https://www.youtube.com/watch?v=G6P2h1NV6R0)
 - Ed Conway (2014) **The Summit**. A history of the 1944 Bretton Woods agreement.
