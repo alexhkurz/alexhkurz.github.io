@@ -32,21 +32,21 @@ With the rise of generative AI, all of this also has an AI angle. Here are three
 - Can we define a notion of human intelligence that distinguishes human intelligence from machine intelligence?
 - Once we develop machines that show human intelligence, what will distinguish people from machines?
 
-In the following, I list some books that help me to understand the issues. The principles that guide my search for solutions can be summarized by three well-known slogans:  [Jevons paradox](https://en.wikipedia.org/wiki/Jevons_paradox) which makes it unlikely that technology (alone) will be the solution, [Gall's law](https://en.wikipedia.org/wiki/John_Gall_(author)#Gall's_law)[^Gall] which emphasizes the importance of choosing the right direction rather than to hope for revolutionary change, and [Goodhart's law](https://en.wikipedia.org/wiki/Goodhart's_law) which implies that any solution must build on democracy, diversity and inclusion. 
+In the following, I list some books that help me to understand the issues. The principles that guide my search for solutions can be summarized by three well-known slogans:  [Jevons paradox](https://en.wikipedia.org/wiki/Jevons_paradox) which tells us not be blinded by technological promises of higher efficiency, [Gall's law](https://en.wikipedia.org/wiki/John_Gall_(author)#Gall's_law)[^Gall] which emphasizes the importance of choosing the right direction rather than to hope for revolutionary change, and [Goodhart's law](https://en.wikipedia.org/wiki/Goodhart's_law) which implies that any solution must build on democracy, diversity and inclusion. 
 
 [^Gall]: On page 52 of Gall's book [Systemantics](https://docdrop.org/download_annotation_doc/John-Gall---Systemantics_-How-Systems-Work-and-Especially-Ho-8qhgx.pdf).
 
 #### Currently Reading
 
 - Menelaos Apostolou (2017) **https://batrachos.com/sites/default/files/pictures/1_5_HN_Books/Apostolou_2017_Sexual%20Selection%20in%20Homo%20sapiens.pdf**
-- Sean Carroll (2016) **The Serengeti Rules: The Quest to Discover How Life Works and Why It Matters**. Keystone species, trophic cascades, cancer, ... which regulations allow human and animal bodies to survive? Which of these regulatory mechanisms scale to whole ecosystems? How is this knowledge used to support the health both of individuals and of societies? [film](https://pbswisconsin.org/watch/nature/the-serengeti-rules-41dfru/), [video lecture](https://www.youtube.com/watch?v=ppTK710PMBE).
+- Sean B Carroll (2016) **The Serengeti Rules: The Quest to Discover How Life Works and Why It Matters**. Keystone species, trophic cascades, cancer, ... which regulations allow human and animal bodies to survive? Which of these regulatory mechanisms scale to whole ecosystems? How is this knowledge used to support the health both of individuals and of societies? [film](https://pbswisconsin.org/watch/nature/the-serengeti-rules-41dfru/), [video lecture](https://www.youtube.com/watch?v=ppTK710PMBE).
+- Sean B Carroll (2005) **Endless Forms Most Beautiful: The New Science of Evo Devo and the Making of the Animal Kingdom** What can we learn from embryology about biological evolution and the organization of cooperation? 
 - David Lewis, Wim Vandekerckhove (2011) **[Whistleblowing and Democratic Values](https://papers.ssrn.com/sol3/Delivery.cfm/SSRN_ID1998293_code1348120.pdf?abstractid=1998293&mirid=1)**.
 - Danny Dorling (2020) **Slowdown: The End of the Great Acceleration** ... [animation](https://www.youtube.com/watch?v=G6P2h1NV6R0)
 - Ed Conway (2014) **The Summit**. A history of the 1944 Bretton Woods agreement.
 - Cecilia Hayes (2018) **Cognitive Gadgets: The Cultural Evolution of Thinking**.
 - Tim Wu (2016) **The Attention Merchants**. A history of advertising from 1833 until today.
 - Cory Doctorow (2023) **The Internet Con: How to Seize the Means of Computation** An account on how Big Tech created monopolies and the importance of interoperability.
-- Sean B. Carroll (2005) **Endless Forms Most Beautiful: The New Science of Evo Devo and the Making of the Animal Kingdom** What can we learn from embryology about biological evolution and the organization of cooperation? 
 - Patrick Sharkey (2018) **Uneasy Peace: The Great Crime Decline, the Renewal of City Life, and the Next War on Violence**. How did American society organize to start bringing down crime rates in the 1990s?
 - Lee Vinsel, Andrew L. Russell (2020) **The Innovation Delusion: How Our Obsession with the New Has Disrupted the Work That Matters Most** What is technology? What role does maintenance vs innovation play in technology-based prosperity?
 - Eric J. Johnson (2021) **The Elements of Choice: Why the Way We Decide Matters** 
