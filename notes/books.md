@@ -34,7 +34,7 @@ With the rise of generative AI, all of this also has an AI angle. Here are three
 
 In the following, I list some books that help me to understand the issues. The principles that guide my search for solutions can be summarized by three well-known slogans:  [Jevons paradox](https://en.wikipedia.org/wiki/Jevons_paradox) which tells us not be blinded by economic promises of growth and technological promises of higher efficiency, [Gall's law](https://en.wikipedia.org/wiki/John_Gall_(author)#Gall's_law)[^Gall] which emphasizes the importance of choosing the right direction rather than to hope for revolutionary change, and [Goodhart's law](https://en.wikipedia.org/wiki/Goodhart's_law) which implies that any solution must build on democracy, diversity and inclusion. 
 
-[^Gall]: On page 52 of Gall's book [Systemantics](https://docdrop.org/download_annotation_doc/John-Gall---Systemantics_-How-Systems-Work-and-Especially-Ho-8qhgx.pdf).
+[^Gall]: On page 52 of Gall's book [Systemantics](https://docdrop.org/download_annotation_doc/John-Gall---Systemantics_-How-Systems-Work-and-Especially-Ho-8qhgx.pdf). Btw, the book is an interesting mix of satire and valuable enigineering insights.
 
 #### Currently Reading
 
