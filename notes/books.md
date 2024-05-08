@@ -38,7 +38,7 @@ In the following, I list some books that help me to understand the issues. The p
 
 #### Currently Reading
 
-- Menelaos Apostolou (2017) **https://batrachos.com/sites/default/files/pictures/1_5_HN_Books/Apostolou_2017_Sexual%20Selection%20in%20Homo%20sapiens.pdf**
+- Menelaos Apostolou (2017) **https://batrachos.com/sites/default/files/pictures/1_5_HN_Books/Apostolou_2017_Sexual%20Selection%20in%20Homo%20sapiens.pdf**.
 - Sean B Carroll (2016) **The Serengeti Rules: The Quest to Discover How Life Works and Why It Matters**. Keystone species, trophic cascades, cancer, ... which regulations allow human and animal bodies to survive? Which of these regulatory mechanisms scale to whole ecosystems? How is this knowledge used to support the health both of individuals and of societies? [film](https://pbswisconsin.org/watch/nature/the-serengeti-rules-41dfru/), [video lecture](https://www.youtube.com/watch?v=ppTK710PMBE).
 - Sean B Carroll (2005) **Endless Forms Most Beautiful: The New Science of Evo Devo and the Making of the Animal Kingdom** What can we learn from embryology about biological evolution and the organization of cooperation? 
 - David Lewis, Wim Vandekerckhove (2011) **[Whistleblowing and Democratic Values](https://papers.ssrn.com/sol3/Delivery.cfm/SSRN_ID1998293_code1348120.pdf?abstractid=1998293&mirid=1)**.
