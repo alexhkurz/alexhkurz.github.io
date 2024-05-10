@@ -25,7 +25,7 @@ One of the many important question that our civilization faces (which include cl
 An example of a question in the intersection of technology and democracy is which technologies can contribute to increasing transparency of governments and corporations while protecting citizens from surveillance.
 -->
 
-My current working titles for this topic are (most recent last) Democratic Governance, Macrofoundations of Software Engineering, Technology and Culture, Designing Algorithms for Cooperation, Cooperative Systems Science, Cooperative Decision Theory (now we circled back to Democratic Governance).
+My current working titles for this topic are (most recent last) Democratic Governance, Macrofoundations of Software Engineering, Technology and Culture, Designing Algorithms for Cooperation, Cooperative Systems Science, Cooperative Decision Theory (now we circled back to Democratic Governance). I recently summed up some questions in a lecture [Challenges for Software Engineering](https://hackmd.io/@alexhkurz/r1xJEv9fC).
 
 With the rise of generative AI, all of this also has an AI angle. Here are three questions:
 - Can there be a mathematical theory of human behaviour that does not model people as machines?
