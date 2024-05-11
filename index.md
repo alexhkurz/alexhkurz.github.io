@@ -26,7 +26,7 @@ Formerly University of Leicester, CWI Amsterdam, Masaryk University Brno, LMU Mu
 
 “Rebellion? I am sorry you call it that,” said Ivan earnestly. “One can hardly live in rebellion, and I want to live. Tell me yourself, I challenge you—answer. Imagine that you are creating a fabric of human destiny with the object of making men happy in the end, giving them peace and rest at last, but that it was essential and inevitable to torture to death only one tiny creature—that baby beating its breast with its fist, for instance—and to found that edifice on its unavenged tears, would you consent to be the architect on those conditions? Tell me, and tell the truth.”
 
-Dostoyevsky, [Brothers Karamasov, page 308](https://www.gutenberg.org/files/28054/old/28054-pdf.pdf)
+Dostoyevsky, [Brothers Karamasov, Rebellion, pages 296-309](https://www.gutenberg.org/files/28054/old/28054-pdf.pdf)
 
 <!---
 
