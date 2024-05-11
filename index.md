@@ -22,6 +22,11 @@ Formerly University of Leicester, CWI Amsterdam, Masaryk University Brno, LMU Mu
 
 [^socialmedia]: I am not much on social media, but I am interested in decentralized social media such as Mastodon, Solid, Nostr and others.
 
+---
+
+“Rebellion? I am sorry you call it that,” said Ivan earnestly. “One can hardly live in rebellion, and I want to live. Tell me yourself, I challenge you—answer. Imagine that you are creating a fabric of human destiny with the object of making men happy in the end, giving them peace and rest at last, but that it was essential and inevitable to torture to death only one tiny creature—that baby beating its breast with its fist, for instance—and to found that edifice on its unavenged tears, would you consent to be the architect on those conditions? Tell me, and tell the truth.”
+
+Dostoyevsky, [Brothers Karamasov, page 308](https://www.gutenberg.org/files/28054/old/28054-pdf.pdf)
 
 <!---
 
@@ -43,11 +48,13 @@ Humans craving attention was good as long as this craving forced us to seek atte
 
 -->
 
----
+<!---
 
 [Jaromil](https://jaromil.dyne.org/): *"Are we developing tech for machines to perceive us or are we developing tech for people to understand machines?"*
 
 [Jaron Lanier](https://en.wikipedia.org/wiki/Jaron_Lanier): *"And so I can't call these things social networks anymore. I call them behavior modification empires. ... I don't believe our species can survive unless we fix this. We cannot have a society in which, if two people wish to communicate, the only way that can happen is if it's financed by a third person who wishes to manipulate them."* 
+
+--->
 
 <!--
 
