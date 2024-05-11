@@ -25,14 +25,14 @@ One of the many important question that our civilization faces (which include cl
 An example of a question in the intersection of technology and democracy is which technologies can contribute to increasing transparency of governments and corporations while protecting citizens from surveillance.
 -->
 
-My current working titles for this topic are (most recent last) Democratic Governance, Macrofoundations of Software Engineering, Technology and Culture, Designing Algorithms for Cooperation, Cooperative Systems Science, Cooperative Decision Theory (now we circled back to Democratic Governance). I recently summed up some questions in a lecture [Challenges for Software Engineering](https://hackmd.io/@alexhkurz/r1xJEv9fC).
+My current working titles for this topic are (most recent last) Democratic Governance, Macrofoundations of Software Engineering, Technology and Culture, Designing Algorithms for Cooperation, Cooperative Systems Science, Cooperative Decision Theory (now we circled back to Democratic Governance). I recently summed up some questions in a lecture [Challenges in Software Engineering](https://hackmd.io/@alexhkurz/r1xJEv9fC).
 
 With the rise of generative AI, all of this also has an AI angle. Here are three questions:
 - Can there be a mathematical theory of human behaviour that does not model people as machines?
 - Can we define a notion of human intelligence that distinguishes human intelligence from machine intelligence?
 - Once we develop machines that show human intelligence, what will distinguish people from machines?
 
-In the following, I list some books that help me to understand the issues. The principles that guide my search for solutions can be summarized by three well-known slogans:  [Jevons paradox](https://en.wikipedia.org/wiki/Jevons_paradox) which tells us not be blinded by economic promises of growth and technological promises of higher efficiency, [Gall's law](https://en.wikipedia.org/wiki/John_Gall_(author)#Gall's_law)[^Gall] which emphasizes the importance of choosing the right direction rather than to hope for revolutionary change, and [Goodhart's law](https://en.wikipedia.org/wiki/Goodhart's_law) which implies that any solution must build on democracy, diversity and inclusion. 
+In the following, I list some books that help me to understand the issues. The principles that guide my search for solutions can be summarized by three well-known slogans:  [Jevons paradox](https://en.wikipedia.org/wiki/Jevons_paradox) which tells us not be blinded by economic promises of growth and technological promises of higher efficiency, [Gall's law](https://en.wikipedia.org/wiki/John_Gall_(author)#Gall's_law)[^Gall] which emphasizes the importance of choosing the right direction rather than to hope for revolutionary change, and [Goodhart's law](https://en.wikipedia.org/wiki/Goodhart's_law) which implies that markets alone do not solve problems and that any solution must build on democracy, diversity and inclusion. 
 
 [^Gall]: On page 52 of Gall's book [Systemantics](https://docdrop.org/download_annotation_doc/John-Gall---Systemantics_-How-Systems-Work-and-Especially-Ho-8qhgx.pdf). Btw, the book is an interesting mix of satire and valuable enigineering insights.
 
