@@ -38,6 +38,8 @@ In the following, I list some books that help me to understand the issues. The p
 
 #### Currently Reading
 
+(I got most of the below as audiobooks, preferably from [libro.fm](https://libro.fm/).)
+
 - Menelaos Apostolou (2017) **[Sexual Selection in Homo sapiens - Parental Control over Mating and the
 Opportunity Cost of Free Mate Choice](https://batrachos.com/sites/default/files/pictures/1_5_HN_Books/Apostolou_2017_Sexual%20Selection%20in%20Homo%20sapiens.pdf)**.
 - Sean B Carroll (2016) **The Serengeti Rules: The Quest to Discover How Life Works and Why It Matters**. Keystone species, trophic cascades, cancer, ... which regulations allow human and animal bodies to survive? Which of these regulatory mechanisms scale to whole ecosystems? How is this knowledge used to support the health both of individuals and of societies? [film](https://pbswisconsin.org/watch/nature/the-serengeti-rules-41dfru/), [video lecture](https://www.youtube.com/watch?v=ppTK710PMBE).
