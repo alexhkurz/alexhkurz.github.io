@@ -24,9 +24,9 @@ Big questions are not easy to turn into concrete research questions, but that on
 
 - Machine learning is great as long as we have, or can generate, large amounts of data. But humans are capable to learn successfully from small numbers of examples. One of the ideas to tackle this gap is to bring together symbolic and statistical AI. While there is work along these lines, there is much more to discover.
 
-- What is a proof? What is an algorithm? What is information?
+- What is a proof? What is an algorithm? What is information? After more than a century of research in algorithms, proof theory and information theory, there is still no satisfactory answer to these questions.
   
-- [Algorithms](https://en.wikipedia.org/wiki/Algorithm) run on [machines](https://en.wikipedia.org/wiki/Turing_machine), [mechanisms](https://en.wikipedia.org/wiki/Mechanism_design) run on [rational agents](https://en.wikipedia.org/wiki/Rational_choice_theory). But what are the right theoretical foundations for human cooperation?
+- [Algorithms](https://en.wikipedia.org/wiki/Algorithm) run on [machines](https://en.wikipedia.org/wiki/Turing_machine), [mechanisms](https://en.wikipedia.org/wiki/Mechanism_design) run on [rational agents](https://en.wikipedia.org/wiki/Rational_choice_theory). But what are the theoretical foundations for *human* cooperation intelligence? I put some preliminary thoughts in lectures on [Designing Algorithms for Cooperation](https://hackmd.io/@alexhkurz/BJXjBaxJC) and [Challenges in Software Engineering](https://hackmd.io/@alexhkurz/r1xJEv9fC).
 
 
 

@@ -14,5 +14,5 @@ If you do both the math-as-programming and the pen-and-paper math, you will see 
 
 ## Software Engineering
 
-My interests in software engineering are currently evolving quickly. A recent summary I gave to my students in my Algorithm Analysis course is available [here](https://hackmd.io/@alexhkurz/BJXjBaxJC). I am interested in setting up software engineering projects that explore these questions. 
+My interests in software engineering are currently evolving quickly. A recent summary I gave to my students in my Algorithm Analysis course is available in my thoughts on [Designing Algorithms for Cooperation](https://hackmd.io/@alexhkurz/BJXjBaxJC) and [Challenges in Software Engineering](https://hackmd.io/@alexhkurz/r1xJEv9fC). I am interested in setting up software engineering projects that explore these questions. 
 
