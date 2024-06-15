@@ -45,27 +45,26 @@ In the following, I list some books that help me to understand the issues. The p
 - Robert Putnam (2020) **The Upswing: How America Came Together a Century Ago and How We Can Do It Again**. A history of individualism and communitarianism in the US from 1890 to 2020.
 - H W Brands (2009) **Traitor to His Class: The Privileged Life and Radical Presidency of Franklin Delano Roosevelt**.
 - Immanuel Wallerstein (2004) **World-Systems Analysis: An Introduction**.
-- Menelaos Apostolou (2017) **[Sexual Selection in Homo sapiens - Parental Control over Mating and the Opportunity Cost of Free Mate Choice](https://batrachos.com/sites/default/files/pictures/1_5_HN_Books/Apostolou_2017_Sexual%20Selection%20in%20Homo%20sapiens.pdf)**.
 - Sean B Carroll (2016) **The Serengeti Rules: The Quest to Discover How Life Works and Why It Matters**. Keystone species, trophic cascades, cancer, ... which regulations allow human and animal bodies to survive? Which of these regulatory mechanisms scale to whole ecosystems? How is this knowledge used to support the health both of individuals and of societies? [film](https://pbswisconsin.org/watch/nature/the-serengeti-rules-41dfru/), [video lecture](https://www.youtube.com/watch?v=ppTK710PMBE).
 - Sean B Carroll (2005) **Endless Forms Most Beautiful: The New Science of Evo Devo and the Making of the Animal Kingdom** What can we learn from embryology about biological evolution and the organization of cooperation? 
 - David Lewis, Wim Vandekerckhove (2011) **[Whistleblowing and Democratic Values](https://papers.ssrn.com/sol3/Delivery.cfm/SSRN_ID1998293_code1348120.pdf?abstractid=1998293&mirid=1)**.
 - Danny Dorling (2020) **Slowdown: The End of the Great Acceleration** ... [animation](https://www.youtube.com/watch?v=G6P2h1NV6R0)
-- Ed Conway (2014) **The Summit**. A history of the 1944 Bretton Woods agreement.
-- Cecilia Hayes (2018) **Cognitive Gadgets: The Cultural Evolution of Thinking**.
 - Tim Wu (2016) **The Attention Merchants**. A history of advertising from 1833 until today.
 - Cory Doctorow (2023) **The Internet Con: How to Seize the Means of Computation** An account on how Big Tech created monopolies and the importance of interoperability.
 - Patrick Sharkey (2018) **Uneasy Peace: The Great Crime Decline, the Renewal of City Life, and the Next War on Violence**. How did American society organize to start bringing down crime rates in the 1990s?
 - Eric J. Johnson (2021) **The Elements of Choice: Why the Way We Decide Matters** 
-- Evolutionary Psychology:
+- Evolutionary Psychology (and related fields):
   - Robert Trivers (2011) **The Folly of Fools: The Logic of Deceit and Self-Deception in Human Life**. Intelligence evolved as an armsrace between deceivers and detectors and self-deception evolved to counter detection. What does this tell us about social media and current politics?
   - David Buss (2016) **Evolutionary Psychology**
   - Joseph LeDoux (2019) **The Deep History of Ourselves: The Four-Billion-Year Story of How We Got Conscious Brains**
   - Robert Sapolski (2017) **Behave: The Biology of Humans at Our Best and Worst**.
   - Robert Wright (1995) **Moral Animal**
   - Cecilia Hayes (2018) **Cognitive Gadgets: The Cultural Evolution of Thinking**.
+  - Menelaos Apostolou (2017) **[Sexual Selection in Homo sapiens - Parental Control over Mating and the Opportunity Cost of Free Mate Choice](https://batrachos.com/sites/default/files/pictures/1_5_HN_Books/Apostolou_2017_Sexual%20Selection%20in%20Homo%20sapiens.pdf)**.
 - Economics:
   - Mancur Olson (1982) **The Rise and Decline of Nations: Economic Growth, Stagflation, and Social Rigidness**.
 - History:
+  - Ed Conway (2014) **The Summit**. A history of the 1944 Bretton Woods agreement.
   - Peter Turchin (2023) **End times: elites, counter-elites, and the path of political disintegration**. Are popular immiseration and elite overproduction two of the most significant factors in the decline of states?
   - Joe Studwell (2013) **How Asia Works: Success and Failure In the World's Most Dynamic Region**. An economic history of industrialization. Why does successful industrialization start with land reform and proctectionism? What implications do these insights have on economic theory?
   - Zephyr Teachout (2014) **[Corruption in America: From Benjamin Franklin's Snuff Box to Citizens United](https://www.jstor.org/stable/j.ctt7zswx5)**. 
