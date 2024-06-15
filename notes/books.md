@@ -42,7 +42,7 @@ In the following, I list some books that help me to understand the issues. The p
 
 - Lee Vinsel, Andrew L. Russell (2020) **The Innovation Delusion: How Our Obsession with the New Has Disrupted the Work That Matters Most** What is technology? What role does maintenance vs innovation play in technology-based prosperity?
 - Sherry Turkle (2011) **Alone Together: Why We Expect More from Technology and Less from Each Other**.
-- Robert Putnam (2020) **The Upswing: How America Came Together a Century Ago and How We Can Do It Again**. A history of individualism and communitarianism in the US from 1890 to 2020.
+- Robert Putnam (2020) **The Upswing: How America Came Together a Century Ago and How We Can Do It Again**. A history of individualism vs communitarianism in the US from 1890 to 2020.
 - H W Brands (2009) **Traitor to His Class: The Privileged Life and Radical Presidency of Franklin Delano Roosevelt**.
 - Immanuel Wallerstein (2004) **World-Systems Analysis: An Introduction**.
 - Sean B Carroll (2016) **The Serengeti Rules: The Quest to Discover How Life Works and Why It Matters**. Keystone species, trophic cascades, cancer, ... which regulations allow human and animal bodies to survive? Which of these regulatory mechanisms scale to whole ecosystems? How is this knowledge used to support the health both of individuals and of societies? [film](https://pbswisconsin.org/watch/nature/the-serengeti-rules-41dfru/), [video lecture](https://www.youtube.com/watch?v=ppTK710PMBE).
