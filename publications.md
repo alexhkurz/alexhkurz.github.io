@@ -15,7 +15,8 @@ The files made available here may be preprints or postprints and can be slightly
 
 ### Chapman 2018-
 
-Alexander Kurz, Apostolos Tzimoulis: Slides on [Canonical Extensions of Quantale-Enriched Categories](https://hackmd.io/@alexhkurz/SkOqwKNzA).
+Alexander Kurz, Apostolos Tzimoulis: Slides on [Canonical Extensions of Quantale-Enriched Categories](https://hackmd.io/@alexhkurz/BJYt4MQvA#/).
+
 Alexander Kurz, Wolfgang Poiger, Bruno Teheux: [Many-valued coalgebraic logic over semi-primal varieties](https://arxiv.org/abs/2308.14581). Accepted for LMCS. 
 
 Alexander Kurz, Wolfgang Poiger, Bruno Teheux: [New perspectives on semi-primal varieties](https://arxiv.org/abs/2301.13406). Journal of Pure and Applied Algebra, Volume 228, Issue 4, April 2024. [doi](https://doi.org/10.1016/j.jpaa.2023.107525).
