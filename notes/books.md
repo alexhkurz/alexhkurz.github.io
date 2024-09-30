@@ -40,7 +40,7 @@ In the following, I list some books that help me to understand the issues. The p
 
 (I got most of the below as audiobooks, preferably from [libro.fm](https://libro.fm/).)
 
-- Richard Evans **The Pursuit of Power** A history of Europe 1815-1914. The institutions that form the basis of modern society (liberalism, nationalism, "deep" state, representative democracy, etc) were largely put in place during the conservative reaction after Napoleon. These times are much more alive today than I previously thought.
+- Richard Evans **The Pursuit of Power** A history of Europe 1815-1914. The institutions that form the basis of modern society (liberalism, nationalism, "deep" state, representative democracy, freedom of speech, public education, end of slavery and serfdom, etc) were largely put in place during the conservative reaction after Napoleon. These times are much more alive today than I previously thought.
 - Richard Evans. **The Coming of the Third Reich** 
 - Christopher Clark. **The Sleepwalkers**
 - Chris Gosden. **Magic**
