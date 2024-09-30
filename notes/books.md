@@ -40,6 +40,18 @@ In the following, I list some books that help me to understand the issues. The p
 
 (I got most of the below as audiobooks, preferably from [libro.fm](https://libro.fm/).)
 
+- Richard Evans **The Pursuit of Power** A history of Europe 1815-1914. The institutions that form the basis of modern society (liberalism, nationalism, "deep" state, representative democracy, etc) were largely put in place during the conservative reaction after Napoleon. These times are much more alive today than I previously thought.
+- Richard Evans. **The Coming of the Third Reich** 
+- Christopher Clark. **The Sleepwalkers**
+- Chris Gosden. **Magic**
+- Ellen Wood. **The Origin of Capitalism**
+- Ira Stoll. **Samuel Adams**
+- Walter Lippmann. **Public Opinion**
+- Edward Bernays. **Propaganda**
+- Osterhammel, Petersson. **Geschichte der Globalisierung**
+- Merlin Sheldrake. **Entangled Life**
+- John Darwin (2008) **After Tamerlane: The Global History of Empire Since 1405**.
+- danah boyd (2014) **[it's complicated - the social lives of networked teens](https://www.danah.org/books/ItsComplicated.pdf)**
 - Jean Twenge (2023) **Generations: The Real Differences Between Gen Z, Millennials, Gen X, Boomers, and Silents—and What They Mean for America's Future**
 - Edward Foley (2020) **Presidential Elections and Majority Rule: The Rise, Demise, and Potential Restoration of the Jeffersonian Electoral**
 - Christopher Clark (2014) **The Sleepwalkers: How Europe Went to War in 1914**
