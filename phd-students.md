@@ -12,7 +12,7 @@ PhD students I supervised or co-supervised.
 
 [Octavian Babus](https://www.linkedin.com/in/octavian-babus-a8723829/). Generalised distributivity and the logic of metric spaces, Leicester, 2016.  
 
-[Christian Kissig](https://www.researchgate.net/profile/Christian_Kissig). Finitary Logics for Coalgebras with Branching, Leicester 2012.  
+[Christian Kissig](https://www.linkedin.com/in/christiankissig/?originalSubdomain=uk). Finitary Logics for Coalgebras with Branching, Leicester 2012.  
 
 [Daniela Petrisan](https://www.irif.fr/~petrisan/). Investigations into Algebra and Topology over Nominal Sets, Leicester 2011.   
 
