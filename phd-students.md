@@ -14,7 +14,7 @@ PhD students I supervised or co-supervised.
 
 [Christian Kissig](https://www.linkedin.com/in/christiankissig/?originalSubdomain=uk). Finitary Logics for Coalgebras with Branching, Leicester 2012.  
 
-[Daniela Petrisan](https://www.irif.fr/~petrisan/). Investigations into Algebra and Topology over Nominal Sets, Leicester 2011.   
+[Daniela Petrisan](https://dblp.org/pid/72/3703.html). Investigations into Algebra and Topology over Nominal Sets, Leicester 2011.   
 
 [Tomoyuki Suzuki](https://dblp.uni-trier.de/pers/hd/s/Suzuki_0001:Tomoyuki). Canonicity and bi-approximation in non-classical logics, Leicester 2010.  
 
