@@ -10,6 +10,7 @@ I am working on the following projects with my students.
 - Trusted AI, Controlled Natural Languages
 - Personal AI Assistants
 - LLMs and Formal Methods
+
 ## Logic and Category Theory
 
 Projects close to the top are the ones I am more likely to be working on now.
