@@ -187,7 +187,7 @@ Why did humans evolve to cooperate? Why did humans evolve the ability to reason?
 
 Why is democracy declining and authoritarianism on the rise? What conditions make democracy work? Can we employ modern technology to strengthen democracy?
 
-- Balaji Srinavasan. **[The Network State](https://balajis.com/the-network-state-2/)**. (2022).
+- Balaji Srinavasan. **[The Network State](https://balajis.com/the-network-state-2/)**. (2022). [Review](https://www.combinationsmag.com/build-network-societies-not-network-states/).
 - Donald Cohen. **The Privatization of Everything: How the Plunder of Public Goods Transformed America and How We Can Fight Back** (2021). How did the importance of public goods disappear from our view?
 - Camila Vergara. **Systemic Corruption: Constitutional Ideas for an Anti-Oligarchic Republic** (2020). Is it possible to design an economic and political system that is stable against oligarchic takeover?  
 - Zachary Carter. **The Price of Peace: Money, Democracy, and the Life of John Maynard Keynes** (2020). Which economic system best supports democracy?
