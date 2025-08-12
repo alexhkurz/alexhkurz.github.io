@@ -1,13 +1,19 @@
 # La Halle de la Machine, Toulouse
 
-https://www.halledelamachine.fr/
+[Official site](https://www.halledelamachine.fr/)
 
-## La Halle
+## La Halle - Outside
 
-...
+![alt text](8AA326D0-C6D4-4C48-9642-B8892B74C719_1_102_o.jpeg)
+
+![alt text](2A86C431-75EF-4E73-AEE8-AA657B5D91B6_1_105_c.jpeg)
+
+## La Halle - Symphone Mechanique
+
+A Drum Machine: 
+![A Drum Machine](9C25C3A6-87FA-49F9-AE0C-11EAC7EB26D9_1_105_c.jpeg)
 
 ## Le Manege
-
 This carousel can be seen for free outside. It only runs on special days and times. Rides cost extra.
 ![alt text](BA6B1CD6-B1B6-4DE7-A41D-4A722391610E_1_102_o.jpeg)
 
