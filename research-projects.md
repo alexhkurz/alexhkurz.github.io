@@ -1,28 +1,38 @@
 # Research Projects
 
-If you are a student interested in some of the topics below, feel free to get in touch. 
+If you are a student interested in some of the topics below, feel free to get in touch. More recent projects are closer to the top of the list.
 
-## Software Engineering
+## Sofwtare Engineering Projects
 
-I am working on the following projects with my students.
+### Active
 
-- Decentralized Moderation in Social Media
-- Trusted AI, Controlled Natural Languages
-- Personal AI Assistants
-- LLMs and Formal Methods
+- AI Intentions, Alignment, Interpretability
+- AI for Mathematics and Formal Methods
+- Distributed Systems, Decentralized Social Media, Blockchain, Nearbytes
+- Contracts for Energy, Digital Twins
+- Wikipedia Governance
+### Sleeping 
 
-## Logic and Category Theory
+- Ideology Mapping
+### Past
 
-Projects close to the top are the ones I am more likely to be working on now.
+- Neuron Models
+- Trusted AI and Controlled Natural Languages
+- Personal AI Assistants (pAIas)
+- Chess XAI: Chess
+
+## Mathematics, Logic, and Category Theory
 
 - Quantale enriched category theory
-- Coalgebraic/modal logic
 - Duality for relations
-- Interactive theorem proving
+- Canonical Extensions
+- Coalgebraic and modal logic
+- Interactive theorem proving (Lean)
 - Distributed systems
 - Nominal string diagrams
 - Nominal sets
-- ...
 
+## Other Directions
 
+- Philosophy of Computer Science
 

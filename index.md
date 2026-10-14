@@ -8,13 +8,24 @@
 
   gtag('config', 'G-0LL1EK05V8');
 </script>
+<script>
+// Track file downloads
+document.addEventListener('click', function(e) {
+  if (e.target.href && e.target.href.match(/\.(pdf|doc|docx|txt)$/i)) {
+    gtag('event', 'download', {
+      'event_category': 'paper',
+      'event_label': e.target.href.split('/').pop()
+    });
+  }
+});
+</script>
 </head>
 
 Alexander Kurz  
 Home-educating parent, Professor of Computer Science at Chapman University  
 Researcher in logic, category theory, and computer science    
 Formerly University of Leicester, CWI Amsterdam, Masaryk University Brno, LMU Munich   
-[Google Scholar](https://scholar.google.com/citations?user=hnsJeJMAAAAJ&hl=en), [DBLP](https://dblp.uni-trier.de/pers/hd/k/Kurz_0001:Alexander), 
+[Google Scholar](https://scholar.google.com/citations?user=hnsJeJMAAAAJ&hl=en), [DBLP](https://dblp.org/pid/k/AlexanderKurz.html), 
 <!-- [Mastodon UK](https://mastodonapp.uk/@alexhkurz),-->
 [Mathstodon](https://mathstodon.xyz/@alexhkurz), [Nostr](npub1ywlf9ajgst7xju7hn7phxjjgf6c4nas9a4wgt3zj8ueh6tu0r59sh3jx96)[^socialmedia]  
 [Reading List](notes/books.html)  
@@ -101,12 +112,6 @@ If we want to survive on this planet, we need to respect [planetary boundaries](
 
 ---
 
-In early 2021, the **University of Leicester** threatened with redundancy some of the best mathematicians and computer scientists I know, former colleagues of mine. By the end of the academic year, if I counted correctly, 16 academics in mathematics and computer science either left their job "voluntarily" or were made redundant ... [more](leicester.md) ... 
-
-Ongoing Petitions: [Aberdeen](https://www.change.org/p/save-language-translation-interpreting-degrees-at-the-university-of-aberdeen) ...  [Kent](https://www.change.org/p/save-arts-humanities-and-social-sciences-subjects-at-the-university-of-kent) ... A recent [article](https://www.theguardian.com/commentisfree/2024/mar/29/britain-universities-freefall-saving-them-funding-international-students) on the ongoing decline of British academia.
-
----
-
 <!--Both natural and programming languages are recursive. In German also words are recursive, for example, we can make words such [Rindfleischetikettierungsüberwachungsaufgabenübertragungsgesetz](https://en.wikipedia.org/wiki/Rinderkennzeichnungs-_und_Rindfleischetikettierungs%C3%BCberwachungsaufgaben%C3%BCbertragungsgesetz). There is no longest word in German, much as there is no longest sentence in English. Btw, there is an interesting debate about whether [Piraha](https://www.youtube.com/watch?v=5NyB4fIZHeU) is a language in which the length of sentences is also bounded (but the lengths of stories would still be unbounded). 
 
 --->
@@ -118,9 +123,12 @@ Ongoing Petitions: [Aberdeen](https://www.change.org/p/save-language-translation
 
 ([research](research.html))
 
+Consider submitting to [LATD 2027](https://latd2027.uni-eszterhazy.hu/) (Logic, Algebra and Truth Degrees; Eger, Hungary, 28 June–2 July 2027). I am on the programme committee.
+
 [Projects](research-projects.md)  
 [Publications](publications.html)    
 [Talks](talks.html)  
+[LEAP Lab](https://leap-at-chapman.github.io/)
 <!--[Events](events.html)-->
 <!--[Chapman University Engineering Seminars](engineering-seminars.html)-->
 [PhD students](phd-students.html)   
@@ -129,7 +137,7 @@ Ongoing Petitions: [Aberdeen](https://www.change.org/p/save-language-translation
 
 (teaching)
 
-Full Courses: [Algorithm Analysis](https://codeberg.org/alexhkurz/algorithm-analysis-2024) (Spring 2024), [Programming Languages](https://codeberg.org/alexhkurz/programming-languages-2023) (Fall 2023), [Compiler Construction](https://github.com/alexhkurz/compiler-construction-2022/blob/main/README.md) (Spring 2022),    
+Full Courses: Bus-658 (Spring 2026), Torino (2025-2026), [Algorithm Analysis](https://codeberg.org/alexhkurz/algorithm-analysis-2024) (Spring 2024), [Programming Languages](https://codeberg.org/alexhkurz/programming-languages-2023) (Fall 2023), [Compiler Construction](https://github.com/alexhkurz/compiler-construction-2022/blob/main/README.md) (Spring 2022),    
 1/3 Courses: [Logic](https://hackmd.io/@alexhkurz/rJDrv_qDT) (Spring 2024), [Smart Contracts](https://github.com/alexhkurz/introduction-to-smart-contracts/) (Spring 2023), [NLP](https://hackmd.io/@alexhkurz/HyHullxw9) (Spring 2022),   
 [Software](software.md)  
 Short Courses: [Automata and Haskell](https://hackmd.io/@alexhkurz/HylLKujCP) and [Monads in Mathematics and Haskell](https://hackmd.io/@alexhkurz/H1OxumxRP)   
